@@ -1,0 +1,70 @@
+---
+import { site } from '../data/site';
+import { services } from '../data/services';
+import { areas } from '../data/areas';
+const year = new Date().getFullYear();
+---
+<footer class="bg-brand-900 text-white mt-24">
+ <div class="container-x py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+ <div>
+ <div class="mb-4">
+ <img
+ src="/images/brand/floors-to-you-logo.webp"
+ alt="Floors To You - Where We Bring The Showroom To You"
+ width="617"
+ height="255"
+ class="h-16 w-auto bg-cream rounded-xl2 p-3"
+ loading="lazy"
+ />
+ </div>
+ <p class="text-white/80 text-sm leading-relaxed mb-4">{site.tagline}. Locally owned, locally installed since {site.foundingDate}.</p>
+ <address class="not-italic text-sm text-white/80 leading-relaxed">
+ {site.address.street}<br/>
+ {site.address.city}, {site.address.region} {site.address.postalCode}<br/>
+ <a href={`tel:${site.phoneTel}`} class="text-white hover:text-brand-300 no-underline font-semibold">{site.phone}</a>
+ </address>
+ </div>
+
+ <div>
+ <h4 class="text-white font-display text-lg mb-4">Flooring</h4>
+ <ul class="space-y-2 text-sm">
+ {services.map((s) => (
+ <li><a href={`/services/${s.slug}`} class="text-white/80 hover:text-brand-300 no-underline">{s.shortName}</a></li>
+ ))}
+ </ul>
+ </div>
+
+ <div>
+ <h4 class="text-white font-display text-lg mb-4">Service Areas</h4>
+ <ul class="space-y-2 text-sm">
+ {areas.map((a) => (
+ <li><a href={`/areas/${a.slug}`} class="text-white/80 hover:text-brand-300 no-underline">{a.city}, OK</a></li>
+ ))}
+ </ul>
+ </div>
+
+ <div>
+ <h4 class="text-white font-display text-lg mb-4">Company</h4>
+ <ul class="space-y-2 text-sm">
+ <li><a href="/products" class="text-white/80 hover:text-brand-300 no-underline">Shop All Flooring</a></li>
+ <li><a href="/about" class="text-white/80 hover:text-brand-300 no-underline">About</a></li>
+ <li><a href="/how-it-works" class="text-white/80 hover:text-brand-300 no-underline">How It Works</a></li>
+ <li><a href="/financing" class="text-white/80 hover:text-brand-300 no-underline">Financing</a></li>
+ <li><a href="/free-in-home-estimate" class="text-white/80 hover:text-brand-300 no-underline">Free Estimate</a></li>
+ <li><a href="/reviews" class="text-white/80 hover:text-brand-300 no-underline">Reviews</a></li>
+ <li><a href="/flooring-faq" class="text-white/80 hover:text-brand-300 no-underline">FAQ</a></li>
+ <li><a href="/contact" class="text-white/80 hover:text-brand-300 no-underline">Contact</a></li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="border-t border-white/10">
+ <div class="container-x py-6 flex flex-col md:flex-row justify-between gap-4 text-xs text-white/60">
+ <p>© {year} {site.legalName}. All rights reserved.</p>
+ <div class="flex gap-4">
+ <a href="/privacy" class="text-white/60 hover:text-white no-underline">Privacy</a>
+ <a href="/sitemap-index.xml" class="text-white/60 hover:text-white no-underline">Sitemap</a>
+ </div>
+ </div>
+ </div>
+</footer>

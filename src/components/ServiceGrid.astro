@@ -1,0 +1,26 @@
+---
+import { services } from '../data/services';
+export interface Props { areaSlug?: string; }
+const { areaSlug } = Astro.props;
+const linkBase = areaSlug ? `/${areaSlug}` : '/services';
+---
+<section class="container-x py-16 md:py-24">
+ <div class="text-center max-w-2xl mx-auto mb-12">
+ <p class="eyebrow mb-3">Shop By Flooring Type</p>
+ <h2>Beautiful Floors For Every Style &amp; Budget</h2>
+ <p class="mt-4 text-ink/75">Hundreds of in-stock carpet, hardwood, LVP, laminate, and tile SKUs - ready for next-day install in Oklahoma City and the surrounding metro.</p>
+ </div>
+ <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+ {services.map((s) => (
+ <a href={`${linkBase}/${s.slug}`} class="card group no-underline">
+ <div class="aspect-[4/5] overflow-hidden bg-brand-100">
+ <img src={s.hero} alt={s.heroAlt} loading="lazy" width="500" height="625" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+ </div>
+ <div class="p-5">
+ <h3 class="text-xl text-brand-800 mb-1">{s.shortName}</h3>
+ <p class="text-sm text-ink/70">{s.priceFrom}</p>
+ </div>
+ </a>
+ ))}
+ </div>
+</section>

@@ -1,0 +1,41 @@
+---
+import { site } from '../../data/site';
+
+export interface Props {
+  name: string;
+  description: string;
+  slug: string;
+  areaServed?: string[];
+  image?: string;
+  priceFrom?: string;
+}
+
+const { name, description, slug, areaServed = ['Oklahoma City', 'Edmond', 'Yukon', 'Mustang', 'Midwest City', 'Moore', 'Norman', 'Guthrie'], image, priceFrom } = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${site.domain}/services/${slug}#service`,
+  name,
+  description,
+  serviceType: name,
+  provider: { '@id': `${site.domain}/#business` },
+  areaServed: areaServed.map((c) => ({ '@type': 'City', name: `${c}, OK` })),
+  ...(image && { image: `${site.domain}${image}` }),
+  ...(priceFrom && {
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'USD',
+      price: priceFrom.replace(/[^0-9.]/g, ''),
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: priceFrom.replace(/[^0-9.]/g, ''),
+        priceCurrency: 'USD',
+        unitText: 'SQF',
+      },
+    },
+  }),
+  url: `${site.domain}/services/${slug}`,
+};
+---
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

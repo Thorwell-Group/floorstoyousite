@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import EstimateForm from '../components/EstimateForm.astro';
+import WhyUs from '../components/WhyUs.astro';
+import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
+---
+<BaseLayout
+ title="Free In-Home Flooring Estimate | Oklahoma City | Floors To You OKC"
+ description="Book a free in-home flooring estimate in Oklahoma City, Edmond, Yukon, Mustang, Moore, Norman or Guthrie. Written quote within one business day. Call (405) 913-7381."
+>
+ <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Free In-Home Estimate', url: '/free-in-home-estimate' }]} />
+
+ <section class="container-x py-12">
+ <p class="eyebrow mb-3">Free Service</p>
+ <h1 class="mb-4">Free In-Home Flooring Estimates Across The OKC Metro</h1>
+ <p class="text-lg text-ink/80 max-w-2xl mb-8">No pressure. No upselling. A Floors To You OKC design consultant will measure your space, match samples to your light and trim, and leave you with a written, itemized quote - usually the same day.</p>
+ <img src="/images/photos/install/measuringflooring.webp" alt="Floors To You OKC consultant measuring a room during a free in-home estimate" width="1600" height="700" loading="lazy" class="w-full h-auto rounded-xl2 shadow-soft aspect-[21/9] object-cover" />
+ </section>
+
+ <EstimateForm />
+ <WhyUs />
+
+ <Fragment slot="head">
+ <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'Free In-Home Estimate', url: '/free-in-home-estimate' }]} />
+ </Fragment>
+</BaseLayout>

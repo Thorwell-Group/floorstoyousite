@@ -1,0 +1,25 @@
+---
+export interface Props {
+  faqs: { q: string; a: string }[];
+  heading?: string;
+  eyebrow?: string;
+}
+const { faqs, heading = 'Frequently Asked Questions', eyebrow = 'Good To Know' } = Astro.props;
+---
+<section class="container-x py-16 md:py-24">
+  <div class="max-w-2xl mx-auto text-center mb-10">
+    <p class="eyebrow mb-3">{eyebrow}</p>
+    <h2>{heading}</h2>
+  </div>
+  <div class="max-w-3xl mx-auto space-y-3">
+    {faqs.map((f) => (
+      <details class="card p-5 group">
+        <summary class="cursor-pointer list-none flex items-start justify-between gap-4 font-display text-lg text-brand-800">
+          <span>{f.q}</span>
+          <span class="text-brand-500 group-open:rotate-45 transition-transform text-2xl leading-none">+</span>
+        </summary>
+        <p class="mt-3 text-ink/80 leading-relaxed">{f.a}</p>
+      </details>
+    ))}
+  </div>
+</section>

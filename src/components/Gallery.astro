@@ -1,0 +1,31 @@
+---
+export interface Props {
+  eyebrow?: string;
+  heading?: string;
+  subhead?: string;
+  items: { src: string; alt: string; caption?: string }[];
+}
+const { eyebrow = 'Inspiration Gallery', heading = 'Recent Oklahoma City Installs', subhead = "A few of our favorite rooms from the last 12 months across the OKC metro.", items } = Astro.props;
+---
+<section class="container-x py-16 md:py-24">
+  <div class="text-center max-w-2xl mx-auto mb-12">
+    <p class="eyebrow mb-3">{eyebrow}</p>
+    <h2>{heading}</h2>
+    <p class="mt-4 text-ink/75">{subhead}</p>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    {items.map((it, i) => (
+      <figure class={`overflow-hidden rounded-xl2 shadow-card ${i === 0 ? 'md:col-span-2 md:row-span-2' : ''}`}>
+        <img
+          src={it.src}
+          alt={it.alt}
+          loading="lazy"
+          width="800"
+          height="600"
+          class={`w-full h-full object-cover ${i === 0 ? 'aspect-[4/3]' : 'aspect-[4/3]'} hover:scale-105 transition-transform duration-500`}
+        />
+        {it.caption && <figcaption class="sr-only">{it.caption}</figcaption>}
+      </figure>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import EstimateForm from '../components/EstimateForm.astro';
+import GoogleMap from '../components/GoogleMap.astro';
+import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
+import { site } from '../data/site';
+---
+<BaseLayout
+ title="Contact Floors To You OKC | 4020 West Reno Ave, Oklahoma City"
+ description="Visit our Oklahoma City showroom at 4020 W Reno Ave or call (405) 913-7381. Free in-home flooring estimates across the OKC metro within one business hour."
+>
+ <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact' }]} />
+
+ <section class="container-x py-12">
+ <h1 class="mb-4">Visit Our OKC Showroom</h1>
+ <p class="text-lg text-ink/80 max-w-2xl mb-8">Stop in to walk on 30+ full-size flooring samples, talk to a design consultant, and leave with a same-day quote - or schedule a free in-home measure below.</p>
+ <img src="/images/photos/team/flooringteam.webp" alt="Floors To You OKC team welcoming a customer at the West Reno Avenue showroom" width="1600" height="700" loading="lazy" class="w-full h-auto rounded-xl2 shadow-soft aspect-[21/9] object-cover mb-10" />
+
+ <div class="grid lg:grid-cols-2 gap-10 items-start">
+ <div class="space-y-6">
+ <div class="card p-6">
+ <h2 class="text-2xl mb-3">Showroom</h2>
+ <p class="text-ink/80 leading-relaxed">{site.address.street}<br />{site.address.city}, {site.address.region} {site.address.postalCode}</p>
+ </div>
+ <div class="card p-6">
+ <h2 class="text-2xl mb-3">Call Us</h2>
+ <p><a href={`tel:${site.phoneTel}`} class="font-display text-2xl text-brand-800 no-underline hover:text-brand-500">{site.phone}</a></p>
+ <p class="text-sm text-ink/65 mt-1">Showroom &amp; estimates</p>
+ </div>
+ <div class="card p-6">
+ <h2 class="text-2xl mb-3">Hours</h2>
+ <ul class="text-ink/80 space-y-1">
+ {site.hours.map((h) => (
+ <li class="flex justify-between"><span class="font-medium">{h.day}</span><span>{h.open ? `${h.open} – ${h.close}` : 'Closed'}</span></li>
+ ))}
+ </ul>
+ </div>
+ </div>
+ <GoogleMap src="https://www.google.com/maps?q=4020+West+Reno+Avenue,+Oklahoma+City,+OK+73107&output=embed" title="Floors To You OKC showroom map" />
+ </div>
+ </section>
+
+ <EstimateForm />
+
+ <Fragment slot="head">
+ <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact' }]} />
+ </Fragment>
+</BaseLayout>

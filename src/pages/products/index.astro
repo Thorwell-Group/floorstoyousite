@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import ProductGrid from '../../components/ProductGrid.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
+import { products, productCategories, productsByCategory } from '../../data/products';
+---
+<BaseLayout
+ title={`Shop All Flooring | ${products.length} In-Stock Carpet, Wood, Tile & Vinyl | Floors To You OKC`}
+ description={`Browse all ${products.length} in-stock flooring SKUs at Floors To You OKC - carpet, engineered wood, laminate, tile, vinyl glue & vinyl click. Free in-home estimate.`}
+>
+ <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Shop Flooring', url: '/products' }]} />
+
+ <section class="container-x py-10">
+ <p class="eyebrow mb-3">Shop The Showroom</p>
+ <h1 class="mb-4">All In-Stock Flooring · {products.length} SKUs</h1>
+ <p class="text-lg text-ink/80 max-w-2xl">Every product below is in stock at our West Reno Avenue showroom in Oklahoma City - most can install within 24–72 hours of your accepted quote.</p>
+ <div class="flex flex-wrap gap-2 mt-6">
+ {productCategories.map((c) => (
+ <a href={`#${c.slug}`} class="px-4 py-2 rounded-full bg-brand-50 text-brand-800 text-sm font-medium hover:bg-brand-100 no-underline">
+ {c.label} ({productsByCategory(c.slug).length})
+ </a>
+ ))}
+ </div>
+ </section>
+
+ {productCategories.map((c) => {
+ const items = productsByCategory(c.slug);
+ return items.length > 0 && (
+ <div id={c.slug} class="scroll-mt-24">
+ <ProductGrid
+ products={items}
+ eyebrow={c.label}
+ heading={`${c.label} Products In Stock`}
+ subhead={`${items.length} ${c.label.toLowerCase()} SKUs at our Oklahoma City showroom. Tap a tile for the full product page.`}
+ />
+ </div>
+ );
+ })}
+
+ <CtaBand headline="See a floor you love?" subline="Book a free in-home estimate and we'll bring samples to match your light + trim." />
+
+ <Fragment slot="head">
+ <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'Shop Flooring', url: '/products' }]} />
+ </Fragment>
+</BaseLayout>

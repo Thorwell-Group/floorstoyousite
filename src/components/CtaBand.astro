@@ -1,0 +1,17 @@
+---
+import { site } from '../data/site';
+export interface Props { headline?: string; subline?: string; }
+const { headline = 'Ready For New Floors? Get A Free In-Home Estimate.', subline = '0% interest financing for 24 months. Next-day install on in-stock material. 100% labor guarantee.' } = Astro.props;
+---
+<section class="bg-brand-800 text-white">
+  <div class="container-x py-14 md:py-20 grid lg:grid-cols-[1.4fr_1fr] gap-8 items-center">
+    <div>
+      <h2 class="text-white mb-3">{headline}</h2>
+      <p class="text-white/85 leading-relaxed">{subline}</p>
+    </div>
+    <div class="flex flex-col sm:flex-row lg:justify-end gap-3">
+      <a href={`tel:${site.phoneTel}`} class="btn bg-white text-brand-800 hover:bg-brand-50">Call {site.phone}</a>
+      <a href="/free-in-home-estimate" class="btn bg-brand-500 text-white hover:bg-brand-600">Book Free Estimate</a>
+    </div>
+  </div>
+</section>

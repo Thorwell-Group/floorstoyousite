@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import CtaBand from '../components/CtaBand.astro';
+import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
+
+const steps = [
+ { n: '01', t: 'Schedule a Free Estimate', d: 'Call (405) 913-7381 or book online. Our consultant comes to you anywhere in the OKC metro within 1–2 business days.', img: '/images/photos/install/measuringflooring.webp', alt: 'Floors To You OKC consultant measuring a room for a new floor estimate' },
+ { n: '02', t: 'Pick Your Floor', d: 'Browse hundreds of full-size samples in the showroom or have us bring samples to your home - matched to your light, trim, and lifestyle.', img: '/images/photos/showroom/showroomsamples.webp', alt: 'In-stock flooring samples in the Floors To You OKC showroom' },
+ { n: '03', t: 'Get An Itemized Written Quote', d: 'Same-day, no-pressure quote. Material, pad, labor, removal, and disposal - all itemized. No surprise upcharges.', img: '/images/photos/install/flooringinstallation.webp', alt: 'Itemized flooring quote prepared by Floors To You OKC' },
+ { n: '04', t: 'Finance (Optional)', d: 'Apply for 0% APR financing for 24 months through Synchrony - most decisions in under 60 seconds.', img: '/images/photos/rooms/kitchenfloors.webp', alt: 'OKC kitchen flooring financed at 0% APR through Synchrony' },
+ { n: '05', t: 'Install In As Little As 24 Hours', d: 'Our W-2 installers handle prep, install, baseboard, and cleanup - most whole-room jobs finish in a single day.', img: '/images/photos/install/floorinstalling.webp', alt: 'Floors To You OKC installer fitting new flooring in an Oklahoma City home' },
+ { n: '06', t: 'Enjoy Your 100% Guarantee', d: 'Every product and every install is backed by our 100% guarantee for as long as you own the home.', img: '/images/photos/hardwood/closeuphardwood.webp', alt: 'Close-up of a finished hardwood install backed by the Floors To You OKC guarantee' },
+];
+---
+<BaseLayout
+ title="How It Works | OKC Flooring Process Step-By-Step | Floors To You OKC"
+ description="See exactly how a Floors To You OKC project unfolds - from free estimate to next-day install - with our 6-step Oklahoma City flooring process."
+>
+ <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'How It Works', url: '/how-it-works' }]} />
+
+ <section class="container-x py-12">
+ <p class="eyebrow mb-3">Our Process</p>
+ <h1 class="mb-4">Getting New Floors Is As Easy As 1-2-3 (Okay, 6)</h1>
+ <p class="text-lg text-ink/80 max-w-2xl">Here's exactly what happens from the moment you call Floors To You OKC to the day you walk on your new floor.</p>
+ </section>
+
+ <section class="container-x pb-12">
+ <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+ {steps.map((s) => (
+ <article class="card overflow-hidden">
+ <div class="aspect-[4/3] overflow-hidden bg-brand-100">
+ <img src={s.img} alt={s.alt} loading="lazy" width="800" height="600" class="w-full h-full object-cover" />
+ </div>
+ <div class="p-6">
+ <div class="font-display text-4xl text-brand-300 mb-3">{s.n}</div>
+ <h3 class="text-xl mb-2">{s.t}</h3>
+ <p class="text-ink/75 leading-relaxed">{s.d}</p>
+ </div>
+ </article>
+ ))}
+ </div>
+ </section>
+
+ <CtaBand />
+
+ <Fragment slot="head">
+ <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'How It Works', url: '/how-it-works' }]} />
+ </Fragment>
+</BaseLayout>

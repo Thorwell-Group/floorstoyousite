@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ServiceGrid from '../components/ServiceGrid.astro';
+import AreaGrid from '../components/AreaGrid.astro';
+import Testimonials from '../components/Testimonials.astro';
+import WhyUs from '../components/WhyUs.astro';
+import CtaBand from '../components/CtaBand.astro';
+import FAQ from '../components/FAQ.astro';
+import EstimateForm from '../components/EstimateForm.astro';
+import Gallery from '../components/Gallery.astro';
+import FAQSchema from '../components/schema/FAQSchema.astro';
+import { generalFaqs } from '../data/faqs';
+
+const galleryItems = [
+ { src: '/images/photos/hardwood/hardwoodinsun1.webp', alt: 'Sun-lit Oklahoma City living room with wide-plank engineered wood flooring' },
+ { src: '/images/photos/lvp/vinyl.webp', alt: 'Waterproof vinyl flooring in a sun-lit OKC home' },
+ { src: '/images/photos/laminate/lamiantekitchen.webp', alt: 'OKC kitchen with realistic wood-look laminate flooring' },
+ { src: '/images/photos/tile/tile1.webp', alt: 'Spa-style bathroom tile install in an Oklahoma City home' },
+ { src: '/images/photos/carpet/carpetbasement.webp', alt: 'Cozy carpeted basement family room installed in an OKC home' },
+ { src: '/images/photos/hardwood/wideplank.webp', alt: 'Wide-plank engineered wood detail in an Edmond, OK home' },
+];
+---
+<BaseLayout
+ title="Flooring Store Oklahoma City | Carpet, Hardwood, LVP & Tile | Floors To You OKC"
+ description="Oklahoma City's largest in-stock flooring showroom. Carpet, hardwood, LVP, laminate & tile installed across OKC, Edmond, Yukon, Moore & Norman. 0% financing. Call (405) 913-7381."
+>
+ <section class="relative overflow-hidden bg-gradient-to-br from-cream via-brand-50 to-brand-100">
+ <div aria-hidden class="pointer-events-none absolute -top-32 -right-32 w-[36rem] h-[36rem] rounded-full bg-brand-300/35 blur-3xl"></div>
+ <div aria-hidden class="pointer-events-none absolute -bottom-40 -left-32 w-[30rem] h-[30rem] rounded-full bg-brand-500/15 blur-3xl"></div>
+
+ <div class="container-x relative grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-16 items-center py-14 lg:py-24">
+ <div>
+ <div class="inline-flex items-center gap-2 rounded-full bg-white/80 backdrop-blur border border-brand-200 px-4 py-1.5 mb-6 shadow-card">
+ <span class="text-brand-500" aria-hidden>★★★★★</span>
+ <span class="text-sm font-semibold text-brand-800">4.9 / 5 from 187+ OKC homeowners</span>
+ </div>
+
+ <h1 class="mb-5">
+ <span class="block text-brand-800">Beautiful New Floors.</span>
+ <span class="block text-brand-500">Installed In 24 Hours.</span>
+ </h1>
+
+ <p class="text-lg md:text-xl text-ink/80 leading-relaxed mb-7 max-w-xl">
+ The largest in-stock selection of carpet, hardwood, LVP, laminate &amp; tile in Oklahoma - with a <strong class="text-brand-800">100% product &amp; labor guarantee</strong> and 0% financing for 24 months.
+ </p>
+
+ <div class="flex flex-wrap gap-3 mb-8">
+ <a href="/free-in-home-estimate" class="btn-primary">Get My Free Estimate</a>
+ <a href="/services" class="btn-outline">Shop Flooring</a>
+ </div>
+
+ <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink/70">
+ <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> Next-day install on in-stock</li>
+ <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> 0% APR for 24 months</li>
+ <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> Free in-home measure</li>
+ </ul>
+ </div>
+
+ <div class="relative">
+ <div aria-hidden class="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-brand-300/40 to-brand-500/20 blur-2xl"></div>
+
+ <div class="relative grid grid-cols-5 grid-rows-6 gap-3 lg:gap-4 h-[28rem] md:h-[34rem]">
+ <img
+ src="/images/photos/hardwood/hardwood-full-home.webp"
+ alt="Spacious open-concept Oklahoma City home with wide-plank hardwood flooring by Floors To You OKC"
+ loading="eager"
+ fetchpriority="high"
+ width="900"
+ height="700"
+ class="col-span-3 row-span-6 w-full h-full object-cover rounded-xl2 shadow-soft"
+ />
+ <img
+ src="/images/photos/tile/tileluxuryhome.webp"
+ alt="Large-format tile flooring in a luxury Oklahoma City home"
+ loading="eager"
+ width="600"
+ height="400"
+ class="col-span-2 row-span-3 w-full h-full object-cover rounded-xl2 shadow-soft"
+ />
+ <img
+ src="/images/photos/lvp/luxuryvinly.webp"
+ alt="Waterproof luxury vinyl plank in a modern OKC living room"
+ loading="eager"
+ width="600"
+ height="400"
+ class="col-span-2 row-span-3 w-full h-full object-cover rounded-xl2 shadow-soft"
+ />
+ </div>
+
+ <div class="hidden md:flex absolute -bottom-6 -left-6 lg:-left-10 z-10 items-center gap-3 bg-white rounded-xl2 shadow-soft px-5 py-4 max-w-xs">
+ <div class="grid place-items-center w-11 h-11 rounded-full bg-brand-500 text-white font-display text-lg" aria-hidden>2.5k</div>
+ <div>
+ <p class="font-semibold text-brand-800 leading-tight">2,500+ OKC installs</p>
+ <p class="text-xs text-ink/65">Locally owned since 2018</p>
+ </div>
+ </div>
+
+ <div class="hidden md:flex absolute -top-5 -right-3 lg:-right-6 z-10 items-center gap-2 bg-brand-800 text-white rounded-full pl-2 pr-4 py-2 shadow-soft">
+ <span class="grid place-items-center w-8 h-8 rounded-full bg-brand-500 text-white text-sm font-bold" aria-hidden>0%</span>
+ <span class="text-sm font-semibold">APR · 24 months</span>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="bg-brand-800 text-white">
+ <div class="container-x py-10 grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+ <div><p class="font-display text-3xl text-brand-300">2,500+</p><p class="text-sm text-white/80">Local installs</p></div>
+ <div><p class="font-display text-3xl text-brand-300">4.9★</p><p class="text-sm text-white/80">Average review</p></div>
+ <div><p class="font-display text-3xl text-brand-300">24hr</p><p class="text-sm text-white/80">Install turnaround</p></div>
+ <div><p class="font-display text-3xl text-brand-300">0% APR</p><p class="text-sm text-white/80">Financing 24 mo.</p></div>
+ </div>
+ </section>
+
+ <ServiceGrid />
+ <WhyUs />
+ <Gallery items={galleryItems} />
+ <AreaGrid />
+ <Testimonials />
+ <CtaBand />
+ <FAQ faqs={generalFaqs} heading="Flooring FAQ Oklahoma City Homeowners Ask Most" />
+ <EstimateForm />
+
+ <Fragment slot="head">
+ <FAQSchema faqs={generalFaqs} />
+ </Fragment>
+</BaseLayout>

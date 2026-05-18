@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import Hero from '../../components/Hero.astro';
+import AreaGrid from '../../components/AreaGrid.astro';
+import Testimonials from '../../components/Testimonials.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import EstimateForm from '../../components/EstimateForm.astro';
+import Gallery from '../../components/Gallery.astro';
+import ProductGrid from '../../components/ProductGrid.astro';
+import { productsByService } from '../../data/products';
+import ServiceSchema from '../../components/schema/ServiceSchema.astro';
+import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
+import FAQSchema from '../../components/schema/FAQSchema.astro';
+import { services } from '../../data/services';
+
+export function getStaticPaths() {
+ return services.map((s) => ({ params: { service: s.slug }, props: { service: s } }));
+}
+const { service: s } = Astro.props;
+const serviceProducts = productsByService(s.slug);
+
+const breadcrumbs = [
+ { name: 'Home', url: '/' },
+ { name: 'Flooring', url: '/services' },
+ { name: s.shortName, url: `/services/${s.slug}` },
+];
+---
+<BaseLayout title={s.metaTitle} description={s.metaDescription}>
+ <Breadcrumb items={breadcrumbs} />
+
+ <Hero
+ eyebrow={`${s.shortName} · From ${s.priceFrom}`}
+ title={s.name + ' In Oklahoma City'}
+ subtitle={s.intro}
+ image={s.hero}
+ imageAlt={s.heroAlt}
+ ctaPrimary={{ label: 'Get My Free Estimate', href: '/free-in-home-estimate' }}
+ ctaSecondary={{ label: 'See All Flooring', href: '/services' }}
+ />
+
+ <section class="container-x py-16 md:py-20 grid lg:grid-cols-2 gap-12 items-start">
+ <div>
+ <p class="eyebrow mb-3">Why Choose This Floor</p>
+ <h2 class="mb-5">The Benefits of {s.shortName}</h2>
+ <ul class="space-y-3 text-ink/85">
+ {s.benefits.map((b) => <li class="flex gap-3"><span class="text-brand-500 mt-1" aria-hidden>✓</span><span>{b}</span></li>)}
+ </ul>
+ </div>
+ <div class="card p-6 md:p-8 bg-brand-50">
+ <h3 class="text-2xl mb-3">Best Rooms For {s.shortName}</h3>
+ <div class="flex flex-wrap gap-2 mb-6">
+ {s.bestFor.map((r) => <span class="px-3 py-1 rounded-full bg-white text-brand-800 text-sm font-medium">{r}</span>)}
+ </div>
+ <dl class="space-y-3 text-sm">
+ <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Starting at</dt><dd class="text-brand-800 font-semibold">{s.priceFrom}</dd></div>
+ <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Warranty</dt><dd class="text-brand-800 font-semibold">{s.warranty}</dd></div>
+ <div class="flex justify-between"><dt class="text-ink/70">Install lead time</dt><dd class="text-brand-800 font-semibold">As fast as 24 hours</dd></div>
+ </dl>
+ </div>
+ </section>
+
+ <section class="bg-brand-50">
+ <div class="container-x py-16 grid lg:grid-cols-2 gap-10 items-center">
+ <div>
+ <p class="eyebrow mb-3">Installation</p>
+ <h2 class="mb-4">How We Install {s.shortName}</h2>
+ <p class="text-ink/80 leading-relaxed mb-4">{s.installation}</p>
+ <p class="eyebrow mt-8 mb-3">Care &amp; Maintenance</p>
+ <h3 class="mb-3">Keep Your Floors Looking New</h3>
+ <p class="text-ink/80 leading-relaxed">{s.care}</p>
+ </div>
+ <img src={s.installImage.src} alt={s.installImage.alt} loading="lazy" width="900" height="700" class="rounded-xl2 shadow-soft w-full h-auto object-cover aspect-[4/3]" />
+ </div>
+ </section>
+
+ <Gallery items={s.gallery} eyebrow={`${s.shortName} Gallery`} heading={`Recent ${s.shortName} Installs Across OKC`} subhead={`Snapshots from ${s.shortName.toLowerCase()} projects we've completed across Oklahoma City and the metro.`} />
+
+ <ProductGrid
+ products={serviceProducts}
+ eyebrow={`Shop ${s.shortName}`}
+ heading={`${serviceProducts.length} In-Stock ${s.shortName} Products`}
+ subhead={`Every ${s.shortName.toLowerCase()} SKU below is in stock at our West Reno Avenue showroom - most install within 24–72 hours.`}
+ />
+
+ <AreaGrid serviceSlug={s.slug} serviceName={s.shortName} />
+ <Testimonials />
+ <FAQ faqs={s.faqs} heading={`${s.shortName} Questions OKC Homeowners Ask`} />
+ <CtaBand headline={`Get A Free ${s.shortName} Estimate Today`} subline="In-home measure, written quote, and next-day install on in-stock material." />
+ <EstimateForm />
+
+ <Fragment slot="head">
+ <BreadcrumbSchema items={breadcrumbs} />
+ <ServiceSchema name={s.name} description={s.intro} slug={s.slug} image={s.hero} priceFrom={s.priceFrom} />
+ <FAQSchema faqs={s.faqs} />
+ </Fragment>
+</BaseLayout>

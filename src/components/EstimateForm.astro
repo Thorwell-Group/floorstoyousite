@@ -1,0 +1,68 @@
+---
+import { site } from '../data/site';
+---
+<section id="estimate" class="container-x py-16 md:py-24">
+  <div class="grid lg:grid-cols-2 gap-12 items-start">
+    <div>
+      <p class="eyebrow mb-3">Free In-Home Estimate</p>
+      <h2 class="mb-4">Schedule Your Free Measure</h2>
+      <p class="text-ink/80 leading-relaxed mb-6">Tell us about your project and a Floors To You OKC design consultant will be in touch within one business hour to schedule a free in-home measure and quote.</p>
+      <ul class="space-y-3 text-ink/85">
+        <li class="flex gap-3"><span class="text-brand-500" aria-hidden>✓</span> No-pressure consultation in your home</li>
+        <li class="flex gap-3"><span class="text-brand-500" aria-hidden>✓</span> Bring samples that match your light &amp; trim</li>
+        <li class="flex gap-3"><span class="text-brand-500" aria-hidden>✓</span> Written quote with itemized labor &amp; material</li>
+        <li class="flex gap-3"><span class="text-brand-500" aria-hidden>✓</span> Most quotes can install within 5 days</li>
+      </ul>
+      <div class="mt-8 p-5 rounded-xl2 bg-brand-50">
+        <p class="text-sm text-ink/70 mb-1">Or call us right now</p>
+        <a href={`tel:${site.phoneTel}`} class="font-display text-3xl text-brand-800 no-underline hover:text-brand-500">{site.phone}</a>
+      </div>
+    </div>
+
+    <form name="estimate" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="card p-6 md:p-8 space-y-4">
+      <input type="hidden" name="form-name" value="estimate" />
+      <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <label class="block">
+          <span class="text-sm font-semibold text-brand-800">First name *</span>
+          <input required name="first_name" autocomplete="given-name" class="mt-1 w-full rounded-lg border border-brand-200 px-4 py-3 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" />
+        </label>
+        <label class="block">
+          <span class="text-sm font-semibold text-brand-800">Last name *</span>
+          <input required name="last_name" autocomplete="family-name" class="mt-1 w-full rounded-lg border border-brand-200 px-4 py-3 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" />
+        </label>
+      </div>
+      <label class="block">
+        <span class="text-sm font-semibold text-brand-800">Email *</span>
+        <input required type="email" name="email" autocomplete="email" class="mt-1 w-full rounded-lg border border-brand-200 px-4 py-3 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" />
+      </label>
+      <label class="block">
+        <span class="text-sm font-semibold text-brand-800">Phone *</span>
+        <input required type="tel" name="phone" autocomplete="tel" class="mt-1 w-full rounded-lg border border-brand-200 px-4 py-3 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" />
+      </label>
+      <label class="block">
+        <span class="text-sm font-semibold text-brand-800">City *</span>
+        <select required name="city" class="mt-1 w-full rounded-lg border border-brand-200 px-4 py-3 bg-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none">
+          <option value="">Choose your city</option>
+          <option>Oklahoma City</option><option>Edmond</option><option>Yukon</option><option>Mustang</option>
+          <option>Midwest City</option><option>Moore</option><option>Norman</option><option>Guthrie</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label class="block">
+        <span class="text-sm font-semibold text-brand-800">Interested in</span>
+        <select name="interest" class="mt-1 w-full rounded-lg border border-brand-200 px-4 py-3 bg-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none">
+          <option>Not sure yet</option>
+          <option>Carpet</option><option>Engineered Wood</option><option>Laminate</option>
+          <option>Tile</option><option>Vinyl Glue (LVT)</option><option>Vinyl Click (LVP)</option>
+        </select>
+      </label>
+      <label class="block">
+        <span class="text-sm font-semibold text-brand-800">Project details</span>
+        <textarea name="details" rows="4" class="mt-1 w-full rounded-lg border border-brand-200 px-4 py-3 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none"></textarea>
+      </label>
+      <button type="submit" class="btn-primary w-full">Book My Free Estimate</button>
+      <p class="text-xs text-ink/60 text-center">We respond within one business hour. We never share your info.</p>
+    </form>
+  </div>
+</section>

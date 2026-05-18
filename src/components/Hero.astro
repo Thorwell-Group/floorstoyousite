@@ -1,0 +1,29 @@
+---
+export interface Props {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  image: string;
+  imageAlt: string;
+  ctaPrimary?: { label: string; href: string };
+  ctaSecondary?: { label: string; href: string };
+}
+const { eyebrow, title, subtitle, image, imageAlt, ctaPrimary, ctaSecondary } = Astro.props;
+---
+<section class="relative overflow-hidden bg-brand-50">
+  <div class="container-x grid lg:grid-cols-2 gap-10 lg:gap-16 items-center py-14 lg:py-24">
+    <div>
+      {eyebrow && <p class="eyebrow mb-4">{eyebrow}</p>}
+      <h1 class="mb-5">{title}</h1>
+      {subtitle && <p class="text-lg md:text-xl text-ink/80 leading-relaxed mb-7 max-w-xl">{subtitle}</p>}
+      <div class="flex flex-wrap gap-3">
+        {ctaPrimary && <a href={ctaPrimary.href} class="btn-primary">{ctaPrimary.label}</a>}
+        {ctaSecondary && <a href={ctaSecondary.href} class="btn-outline">{ctaSecondary.label}</a>}
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute -inset-4 rounded-xl2 bg-brand-200/40 blur-2xl"></div>
+      <img src={image} alt={imageAlt} loading="eager" fetchpriority="high" width="900" height="700" class="relative rounded-xl2 shadow-soft w-full h-auto object-cover aspect-[4/3]" />
+    </div>
+  </div>
+</section>

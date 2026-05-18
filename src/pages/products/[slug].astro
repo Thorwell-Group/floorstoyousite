@@ -1,0 +1,123 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import ProductGrid from '../../components/ProductGrid.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
+import { products, productCategories, productsByCategory } from '../../data/products';
+import { services } from '../../data/services';
+import { site } from '../../data/site';
+
+export function getStaticPaths() {
+ return products.map((p) => ({ params: { slug: p.slug }, props: { product: p } }));
+}
+const { product: p } = Astro.props;
+
+const category = productCategories.find((c) => c.slug === p.category);
+const service = services.find((s) => s.slug === p.service);
+const related = productsByCategory(p.category).filter((x) => x.slug !== p.slug).slice(0, 10);
+
+const title = `${p.name} ${category?.label ?? ''} | In-Stock at Floors To You OKC`;
+const description = `${p.name} ${category?.label.toLowerCase() ?? 'flooring'} in stock at Floors To You OKC - Oklahoma City's largest flooring showroom. ${service?.priceFrom ?? ''} Free in-home estimate.`;
+
+const breadcrumbs = [
+ { name: 'Home', url: '/' },
+ { name: 'Shop Flooring', url: '/products' },
+ { name: category?.label ?? 'Flooring', url: `/services/${p.service}` },
+ { name: p.name, url: `/products/${p.slug}` },
+];
+
+const productSchema = {
+ '@context': 'https://schema.org',
+ '@type': 'Product',
+ name: p.name,
+ image: `${site.domain}${p.image}`,
+ description,
+ brand: { '@type': 'Brand', name: site.legalName },
+ category: category?.label ?? 'Flooring',
+ offers: {
+ '@type': 'Offer',
+ availability: 'https://schema.org/InStock',
+ priceCurrency: 'USD',
+ price: (service?.priceFrom ?? '$0').replace(/[^0-9.]/g, ''),
+ priceSpecification: {
+ '@type': 'UnitPriceSpecification',
+ priceCurrency: 'USD',
+ price: (service?.priceFrom ?? '$0').replace(/[^0-9.]/g, ''),
+ unitText: 'SQF',
+ },
+ seller: { '@id': `${site.domain}/#business` },
+ url: `${site.domain}/products/${p.slug}`,
+ },
+};
+---
+<BaseLayout title={title} description={description} image={p.image} includeLocalBusiness={true}>
+ <Breadcrumb items={breadcrumbs} />
+
+ <section class="container-x py-10 grid lg:grid-cols-[1fr_1.1fr] gap-12 items-start">
+ <div class="card overflow-hidden bg-brand-100">
+ <img
+ src={p.image}
+ alt={`${p.name} - ${category?.label ?? 'flooring'} in stock at Floors To You OKC in Oklahoma City`}
+ width="800"
+ height="800"
+ loading="eager"
+ fetchpriority="high"
+ class="w-full h-auto aspect-square object-cover"
+ />
+ </div>
+ <div>
+ <p class="eyebrow mb-3">{category?.label} · In Stock</p>
+ <h1 class="mb-4">{p.name}</h1>
+ <p class="text-lg text-ink/80 leading-relaxed mb-6">
+ {p.name} is one of {productsByCategory(p.category).length} in-stock {category?.label.toLowerCase()} options at Floors To You OKC - ready for next-day install in Oklahoma City and the surrounding metro.
+ </p>
+
+ <dl class="grid grid-cols-2 gap-4 mb-8">
+ <div class="card p-4">
+ <dt class="text-xs uppercase tracking-wide text-ink/60">Category</dt>
+ <dd class="text-brand-800 font-semibold mt-1">{category?.label}</dd>
+ </div>
+ <div class="card p-4">
+ <dt class="text-xs uppercase tracking-wide text-ink/60">Availability</dt>
+ <dd class="text-brand-800 font-semibold mt-1">In stock - next-day install</dd>
+ </div>
+ {service && (
+ <div class="card p-4">
+ <dt class="text-xs uppercase tracking-wide text-ink/60">Installed from</dt>
+ <dd class="text-brand-800 font-semibold mt-1">{service.priceFrom}</dd>
+ </div>
+ )}
+ {service && (
+ <div class="card p-4">
+ <dt class="text-xs uppercase tracking-wide text-ink/60">Warranty</dt>
+ <dd class="text-brand-800 font-semibold mt-1">{service.warranty}</dd>
+ </div>
+ )}
+ </dl>
+
+ <div class="flex flex-wrap gap-3 mb-8">
+ <a href="/free-in-home-estimate" class="btn-primary">Book Free Estimate</a>
+ <a href={`tel:${site.phoneTel}`} class="btn-outline">Call {site.phone}</a>
+ </div>
+
+ <div class="text-sm text-ink/65 leading-relaxed">
+ Available across the OKC metro - Oklahoma City, Edmond, Yukon, Mustang, Midwest City, Moore, Norman, and Guthrie. <a href={`/services/${p.service}`} class="text-brand-700 hover:text-brand-500">Learn more about {category?.label.toLowerCase()} installation →</a>
+ </div>
+ </div>
+ </section>
+
+ <ProductGrid
+ products={related}
+ eyebrow="Related"
+ heading={`More ${category?.label} In Stock`}
+ subhead={`Other ${category?.label.toLowerCase()} options from the Floors To You OKC showroom.`}
+ />
+
+ <CtaBand headline={`Love ${p.name}? Book your free estimate.`} subline="Our consultant will bring samples to match your light, trim, and lifestyle - no pressure." />
+
+ <Fragment slot="head">
+ <BreadcrumbSchema items={breadcrumbs} />
+ <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+ </Fragment>
+</BaseLayout>

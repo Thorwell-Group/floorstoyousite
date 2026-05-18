@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import Hero from '../../components/Hero.astro';
+import ServiceGrid from '../../components/ServiceGrid.astro';
+import Testimonials from '../../components/Testimonials.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import EstimateForm from '../../components/EstimateForm.astro';
+import GoogleMap from '../../components/GoogleMap.astro';
+import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
+import FAQSchema from '../../components/schema/FAQSchema.astro';
+import { areas } from '../../data/areas';
+import { services } from '../../data/services';
+import { site } from '../../data/site';
+import { generalFaqs } from '../../data/faqs';
+
+export function getStaticPaths() {
+ return areas.map((a) => ({ params: { city: a.slug }, props: { area: a } }));
+}
+const { area: a } = Astro.props;
+
+const breadcrumbs = [
+ { name: 'Home', url: '/' },
+ { name: 'Service Areas', url: '/areas' },
+ { name: a.city, url: `/areas/${a.slug}` },
+];
+
+const localBusinessAreaSchema = {
+ '@context': 'https://schema.org',
+ '@type': 'HomeAndConstructionBusiness',
+ '@id': `${site.domain}/areas/${a.slug}#business`,
+ name: `${site.name} – Serving ${a.city}, ${a.state}`,
+ parentOrganization: { '@id': `${site.domain}/#business` },
+ url: `${site.domain}/areas/${a.slug}`,
+ telephone: site.phone,
+ image: `${site.domain}${site.logo}`,
+ priceRange: site.priceRange,
+ address: {
+ '@type': 'PostalAddress',
+ streetAddress: site.address.street,
+ addressLocality: site.address.city,
+ addressRegion: site.address.region,
+ postalCode: site.address.postalCode,
+ addressCountry: site.address.country,
+ },
+ areaServed: {
+ '@type': 'City',
+ name: `${a.city}, ${a.state}`,
+ containedInPlace: { '@type': 'AdministrativeArea', name: `${a.county}, Oklahoma` },
+ },
+ geo: { '@type': 'GeoCoordinates', latitude: a.geo.lat, longitude: a.geo.lng },
+ hasOfferCatalog: {
+ '@type': 'OfferCatalog',
+ name: `Flooring services in ${a.city}`,
+ itemListElement: services.map((s) => ({
+ '@type': 'Offer',
+ itemOffered: { '@type': 'Service', name: `${s.shortName} in ${a.city}, ${a.state}`, url: `${site.domain}/${a.slug}/${s.slug}` },
+ })),
+ },
+};
+
+const areaFaqs = [
+ {
+ q: `Do you offer free in-home estimates in ${a.city}?`,
+ a: `Yes. Floors To You OKC offers free in-home estimates throughout ${a.city} and surrounding ZIP codes (${a.zipCodes.join(', ')}). Most estimates are scheduled within 1–2 business days.`,
+ },
+ {
+ q: `How long does it take to drive to your showroom from ${a.city}?`,
+ a: a.drivingMinutes === 0 ? 'Our showroom is located in Oklahoma City at 4020 W Reno Avenue.' : `Our West Reno Avenue showroom is about ${a.drivingMinutes} minutes from ${a.city}, OK.`,
+ },
+ {
+ q: `What flooring types do you install in ${a.city}?`,
+ a: `We install carpet, hardwood, luxury vinyl plank (LVP), laminate, and tile in ${a.city} homes - all backed by a 100% product and labor guarantee.`,
+ },
+];
+---
+<BaseLayout
+ title={a.metaTitle}
+ description={a.metaDescription}
+ includeLocalBusiness={false}
+>
+ <Breadcrumb items={breadcrumbs} />
+
+ <Hero
+ eyebrow={`Serving ${a.county}, OK`}
+ title={`Flooring Installation In ${a.city}, ${a.state}`}
+ subtitle={a.intro}
+ image={a.hero}
+ imageAlt={a.heroAlt}
+ ctaPrimary={{ label: `Free ${a.city} Estimate`, href: '/free-in-home-estimate' }}
+ ctaSecondary={{ label: 'Browse Flooring', href: '/services' }}
+ />
+
+ <section class="container-x py-16 grid lg:grid-cols-3 gap-8 items-start">
+ <div class="lg:col-span-2">
+ <p class="eyebrow mb-3">Local To You</p>
+ <h2 class="mb-4">Floors To You OKC In {a.city}</h2>
+ <p class="text-ink/80 leading-relaxed mb-4">{a.localProof}</p>
+ <h3 class="text-xl mt-8 mb-3">{a.city} Neighborhoods We Serve</h3>
+ <div class="flex flex-wrap gap-2">
+ {a.neighborhoods.map((n) => <span class="px-3 py-1 rounded-full bg-brand-50 text-brand-800 text-sm font-medium">{n}</span>)}
+ </div>
+ <h3 class="text-xl mt-8 mb-3">ZIP Codes Covered</h3>
+ <p class="text-ink/80">{a.zipCodes.join(' · ')}</p>
+ </div>
+ <aside class="card p-6 bg-brand-50">
+ <h3 class="text-2xl mb-3">{a.city} Snapshot</h3>
+ <dl class="text-sm space-y-2">
+ <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">County</dt><dd class="text-brand-800 font-semibold">{a.county}</dd></div>
+ <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Population</dt><dd class="text-brand-800 font-semibold">{a.population.toLocaleString()}</dd></div>
+ <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Drive to showroom</dt><dd class="text-brand-800 font-semibold">{a.drivingMinutes === 0 ? 'On site' : `${a.drivingMinutes} min`}</dd></div>
+ <div class="flex justify-between"><dt class="text-ink/70">Service radius</dt><dd class="text-brand-800 font-semibold">{site.serviceRadiusMiles} mi</dd></div>
+ </dl>
+ <a href="/free-in-home-estimate" class="btn-primary w-full mt-6">Free {a.city} Estimate</a>
+ </aside>
+ </section>
+
+ <section class="container-x pb-16">
+ <h2 class="mb-6 text-center">{a.city} Service Area Map</h2>
+ <GoogleMap src={a.mapEmbed} title={`Floors To You OKC service map for ${a.city}, OK`} />
+ </section>
+
+ <ServiceGrid areaSlug={a.slug} />
+ <Testimonials />
+ <FAQ faqs={areaFaqs} heading={`${a.city} Flooring FAQ`} />
+ <CtaBand headline={`Get A Free ${a.city} Flooring Estimate Today`} subline={`Floors To You OKC has installed in hundreds of ${a.city} homes - yours is next.`} />
+ <EstimateForm />
+
+ <Fragment slot="head">
+ <BreadcrumbSchema items={breadcrumbs} />
+ <FAQSchema faqs={areaFaqs} />
+ <script type="application/ld+json" set:html={JSON.stringify(localBusinessAreaSchema)} />
+ </Fragment>
+</BaseLayout>

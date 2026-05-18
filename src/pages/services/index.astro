@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import ServiceGrid from '../../components/ServiceGrid.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
+---
+<BaseLayout
+ title="Flooring Services Oklahoma City | Carpet, Hardwood, LVP, Tile | Floors To You OKC"
+ description="Explore every flooring type Floors To You OKC installs in Oklahoma City - carpet, hardwood, luxury vinyl plank, laminate & tile. In-stock + next-day install."
+>
+ <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Flooring', url: '/services' }]} />
+ <section class="container-x py-10">
+ <p class="eyebrow mb-3">Flooring</p>
+ <h1 class="mb-4">Every Floor We Install In Oklahoma City</h1>
+ <p class="text-lg text-ink/80 max-w-2xl">From plush bedroom carpet to indestructible LVP and wide-plank hardwood - see what's in-stock, what's on sale, and what installs next day.</p>
+ </section>
+ <ServiceGrid />
+ <CtaBand />
+
+ <Fragment slot="head">
+ <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'Flooring', url: '/services' }]} />
+ </Fragment>
+</BaseLayout>

@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import CtaBand from '../components/CtaBand.astro';
+import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
+---
+<BaseLayout
+ title="0% Financing on New Floors | Synchrony Financing | Floors To You OKC"
+ description="Finance your new Oklahoma City flooring at 0% APR for 24 months through Synchrony. Quick online approval, no prepayment penalty. Apply today."
+>
+ <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Financing', url: '/financing' }]} />
+
+ <section class="container-x py-12 grid lg:grid-cols-2 gap-12 items-center">
+ <div>
+ <p class="eyebrow mb-3">Financing</p>
+ <h1 class="mb-5">New Floors Today. 0% APR For 24 Months.</h1>
+ <p class="text-lg text-ink/80 leading-relaxed mb-6">Through our Synchrony partnership, every Floors To You OKC project qualifies for 0% interest financing for 24 months on purchases of $1,000+. Larger projects can be financed up to 60 months at low fixed rates.</p>
+ <ul class="space-y-3 text-ink/85 mb-6">
+ <li class="flex gap-3"><span class="text-brand-500" aria-hidden>✓</span> Quick online application - instant decisions</li>
+ <li class="flex gap-3"><span class="text-brand-500" aria-hidden>✓</span> 0% APR for 24 months on qualifying purchases</li>
+ <li class="flex gap-3"><span class="text-brand-500" aria-hidden>✓</span> No prepayment penalty - pay off any time</li>
+ <li class="flex gap-3"><span class="text-brand-500" aria-hidden>✓</span> Up to 60-month plans for larger projects</li>
+ </ul>
+ <a href="https://www.synchrony.com/" rel="nofollow noopener" class="btn-primary">Apply For Financing</a>
+ </div>
+ <img src="/images/photos/rooms/kitchenfloors.webp" alt="Newly installed kitchen flooring financed at 0% APR through Floors To You OKC" width="800" height="600" loading="lazy" class="rounded-xl2 shadow-soft w-full h-auto object-cover aspect-[4/3]" />
+ </section>
+
+ <section class="bg-brand-50">
+ <div class="container-x py-16 grid md:grid-cols-3 gap-8">
+ <div class="card p-6"><h3 class="text-xl mb-2">Step 1 - Apply</h3><p class="text-ink/75">Fill out the quick Synchrony application - most decisions come back in under 60 seconds.</p></div>
+ <div class="card p-6"><h3 class="text-xl mb-2">Step 2 - Pick Your Floor</h3><p class="text-ink/75">Use your approved credit limit on any in-stock or special-order flooring in the showroom.</p></div>
+ <div class="card p-6"><h3 class="text-xl mb-2">Step 3 - Install</h3><p class="text-ink/75">Schedule install - often within 5 business days - and pay over time at 0% APR.</p></div>
+ </div>
+ </section>
+
+ <CtaBand headline="Questions about financing your floors?" subline="Call (405) 913-7381 or stop into the showroom - we'll walk you through it in 5 minutes." />
+
+ <Fragment slot="head">
+ <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'Financing', url: '/financing' }]} />
+ </Fragment>
+</BaseLayout>

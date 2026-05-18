@@ -1,0 +1,58 @@
+---
+import { testimonials, googleReviewsUrl } from '../data/testimonials';
+export interface Props { limit?: number; }
+const { limit = 6 } = Astro.props;
+const show = testimonials.slice(0, limit);
+---
+<section class="container-x py-16 md:py-24">
+ <div class="text-center max-w-2xl mx-auto mb-12">
+ <div class="inline-flex items-center gap-2 rounded-full bg-white border border-brand-200 px-4 py-1.5 mb-4 shadow-card">
+ <span class="text-brand-500" aria-hidden>★★★★★</span>
+ <span class="text-sm font-semibold text-brand-800">4.9 / 5 - verified Google reviews</span>
+ </div>
+ <p class="eyebrow mb-3">Real OKC Homeowners</p>
+ <h2>Why Oklahoma Picks Floors To You OKC</h2>
+ </div>
+
+ <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+ {show.map((t) => (
+ <article class="card p-6 flex flex-col h-full">
+ <header class="flex items-start justify-between gap-3 mb-3">
+ <div class="flex items-center gap-3">
+ <div class="grid place-items-center w-10 h-10 rounded-full bg-brand-500 text-white font-semibold text-sm" aria-hidden>
+ {t.name.split(' ').map((n) => n[0]).slice(0, 2).join('')}
+ </div>
+ <div>
+ <p class="font-semibold text-brand-800 leading-tight">{t.name}</p>
+ {t.meta && <p class="text-xs text-ink/55">{t.meta}</p>}
+ </div>
+ </div>
+ <div class="text-brand-500 text-sm" aria-label={`${t.rating} out of 5 stars`}>{'★'.repeat(t.rating)}</div>
+ </header>
+
+ <p class="text-ink/85 leading-relaxed text-sm">&ldquo;{t.body}&rdquo;</p>
+
+ <footer class="mt-auto pt-4">
+ {(t.date || t.product || t.city) && (
+ <p class="text-xs text-ink/55 border-t border-brand-100 pt-3">
+ {[t.date, t.city, t.product].filter(Boolean).join(' · ')}
+ </p>
+ )}
+ {t.ownerReply && (
+ <div class="mt-3 p-3 rounded-lg bg-brand-50">
+ <p class="text-[11px] font-semibold uppercase tracking-wide text-brand-700 mb-1">Owner reply</p>
+ <p class="text-xs text-ink/75 leading-relaxed">{t.ownerReply}</p>
+ </div>
+ )}
+ </footer>
+ </article>
+ ))}
+ </div>
+
+ <div class="text-center mt-10 flex flex-col sm:flex-row gap-3 justify-center items-center">
+ <a href={googleReviewsUrl} target="_blank" rel="noopener" class="btn-primary">
+ <span aria-hidden>★</span> See All Reviews On Google
+ </a>
+ <a href="/reviews" class="btn-outline">Read More On Our Site</a>
+ </div>
+</section>

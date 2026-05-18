@@ -1,0 +1,157 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import Hero from '../../components/Hero.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import FAQ from '../../components/FAQ.astro';
+import Testimonials from '../../components/Testimonials.astro';
+import EstimateForm from '../../components/EstimateForm.astro';
+import GoogleMap from '../../components/GoogleMap.astro';
+import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
+import FAQSchema from '../../components/schema/FAQSchema.astro';
+import { areas } from '../../data/areas';
+import { services } from '../../data/services';
+import { site } from '../../data/site';
+
+export function getStaticPaths() {
+ return areas.flatMap((a) =>
+ services.map((s) => ({
+ params: { city: a.slug, service: s.slug },
+ props: { area: a, service: s },
+ }))
+ );
+}
+const { area: a, service: s } = Astro.props;
+
+const breadcrumbs = [
+ { name: 'Home', url: '/' },
+ { name: a.city, url: `/areas/${a.slug}` },
+ { name: s.shortName, url: `/${a.slug}/${s.slug}` },
+];
+
+const title = `${s.shortName} ${a.city === 'Oklahoma City' ? 'Oklahoma City' : `${a.city}, OK`} | ${s.shortName} Installation | Floors To You OKC`;
+const description = `Professional ${s.shortName.toLowerCase()} installation in ${a.city}, OK. In-stock + next-day install, lifetime warranty, 0% financing. Free in-home estimate - call (405) 913-7381.`;
+
+const localFaqs = [
+ {
+ q: `How much does ${s.shortName.toLowerCase()} cost in ${a.city}, OK?`,
+ a: `${s.shortName} installation in ${a.city} starts at ${s.priceFrom} through Floors To You OKC. Most ${a.city} homes are quoted within 24 hours of your free in-home measure.`,
+ },
+ {
+ q: `Do you install ${s.shortName.toLowerCase()} in every ${a.city} neighborhood?`,
+ a: `Yes - we install in every ${a.city} neighborhood, including ${a.neighborhoods.slice(0, 3).join(', ')} and surrounding ZIPs ${a.zipCodes.slice(0, 3).join(', ')}.`,
+ },
+ {
+ q: `How fast can you install ${s.shortName.toLowerCase()} in ${a.city}?`,
+ a: `Most in-stock ${s.shortName.toLowerCase()} installs in ${a.city} can be scheduled within 24–72 hours of your accepted quote.`,
+ },
+];
+
+const serviceSchema = {
+ '@context': 'https://schema.org',
+ '@type': 'Service',
+ '@id': `${site.domain}/${a.slug}/${s.slug}#service`,
+ name: `${s.shortName} Installation in ${a.city}, ${a.state}`,
+ serviceType: s.name,
+ description,
+ provider: { '@id': `${site.domain}/#business` },
+ areaServed: { '@type': 'City', name: `${a.city}, ${a.state}` },
+ url: `${site.domain}/${a.slug}/${s.slug}`,
+ image: `${site.domain}${s.hero}`,
+ offers: {
+ '@type': 'Offer',
+ priceCurrency: 'USD',
+ price: s.priceFrom.replace(/[^0-9.]/g, ''),
+ priceSpecification: {
+ '@type': 'UnitPriceSpecification',
+ price: s.priceFrom.replace(/[^0-9.]/g, ''),
+ priceCurrency: 'USD',
+ unitText: 'SQF',
+ },
+ },
+};
+---
+<BaseLayout title={title} description={description} includeLocalBusiness={false}>
+ <Breadcrumb items={breadcrumbs} />
+
+ <Hero
+ eyebrow={`${a.city}, OK · From ${s.priceFrom}`}
+ title={`${s.shortName} ${a.city === 'Oklahoma City' ? 'In OKC' : `In ${a.city}, OK`}`}
+ subtitle={`${s.intro.split('.')[0]}. We've installed ${s.shortName.toLowerCase()} in hundreds of ${a.city} homes - yours is next.`}
+ image={s.hero}
+ imageAlt={`${s.shortName} installed by Floors To You OKC in a ${a.city}, Oklahoma home`}
+ ctaPrimary={{ label: `Free ${a.city} Quote`, href: '/free-in-home-estimate' }}
+ ctaSecondary={{ label: `All ${a.city} Flooring`, href: `/areas/${a.slug}` }}
+ />
+
+ <section class="container-x py-16 grid lg:grid-cols-3 gap-10 items-start">
+ <div class="lg:col-span-2">
+ <p class="eyebrow mb-3">Why {a.city} Picks This Floor</p>
+ <h2 class="mb-4">{s.shortName} For {a.city} Homes</h2>
+ <p class="text-ink/80 leading-relaxed mb-6">{s.intro}</p>
+ <h3 class="text-xl mb-3">Top Reasons {a.city} Homeowners Choose {s.shortName}</h3>
+ <ul class="space-y-2 mb-8 text-ink/85">
+ {s.benefits.map((b) => <li class="flex gap-3"><span class="text-brand-500 mt-1" aria-hidden>✓</span><span>{b}</span></li>)}
+ </ul>
+ <h3 class="text-xl mb-3">Best Rooms For {s.shortName} In {a.city} Homes</h3>
+ <div class="flex flex-wrap gap-2 mb-8">
+ {s.bestFor.map((r) => <span class="px-3 py-1 rounded-full bg-brand-50 text-brand-800 text-sm font-medium">{r}</span>)}
+ </div>
+ <h3 class="text-xl mb-3">Our {a.city} Install Process</h3>
+ <p class="text-ink/80 leading-relaxed">{s.installation}</p>
+ </div>
+ <aside class="space-y-4">
+ <div class="card p-6 bg-brand-50">
+ <h3 class="text-xl mb-3">{s.shortName} In {a.city}</h3>
+ <dl class="text-sm space-y-2">
+ <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Starting at</dt><dd class="text-brand-800 font-semibold">{s.priceFrom}</dd></div>
+ <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Warranty</dt><dd class="text-brand-800 font-semibold">{s.warranty}</dd></div>
+ <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Drive from showroom</dt><dd class="text-brand-800 font-semibold">{a.drivingMinutes === 0 ? 'On site' : `${a.drivingMinutes} min`}</dd></div>
+ <div class="flex justify-between"><dt class="text-ink/70">Install turnaround</dt><dd class="text-brand-800 font-semibold">As fast as 24 hr</dd></div>
+ </dl>
+ <a href="/free-in-home-estimate" class="btn-primary w-full mt-5">Free {a.city} Quote</a>
+ </div>
+ <div class="card p-6">
+ <h4 class="text-lg mb-2">Other {a.city} Flooring</h4>
+ <ul class="text-sm space-y-1">
+ {services.filter((x) => x.slug !== s.slug).map((x) => (
+ <li><a href={`/${a.slug}/${x.slug}`} class="text-brand-700 hover:text-brand-500 no-underline">{x.shortName} in {a.city}</a></li>
+ ))}
+ </ul>
+ </div>
+ <div class="card p-6">
+ <h4 class="text-lg mb-2">Related</h4>
+ <ul class="text-sm space-y-1">
+ <li><a href={`/areas/${a.slug}`} class="text-brand-700 hover:text-brand-500 no-underline">All flooring in {a.city}</a></li>
+ <li><a href={`/services/${s.slug}`} class="text-brand-700 hover:text-brand-500 no-underline">{s.shortName} across the OKC metro</a></li>
+ <li><a href="/financing" class="text-brand-700 hover:text-brand-500 no-underline">0% APR financing</a></li>
+ </ul>
+ </div>
+ </aside>
+ </section>
+
+ <section class="bg-brand-50">
+ <div class="container-x py-16 grid lg:grid-cols-2 gap-10 items-center">
+ <div>
+ <h2 class="mb-3">{a.city} Service Area Map</h2>
+ <p class="text-ink/80 leading-relaxed mb-6">Floors To You OKC installs in every ZIP across {a.city} ({a.zipCodes.join(', ')}). Schedule a free in-home {s.shortName.toLowerCase()} estimate today.</p>
+ <a href="/free-in-home-estimate" class="btn-primary">Book My Free Estimate</a>
+ </div>
+ <GoogleMap src={a.mapEmbed} title={`${s.shortName} installation map for ${a.city}, OK`} />
+ </div>
+ </section>
+
+ <Testimonials />
+ <FAQ faqs={localFaqs} heading={`${s.shortName} In ${a.city} - FAQ`} />
+ <CtaBand
+ headline={`Free ${s.shortName} Estimate in ${a.city}, OK`}
+ subline={`In-home measure in 1–2 days. Written quote same day. Install in as little as 24 hours.`}
+ />
+ <EstimateForm />
+
+ <Fragment slot="head">
+ <BreadcrumbSchema items={breadcrumbs} />
+ <FAQSchema faqs={localFaqs} />
+ <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+ </Fragment>
+</BaseLayout>

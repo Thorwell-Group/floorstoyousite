@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import AreaGrid from '../../components/AreaGrid.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
+---
+<BaseLayout
+ title="OKC Metro Service Areas | Where Floors To You Installs | Floors To You OKC"
+ description="See every city Floors To You OKC installs in - Oklahoma City, Edmond, Yukon, Mustang, Midwest City, Moore, Norman & Guthrie. Free in-home estimates metro-wide."
+>
+ <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Service Areas', url: '/areas' }]} />
+ <section class="container-x py-10">
+ <p class="eyebrow mb-3">Service Areas</p>
+ <h1 class="mb-4">Floors To You OKC Service Areas</h1>
+ <p class="text-lg text-ink/80 max-w-2xl">We install across the entire OKC metro - within 50 miles of our West Reno showroom. Pick your city below for local pricing, drive time, and in-stock options.</p>
+ </section>
+ <AreaGrid />
+ <CtaBand />
+
+ <Fragment slot="head">
+ <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'Service Areas', url: '/areas' }]} />
+ </Fragment>
+</BaseLayout>
