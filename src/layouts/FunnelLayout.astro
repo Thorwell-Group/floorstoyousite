@@ -1,0 +1,143 @@
+---
+import '../styles/global.css';
+import { site } from '../data/site';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+}
+
+const { title, description, canonical } = Astro.props;
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, site.domain).toString();
+const year = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#bd9454" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href={canonicalUrl} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    {/* Meta Pixel - PageView fires on every funnel page load */}
+    <script is:inline set:html={`!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1002211829428152');
+fbq('track', 'PageView');`} />
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1002211829428152&amp;ev=PageView&amp;noscript=1" alt="" /></noscript>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" />
+
+    {/* Warm the GHL connections so the iframe paints fast */}
+    <link rel="preconnect" href="https://api.leadconnectorhq.com" crossorigin />
+    <link rel="preconnect" href="https://link.msgsndr.com" crossorigin />
+    <link rel="dns-prefetch" href="https://api.leadconnectorhq.com" />
+    <link rel="dns-prefetch" href="https://link.msgsndr.com" />
+    <link rel="preload" as="script" href="https://link.msgsndr.com/js/form_embed.js" />
+  </head>
+  <body class="min-h-screen flex flex-col bg-cream">
+    {/* Stripped header - logo + email only, no nav so visitors stay on the funnel */}
+    <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-brand-100 shadow-sm">
+      <div class="container-x flex items-center justify-between py-2 lg:py-3">
+        <a href="/" class="flex items-center no-underline" aria-label={`${site.name} home`}>
+          <img
+            src="/images/brand/floors-to-you-logo.webp"
+            alt="Floors To You - Where We Bring The Showroom To You"
+            width="617"
+            height="255"
+            class="h-9 sm:h-10 lg:h-12 w-auto"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </a>
+        <a
+          href={site.emailHref}
+          class="inline-flex items-center gap-2 rounded-xl2 bg-brand-500 text-white text-xs sm:text-sm font-semibold px-3 sm:px-5 py-2 sm:py-2.5 hover:bg-brand-600 shadow-card no-underline"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="M3 7l9 6 9-6"/>
+          </svg>
+          <span class="hidden xs:inline sm:hidden">Email Us</span>
+          <span class="hidden sm:inline">Email Us</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main" class="flex-1">
+      <slot />
+    </main>
+
+    {/* Minimal footer - legal only */}
+    <footer class="bg-brand-900 text-white/70 text-xs border-t border-white/10">
+      <div class="container-x py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-center sm:text-left leading-relaxed">
+          © {year} {site.legalName} · All rights reserved
+          <span class="mx-2 opacity-40">·</span>
+          <a href="/privacy" class="text-white/80 hover:text-white">Privacy</a>
+          <span class="mx-2 opacity-40">·</span>
+          <a href={site.emailHref} class="text-white/80 hover:text-white">{site.email}</a>
+        </div>
+        <div class="text-[10px] uppercase tracking-[0.22em] text-white/55 font-semibold">
+          Site by <a href="https://thorwellgroup.com" target="_blank" rel="noopener" class="text-white hover:text-brand-300 no-underline">Thorwell Group</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const reveal = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-in');
+            reveal.unobserve(entry.target);
+          }
+        }
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+      document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-zoom').forEach((el) => reveal.observe(el));
+
+      const counter = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const el = entry.target as HTMLElement;
+          const target = parseFloat(el.dataset.count || '0');
+          const suffix = el.dataset.suffix || '';
+          const prefix = el.dataset.prefix || '';
+          const dur = 1300;
+          const start = performance.now();
+          const tick = (now: number) => {
+            const p = Math.min(1, (now - start) / dur);
+            const eased = 1 - Math.pow(1 - p, 3);
+            const value = Math.round(target * eased);
+            el.textContent = `${prefix}${value}${suffix}`;
+            if (p < 1) requestAnimationFrame(tick);
+          };
+          requestAnimationFrame(tick);
+          counter.unobserve(el);
+        }
+      }, { threshold: 0.4 });
+      document.querySelectorAll('[data-count]').forEach((el) => counter.observe(el));
+    </script>
+
+    <style is:global>
+      .reveal, .reveal-left, .reveal-right, .reveal-zoom { opacity: 0; transition: opacity .7s ease, transform .7s ease; }
+      .reveal { transform: translateY(16px); }
+      .reveal-left { transform: translateX(-24px); }
+      .reveal-right { transform: translateX(24px); }
+      .reveal-zoom { transform: scale(.96); }
+      .is-in { opacity: 1 !important; transform: none !important; }
+      .reveal-d1 { transition-delay: .08s; }
+      .reveal-d2 { transition-delay: .16s; }
+      .reveal-d3 { transition-delay: .24s; }
+      .marquee-track { animation: marquee 28s linear infinite; }
+      @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    </style>
+  </body>
+</html>

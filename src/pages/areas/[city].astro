@@ -33,7 +33,7 @@ const localBusinessAreaSchema = {
  name: `${site.name} – Serving ${a.city}, ${a.state}`,
  parentOrganization: { '@id': `${site.domain}/#business` },
  url: `${site.domain}/areas/${a.slug}`,
- telephone: site.phone,
+ email: site.email,
  image: `${site.domain}${site.logo}`,
  priceRange: site.priceRange,
  address: {
@@ -88,7 +88,7 @@ const areaFaqs = [
  subtitle={a.intro}
  image={a.hero}
  imageAlt={a.heroAlt}
- ctaPrimary={{ label: `Free ${a.city} Estimate`, href: '/free-in-home-estimate' }}
+ ctaPrimary={{ label: `Free ${a.city} Estimate`, href: '/book' }}
  ctaSecondary={{ label: 'Browse Flooring', href: '/services' }}
  />
 
@@ -112,7 +112,7 @@ const areaFaqs = [
  <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Drive to showroom</dt><dd class="text-brand-800 font-semibold">{a.drivingMinutes === 0 ? 'On site' : `${a.drivingMinutes} min`}</dd></div>
  <div class="flex justify-between"><dt class="text-ink/70">Service radius</dt><dd class="text-brand-800 font-semibold">{site.serviceRadiusMiles} mi</dd></div>
  </dl>
- <a href="/free-in-home-estimate" class="btn-primary w-full mt-6">Free {a.city} Estimate</a>
+ <a href="/book" class="btn-primary w-full mt-6">Free {a.city} Estimate</a>
  </aside>
  </section>
 

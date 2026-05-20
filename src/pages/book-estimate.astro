@@ -1,0 +1,124 @@
+---
+import FunnelLayout from '../layouts/FunnelLayout.astro';
+
+const title = 'Pick Your Appointment Time · Floors To You OKC';
+const description = 'Schedule your free in-home flooring estimate. Pick the time that works best for you.';
+---
+<FunnelLayout title={title} description={description}>
+  {/* HERO + CALENDAR - calendar visible immediately on mobile, no preamble above it. */}
+  <section class="relative isolate overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-cream via-brand-50 to-cream"></div>
+    <div class="absolute -top-32 -right-32 -z-10 h-[36rem] w-[36rem] rounded-full bg-brand-300/30 blur-3xl" aria-hidden="true"></div>
+    <div class="absolute -bottom-32 -left-32 -z-10 h-[28rem] w-[28rem] rounded-full bg-brand-500/10 blur-3xl" aria-hidden="true"></div>
+
+    <div class="container-x pt-4 pb-12 lg:pt-10 lg:pb-20">
+
+      {/* Mobile: ultra-compact eyebrow + headline above the calendar.
+          Desktop: same block, centered, more breathing room. */}
+      <div class="max-w-3xl mx-auto text-center reveal">
+        <span class="inline-flex items-center gap-2 rounded-full bg-brand-500/10 ring-1 ring-brand-200 text-brand-700 px-3 py-1 text-[10px] uppercase tracking-[0.22em] font-bold">
+          <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>
+          Final Step
+        </span>
+        <h1 class="mt-3 font-display font-bold leading-[1.02] tracking-tight text-2xl sm:text-3xl lg:text-5xl text-brand-800">
+          Pick a time that
+          <span class="block text-brand-500">works for you.</span>
+        </h1>
+        <p class="mt-3 text-sm sm:text-base text-ink/80 max-w-xl mx-auto">
+          Choose any open slot below. Your consultant will arrive on time with samples and measurements.
+        </p>
+      </div>
+
+      {/* Calendar - visible immediately. min-h sized so the picker is in view on mobile. */}
+      <div class="mt-5 lg:mt-10 max-w-3xl mx-auto reveal reveal-d2">
+        <div class="rounded-xl2 bg-white ring-1 ring-brand-200 shadow-soft overflow-hidden p-2 sm:p-4">
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/booking/1z4l2qv8WsN0G63StpPC"
+            style="width:100%;border:none;overflow:hidden;min-height:720px;display:block;background:#fff;"
+            scrolling="no"
+            id="1z4l2qv8WsN0G63StpPC"
+            title="Schedule your in-home flooring estimate"
+            loading="eager"
+            fetchpriority="high"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* GHL embed resize + booking detection */}
+  <script src="https://link.msgsndr.com/js/form_embed.js" is:inline async></script>
+
+  {/* Confirmation modal - hidden by default, shown on successful booking */}
+  <div
+    id="fty-confirm"
+    style="display:none;"
+    class="fixed inset-0 z-[100] items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="fty-confirm-title"
+  >
+    <div class="bg-white rounded-xl2 shadow-soft max-w-md w-full p-8 sm:p-10 text-center ring-1 ring-brand-200">
+      <div class="mx-auto h-20 w-20 rounded-full bg-green-100 flex items-center justify-center">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-green-600" aria-hidden="true">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h2 id="fty-confirm-title" class="mt-6 font-display text-2xl sm:text-3xl font-bold text-brand-800">
+        Thank you!
+      </h2>
+      <p class="mt-3 text-ink/80 leading-relaxed">
+        Your free in-home flooring estimate is booked. We'll see you soon - check your inbox for confirmation details.
+      </p>
+      <a
+        href="/"
+        class="mt-8 inline-flex items-center justify-center gap-2 rounded-xl2 bg-brand-500 text-white hover:bg-brand-600 px-7 py-3.5 font-bold text-sm shadow-soft no-underline"
+      >
+        Back to Website
+        <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <script is:inline>
+    // Fire Lead pixel event on landing (user has already submitted the intake survey).
+    if (typeof fbq === 'function') {
+      fbq('track', 'Lead');
+    }
+
+    // Watch for booking-confirmed message from the GHL calendar widget.
+    // The widget posts many messages (resize, navigation, etc.) - we only fire on
+    // payloads that look like an appointment was actually booked.
+    let ftyBookingHandled = false;
+    window.addEventListener('message', (e) => {
+      if (!e.origin || !/leadconnectorhq\.com|msgsndr\.com/.test(e.origin)) return;
+      const d = e.data;
+      const eventName = (d && (d.event || d.type || d.action)) || '';
+      const payload = typeof d === 'string' ? d : JSON.stringify(d || {});
+
+      // Ignore resize / scroll / height-update chatter
+      if (/^(resize|height|scroll|navigate)/i.test(eventName)) return;
+
+      const looksLikeBooking =
+        /appointment.{0,30}(booked|confirmed|scheduled|created|success)/i.test(payload) ||
+        /booking.{0,30}(complete|completed|confirmed|success|booked)/i.test(payload) ||
+        /\b(appointmentBooked|bookingComplete(d)?|bookingConfirmed|appointment_booked|booking_success)\b/i.test(eventName);
+
+      if (looksLikeBooking && !ftyBookingHandled) {
+        ftyBookingHandled = true;
+        // Move to a distinct URL so Facebook attributes Schedule+PageView to the
+        // booking-confirmation step, separate from the Lead+PageView landing step.
+        try { history.pushState({}, '', '/book-estimate/booked'); } catch (e) {}
+        if (typeof fbq === 'function') {
+          fbq('track', 'PageView');
+          fbq('track', 'Schedule');
+        }
+        const modal = document.getElementById('fty-confirm');
+        if (modal) {
+          modal.style.display = 'flex';
+          document.body.style.overflow = 'hidden';
+        }
+      }
+    });
+  </script>
+</FunnelLayout>

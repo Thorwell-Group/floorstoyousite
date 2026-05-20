@@ -31,12 +31,12 @@ const breadcrumbs = [
  <Breadcrumb items={breadcrumbs} />
 
  <Hero
- eyebrow={`${s.shortName} · From ${s.priceFrom}`}
+ eyebrow={`${s.shortName} · Oklahoma City Showroom`}
  title={s.name + ' In Oklahoma City'}
  subtitle={s.intro}
  image={s.hero}
  imageAlt={s.heroAlt}
- ctaPrimary={{ label: 'Get My Free Estimate', href: '/free-in-home-estimate' }}
+ ctaPrimary={{ label: 'Get My Free Estimate', href: '/book' }}
  ctaSecondary={{ label: 'See All Flooring', href: '/services' }}
  />
 
@@ -54,7 +54,7 @@ const breadcrumbs = [
  {s.bestFor.map((r) => <span class="px-3 py-1 rounded-full bg-white text-brand-800 text-sm font-medium">{r}</span>)}
  </div>
  <dl class="space-y-3 text-sm">
- <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Starting at</dt><dd class="text-brand-800 font-semibold">{s.priceFrom}</dd></div>
+ <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Availability</dt><dd class="text-brand-800 font-semibold">In stock</dd></div>
  <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Warranty</dt><dd class="text-brand-800 font-semibold">{s.warranty}</dd></div>
  <div class="flex justify-between"><dt class="text-ink/70">Install lead time</dt><dd class="text-brand-800 font-semibold">As fast as 24 hours</dd></div>
  </dl>
@@ -92,7 +92,7 @@ const breadcrumbs = [
 
  <Fragment slot="head">
  <BreadcrumbSchema items={breadcrumbs} />
- <ServiceSchema name={s.name} description={s.intro} slug={s.slug} image={s.hero} priceFrom={s.priceFrom} />
+ <ServiceSchema name={s.name} description={s.intro} slug={s.slug} image={s.hero} />
  <FAQSchema faqs={s.faqs} />
  </Fragment>
 </BaseLayout>
