@@ -14,8 +14,8 @@ import { site } from '../data/site';
         <li class="flex gap-3"><span class="text-brand-500" aria-hidden>✓</span> Most quotes can install within 5 days</li>
       </ul>
       <div class="mt-8 p-5 rounded-xl2 bg-brand-50">
-        <p class="text-sm text-ink/70 mb-1">Or call us right now</p>
-        <a href={`tel:${site.phoneTel}`} class="font-display text-3xl text-brand-800 no-underline hover:text-brand-500">{site.phone}</a>
+        <p class="text-sm text-ink/70 mb-1">Or email us right now</p>
+        <a href={site.emailHref} class="font-display text-xl md:text-2xl text-brand-800 no-underline hover:text-brand-500 break-all">{site.email}</a>
       </div>
     </div>
 

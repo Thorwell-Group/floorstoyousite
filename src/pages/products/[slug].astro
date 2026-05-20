@@ -18,7 +18,7 @@ const service = services.find((s) => s.slug === p.service);
 const related = productsByCategory(p.category).filter((x) => x.slug !== p.slug).slice(0, 10);
 
 const title = `${p.name} ${category?.label ?? ''} | In-Stock at Floors To You OKC`;
-const description = `${p.name} ${category?.label.toLowerCase() ?? 'flooring'} in stock at Floors To You OKC - Oklahoma City's largest flooring showroom. ${service?.priceFrom ?? ''} Free in-home estimate.`;
+const description = `${p.name} ${category?.label.toLowerCase() ?? 'flooring'} in stock at Floors To You OKC - Oklahoma City's largest flooring showroom. Free in-home estimate.`;
 
 const breadcrumbs = [
  { name: 'Home', url: '/' },
@@ -38,14 +38,6 @@ const productSchema = {
  offers: {
  '@type': 'Offer',
  availability: 'https://schema.org/InStock',
- priceCurrency: 'USD',
- price: (service?.priceFrom ?? '$0').replace(/[^0-9.]/g, ''),
- priceSpecification: {
- '@type': 'UnitPriceSpecification',
- priceCurrency: 'USD',
- price: (service?.priceFrom ?? '$0').replace(/[^0-9.]/g, ''),
- unitText: 'SQF',
- },
  seller: { '@id': `${site.domain}/#business` },
  url: `${site.domain}/products/${p.slug}`,
  },
@@ -84,8 +76,8 @@ const productSchema = {
  </div>
  {service && (
  <div class="card p-4">
- <dt class="text-xs uppercase tracking-wide text-ink/60">Installed from</dt>
- <dd class="text-brand-800 font-semibold mt-1">{service.priceFrom}</dd>
+ <dt class="text-xs uppercase tracking-wide text-ink/60">Install lead time</dt>
+ <dd class="text-brand-800 font-semibold mt-1">As fast as 24 hr</dd>
  </div>
  )}
  {service && (
@@ -98,7 +90,7 @@ const productSchema = {
 
  <div class="flex flex-wrap gap-3 mb-8">
  <a href="/book" class="btn-primary">Book Free Estimate</a>
- <a href={`tel:${site.phoneTel}`} class="btn-outline">Call {site.phone}</a>
+ <a href={site.emailHref} class="btn-outline">Email {site.email}</a>
  </div>
 
  <div class="text-sm text-ink/65 leading-relaxed">

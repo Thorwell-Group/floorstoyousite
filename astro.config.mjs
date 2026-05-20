@@ -22,7 +22,7 @@ export default defineConfig({
       policy: [{ userAgent: '*', allow: '/' }],
     }),
     compress({
-      CSS: true,
+      CSS: false,
       HTML: { 'html-minifier-terser': { removeAttributeQuotes: false } },
       Image: false,
       JavaScript: true,
@@ -30,5 +30,5 @@ export default defineConfig({
     }),
   ],
   build: { inlineStylesheets: 'auto' },
-  vite: { build: { cssMinify: 'lightningcss' } },
+  vite: { build: { cssMinify: 'esbuild' } },
 });

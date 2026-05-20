@@ -3,7 +3,7 @@ export type FAQ = { q: string; a: string };
 export const generalFaqs: FAQ[] = [
  {
  q: 'Do you offer free in-home estimates in Oklahoma City?',
- a: 'Yes. Floors To You OKC offers free in-home flooring estimates throughout the OKC metro - Edmond, Yukon, Mustang, Midwest City, Moore, Norman, and Guthrie. Call (405) 913-7381 or use the form to book a time that fits your schedule.',
+ a: 'Yes. Floors To You OKC offers free in-home flooring estimates throughout the OKC metro - Edmond, Yukon, Mustang, Midwest City, Moore, Norman, and Guthrie. Email bsmith@allinfloors.com or use the form to book a time that fits your schedule.',
  },
  {
  q: 'How fast can you install new floors?',

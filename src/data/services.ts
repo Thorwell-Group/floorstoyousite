@@ -41,15 +41,15 @@ export const services: Service[] = [
  'Our W-2 installers handle subfloor prep, tack strip, pad, seaming, and stair wrap so your finished room looks built-in - not bolted on. Most whole-home carpet installs finish in one day.',
  care:
  'Vacuum twice a week in traffic lanes, blot spills with cool water, and schedule a deep clean every 12–18 months to protect your warranty.',
- priceFrom: '$2.49 / sq ft installed',
+ priceFrom: '',
  warranty: 'Lifetime stain + 100% labor guarantee',
  metaTitle: 'Carpet Flooring Oklahoma City | In-Stock Carpet & Install | Floors To You OKC',
  metaDescription:
- 'Shop in-stock carpet in Oklahoma City with next-day installation, lifetime stain warranty, and 0% financing. Free in-home estimate - call (405) 913-7381.',
+ 'Shop in-stock carpet in Oklahoma City with next-day installation, lifetime stain warranty, and 0% financing. Free in-home estimate - email bsmith@allinfloors.com.',
  faqs: [
  {
  q: 'How much does carpet installation cost in Oklahoma City?',
- a: 'Most whole-room carpet projects at Floors To You OKC range from $2.49 to $5.99 per square foot installed, including pad, removal of old flooring, and labor. Bring your room measurements to the showroom for a same-day quote.',
+ a: 'Carpet pricing depends on the style, fiber, pad selection, and square footage of your home. Book a free in-home measure for a same-day, itemized quote.',
  },
  {
  q: 'Can you install carpet over concrete?',
@@ -88,11 +88,11 @@ export const services: Service[] = [
  'We float or glue engineered planks over concrete and nail-down over plywood. Acclimation, moisture readings, and expansion gaps are part of every Floors To You OKC install - never an upcharge.',
  care:
  "Sweep daily, damp-mop with a wood-safe cleaner monthly, keep humidity between 35–55%, and add felt pads under furniture to keep your finish factory-fresh.",
- priceFrom: '$5.99 / sq ft installed',
+ priceFrom: '',
  warranty: 'Up to 50-year finish + lifetime structural',
  metaTitle: 'Engineered Wood Flooring Oklahoma City | Installer | Floors To You OKC',
  metaDescription:
- 'Engineered wood floors installed across Oklahoma City. In-stock oak, hickory & walnut, slab-friendly, lifetime structural warranty, 0% financing. Call (405) 913-7381.',
+ 'Engineered wood floors installed across Oklahoma City. In-stock oak, hickory & walnut, slab-friendly, lifetime structural warranty, 0% financing. Email bsmith@allinfloors.com.',
  faqs: [
  {
  q: 'Why choose engineered wood over solid hardwood in Oklahoma?',
@@ -135,11 +135,11 @@ export const services: Service[] = [
  'Laminate floats over an attached or rolled underlayment with a 3/8" expansion gap at every wall. Our crews undercut door jambs, transition to existing flooring, and protect baseboards - no shoe-mold needed.',
  care:
  'Sweep often, damp-mop with a laminate-safe cleaner, and avoid steam mops - water sitting at plank seams is the only thing that can damage modern laminate.',
- priceFrom: '$3.99 / sq ft installed',
+ priceFrom: '',
  warranty: 'Up to 30-year residential wear',
  metaTitle: 'Laminate Flooring Oklahoma City | Scratch-Proof Wood-Look | Floors To You OKC',
  metaDescription:
- 'Durable wood-look laminate flooring installed across Oklahoma City. AC4-rated, pet-friendly, in-stock with next-day install. 0% financing. Call (405) 913-7381.',
+ 'Durable wood-look laminate flooring installed across Oklahoma City. AC4-rated, pet-friendly, in-stock with next-day install. 0% financing. Email bsmith@allinfloors.com.',
  faqs: [
  {
  q: 'Is laminate flooring waterproof?',
@@ -182,11 +182,11 @@ export const services: Service[] = [
  "We level the subfloor with self-leveling underlayment, set every tile with polymer-modified thinset, and seal grout with a 15-year color-sealer. Showers get a Schluter or RedGard waterproofing membrane standard.",
  care:
  'Sweep, mop with pH-neutral cleaner, and re-seal grout lines every 2–3 years for an as-new look. Avoid bleach and ammonia on natural stone.',
- priceFrom: '$6.99 / sq ft installed',
+ priceFrom: '',
  warranty: 'Lifetime tile + 5-year installation',
  metaTitle: 'Tile Flooring Oklahoma City | Porcelain & Ceramic Install | Floors To You OKC',
  metaDescription:
- 'Porcelain, ceramic & stone tile flooring installed across Oklahoma City. Showers, kitchens & baths. Lifetime tile warranty. 0% financing. Call (405) 913-7381.',
+ 'Porcelain, ceramic & stone tile flooring installed across Oklahoma City. Showers, kitchens & baths. Lifetime tile warranty. 0% financing. Email bsmith@allinfloors.com.',
  faqs: [
  {
  q: 'How long does a tile install take?',
@@ -229,11 +229,11 @@ export const services: Service[] = [
  "We level the subfloor with self-leveling underlayment, trowel on the manufacturer-spec adhesive, and roll the planks for full transfer. Most glue-down LVT installs in an OKC home finish in 1–2 days, with full traffic the next morning.",
  care:
  'Sweep, damp-mop with vinyl-safe cleaner, and skip wax or polish - LVT is finished for life. Add felt pads to chair legs to keep wear layers pristine.',
- priceFrom: '$4.99 / sq ft installed',
+ priceFrom: '',
  warranty: 'Lifetime residential waterproof',
  metaTitle: 'Glue-Down Vinyl (LVT) Oklahoma City | Vinyl Plank Install | Floors To You OKC',
  metaDescription:
- 'Glue-down luxury vinyl tile (LVT) installed across Oklahoma City. 100% waterproof, commercial-grade wear, lifetime warranty. 0% financing. Call (405) 913-7381.',
+ 'Glue-down luxury vinyl tile (LVT) installed across Oklahoma City. 100% waterproof, commercial-grade wear, lifetime warranty. 0% financing. Email bsmith@allinfloors.com.',
  faqs: [
  {
  q: 'Glue-down vinyl vs click vinyl - which should I pick?',
@@ -276,11 +276,11 @@ export const services: Service[] = [
  "We laser-check the subfloor for level, float the planks over a 1mm IIC-rated underlayment, and finish with color-matched quarter-round. Most click-vinyl installs in an OKC home finish in 1–2 days, fully walkable immediately.",
  care:
  'Sweep, damp-mop with vinyl-safe cleaner, and skip wax or polish - LVP is finished for life. Add felt pads to chair legs to keep wear layers pristine.',
- priceFrom: '$4.49 / sq ft installed',
+ priceFrom: '',
  warranty: 'Lifetime residential waterproof',
  metaTitle: 'Click-Lock Vinyl (LVP) Oklahoma City | Waterproof Floors | Floors To You OKC',
  metaDescription:
- '100% waterproof click-lock LVP flooring installed across Oklahoma City. SPC rigid core, pet-proof, lifetime warranty. Next-day install + 0% financing. (405) 913-7381.',
+ '100% waterproof click-lock LVP flooring installed across Oklahoma City. SPC rigid core, pet-proof, lifetime warranty. Next-day install + 0% financing. bsmith@allinfloors.com.',
  faqs: [
  {
  q: 'What is the difference between SPC, WPC, and standard LVP?',

@@ -4,10 +4,8 @@ export const site = {
   tagline: "Oklahoma City's largest in-stock flooring showroom",
   domain: 'https://floorstoyouokc.com',
   logo: '/images/brand/floors-to-you-okc-logo.webp',
-  phone: '(405) 913-7381',
-  phoneAlt: '(405) 486-9165',
-  phoneTel: '+14059137381',
-  email: 'info@floorstoyouokc.com',
+  email: 'bsmith@allinfloors.com',
+  emailHref: 'mailto:bsmith@allinfloors.com',
   address: {
     street: '4020 West Reno Avenue',
     city: 'Oklahoma City',

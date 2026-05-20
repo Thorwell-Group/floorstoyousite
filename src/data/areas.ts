@@ -47,7 +47,7 @@ export const areas: Area[] = [
  'https://www.google.com/maps?q=4020+West+Reno+Avenue,+Oklahoma+City,+OK+73107&output=embed',
  metaTitle: 'Flooring Store Oklahoma City | Carpet, Hardwood, LVP, Tile | Floors To You OKC',
  metaDescription:
- 'Oklahoma City flooring store with the metro’s largest in-stock carpet, hardwood, LVP, laminate & tile selection. Next-day install + 0% financing. (405) 913-7381.',
+ 'Oklahoma City flooring store with the metro’s largest in-stock carpet, hardwood, LVP, laminate & tile selection. Next-day install + 0% financing. bsmith@allinfloors.com.',
  hero: '/images/photos/hero/hero.webp',
  heroAlt: 'Open-concept Oklahoma City home with new wide-plank flooring installed by Floors To You OKC',
  },
@@ -68,7 +68,7 @@ export const areas: Area[] = [
  mapEmbed: 'https://www.google.com/maps?q=Edmond,+OK&output=embed',
  metaTitle: 'Flooring Store Edmond OK | Carpet, Hardwood & LVP Install | Floors To You OKC',
  metaDescription:
- 'Edmond flooring installer with in-home estimates, next-day install on in-stock carpet, LVP, hardwood & tile. 100% guarantee + 0% financing. (405) 913-7381.',
+ 'Edmond flooring installer with in-home estimates, next-day install on in-stock carpet, LVP, hardwood & tile. 100% guarantee + 0% financing. bsmith@allinfloors.com.',
  hero: '/images/photos/hardwood/hardwoodmodernhome.webp',
  heroAlt: 'Modern Edmond, Oklahoma home with new hardwood flooring installed by Floors To You OKC',
  },
@@ -89,7 +89,7 @@ export const areas: Area[] = [
  mapEmbed: 'https://www.google.com/maps?q=Yukon,+OK&output=embed',
  metaTitle: 'Flooring Store Yukon OK | Carpet, LVP, Hardwood Install | Floors To You OKC',
  metaDescription:
- 'Yukon, OK flooring installer with same-week install on in-stock carpet, LVP, laminate, hardwood & tile. Free in-home estimate + 0% financing. (405) 913-7381.',
+ 'Yukon, OK flooring installer with same-week install on in-stock carpet, LVP, laminate, hardwood & tile. Free in-home estimate + 0% financing. bsmith@allinfloors.com.',
  hero: '/images/photos/laminate/dogonlaminate.webp',
  heroAlt: 'Family pet on durable laminate flooring installed by Floors To You OKC in a Yukon, OK home',
  },
@@ -110,7 +110,7 @@ export const areas: Area[] = [
  mapEmbed: 'https://www.google.com/maps?q=Mustang,+OK&output=embed',
  metaTitle: 'Flooring Store Mustang OK | Carpet, LVP & Tile Install | Floors To You OKC',
  metaDescription:
- 'Mustang, OK flooring installer with next-day install on in-stock LVP, carpet, laminate & tile. 100% guarantee + 0% financing. (405) 913-7381.',
+ 'Mustang, OK flooring installer with next-day install on in-stock LVP, carpet, laminate & tile. 100% guarantee + 0% financing. bsmith@allinfloors.com.',
  hero: '/images/photos/lvp/vinyllivingroom.webp',
  heroAlt: 'Modern Mustang, OK living room with waterproof luxury vinyl plank flooring by Floors To You OKC',
  },
@@ -131,7 +131,7 @@ export const areas: Area[] = [
  mapEmbed: 'https://www.google.com/maps?q=Midwest+City,+OK&output=embed',
  metaTitle: 'Flooring Store Midwest City OK | LVP, Carpet, Tile | Floors To You OKC',
  metaDescription:
- 'Midwest City flooring installer serving Tinker AFB families. Pet-proof LVP, carpet, hardwood & tile. Military discount + 0% financing. (405) 913-7381.',
+ 'Midwest City flooring installer serving Tinker AFB families. Pet-proof LVP, carpet, hardwood & tile. Military discount + 0% financing. bsmith@allinfloors.com.',
  hero: '/images/photos/carpet/babysfeetoncarpet.webp',
  heroAlt: 'Soft new carpet installed by Floors To You OKC in a Midwest City, OK family home',
  },
@@ -152,7 +152,7 @@ export const areas: Area[] = [
  mapEmbed: 'https://www.google.com/maps?q=Guthrie,+OK&output=embed',
  metaTitle: 'Flooring Store Guthrie OK | Hardwood, LVP & Tile Install | Floors To You OKC',
  metaDescription:
- 'Guthrie, OK flooring installer specializing in engineered hardwood, LVP & tile for historic and new builds. Free estimate + 0% financing. (405) 913-7381.',
+ 'Guthrie, OK flooring installer specializing in engineered hardwood, LVP & tile for historic and new builds. Free estimate + 0% financing. bsmith@allinfloors.com.',
  hero: '/images/photos/hardwood/herringbonefloors.webp',
  heroAlt: 'Herringbone hardwood flooring in a historic Guthrie, OK home installed by Floors To You OKC',
  },
@@ -173,7 +173,7 @@ export const areas: Area[] = [
  mapEmbed: 'https://www.google.com/maps?q=Moore,+OK&output=embed',
  metaTitle: 'Flooring Store Moore OK | LVP, Carpet & Tile Install | Floors To You OKC',
  metaDescription:
- 'Moore, OK flooring installer with waterproof LVP, carpet, hardwood & tile. Insurance-claim-friendly. Next-day install + 0% financing. (405) 913-7381.',
+ 'Moore, OK flooring installer with waterproof LVP, carpet, hardwood & tile. Insurance-claim-friendly. Next-day install + 0% financing. bsmith@allinfloors.com.',
  hero: '/images/photos/tile/tileluxuryhome.webp',
  heroAlt: 'Wide-format tile flooring in a Moore, OK home installed by Floors To You OKC',
  },
@@ -194,7 +194,7 @@ export const areas: Area[] = [
  mapEmbed: 'https://www.google.com/maps?q=Norman,+OK&output=embed',
  metaTitle: 'Flooring Store Norman OK | Carpet, LVP & Hardwood | Floors To You OKC',
  metaDescription:
- 'Norman, OK flooring installer with rental-grade LVP, family carpet, hardwood & tile. Same-week install + 0% financing. (405) 913-7381.',
+ 'Norman, OK flooring installer with rental-grade LVP, family carpet, hardwood & tile. Same-week install + 0% financing. bsmith@allinfloors.com.',
  hero: '/images/photos/laminate/laminateluxuryhome.webp',
  heroAlt: 'Norman, OK family room with new laminate flooring installed by Floors To You OKC',
  },

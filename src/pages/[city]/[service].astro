@@ -30,12 +30,12 @@ const breadcrumbs = [
 ];
 
 const title = `${s.shortName} ${a.city === 'Oklahoma City' ? 'Oklahoma City' : `${a.city}, OK`} | ${s.shortName} Installation | Floors To You OKC`;
-const description = `Professional ${s.shortName.toLowerCase()} installation in ${a.city}, OK. In-stock + next-day install, lifetime warranty, 0% financing. Free in-home estimate - call (405) 913-7381.`;
+const description = `Professional ${s.shortName.toLowerCase()} installation in ${a.city}, OK. In-stock + next-day install, lifetime warranty, 0% financing. Free in-home estimate - email bsmith@allinfloors.com.`;
 
 const localFaqs = [
  {
- q: `How much does ${s.shortName.toLowerCase()} cost in ${a.city}, OK?`,
- a: `${s.shortName} installation in ${a.city} starts at ${s.priceFrom} through Floors To You OKC. Most ${a.city} homes are quoted within 24 hours of your free in-home measure.`,
+ q: `How do I get a ${s.shortName.toLowerCase()} quote in ${a.city}, OK?`,
+ a: `Floors To You OKC provides itemized, written ${s.shortName.toLowerCase()} quotes after a free in-home measure. Most ${a.city} homes are quoted within 24 hours of the visit.`,
  },
  {
  q: `Do you install ${s.shortName.toLowerCase()} in every ${a.city} neighborhood?`,
@@ -58,24 +58,13 @@ const serviceSchema = {
  areaServed: { '@type': 'City', name: `${a.city}, ${a.state}` },
  url: `${site.domain}/${a.slug}/${s.slug}`,
  image: `${site.domain}${s.hero}`,
- offers: {
- '@type': 'Offer',
- priceCurrency: 'USD',
- price: s.priceFrom.replace(/[^0-9.]/g, ''),
- priceSpecification: {
- '@type': 'UnitPriceSpecification',
- price: s.priceFrom.replace(/[^0-9.]/g, ''),
- priceCurrency: 'USD',
- unitText: 'SQF',
- },
- },
 };
 ---
 <BaseLayout title={title} description={description} includeLocalBusiness={false}>
  <Breadcrumb items={breadcrumbs} />
 
  <Hero
- eyebrow={`${a.city}, OK · From ${s.priceFrom}`}
+ eyebrow={`${a.city}, OK · In-Stock Now`}
  title={`${s.shortName} ${a.city === 'Oklahoma City' ? 'In OKC' : `In ${a.city}, OK`}`}
  subtitle={`${s.intro.split('.')[0]}. We've installed ${s.shortName.toLowerCase()} in hundreds of ${a.city} homes - yours is next.`}
  image={s.hero}
@@ -104,7 +93,7 @@ const serviceSchema = {
  <div class="card p-6 bg-brand-50">
  <h3 class="text-xl mb-3">{s.shortName} In {a.city}</h3>
  <dl class="text-sm space-y-2">
- <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Starting at</dt><dd class="text-brand-800 font-semibold">{s.priceFrom}</dd></div>
+ <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Availability</dt><dd class="text-brand-800 font-semibold">In stock</dd></div>
  <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Warranty</dt><dd class="text-brand-800 font-semibold">{s.warranty}</dd></div>
  <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Drive from showroom</dt><dd class="text-brand-800 font-semibold">{a.drivingMinutes === 0 ? 'On site' : `${a.drivingMinutes} min`}</dd></div>
  <div class="flex justify-between"><dt class="text-ink/70">Install turnaround</dt><dd class="text-brand-800 font-semibold">As fast as 24 hr</dd></div>
