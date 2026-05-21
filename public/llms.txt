@@ -1,0 +1,54 @@
+# Floors To You OKC
+
+> Oklahoma City's mobile flooring showroom. We bring carpet, hardwood, LVP, laminate and tile samples to your home, match them to your light and trim, and install across the OKC metro in as little as 24 hours. Lowest price guaranteed - we beat any written quote.
+
+Floors To You OKC is a locally owned flooring store at 4020 West Reno Avenue in Oklahoma City. Since 2018 we've completed 2,500+ local installs across Oklahoma City, Edmond, Yukon, Mustang, Midwest City, Moore, Norman, Guthrie, and the surrounding OKC metro within 50 miles. Average rating 4.9 stars across 187+ verified Google reviews. We offer 0% APR financing for 24 months through Synchrony, a 100% product and labor guarantee, and a lowest-price-guaranteed promise (we beat any written quote).
+
+## Key pages
+
+- [Home](https://floorstoyouokc.com/): Overview, value proposition, hero, services, service areas, testimonials.
+- [Free in-home estimate (funnel)](https://floorstoyouokc.com/book): Primary conversion path. Intake survey for booking a free in-home flooring estimate. Form-only landing page.
+- [Calendar booking](https://floorstoyouokc.com/book-estimate): Step 2 of the funnel. Calendar widget to pick an appointment time after intake.
+- [How it works](https://floorstoyouokc.com/how-it-works): Six-step process from booking to install.
+- [About](https://floorstoyouokc.com/about): Company story, showroom, crews, guarantees.
+- [Financing](https://floorstoyouokc.com/financing): 0% APR for 24 months via Synchrony partner link.
+- [Contact](https://floorstoyouokc.com/contact): Showroom address, hours, map.
+- [Reviews](https://floorstoyouokc.com/reviews): Verified customer reviews.
+- [Flooring FAQ](https://floorstoyouokc.com/flooring-faq): Common questions about flooring in Oklahoma City.
+- [Privacy policy](https://floorstoyouokc.com/privacy)
+- [XML sitemap](https://floorstoyouokc.com/sitemap-index.xml)
+
+## Flooring types (services)
+
+- [All services](https://floorstoyouokc.com/services)
+- [Carpet](https://floorstoyouokc.com/services/carpet): In-stock carpet, pet-friendly options, next-day install.
+- [Engineered wood](https://floorstoyouokc.com/services/engineered-wood): Real oak/hickory/walnut top layer, slab-friendly for OKC humidity.
+- [Laminate](https://floorstoyouokc.com/services/laminate): AC4-rated, scratch-resistant wood-look planks.
+- [Tile](https://floorstoyouokc.com/services/tile): Porcelain, ceramic, and stone for kitchens, bathrooms, mudrooms.
+- [Vinyl glue (LVT)](https://floorstoyouokc.com/services/vinyl-glue): Glue-down luxury vinyl tile, 100% waterproof, commercial-grade.
+- [Vinyl click (LVP / SPC)](https://floorstoyouokc.com/services/vinyl-click): Click-lock luxury vinyl plank with SPC rigid core.
+
+## Service areas
+
+- [All service areas](https://floorstoyouokc.com/areas)
+- [Oklahoma City](https://floorstoyouokc.com/areas/oklahoma-city)
+- [Edmond](https://floorstoyouokc.com/areas/edmond)
+- [Yukon](https://floorstoyouokc.com/areas/yukon)
+- [Mustang](https://floorstoyouokc.com/areas/mustang)
+- [Midwest City](https://floorstoyouokc.com/areas/midwest-city)
+- [Moore](https://floorstoyouokc.com/areas/moore)
+- [Norman](https://floorstoyouokc.com/areas/norman)
+- [Guthrie](https://floorstoyouokc.com/areas/guthrie)
+
+## Shop in-stock products
+
+- [Shop all in-stock SKUs](https://floorstoyouokc.com/products): Full catalog with category jump nav (carpet, engineered wood, laminate, tile, vinyl glue, vinyl click).
+
+## Optional
+
+- [Privacy policy](https://floorstoyouokc.com/privacy)
+- [404 page](https://floorstoyouokc.com/404)
+
+## Crawling
+
+This site is fully open to LLM, AI, and search-engine crawlers - see [robots.txt](https://floorstoyouokc.com/robots.txt) for explicit allow rules covering GPTBot, ClaudeBot, Google-Extended, PerplexityBot, Applebot-Extended, CCBot, and other AI user agents. Structured data (JSON-LD) is embedded on every page for LocalBusiness, Service, FAQ, and Breadcrumb schemas.
