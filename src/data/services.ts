@@ -45,7 +45,7 @@ export const services: Service[] = [
  warranty: 'Lifetime stain + 100% labor guarantee',
  metaTitle: 'Carpet Flooring Oklahoma City | In-Stock Carpet & Install | Floors To You OKC',
  metaDescription:
- 'Shop in-stock carpet in Oklahoma City with next-day installation, lifetime stain warranty, and 0% financing. Free in-home estimate - email bsmith@allinfloors.com.',
+ 'Shop in-stock carpet in Oklahoma City with next-day installation, lifetime stain warranty, and 0% financing. Free in-home estimate.',
  faqs: [
  {
  q: 'How much does carpet installation cost in Oklahoma City?',
@@ -92,7 +92,7 @@ export const services: Service[] = [
  warranty: 'Up to 50-year finish + lifetime structural',
  metaTitle: 'Engineered Wood Flooring Oklahoma City | Installer | Floors To You OKC',
  metaDescription:
- 'Engineered wood floors installed across Oklahoma City. In-stock oak, hickory & walnut, slab-friendly, lifetime structural warranty, 0% financing. Email bsmith@allinfloors.com.',
+ 'Engineered wood floors installed across Oklahoma City. In-stock oak, hickory & walnut, slab-friendly, lifetime structural warranty, 0% financing. Free in-home estimate.',
  faqs: [
  {
  q: 'Why choose engineered wood over solid hardwood in Oklahoma?',
@@ -139,7 +139,7 @@ export const services: Service[] = [
  warranty: 'Up to 30-year residential wear',
  metaTitle: 'Laminate Flooring Oklahoma City | Scratch-Proof Wood-Look | Floors To You OKC',
  metaDescription:
- 'Durable wood-look laminate flooring installed across Oklahoma City. AC4-rated, pet-friendly, in-stock with next-day install. 0% financing. Email bsmith@allinfloors.com.',
+ 'Durable wood-look laminate flooring installed across Oklahoma City. AC4-rated, pet-friendly, in-stock with next-day install. 0% financing. Free in-home estimate.',
  faqs: [
  {
  q: 'Is laminate flooring waterproof?',
@@ -186,7 +186,7 @@ export const services: Service[] = [
  warranty: 'Lifetime tile + 5-year installation',
  metaTitle: 'Tile Flooring Oklahoma City | Porcelain & Ceramic Install | Floors To You OKC',
  metaDescription:
- 'Porcelain, ceramic & stone tile flooring installed across Oklahoma City. Showers, kitchens & baths. Lifetime tile warranty. 0% financing. Email bsmith@allinfloors.com.',
+ 'Porcelain, ceramic & stone tile flooring installed across Oklahoma City. Showers, kitchens & baths. Lifetime tile warranty. 0% financing. Free in-home estimate.',
  faqs: [
  {
  q: 'How long does a tile install take?',
@@ -233,7 +233,7 @@ export const services: Service[] = [
  warranty: 'Lifetime residential waterproof',
  metaTitle: 'Glue-Down Vinyl (LVT) Oklahoma City | Vinyl Plank Install | Floors To You OKC',
  metaDescription:
- 'Glue-down luxury vinyl tile (LVT) installed across Oklahoma City. 100% waterproof, commercial-grade wear, lifetime warranty. 0% financing. Email bsmith@allinfloors.com.',
+ 'Glue-down luxury vinyl tile (LVT) installed across Oklahoma City. 100% waterproof, commercial-grade wear, lifetime warranty. 0% financing. Free in-home estimate.',
  faqs: [
  {
  q: 'Glue-down vinyl vs click vinyl - which should I pick?',
@@ -280,7 +280,7 @@ export const services: Service[] = [
  warranty: 'Lifetime residential waterproof',
  metaTitle: 'Click-Lock Vinyl (LVP) Oklahoma City | Waterproof Floors | Floors To You OKC',
  metaDescription:
- '100% waterproof click-lock LVP flooring installed across Oklahoma City. SPC rigid core, pet-proof, lifetime warranty. Next-day install + 0% financing. bsmith@allinfloors.com.',
+ '100% waterproof click-lock LVP flooring installed across Oklahoma City. SPC rigid core, pet-proof, lifetime warranty. Next-day install + 0% financing. Free in-home estimate.',
  faqs: [
  {
  q: 'What is the difference between SPC, WPC, and standard LVP?',

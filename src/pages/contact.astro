@@ -8,13 +8,13 @@ import { site } from '../data/site';
 ---
 <BaseLayout
  title="Contact Floors To You OKC | 4020 West Reno Ave, Oklahoma City"
- description="Visit our Oklahoma City showroom at 4020 W Reno Ave or email bsmith@allinfloors.com. Free in-home flooring estimates across the OKC metro within one business hour."
+ description="Visit our Oklahoma City showroom at 4020 W Reno Ave or book a free in-home flooring estimate across the OKC metro within one business hour."
 >
  <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact' }]} />
 
  <section class="container-x py-12">
- <h1 class="mb-4">Visit Our OKC Showroom</h1>
- <p class="text-lg text-ink/80 max-w-2xl mb-8">Stop in to walk on 30+ full-size flooring samples, talk to a design consultant, and leave with a same-day quote - or schedule a free in-home measure below.</p>
+ <h1 class="mb-4">Visit Our Showroom - Or Have It Come To You.</h1>
+ <p class="text-lg text-ink/80 max-w-2xl mb-8">Stop in to walk on 30+ full-size samples and leave with a same-day quote. Or stay on the couch - we'll load the truck and bring the showroom to your living room.</p>
  <img src="/images/photos/team/flooringteam.webp" alt="Floors To You OKC team welcoming a customer at the West Reno Avenue showroom" width="1600" height="700" loading="lazy" class="w-full h-auto rounded-xl2 shadow-soft aspect-[21/9] object-cover mb-10" />
 
  <div class="grid lg:grid-cols-2 gap-10 items-start">
@@ -22,11 +22,6 @@ import { site } from '../data/site';
  <div class="card p-6">
  <h2 class="text-2xl mb-3">Showroom</h2>
  <p class="text-ink/80 leading-relaxed">{site.address.street}<br />{site.address.city}, {site.address.region} {site.address.postalCode}</p>
- </div>
- <div class="card p-6">
- <h2 class="text-2xl mb-3">Email Us</h2>
- <p><a href={site.emailHref} class="font-display text-xl md:text-2xl text-brand-800 no-underline hover:text-brand-500 break-all">{site.email}</a></p>
- <p class="text-sm text-ink/65 mt-1">Showroom &amp; estimates</p>
  </div>
  <div class="card p-6">
  <h2 class="text-2xl mb-3">Hours</h2>

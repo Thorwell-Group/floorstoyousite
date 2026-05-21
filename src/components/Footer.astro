@@ -20,8 +20,7 @@ const year = new Date().getFullYear();
  <p class="text-white/80 text-sm leading-relaxed mb-4">{site.tagline}. Locally owned, locally installed since {site.foundingDate}.</p>
  <address class="not-italic text-sm text-white/80 leading-relaxed">
  {site.address.street}<br/>
- {site.address.city}, {site.address.region} {site.address.postalCode}<br/>
- <a href={site.emailHref} class="text-white hover:text-brand-300 no-underline font-semibold">{site.email}</a>
+ {site.address.city}, {site.address.region} {site.address.postalCode}
  </address>
  </div>
 
@@ -59,11 +58,38 @@ const year = new Date().getFullYear();
  </div>
 
  <div class="border-t border-white/10">
- <div class="container-x py-6 flex flex-col md:flex-row justify-between gap-4 text-xs text-white/60">
- <p>© {year} {site.legalName}. All rights reserved.</p>
- <div class="flex gap-4">
- <a href="/privacy" class="text-white/60 hover:text-white no-underline">Privacy</a>
- <a href="/sitemap-index.xml" class="text-white/60 hover:text-white no-underline">Sitemap</a>
+ <div class="container-x py-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+ {/* LEFT: copyright */}
+ <div class="text-xs text-white/60 leading-relaxed text-center sm:text-left">
+ © {year} {site.legalName}. All rights reserved.
+ <div class="mt-1 text-[10px] opacity-80">
+ <a href="/privacy" class="hover:text-white no-underline">Privacy</a>
+ <span class="mx-2 opacity-40">·</span>
+ <a href="/sitemap-index.xml" class="hover:text-white no-underline">Sitemap</a>
+ </div>
+ </div>
+
+ {/* RIGHT: Thorwell credit */}
+ <div class="flex flex-col items-center sm:items-end gap-1.5 leading-none text-center sm:text-right">
+ <span class="text-[10px] uppercase tracking-[0.22em] text-white/55 font-semibold">
+ Site designed and hosted
+ </span>
+ <a
+ href="https://thorwellgroup.com"
+ target="_blank"
+ rel="noopener"
+ class="text-lg sm:text-xl tracking-[0.06em] text-white font-normal hover:text-[#CBFBB4] transition-colors no-underline"
+ >
+ Thor<span class="text-[#CBFBB4]">w</span>ell Group Inc.
+ </a>
+ <a
+ href="https://thorwellgroup.com"
+ target="_blank"
+ rel="noopener"
+ class="text-[10px] sm:text-[11px] tracking-[0.32em] text-white/85 hover:text-[#CBFBB4] transition-colors no-underline"
+ >
+ The future of flooring
+ </a>
  </div>
  </div>
  </div>

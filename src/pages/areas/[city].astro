@@ -33,7 +33,6 @@ const localBusinessAreaSchema = {
  name: `${site.name} – Serving ${a.city}, ${a.state}`,
  parentOrganization: { '@id': `${site.domain}/#business` },
  url: `${site.domain}/areas/${a.slug}`,
- email: site.email,
  image: `${site.domain}${site.logo}`,
  priceRange: site.priceRange,
  address: {

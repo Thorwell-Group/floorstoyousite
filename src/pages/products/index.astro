@@ -12,23 +12,41 @@ import { products, productCategories, productsByCategory } from '../../data/prod
 >
  <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Shop Flooring', url: '/products' }]} />
 
- <section class="container-x py-10">
+ <section class="container-x pt-10 pb-6">
  <p class="eyebrow mb-3">Shop The Showroom</p>
  <h1 class="mb-4">All In-Stock Flooring · {products.length} SKUs</h1>
  <p class="text-lg text-ink/80 max-w-2xl">Every product below is in stock at our West Reno Avenue showroom in Oklahoma City - most can install within 24–72 hours of your accepted quote.</p>
- <div class="flex flex-wrap gap-2 mt-6">
- {productCategories.map((c) => (
- <a href={`#${c.slug}`} class="px-4 py-2 rounded-full bg-brand-50 text-brand-800 text-sm font-medium hover:bg-brand-100 no-underline">
- {c.label} ({productsByCategory(c.slug).length})
- </a>
- ))}
- </div>
  </section>
+
+ {/* Category jump nav - sticky below the site header on mobile so you can hop between carpet/wood/tile/vinyl from anywhere on the page. */}
+ <nav
+ id="product-cat-nav"
+ aria-label="Jump to category"
+ class="sticky top-20 z-30 bg-cream/95 backdrop-blur border-y border-brand-100 shadow-sm"
+ >
+ <div class="container-x">
+ <div class="flex items-center gap-2 overflow-x-auto py-3 -mx-1 px-1 scrollbar-thin">
+ <span class="hidden sm:inline text-[10px] uppercase tracking-[0.22em] font-bold text-ink/55 mr-2 flex-none">Jump To:</span>
+ {productCategories.map((c) => {
+ const count = productsByCategory(c.slug).length;
+ return count > 0 && (
+ <a
+ href={`#${c.slug}`}
+ data-cat={c.slug}
+ class="cat-link flex-none px-4 py-2 rounded-full bg-white ring-1 ring-brand-200 text-brand-800 text-sm font-semibold hover:bg-brand-50 hover:ring-brand-500 no-underline transition-colors whitespace-nowrap"
+ >
+ {c.label} <span class="text-brand-500">({count})</span>
+ </a>
+ );
+ })}
+ </div>
+ </div>
+ </nav>
 
  {productCategories.map((c) => {
  const items = productsByCategory(c.slug);
  return items.length > 0 && (
- <div id={c.slug} class="scroll-mt-24">
+ <div id={c.slug} class="scroll-mt-32 lg:scroll-mt-28">
  <ProductGrid
  products={items}
  eyebrow={c.label}
@@ -38,6 +56,41 @@ import { products, productCategories, productsByCategory } from '../../data/prod
  </div>
  );
  })}
+
+ <style>
+ /* Highlight the active category pill as you scroll past each section. */
+ .cat-link.is-active {
+ background-color: rgb(189 148 84); /* brand-500 */
+ color: white !important;
+ box-shadow: 0 4px 12px rgba(189, 148, 84, 0.35);
+ }
+ .cat-link.is-active span { color: rgba(255,255,255,0.85) !important; }
+ .scrollbar-thin::-webkit-scrollbar { height: 0; }
+ .scrollbar-thin { scrollbar-width: none; }
+ </style>
+
+ <script is:inline>
+ (function () {
+ const links = document.querySelectorAll('.cat-link');
+ if (!links.length) return;
+ const sections = Array.from(links).map((a) => document.getElementById(a.dataset.cat)).filter(Boolean);
+ if (!sections.length) return;
+
+ // Spotlight whichever section is in view as you scroll - so the user always knows where they are.
+ const io = new IntersectionObserver((entries) => {
+ entries.forEach((entry) => {
+ if (entry.isIntersecting) {
+ links.forEach((l) => l.classList.toggle('is-active', l.dataset.cat === entry.target.id));
+ // Auto-scroll the nav so the active pill stays visible on mobile.
+ const active = document.querySelector('.cat-link.is-active');
+ if (active) active.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+ }
+ });
+ }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+
+ sections.forEach((s) => io.observe(s));
+ })();
+ </script>
 
  <CtaBand headline="See a floor you love?" subline="Book a free in-home estimate and we'll bring samples to match your light + trim." />
 
