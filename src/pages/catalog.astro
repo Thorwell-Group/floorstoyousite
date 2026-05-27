@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
+---
+<BaseLayout
+  title="Flooring Catalog | Browse Hardwood, Carpet, Tile & More | Floors To You OKC"
+  description="Browse our full flooring catalog with visualizer. Filter by hardwood, carpet, tile, vinyl and luxury vinyl plank — see how each style looks in your space before you buy."
+>
+  <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Catalog', url: '/catalog' }]} />
+
+  <section class="container-x py-12">
+    <p class="eyebrow mb-3">Catalog</p>
+    <h1 class="mb-5">Browse Our Flooring Catalog</h1>
+    <p class="text-lg text-ink/80 leading-relaxed mb-8 max-w-3xl">Explore every product we carry — hardwood, carpet, tile, vinyl, and luxury vinyl plank. Use the visualizer to see exactly how each style looks in a room like yours before you book your free in-home estimate.</p>
+
+    <a id='catalog'></a><div id='roomvoCatalog'></div>
+  </section>
+
+  <Fragment slot="head">
+    <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'Catalog', url: '/catalog' }]} />
+  </Fragment>
+</BaseLayout>

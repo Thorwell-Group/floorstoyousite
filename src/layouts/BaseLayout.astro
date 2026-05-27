@@ -28,6 +28,15 @@ const { title, description, canonical, image, noindex, includeLocalBusiness = tr
     <meta name="theme-color" content="#bd9454" />
     <SEO title={title} description={description} canonical={canonical} image={image} noindex={noindex} />
     {includeLocalBusiness && <LocalBusinessSchema />}
+    <script
+      is:inline
+      async
+      id="roomvoAssistant"
+      type="text/javascript"
+      data-locale="en-us"
+      data-position="bottom-right"
+      src="https://www.roomvo.com/static/scripts/b2b/common/assistant.js"
+    ></script>
     <slot name="head" />
   </head>
   <body>
