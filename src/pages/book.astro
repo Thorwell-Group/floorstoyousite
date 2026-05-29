@@ -1,7 +1,7 @@
 ---
 import FunnelLayout from '../layouts/FunnelLayout.astro';
 import GoogleReviewsBadge from '../components/GoogleReviewsBadge.astro';
-import { googleReviewsUrl } from '../data/testimonials';
+import ReviewCards from '../components/ReviewCards.astro';
 
 const title = 'Save Big On New Floors · 0% APR For 24 Months · Floors To You OKC';
 const description = `Qualified Oklahoma homeowners save big on new floors with 0% APR financing for 24 months. Free in-home estimate, next-day install, 100% labor guarantee across the OKC metro.`;
@@ -107,15 +107,10 @@ const description = `Qualified Oklahoma homeowners save big on new floors with 0
         <h2 class="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-800 leading-tight">
           "I Can't Believe These Are My Floors."
         </h2>
-        <p class="mt-3 text-ink/70 text-sm sm:text-base">The reaction we hear most often when homeowners walk in after we leave. Read it for yourself on Google.</p>
-
-        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <GoogleReviewsBadge label="Our Google Reviews" />
-          <a href={googleReviewsUrl} target="_blank" rel="noopener" class="btn-primary">
-            <span aria-hidden>★</span> Read Our Reviews On Google
-          </a>
-        </div>
+        <p class="mt-3 text-ink/70 text-sm sm:text-base">The reaction we hear most often when homeowners walk in after we leave. Here's what they had to say.</p>
       </div>
+
+      <ReviewCards class="mt-10 max-w-5xl mx-auto" />
     </div>
   </section>
 

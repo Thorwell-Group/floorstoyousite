@@ -1,14 +1,11 @@
 ---
-import { googleReviewsUrl } from '../data/testimonials';
+// Static, non-clickable trust badge. Intentionally NOT a link so visitors
+// stay on the funnel - the real reviews render on-page via ReviewCards.
 export interface Props { class?: string; label?: string; }
-const { class: cls = '', label = 'Our Google Reviews' } = Astro.props;
+const { class: cls = '', label = 'Reviewed by OKC Homeowners' } = Astro.props;
 ---
-<a
-  href={googleReviewsUrl}
-  target="_blank"
-  rel="noopener"
-  aria-label="Read our reviews on Google (opens in a new tab)"
-  class={`inline-flex items-center gap-2 rounded-full bg-white border border-brand-200 px-4 py-1.5 shadow-card no-underline hover:border-brand-300 transition-colors ${cls}`}
+<span
+  class={`inline-flex items-center gap-2 rounded-full bg-white border border-brand-200 px-4 py-1.5 shadow-card ${cls}`}
 >
   <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true" class="flex-none">
     <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
@@ -18,4 +15,4 @@ const { class: cls = '', label = 'Our Google Reviews' } = Astro.props;
   </svg>
   <span class="text-brand-500 text-sm" aria-hidden="true">★★★★★</span>
   <span class="text-sm font-semibold text-brand-800">{label}</span>
-</a>
+</span>

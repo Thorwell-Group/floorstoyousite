@@ -4,7 +4,6 @@ import ServiceGrid from '../components/ServiceGrid.astro';
 import AreaGrid from '../components/AreaGrid.astro';
 import Testimonials from '../components/Testimonials.astro';
 import GoogleReviewsBadge from '../components/GoogleReviewsBadge.astro';
-import { googleReviewsUrl } from '../data/testimonials';
 import WhyUs from '../components/WhyUs.astro';
 import CtaBand from '../components/CtaBand.astro';
 import FAQ from '../components/FAQ.astro';
@@ -149,7 +148,7 @@ const galleryItems = [
  <section class="bg-brand-800 text-white">
  <div class="container-x py-10 grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
  <div><p class="font-display text-3xl text-brand-300">2,500+</p><p class="text-sm text-white/80">Local installs</p></div>
- <a href={googleReviewsUrl} target="_blank" rel="noopener" class="no-underline group"><p class="font-display text-3xl text-brand-300 group-hover:text-brand-200 transition-colors">★★★★★</p><p class="text-sm text-white/80">Google reviewed</p></a>
+ <div><p class="font-display text-3xl text-brand-300">★★★★★</p><p class="text-sm text-white/80">Google reviewed</p></div>
  <div><p class="font-display text-3xl text-brand-300">24hr</p><p class="text-sm text-white/80">Install turnaround</p></div>
  <div><p class="font-display text-3xl text-brand-300">0% APR</p><p class="text-sm text-white/80">Financing 24 mo.</p></div>
  </div>

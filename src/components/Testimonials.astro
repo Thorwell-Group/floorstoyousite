@@ -1,17 +1,11 @@
 ---
-import GoogleReviewsBadge from './GoogleReviewsBadge.astro';
-import { googleReviewsUrl } from '../data/testimonials';
+import ReviewCards from './ReviewCards.astro';
 ---
 <section class="container-x py-16 md:py-24">
  <div class="text-center max-w-2xl mx-auto">
  <p class="eyebrow mb-3">Reviews</p>
  <h2>Don't Just Take Our Word For It</h2>
- <p class="mt-4 text-ink/75">Read what Oklahoma City homeowners say about Floors To You - straight from Google, unedited.</p>
- <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
- <GoogleReviewsBadge label="Our Google Reviews" />
- <a href={googleReviewsUrl} target="_blank" rel="noopener" class="btn-primary">
- <span aria-hidden>★</span> Read Our Reviews On Google
- </a>
+ <p class="mt-4 text-ink/75">Real, verified Google reviews from Oklahoma City homeowners - unedited.</p>
  </div>
- </div>
+ <ReviewCards class="mt-10 max-w-5xl mx-auto" />
 </section>

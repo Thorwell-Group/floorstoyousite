@@ -2,9 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import CtaBand from '../components/CtaBand.astro';
-import GoogleReviewsBadge from '../components/GoogleReviewsBadge.astro';
+import ReviewCards from '../components/ReviewCards.astro';
 import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
-import { googleReviewsUrl } from '../data/testimonials';
 ---
 <BaseLayout
   title="Reviews | Floors To You OKC | Oklahoma City Flooring Installer"
@@ -16,15 +15,10 @@ import { googleReviewsUrl } from '../data/testimonials';
     <div class="max-w-2xl mx-auto text-center">
       <p class="eyebrow mb-3">Customer Reviews</p>
       <h1>What OKC Homeowners Say</h1>
-      <p class="text-lg text-ink/80 mt-4">We let our work - and our customers - speak for themselves. Read every verified review on our Google Business profile, straight from the source.</p>
-
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <GoogleReviewsBadge label="Our Google Reviews" />
-        <a href={googleReviewsUrl} target="_blank" rel="noopener" class="btn-primary">
-          <span aria-hidden>★</span> Read Our Reviews On Google
-        </a>
-      </div>
+      <p class="text-lg text-ink/80 mt-4">We let our work - and our customers - speak for themselves. Here's what verified Oklahoma City homeowners say about Floors To You OKC.</p>
     </div>
+
+    <ReviewCards class="mt-12 max-w-5xl mx-auto" />
   </section>
 
   <CtaBand headline="Ready to write your own 5-star review?" subline="Book a free in-home estimate and we'll show you how easy it is." />
