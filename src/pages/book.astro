@@ -17,8 +17,8 @@ const description = `Qualified Oklahoma homeowners save big on new floors with 0
       {/* TOP ROW: headline · arrow · form on desktop. Form first on mobile so it's instantly visible. */}
       <div class="grid lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-6 items-center">
 
-        {/* Headline */}
-        <div class="order-2 lg:order-1 text-center lg:text-left">
+        {/* Headline - first on mobile (heading → form → value points) */}
+        <div class="order-1 lg:order-1 text-center lg:text-left">
           <GoogleReviewsBadge class="mb-5" label="Reviewed by OKC Homeowners" />
 
 
@@ -32,7 +32,7 @@ const description = `Qualified Oklahoma homeowners save big on new floors with 0
             <strong class="text-brand-800">0% APR for 24 months · Installed in as little as 24 hours.</strong> Free in-home measure across the entire OKC metro.
           </p>
 
-          <p class="mt-6 font-display font-semibold text-brand-700 text-sm sm:text-base">
+          <p class="mt-6 font-display font-semibold text-brand-700 text-sm sm:text-base hidden lg:block">
             Oklahoma's Largest In-Stock Flooring Showroom
           </p>
         </div>
@@ -47,8 +47,8 @@ const description = `Qualified Oklahoma homeowners save big on new floors with 0
           </div>
         </div>
 
-        {/* Form card - shows first on mobile so it's instantly visible above the fold. */}
-        <div id="form" class="order-1 lg:order-3 scroll-mt-20">
+        {/* Form card - sits right under the heading on mobile, right column on desktop. */}
+        <div id="form" class="order-2 lg:order-3 scroll-mt-20">
           <div class="rounded-xl2 bg-white ring-2 ring-brand-500 shadow-soft overflow-hidden">
             <div class="bg-gradient-to-r from-brand-700 to-brand-800 text-white px-5 py-3 sm:px-6 sm:py-4">
               <div class="text-[10px] sm:text-[11px] uppercase tracking-[0.22em] font-bold text-brand-300">Free · No obligation · 60 seconds</div>
