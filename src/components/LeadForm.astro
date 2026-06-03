@@ -1,0 +1,25 @@
+---
+/**
+ * Bare ("no shell") GoHighLevel / LeadConnector survey embed.
+ * Use a unique `instance` per placement so iframe ids don't collide
+ * when the form is rendered twice on one page (desktop + mobile).
+ * Include <LeadFormScript /> once per page to enable post-submit redirect.
+ */
+export interface Props { instance: string; class?: string; eager?: boolean; }
+const { instance, class: cls = '', eager = false } = Astro.props;
+const iframeId = `fty-survey-${instance}`;
+---
+<div class={cls}>
+  <iframe
+    src="https://api.leadconnectorhq.com/widget/survey/jWARw7xCkBcUAI4uUldA"
+    scrolling="no"
+    id={iframeId}
+    title="Book a free in-home flooring estimate"
+    loading={eager ? 'eager' : 'lazy'}
+    fetchpriority={eager ? 'high' : 'auto'}
+    style="border:0;width:100%;min-height:580px;display:block;background:#fff;border-radius:1rem;"
+  ></iframe>
+  <p class="mt-3 text-center text-[11px] sm:text-xs text-ink/55 leading-relaxed">
+    By submitting, you agree to be contacted by Floors To You OKC. We never share your info.
+  </p>
+</div>

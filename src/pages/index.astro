@@ -8,6 +8,11 @@ import WhyUs from '../components/WhyUs.astro';
 import CtaBand from '../components/CtaBand.astro';
 import FAQ from '../components/FAQ.astro';
 import Gallery from '../components/Gallery.astro';
+import ProofBand from '../components/ProofBand.astro';
+import VisualizerBand from '../components/VisualizerBand.astro';
+import EasyBand from '../components/EasyBand.astro';
+import LeadForm from '../components/LeadForm.astro';
+import LeadFormScript from '../components/LeadFormScript.astro';
 import FAQSchema from '../components/schema/FAQSchema.astro';
 import { generalFaqs } from '../data/faqs';
 
@@ -39,16 +44,17 @@ const galleryItems = [
  </h1>
 
  <p class="text-lg md:text-xl text-ink/80 leading-relaxed mb-7 max-w-xl">
- We bring carpet, hardwood, LVP, laminate and tile to your home - matched to <strong class="text-brand-800">your light and your trim</strong>, then installed across the OKC metro in as little as 24 hours. The kind of floors friends ask about.
+ We bring real samples to your home - matched to <strong class="text-brand-800">your light and your trim</strong> - and our visualizer drops hundreds of styles right into a photo of your room. Come home every day to floors you fall in love with, the kind that make you the envy of the block.
  </p>
 
  <div class="flex flex-wrap gap-3 mb-8">
  <a href="/book" class="btn-primary">Get My Free Estimate</a>
- <a href="/services" class="btn-outline">Shop Flooring</a>
+ <a href="/catalog" class="btn-outline">See It In Your Room</a>
  </div>
 
  <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink/70">
  <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> Lowest price guaranteed</li>
+ <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> Free samples brought to your home</li>
  <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> Installed in as little as 24 hours</li>
  <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> 0% APR for 24 months</li>
  </ul>
@@ -99,6 +105,13 @@ const galleryItems = [
  </div>
 
  <div class="relative">
+ {/* Desktop: free-estimate form embedded right in the hero (no shell) */}
+ <div class="hidden lg:block">
+ <LeadForm instance="hero" eager={true} />
+ </div>
+
+ {/* Mobile & tablet: visual collage */}
+ <div class="relative lg:hidden">
  <div aria-hidden class="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-brand-300/40 to-brand-500/20 blur-2xl"></div>
 
  <div class="relative grid grid-cols-5 grid-rows-6 gap-3 lg:gap-4 h-[28rem] md:h-[34rem]">
@@ -143,6 +156,7 @@ const galleryItems = [
  </div>
  </div>
  </div>
+ </div>
  </section>
 
  <section class="bg-brand-800 text-white">
@@ -153,6 +167,8 @@ const galleryItems = [
  <div><p class="font-display text-3xl text-brand-300">0% APR</p><p class="text-sm text-white/80">Financing 24 mo.</p></div>
  </div>
  </section>
+
+ <ProofBand />
 
  {/* ───────── WHY VISIT 6 SHOWROOMS? ───────── */}
  <section class="bg-cream py-16 md:py-24">
@@ -205,13 +221,28 @@ const galleryItems = [
  </div>
  </section>
 
+ <VisualizerBand />
  <ServiceGrid />
+ <EasyBand />
  <WhyUs />
+
+ {/* Mobile: free-estimate form right below "Why Floors To You" (no shell) */}
+ <section class="container-x pb-4 lg:hidden">
+ <div class="text-center max-w-md mx-auto mb-6">
+ <p class="eyebrow mb-2">Free In-Home Estimate</p>
+ <h2 class="text-3xl">Get Your Estimate</h2>
+ <p class="mt-2 text-ink/70 text-sm">60 seconds. We bring the showroom - and the samples - to you.</p>
+ </div>
+ <LeadForm instance="mobile" class="max-w-md mx-auto" />
+ </section>
+
  <Gallery items={galleryItems} />
  <AreaGrid />
  <Testimonials />
  <CtaBand />
  <FAQ faqs={generalFaqs} heading="Flooring FAQ Oklahoma City Homeowners Ask Most" />
+
+ <LeadFormScript />
 
  <Fragment slot="head">
  <FAQSchema faqs={generalFaqs} />

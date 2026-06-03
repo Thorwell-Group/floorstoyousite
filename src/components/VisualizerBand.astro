@@ -1,0 +1,54 @@
+---
+/** Samples-at-home + RoomVo visualizer pitch. Reusable across pages. */
+export interface Props { class?: string; }
+const { class: cls = '' } = Astro.props;
+const points = [
+  { t: 'Real samples, brought to your door', d: 'No showroom hopping. We load the truck and bring the floors to you.' },
+  { t: 'Matched to your light & your trim', d: 'See each option in your actual rooms - not under store fluorescents.' },
+  { t: 'Upload a photo, try 100s of styles', d: 'Our visualizer drops hundreds of colors & styles right into a picture of your room.' },
+  { t: 'Decide with zero pressure', d: 'See it, love it, then book. No commission pitch, ever.' },
+];
+---
+<section class={`bg-cream py-16 md:py-24 ${cls}`}>
+  <div class="container-x grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+    <div>
+      <p class="eyebrow mb-3">See It Before You Buy</p>
+      <h2>See Your Favorite Floors In Your Own Home - Before You Spend a Dime.</h2>
+      <p class="mt-4 text-lg text-ink/80 leading-relaxed">
+        Choosing the right floors is stressful - it's a big decision you'll live with for years. So we take the guesswork out. The designers at Floors To You bring real samples into your home, match them to your light and trim, and upload photos of your actual rooms into our visualizer - so you can try hundreds of colors and styles and see the finished look before you make a final decision.
+      </p>
+      <ul class="mt-6 space-y-4">
+        {points.map((p) => (
+          <li class="flex gap-3">
+            <span class="text-brand-500 mt-1 flex-none" aria-hidden>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span><strong class="text-brand-800">{p.t}.</strong> <span class="text-ink/70">{p.d}</span></span>
+          </li>
+        ))}
+      </ul>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/catalog" class="btn-primary">Try The Room Visualizer</a>
+        <a href="/book" class="btn-outline">Get Samples At Home</a>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div aria-hidden class="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-brand-300/40 to-brand-500/15 blur-2xl"></div>
+      <img
+        src="/images/photos/lvp/luxuryvinly.webp"
+        alt="Homeowner previewing flooring styles in their own Oklahoma City living room with the Floors To You visualizer"
+        width="900"
+        height="700"
+        loading="lazy"
+        class="relative rounded-xl2 shadow-soft w-full h-auto object-cover aspect-[4/3]"
+      />
+      <div class="absolute -bottom-5 left-4 right-4 sm:left-6 sm:right-auto sm:max-w-xs bg-white rounded-xl2 shadow-soft px-5 py-4 flex items-center gap-3">
+        <span class="grid place-items-center w-11 h-11 flex-none rounded-full bg-brand-500 text-white" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        </span>
+        <p class="text-sm leading-snug"><strong class="text-brand-800">Upload your room</strong><br/><span class="text-ink/65">try hundreds of styles in seconds</span></p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+---
+/** Include once per page that renders one or more <LeadForm /> embeds. */
+---
+<script src="https://link.msgsndr.com/js/form_embed.js" is:inline async></script>
+<script is:inline>
+  const FTY_BOOK_REDIRECT = '/book-estimate';
+  let ftyRedirected = false;
+  window.addEventListener('message', (e) => {
+    if (!e.origin || !/leadconnectorhq\.com|msgsndr\.com/.test(e.origin)) return;
+    const d = e.data;
+    const submitted =
+      (typeof d === 'string' && /submit/i.test(d)) ||
+      (d && (d.type === 'form_submit_redirect' || d.type === 'survey_submit_redirect' || d.type === 'form_submit_action' || /submit/i.test(d.event || d.type || '')));
+    if (submitted && !ftyRedirected) {
+      ftyRedirected = true;
+      window.top.location.href = FTY_BOOK_REDIRECT;
+    }
+  });
+</script>

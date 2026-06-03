@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import SEO from '../components/SEO.astro';
+import PromoBar from '../components/PromoBar.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import LocalBusinessSchema from '../components/schema/LocalBusinessSchema.astro';
@@ -41,6 +42,7 @@ const { title, description, canonical, image, noindex, includeLocalBusiness = tr
   </head>
   <body>
     <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 bg-brand-800 text-white px-4 py-2 rounded-lg">Skip to content</a>
+    <PromoBar />
     <Header />
     <main id="main">
       <slot />

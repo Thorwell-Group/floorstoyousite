@@ -1,0 +1,46 @@
+---
+/** Done-for-you / "we make it easy" band: furniture, baseboards, haul-away, clean finish. */
+export interface Props { class?: string; }
+const { class: cls = '' } = Astro.props;
+const steps = [
+  { t: 'We Move The Furniture', d: 'Heavy couches, beds, dressers - we move it out and put it back. You lift nothing.', icon: 'sofa' },
+  { t: 'Baseboards Off & Back On', d: 'We pull and reset your baseboards for a clean, finished edge - no gaps, no quarter-round patch jobs.', icon: 'ruler' },
+  { t: 'Old Floors Hauled Away', d: 'Tear-out, prep and disposal of your old flooring is included. Nothing left in your driveway.', icon: 'truck' },
+  { t: 'Spotless, Professional Finish', d: 'We vacuum, wipe down and walk the job with you. We leave it cleaner than we found it.', icon: 'sparkle' },
+];
+---
+<section class={`bg-white py-16 md:py-24 ${cls}`}>
+  <div class="container-x">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <p class="eyebrow mb-3">Done-For-You, Start To Finish</p>
+      <h2>Furniture? Baseboards? Cleanup? Handled.</h2>
+      <p class="mt-4 text-lg text-ink/75 leading-relaxed">New floors should feel effortless. Our professional crews take care of the hard, messy parts - so the only thing you do is pick the floor you love.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      {steps.map((s) => (
+        <div class="rounded-xl2 bg-cream ring-1 ring-brand-100 p-6">
+          <span class="grid place-items-center w-14 h-14 rounded-full bg-brand-100 text-brand-700 mb-5" aria-hidden="true">
+            {s.icon === 'sofa' && (
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3"/><path d="M2 13a2 2 0 0 1 2-2 2 2 0 0 1 2 2v3h12v-3a2 2 0 0 1 4 0v5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/><path d="M6 19v2M18 19v2"/></svg>
+            )}
+            {s.icon === 'ruler' && (
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 17 3l4 4L7 21z"/><path d="m7.5 12.5 2 2M11 9l1.5 1.5M14.5 5.5l2 2"/></svg>
+            )}
+            {s.icon === 'truck' && (
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v9H3z"/><path d="M14 9h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+            )}
+            {s.icon === 'sparkle' && (
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/><path d="M19 14l.8 1.9L22 17l-2.2.9L19 20l-.8-2.1L16 17l2.2-1.1z"/></svg>
+            )}
+          </span>
+          <h3 class="text-brand-800 text-xl font-display mb-2">{s.t}</h3>
+          <p class="text-sm text-ink/70 leading-relaxed">{s.d}</p>
+        </div>
+      ))}
+    </div>
+    <div class="mt-10 text-center">
+      <a href="/book" class="btn-primary">Get My Free In-Home Estimate</a>
+      <p class="mt-3 text-xs sm:text-sm text-ink/55 uppercase tracking-[0.18em] font-semibold">Free · No Obligation · We Handle The Rest</p>
+    </div>
+  </div>
+</section>
