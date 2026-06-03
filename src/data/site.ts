@@ -21,6 +21,9 @@ export const site = {
     { day: 'Saturday', open: '10:00', close: '16:00' },
     { day: 'Sunday', open: null, close: null },
   ],
+  phone: '(405) 913-7381',
+  phoneE164: '+14059137381',
+  email: 'floorstoyouinfo@allinfloors.com',
   social: {
     facebook: 'https://www.facebook.com/profile.php?id=100088814169249',
   },
