@@ -7,6 +7,8 @@ import Testimonials from '../../components/Testimonials.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import FAQ from '../../components/FAQ.astro';
 import GoogleMap from '../../components/GoogleMap.astro';
+import VisualizerBand from '../../components/VisualizerBand.astro';
+import EasyBand from '../../components/EasyBand.astro';
 import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
 import FAQSchema from '../../components/schema/FAQSchema.astro';
 import { areas } from '../../data/areas';
@@ -119,10 +121,12 @@ const areaFaqs = [
  <GoogleMap src={a.mapEmbed} title={`Floors To You OKC service map for ${a.city}, OK`} />
  </section>
 
+ <VisualizerBand />
  <ServiceGrid areaSlug={a.slug} />
+ <EasyBand />
  <Testimonials />
  <FAQ faqs={areaFaqs} heading={`${a.city} Flooring FAQ`} />
- <CtaBand headline={`Get A Free ${a.city} Flooring Estimate Today`} subline={`Floors To You OKC has installed in hundreds of ${a.city} homes - yours is next.`} />
+ <CtaBand headline={`Come Home To Floors You Love In ${a.city}.`} subline={`We bring the samples to your ${a.city} home, preview them in your own rooms, then handle furniture, baseboards, install and cleanup. Lowest price guaranteed, 0% APR for 24 months, installed in as little as 24 hours.`} />
 
  <Fragment slot="head">
  <BreadcrumbSchema items={breadcrumbs} />

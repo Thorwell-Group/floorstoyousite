@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import CtaBand from '../components/CtaBand.astro';
 import WhyUs from '../components/WhyUs.astro';
+import VisualizerBand from '../components/VisualizerBand.astro';
+import EasyBand from '../components/EasyBand.astro';
 import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
 ---
 <BaseLayout
@@ -18,7 +20,9 @@ import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
  <img src="/images/photos/install/measuringflooring.webp" alt="Floors To You OKC consultant measuring a room during a free in-home estimate" width="1600" height="700" loading="lazy" class="w-full h-auto rounded-xl2 shadow-soft aspect-[21/9] object-cover" />
  </section>
 
+ <VisualizerBand />
  <WhyUs />
+ <EasyBand />
  <CtaBand />
 
  <Fragment slot="head">

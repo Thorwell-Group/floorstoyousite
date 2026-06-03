@@ -8,6 +8,8 @@ import CtaBand from '../../components/CtaBand.astro';
 import FAQ from '../../components/FAQ.astro';
 import Gallery from '../../components/Gallery.astro';
 import ProductGrid from '../../components/ProductGrid.astro';
+import VisualizerBand from '../../components/VisualizerBand.astro';
+import EasyBand from '../../components/EasyBand.astro';
 import { productsByService } from '../../data/products';
 import ServiceSchema from '../../components/schema/ServiceSchema.astro';
 import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
@@ -76,6 +78,8 @@ const breadcrumbs = [
 
  <Gallery items={s.gallery} eyebrow={`${s.shortName} Gallery`} heading={`Recent ${s.shortName} Installs Across OKC`} subhead={`Snapshots from ${s.shortName.toLowerCase()} projects we've completed across Oklahoma City and the metro.`} />
 
+ <VisualizerBand />
+
  <ProductGrid
  products={serviceProducts}
  eyebrow={`Shop ${s.shortName}`}
@@ -83,10 +87,12 @@ const breadcrumbs = [
  subhead={`Every ${s.shortName.toLowerCase()} SKU below is in stock at our West Reno Avenue showroom - most install within 24–72 hours.`}
  />
 
+ <EasyBand />
+
  <AreaGrid serviceSlug={s.slug} serviceName={s.shortName} />
  <Testimonials />
  <FAQ faqs={s.faqs} heading={`${s.shortName} Questions OKC Homeowners Ask`} />
- <CtaBand headline={`Get A Free ${s.shortName} Estimate Today`} subline="In-home measure, written quote, and next-day install on in-stock material." />
+ <CtaBand headline={`Fall In Love With Your New ${s.shortName}.`} subline={`We bring ${s.shortName.toLowerCase()} samples to your home, match them to your light and trim, then handle furniture, baseboards, install and cleanup. Lowest price guaranteed, 0% APR for 24 months, installed in as little as 24 hours.`} />
 
  <Fragment slot="head">
  <BreadcrumbSchema items={breadcrumbs} />

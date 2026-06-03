@@ -6,6 +6,8 @@ import CtaBand from '../../components/CtaBand.astro';
 import FAQ from '../../components/FAQ.astro';
 import Testimonials from '../../components/Testimonials.astro';
 import GoogleMap from '../../components/GoogleMap.astro';
+import VisualizerBand from '../../components/VisualizerBand.astro';
+import EasyBand from '../../components/EasyBand.astro';
 import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
 import FAQSchema from '../../components/schema/FAQSchema.astro';
 import { areas } from '../../data/areas';
@@ -118,6 +120,8 @@ const serviceSchema = {
  </aside>
  </section>
 
+ <VisualizerBand />
+
  <section class="bg-brand-50">
  <div class="container-x py-16 grid lg:grid-cols-2 gap-10 items-center">
  <div>
@@ -129,11 +133,13 @@ const serviceSchema = {
  </div>
  </section>
 
+ <EasyBand />
+
  <Testimonials />
  <FAQ faqs={localFaqs} heading={`${s.shortName} In ${a.city} - FAQ`} />
  <CtaBand
- headline={`Free ${s.shortName} Estimate in ${a.city}, OK`}
- subline={`In-home measure in 1–2 days. Written quote same day. Install in as little as 24 hours.`}
+ headline={`Come Home To ${s.shortName} You Love In ${a.city}.`}
+ subline={`We bring the samples to your ${a.city} home, preview them in your own rooms, then handle furniture, baseboards, install and cleanup. Lowest price guaranteed, 0% APR for 24 months, installed in as little as 24 hours.`}
  />
 
  <Fragment slot="head">
