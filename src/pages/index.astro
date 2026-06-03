@@ -13,6 +13,7 @@ import VisualizerBand from '../components/VisualizerBand.astro';
 import EasyBand from '../components/EasyBand.astro';
 import LeadForm from '../components/LeadForm.astro';
 import LeadFormScript from '../components/LeadFormScript.astro';
+import FeatureQuote from '../components/FeatureQuote.astro';
 import FAQSchema from '../components/schema/FAQSchema.astro';
 import { generalFaqs } from '../data/faqs';
 
@@ -236,6 +237,7 @@ const galleryItems = [
  <LeadForm instance="mobile" class="max-w-md mx-auto" />
  </section>
 
+ <FeatureQuote />
  <Gallery items={galleryItems} />
  <AreaGrid />
  <Testimonials />
