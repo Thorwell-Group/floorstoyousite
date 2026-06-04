@@ -10,7 +10,7 @@ const linkBase = areaSlug ? `/${areaSlug}` : '/services';
  <h2>The Kind Of Floors Friends Ask About.</h2>
  <p class="mt-4 text-ink/75">We bring the samples to your living room, match them to your light, and install the one you fell in love with - often within a week.</p>
  </div>
- <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+ <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
  {services.map((s) => (
  <a href={`${linkBase}/${s.slug}`} class="card group no-underline">
  <div class="aspect-[4/5] overflow-hidden bg-brand-100">
