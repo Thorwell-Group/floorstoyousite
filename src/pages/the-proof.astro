@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import WhyChoose from '../components/WhyChoose.astro';
+import VisualizerBand from '../components/VisualizerBand.astro';
+import EasyBand from '../components/EasyBand.astro';
+import ProofBand from '../components/ProofBand.astro';
+import CtaBand from '../components/CtaBand.astro';
+import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'The Proof', url: '/the-proof' },
+];
+---
+<BaseLayout
+  title="The Proof | Why Homeowners Choose Floors To You OKC"
+  description="The proof is in the experience: complimentary in-home design consultations, a room visualizer, furniture moving, next-day installation, price-match confidence and a lifetime installation warranty across the OKC metro."
+>
+  <Breadcrumb items={breadcrumbs} />
+
+  <section class="container-x py-12 md:py-16 text-center max-w-3xl mx-auto">
+    <p class="eyebrow mb-3">The Proof</p>
+    <h1 class="mb-5">The Proof Is In The Experience.</h1>
+    <p class="text-lg text-ink/80 leading-relaxed">
+      Anyone can sell a floor. We make the whole thing effortless - and we put it in writing. Complimentary in-home design visits, a visualizer that previews floors in your own rooms, furniture moving, next-day installation, a price-match promise, and a lifetime installation warranty. Floors that are waterproof, pet proof, kid proof and life proof. Here's the proof.
+    </p>
+  </section>
+
+  <div id="benefits" class="scroll-mt-28"><WhyChoose /></div>
+  <div id="visualizer" class="scroll-mt-28"><VisualizerBand /></div>
+  <div id="handled" class="scroll-mt-28"><EasyBand /></div>
+  <div id="proof" class="scroll-mt-28"><ProofBand /></div>
+  <CtaBand />
+
+  <Fragment slot="head">
+    <BreadcrumbSchema items={breadcrumbs} />
+  </Fragment>
+</BaseLayout>

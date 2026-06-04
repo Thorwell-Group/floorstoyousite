@@ -1,0 +1,60 @@
+---
+/** "Why homeowners choose us" - photo-topped benefit cards (Express-style layout, elevated voice). */
+const cards = [
+  {
+    title: 'Furniture Moving Included',
+    img: '/images/photos/whychoose/furniture-moving.webp',
+    alt: 'Floors To You crew carefully moving a homeowner’s sofa during a flooring install',
+    body: 'No back-breaking work on your end. Our crew moves the heavy furniture out and sets every piece right back when the job is done.',
+    href: '/how-it-works',
+  },
+  {
+    title: 'Complimentary In-Home Design Consultations',
+    img: '/images/photos/whychoose/design-consultation.webp',
+    alt: 'Floors To You design consultant reviewing flooring options with a couple in their home',
+    body: 'Our design consultants bring hundreds of samples to you — so you choose in your own lighting, beside your own décor, in the comfort of home.',
+    href: '/book',
+  },
+  {
+    title: 'Lifetime Installation Warranty',
+    img: '/images/photos/whychoose/lifetime-warranty.webp',
+    alt: 'Hands holding a protective checkmark shield over a wooden house and family — the Floors To You lifetime installation warranty',
+    body: 'We stand behind our craftsmen with one of the strongest warranties in the business. If anything is ever off, we make it right.',
+    href: '/about',
+  },
+  {
+    title: 'Professional Next-Day Installation',
+    img: '/images/photos/whychoose/next-day-install.webp',
+    alt: 'Floors To You installer fitting luxury vinyl plank flooring in an Oklahoma City home',
+    body: 'We keep hundreds of styles in stock, so there are no long order waits. Most projects install as soon as the very next day.',
+    href: '/services',
+  },
+];
+---
+<section class="bg-cream py-16 md:py-24">
+  <div class="container-x">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <p class="eyebrow mb-3">The Floors To You Difference</p>
+      <h2>Why Oklahoma Homeowners Choose Floors To You</h2>
+      <p class="mt-4 text-lg text-ink/75 leading-relaxed">Shop-at-home flooring made effortless — complimentary in-home design visits, expert installation, furniture moving, and a lifetime installation warranty.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-6 lg:gap-7 max-w-5xl mx-auto">
+      {cards.map((c) => (
+        <article class="card group flex flex-col border-b-4 border-brand-500">
+          <div class="aspect-[16/10] overflow-hidden bg-brand-100">
+            <img src={c.img} alt={c.alt} width="800" height="500" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          </div>
+          <div class="p-6 md:p-7 flex flex-col flex-1">
+            <h3 class="text-xl md:text-2xl mb-3">{c.title}</h3>
+            <p class="text-ink/70 leading-relaxed">{c.body}</p>
+            <a href={c.href} class="mt-5 inline-flex items-center gap-1.5 font-semibold text-brand-700 hover:text-brand-500 no-underline">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

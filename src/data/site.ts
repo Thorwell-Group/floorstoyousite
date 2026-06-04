@@ -28,7 +28,7 @@ export const site = {
     facebook: 'https://www.facebook.com/profile.php?id=100088814169249',
   },
   promises: [
-    'Lowest price guaranteed - we beat any written quote',
+    'Honest pricing - we price-match the same or similar material',
     'We bring the showroom to you',
     'Next-day install on in-stock material',
     '0% APR financing for 24 months',

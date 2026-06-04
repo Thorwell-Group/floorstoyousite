@@ -1,0 +1,13 @@
+---
+/** Circular "Lowest Price Guaranteed" seal / sticker patch. Pass `class` to position it. */
+export interface Props { class?: string; }
+const { class: cls = '' } = Astro.props;
+---
+<div class={`relative grid place-items-center w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-brand-500 text-white text-center shadow-card ring-4 ring-white -rotate-6 select-none ${cls}`} role="img" aria-label="Lowest Price Guaranteed on the same or similar material">
+  <div aria-hidden class="absolute inset-2 rounded-full border border-dashed border-white/60"></div>
+  <div class="px-2">
+    <div class="text-[10px] font-bold uppercase tracking-[0.14em] leading-tight">Lowest Price</div>
+    <div class="font-display text-lg font-bold leading-none my-1">GUARANTEED</div>
+    <div class="text-[8px] uppercase tracking-[0.16em] text-white/85">Same or similar material</div>
+  </div>
+</div>

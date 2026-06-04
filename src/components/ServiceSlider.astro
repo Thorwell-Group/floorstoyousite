@@ -1,0 +1,46 @@
+---
+/** Horizontally-scrollable "flooring solutions by product" slider. */
+import { services } from '../data/services';
+---
+<section class="bg-white py-14 md:py-20">
+  <div class="container-x">
+    <div class="flex items-end justify-between gap-4 mb-8">
+      <div>
+        <p class="eyebrow mb-3">Flooring Solutions By Product</p>
+        <h2>Explore Every Floor We Bring To You</h2>
+      </div>
+      <a href="/services" class="hidden sm:inline-flex items-center gap-1.5 font-semibold text-brand-700 hover:text-brand-500 no-underline whitespace-nowrap">
+        View all
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="container-x">
+    <div class="fty-scroll flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory -mx-5 px-5 md:mx-0 md:px-0">
+      {services.map((s) => (
+        <a href={`/services/${s.slug}`} class="group relative flex-none w-60 sm:w-72 snap-start rounded-xl2 overflow-hidden shadow-card no-underline">
+          <div class="aspect-[3/4] overflow-hidden bg-brand-100">
+            <img src={s.hero} alt={s.heroAlt} loading="lazy" width="400" height="533" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          </div>
+          <div aria-hidden class="absolute inset-0 bg-gradient-to-t from-brand-900/85 via-brand-900/15 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <h3 class="text-white text-xl md:text-2xl">{s.shortName}</h3>
+            <p class="mt-1 text-white/85 text-sm inline-flex items-center gap-1.5 font-semibold">
+              Shop {s.shortName}
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </p>
+          </div>
+        </a>
+      ))}
+    </div>
+    <p class="mt-2 text-xs text-ink/45 sm:hidden">Swipe to explore →</p>
+  </div>
+</section>
+
+<style>
+  .fty-scroll { scrollbar-width: thin; scrollbar-color: rgba(189,148,84,.45) transparent; }
+  .fty-scroll::-webkit-scrollbar { height: 6px; }
+  .fty-scroll::-webkit-scrollbar-track { background: transparent; }
+  .fty-scroll::-webkit-scrollbar-thumb { background: rgba(189,148,84,.45); border-radius: 9999px; }
+</style>

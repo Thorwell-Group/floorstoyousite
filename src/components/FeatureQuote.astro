@@ -1,5 +1,6 @@
 ---
 /** Full-bleed lifestyle photo with an overlaid customer quote. */
+import PriceGuaranteeBadge from './PriceGuaranteeBadge.astro';
 ---
 <section class="relative overflow-hidden">
   <img
@@ -11,6 +12,8 @@
     class="absolute inset-0 w-full h-full object-cover"
   />
   <div aria-hidden class="absolute inset-0 bg-gradient-to-r from-brand-900/90 via-brand-900/65 to-brand-900/10"></div>
+
+  <PriceGuaranteeBadge class="absolute bottom-6 right-6 z-10 hidden sm:grid" />
 
   <div class="container-x relative py-20 md:py-28 lg:py-36">
     <figure class="max-w-xl text-white">

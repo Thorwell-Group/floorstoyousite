@@ -14,6 +14,9 @@ import EasyBand from '../components/EasyBand.astro';
 import LeadForm from '../components/LeadForm.astro';
 import LeadFormScript from '../components/LeadFormScript.astro';
 import FeatureQuote from '../components/FeatureQuote.astro';
+import WhyChoose from '../components/WhyChoose.astro';
+import ServiceSlider from '../components/ServiceSlider.astro';
+import PriceGuaranteeBadge from '../components/PriceGuaranteeBadge.astro';
 import FAQSchema from '../components/schema/FAQSchema.astro';
 import { generalFaqs } from '../data/faqs';
 
@@ -45,7 +48,7 @@ const galleryItems = [
  </h1>
 
  <p class="text-lg md:text-xl text-ink/80 leading-relaxed mb-7 max-w-xl">
- We bring real samples to your home - matched to <strong class="text-brand-800">your light and your trim</strong> - and our visualizer drops hundreds of styles right into a photo of your room. Come home every day to floors you fall in love with, the kind that make you the envy of the block.
+ We bring the showroom to your living room - real samples hand-matched to <strong class="text-brand-800">your light, your trim, and the home you've been picturing</strong>. Tasteful transformation, made effortless: come home every day to floors you fall in love with.
  </p>
 
  <div class="flex flex-wrap gap-3 mb-8">
@@ -54,10 +57,10 @@ const galleryItems = [
  </div>
 
  <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink/70">
- <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> Lowest price guaranteed</li>
- <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> Free samples brought to your home</li>
+ <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> Samples hand-matched to your home</li>
+ <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> Complimentary in-home design visit</li>
  <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> Installed in as little as 24 hours</li>
- <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> 0% APR for 24 months</li>
+ <li class="flex items-center gap-2"><span class="text-brand-500" aria-hidden>✓</span> 0% financing available</li>
  </ul>
 
  {/* Happy families counter - animated count-up on viewport entry. */}
@@ -76,6 +79,8 @@ const galleryItems = [
  <div class="text-[10px] sm:text-xs text-ink/55 mt-0.5">Served across the OKC metro since 2018</div>
  </div>
  </div>
+
+ <PriceGuaranteeBadge class="mt-8" />
 
  {/* Count-up animation on viewport entry. Runs once per element. */}
  <script is:inline>
@@ -169,6 +174,8 @@ const galleryItems = [
  </div>
  </section>
 
+ <ServiceSlider />
+
  <ProofBand />
 
  {/* ───────── WHY VISIT 6 SHOWROOMS? ───────── */}
@@ -222,6 +229,7 @@ const galleryItems = [
  </div>
  </section>
 
+ <WhyChoose />
  <VisualizerBand />
  <ServiceGrid />
  <EasyBand />
