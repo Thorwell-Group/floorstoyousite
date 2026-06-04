@@ -1,24 +1,29 @@
 ---
 const proofs = [
   {
-    label: 'Waterproof',
-    line: 'Spills, mopping, pet bowls & bath splashes - 100% waterproof luxury vinyl that never warps.',
+    label: 'Life Proof',
+    line: 'Furniture, high heels, moving day and everyday wear - tough wear layers keep floors looking new for years.',
+    icon: 'shield',
+  },
+  {
+    label: 'Water Proof',
+    line: 'Spills, mopping, pet bowls and bath splashes - 100% waterproof luxury vinyl that never warps.',
     icon: 'water',
   },
   {
-    label: 'Pet Proof',
-    line: 'Claws, zoomies & the occasional accident. Scratch- and stain-resistant floors built for paws.',
-    icon: 'paw',
-  },
-  {
-    label: 'Kid & Family Proof',
+    label: 'Family Proof',
     line: 'Dropped toys, juice boxes and heavy daily traffic - flooring that shrugs off real family life.',
     icon: 'family',
   },
   {
-    label: 'Scratch & Life Proof',
-    line: 'Furniture, high heels, moving day - wear-layer protection that keeps floors looking new for years.',
-    icon: 'shield',
+    label: 'Pet Proof',
+    line: 'Claws, zoomies and the occasional accident - scratch- and stain-resistant floors built for paws.',
+    icon: 'paw',
+  },
+  {
+    label: 'Mess Proof',
+    line: "Wine, markers and muddy shoes - wipe-clean surfaces that don't stain, so messes never leave a mark.",
+    icon: 'sparkle',
   },
 ];
 ---
@@ -26,13 +31,13 @@ const proofs = [
   <div class="container-x">
     <div class="text-center max-w-3xl mx-auto mb-12">
       <p class="eyebrow text-brand-300 mb-3">Built For Real Oklahoma Life</p>
-      <h2 class="text-white">Waterproof. Pet Proof. Kid Proof. Life Proof.</h2>
+      <h2 class="text-white">Life Proof. Water Proof. Family Proof. Pet Proof. Mess Proof.</h2>
       <p class="mt-4 text-lg text-white/80 leading-relaxed">
         Beautiful is easy. We sell floors that stay beautiful - engineered to survive kids, pets, spills and every Saturday in between.
       </p>
     </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
       {proofs.map((p) => (
         <div class="rounded-xl2 bg-white/[0.06] ring-1 ring-white/10 p-6 hover:bg-white/[0.1] transition-colors">
           <span class="grid place-items-center w-14 h-14 rounded-full bg-brand-500 text-white mb-5" aria-hidden="true">
@@ -47,6 +52,9 @@ const proofs = [
             )}
             {p.icon === 'shield' && (
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 4 6v6c0 5 3.4 8.2 8 9.5 4.6-1.3 8-4.5 8-9.5V6l-8-3.5z"/><path d="m9 12 2 2 4-4"/></svg>
+            )}
+            {p.icon === 'sparkle' && (
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/><path d="M19 14l.8 1.9L22 17l-2.2.9L19 20l-.8-2.1L16 17l2.2-1.1z"/></svg>
             )}
           </span>
           <h3 class="text-white text-xl font-display mb-2">{p.label}</h3>
