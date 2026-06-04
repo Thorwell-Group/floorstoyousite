@@ -1,0 +1,57 @@
+---
+/** Evergreen urgency countdown. Cycles from 2 days down to 6 hours, then resets. */
+export interface Props { class?: string; }
+const { class: cls = '' } = Astro.props;
+---
+<div class={`fty-countdown ${cls}`} data-cycle="172800" data-reset="21600">
+  <div class="inline-flex flex-col items-center gap-2 rounded-xl2 bg-brand-900 text-white px-6 sm:px-8 py-4 shadow-soft">
+    <div class="text-[10px] sm:text-[11px] uppercase tracking-[0.24em] font-bold text-brand-300 flex items-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-brand-500 animate-pulse" aria-hidden="true"></span>
+      Limited-Time Pricing Ends In
+    </div>
+    <div class="flex items-end gap-2 sm:gap-3 font-display font-bold leading-none">
+      <div class="text-center"><span data-cd="d" class="text-3xl sm:text-4xl tabular-nums">0</span><div class="text-[9px] sm:text-[10px] font-sans font-semibold text-white/55 uppercase tracking-widest mt-1.5">Days</div></div>
+      <span class="text-2xl sm:text-3xl text-brand-500 pb-3">:</span>
+      <div class="text-center"><span data-cd="h" class="text-3xl sm:text-4xl tabular-nums">00</span><div class="text-[9px] sm:text-[10px] font-sans font-semibold text-white/55 uppercase tracking-widest mt-1.5">Hrs</div></div>
+      <span class="text-2xl sm:text-3xl text-brand-500 pb-3">:</span>
+      <div class="text-center"><span data-cd="m" class="text-3xl sm:text-4xl tabular-nums">00</span><div class="text-[9px] sm:text-[10px] font-sans font-semibold text-white/55 uppercase tracking-widest mt-1.5">Min</div></div>
+      <span class="text-2xl sm:text-3xl text-brand-500 pb-3">:</span>
+      <div class="text-center"><span data-cd="s" class="text-3xl sm:text-4xl tabular-nums">00</span><div class="text-[9px] sm:text-[10px] font-sans font-semibold text-white/55 uppercase tracking-widest mt-1.5">Sec</div></div>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var el = document.querySelector('.fty-countdown');
+    if (!el) return;
+    var cycle = parseInt(el.dataset.cycle, 10) || 172800;   // 2 days
+    var resetAt = parseInt(el.dataset.reset, 10) || 21600;   // 6 hours floor
+    var KEY = 'ftyCountdownDeadline';
+    function fresh() { var d = Date.now() + cycle * 1000; try { localStorage.setItem(KEY, d); } catch (e) {} return d; }
+    function getDeadline() {
+      var d;
+      try { d = parseInt(localStorage.getItem(KEY), 10); } catch (e) { d = NaN; }
+      if (!d || isNaN(d)) return fresh();
+      if ((d - Date.now()) / 1000 <= resetAt) return fresh();   // reset once it dips to 6h
+      return d;
+    }
+    var deadline = getDeadline();
+    var dd = el.querySelector('[data-cd=d]'), hh = el.querySelector('[data-cd=h]'),
+        mm = el.querySelector('[data-cd=m]'), ss = el.querySelector('[data-cd=s]');
+    function pad(n) { return ('0' + n).slice(-2); }
+    function tick() {
+      var rem = Math.floor((deadline - Date.now()) / 1000);
+      if (rem <= resetAt) { deadline = fresh(); rem = Math.floor((deadline - Date.now()) / 1000); }
+      var d = Math.floor(rem / 86400); rem -= d * 86400;
+      var h = Math.floor(rem / 3600); rem -= h * 3600;
+      var m = Math.floor(rem / 60); var s = rem - m * 60;
+      if (dd) dd.textContent = d;
+      if (hh) hh.textContent = pad(h);
+      if (mm) mm.textContent = pad(m);
+      if (ss) ss.textContent = pad(s);
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+</script>
