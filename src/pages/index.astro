@@ -17,6 +17,7 @@ import FeatureQuote from '../components/FeatureQuote.astro';
 import WhyChoose from '../components/WhyChoose.astro';
 import ServiceSlider from '../components/ServiceSlider.astro';
 import PriceGuaranteeBadge from '../components/PriceGuaranteeBadge.astro';
+import Countdown from '../components/Countdown.astro';
 import FAQSchema from '../components/schema/FAQSchema.astro';
 import { generalFaqs } from '../data/faqs';
 
@@ -113,7 +114,13 @@ const galleryItems = [
  <div class="relative">
  {/* Desktop: free-estimate form embedded right in the hero (no shell) */}
  <div class="hidden lg:block">
+ <div class="text-center mb-5">
+ <p class="eyebrow mb-2">Free In-Home Estimate · No Obligation</p>
+ <h2 class="text-3xl xl:text-4xl">Claim This Month's Pricing &amp; 0% APR</h2>
+ <p class="mt-2 text-ink/70">60 seconds. We bring the showroom - and the samples - to you.</p>
+ </div>
  <LeadForm instance="hero" eager={true} />
+ <div class="mt-5 flex justify-center"><Countdown /></div>
  </div>
 
  {/* Mobile & tablet: visual collage */}
@@ -244,6 +251,7 @@ const galleryItems = [
  <p class="mt-2 text-ink/70 text-sm">60 seconds. We bring the showroom - and the samples - to you.</p>
  </div>
  <LeadForm instance="mobile" class="max-w-md mx-auto" />
+ <div class="mt-5 flex justify-center"><Countdown /></div>
  </section>
 
  <Gallery items={galleryItems} />
