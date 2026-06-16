@@ -30,7 +30,7 @@ const description = `Qualified Oklahoma homeowners save big on new floors with 0
             <span class="block mt-2">Get Your Estimate.</span>
           </h1>
 
-          <p class="mt-5 text-base sm:text-lg text-ink/80 leading-relaxed max-w-xl mx-auto lg:mx-0">
+          <p class="mt-4 text-sm sm:text-lg text-ink/80 leading-relaxed max-w-xl mx-auto lg:mx-0">
             <strong class="text-brand-800">0% APR for 24 months · Installed in as little as 24 hours.</strong> Free in-home measure across the entire OKC metro.
           </p>
 
@@ -38,7 +38,8 @@ const description = `Qualified Oklahoma homeowners save big on new floors with 0
             Oklahoma's Largest In-Stock Flooring Showroom
           </p>
 
-          <div class="mt-7 flex justify-center lg:justify-start">
+          {/* Desktop only - on mobile this badge sits below the form (see order-4 block) */}
+          <div class="mt-7 hidden lg:flex lg:justify-start">
             <PriceGuaranteeBadge />
           </div>
         </div>
@@ -54,7 +55,7 @@ const description = `Qualified Oklahoma homeowners save big on new floors with 0
         </div>
 
         {/* Form card - sits right under the heading on mobile, right column on desktop. */}
-        <div id="form" class="order-2 lg:order-3 scroll-mt-20 mt-4 lg:mt-14">
+        <div id="form" class="order-2 lg:order-3 scroll-mt-20 mt-1 lg:mt-14">
           <iframe
             src="https://api.leadconnectorhq.com/widget/survey/jWARw7xCkBcUAI4uUldA"
             scrolling="no"
@@ -68,6 +69,11 @@ const description = `Qualified Oklahoma homeowners save big on new floors with 0
             By submitting, you agree to be contacted by Floors To You OKC. We never share your info.
           </p>
           <Countdown class="mt-6 flex justify-center" />
+        </div>
+
+        {/* Lowest Price Guaranteed seal - below the form on mobile only (desktop shows it in the headline column). */}
+        <div class="order-3 mt-8 flex justify-center lg:hidden">
+          <PriceGuaranteeBadge />
         </div>
 
       </div>
