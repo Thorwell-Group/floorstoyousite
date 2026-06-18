@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import FAQ from '../../components/FAQ.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
+import FAQSchema from '../../components/schema/FAQSchema.astro';
+import { posts } from '../../data/posts';
+import { site } from '../../data/site';
+
+export function getStaticPaths() {
+  return posts.map((p) => ({ params: { slug: p.slug }, props: { post: p } }));
+}
+const { post: p } = Astro.props;
+const others = posts.filter((o) => o.slug !== p.slug).slice(0, 2);
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Flooring Blog', url: '/blog' },
+  { name: p.title, url: `/blog/${p.slug}` },
+];
+
+const fmtDate = (iso: string) =>
+  new Date(iso + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
+const blogPostingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  '@id': `${site.domain}/blog/${p.slug}#post`,
+  headline: p.title,
+  description: p.metaDescription,
+  image: `${site.domain}${p.hero}`,
+  datePublished: p.datePublished,
+  dateModified: p.dateModified,
+  url: `${site.domain}/blog/${p.slug}`,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${site.domain}/blog/${p.slug}` },
+  author: { '@type': 'Organization', name: site.name, url: site.domain },
+  publisher: { '@id': `${site.domain}/#business` },
+};
+---
+<BaseLayout title={p.metaTitle} description={p.metaDescription} image={p.hero}>
+  <Breadcrumb items={breadcrumbs} />
+
+  <article class="container-x py-10 max-w-3xl">
+    <header class="mb-8">
+      <span class="inline-block px-3 py-1 rounded-full bg-brand-50 text-brand-800 text-xs font-semibold uppercase tracking-wide">{p.category}</span>
+      <h1 class="mt-4 mb-3">{p.title}</h1>
+      <p class="text-sm text-ink/55">
+        <time datetime={p.datePublished}>{fmtDate(p.datePublished)}</time>
+        · {p.readMinutes} min read · By {site.name}
+      </p>
+    </header>
+
+    <img src={p.hero} alt={p.heroAlt} width="900" height="500" class="w-full rounded-xl2 object-cover mb-8" />
+
+    <p class="text-lg text-ink/85 leading-relaxed mb-8">{p.intro}</p>
+
+    {p.sections.map((sec) => (
+      <section class="mb-8">
+        <h2 class="text-2xl mb-3">{sec.heading}</h2>
+        {sec.paragraphs.map((para) => <p class="text-ink/80 leading-relaxed mb-4">{para}</p>)}
+        {sec.bullets && (
+          <ul class="space-y-2 mt-2 mb-2">
+            {sec.bullets.map((b) => (
+              <li class="flex gap-3 text-ink/85"><span class="text-brand-500 mt-1" aria-hidden>✓</span><span>{b}</span></li>
+            ))}
+          </ul>
+        )}
+      </section>
+    ))}
+
+    <aside class="mt-10 p-6 rounded-xl2 bg-brand-50 ring-1 ring-brand-100">
+      <h2 class="text-xl mb-3">Keep Reading</h2>
+      <ul class="space-y-1 text-sm">
+        {p.related.map((r) => (
+          <li><a href={r.href} class="text-brand-700 hover:text-brand-500 no-underline">{r.label} →</a></li>
+        ))}
+      </ul>
+    </aside>
+  </article>
+
+  <FAQ faqs={p.faqs} heading={`${p.title} — FAQ`} />
+
+  {others.length > 0 && (
+    <section class="container-x py-12">
+      <h2 class="mb-6">More Flooring Guides</h2>
+      <div class="grid sm:grid-cols-2 gap-6">
+        {others.map((o) => (
+          <a href={`/blog/${o.slug}`} class="group flex gap-4 items-center rounded-xl2 overflow-hidden ring-1 ring-brand-100 bg-white shadow-card hover:shadow-soft transition-shadow no-underline p-3">
+            <img src={o.hero} alt={o.heroAlt} loading="lazy" width="160" height="120" class="w-28 h-24 object-cover rounded-lg flex-none" />
+            <div>
+              <h3 class="text-base text-brand-800 group-hover:text-brand-700">{o.title}</h3>
+              <p class="mt-1 text-xs text-ink/60">{o.category} · {o.readMinutes} min read</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <CtaBand
+    headline="Come Home To Floors You Love."
+    subline="We bring the samples to your home, preview them in your own rooms, then handle furniture, baseboards, install and cleanup. Lowest price guaranteed, 0% APR for 24 months, installed in as little as 24 hours."
+  />
+
+  <Fragment slot="head">
+    <BreadcrumbSchema items={breadcrumbs} />
+    <FAQSchema faqs={p.faqs} />
+    <script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema)} />
+  </Fragment>
+</BaseLayout>

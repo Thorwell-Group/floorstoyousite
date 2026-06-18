@@ -31,7 +31,15 @@ const breadcrumbs = [
 ];
 
 const title = `${s.shortName} ${a.city === 'Oklahoma City' ? 'Oklahoma City' : `${a.city}, OK`} | ${s.shortName} Installation | Floors To You OKC`;
-const description = `Professional ${s.shortName.toLowerCase()} installation in ${a.city}, OK. In-stock + next-day install, lifetime warranty, 0% financing. Book a free in-home estimate.`;
+// Unique per (city, service): the head term stays in front for CTR, then we
+// pull real, city-specific signals (neighborhoods + ZIPs from areas.ts) so no
+// two of the 48 service-city pages share a templated meta description.
+const description = `${s.shortName} installation in ${a.city}, OK — serving ${a.neighborhoods[0]} to ${a.neighborhoods[a.neighborhoods.length - 1]} (ZIPs ${a.zipCodes.slice(0, 2).join(', ')}). In-stock, next-day install, 0% financing. Free in-home estimate.`;
+
+// City-specific prose so each service-city page carries unique, grounded local
+// content (built only from real fields in areas.ts) instead of the prior
+// service-only copy with a swapped city token.
+const cityContext = `Floors To You OKC has installed ${s.shortName.toLowerCase()} throughout ${a.city} since 2018, covering all ${a.zipCodes.length} area ZIP codes from ${a.neighborhoods[0]} to ${a.neighborhoods[a.neighborhoods.length - 1]}. ${a.drivingMinutes === 0 ? 'Our West Reno Avenue showroom sits right in town' : `Our crews reach ${a.city} in about ${a.drivingMinutes} minutes from the West Reno Avenue showroom`}, serving a community of roughly ${a.population.toLocaleString()} residents across ${a.county}.`;
 
 const localFaqs = [
  {
@@ -88,7 +96,10 @@ const serviceSchema = {
  {s.bestFor.map((r) => <span class="px-3 py-1 rounded-full bg-brand-50 text-brand-800 text-sm font-medium">{r}</span>)}
  </div>
  <h3 class="text-xl mb-3">Our {a.city} Install Process</h3>
- <p class="text-ink/80 leading-relaxed">{s.installation}</p>
+ <p class="text-ink/80 leading-relaxed mb-8">{s.installation}</p>
+ <h3 class="text-xl mb-3">{s.shortName} Installers Serving {a.city}, {a.county}</h3>
+ <p class="text-ink/80 leading-relaxed mb-4">{cityContext}</p>
+ <p class="text-ink/80 leading-relaxed">{a.localProof}</p>
  </div>
  <aside class="space-y-4">
  <div class="card p-6 bg-brand-50">
