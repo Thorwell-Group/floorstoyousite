@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
+import { posts } from '../../data/posts';
+import { site } from '../../data/site';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Flooring Blog', url: '/blog' },
+];
+
+// Newest first.
+const sorted = [...posts].sort((a, b) => (a.datePublished < b.datePublished ? 1 : -1));
+const [featured, ...rest] = sorted;
+
+const fmtDate = (iso: string) =>
+  new Date(iso + 'T00:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
+const title = 'Flooring Blog: OKC Buying Guides & Comparisons | Floors To You OKC';
+const description =
+  'Flooring buying guides, comparisons, and cost planning for Oklahoma City homeowners — from the team at Floors To You OKC. LVP vs. laminate, climate tips, and more.';
+
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  '@id': `${site.domain}/blog#blog`,
+  name: 'Floors To You OKC Flooring Blog',
+  url: `${site.domain}/blog`,
+  publisher: { '@id': `${site.domain}/#business` },
+  blogPost: sorted.map((p) => ({
+    '@type': 'BlogPosting',
+    headline: p.title,
+    url: `${site.domain}/blog/${p.slug}`,
+    datePublished: p.datePublished,
+    dateModified: p.dateModified,
+    image: `${site.domain}${p.hero}`,
+  })),
+};
+---
+<BaseLayout title={title} description={description}>
+  <Breadcrumb items={breadcrumbs} />
+
+  <section class="container-x pt-8 pb-4">
+    <p class="eyebrow mb-3">Flooring Blog</p>
+    <h1 class="mb-4">Flooring Guides For Oklahoma City Homeowners</h1>
+    <p class="text-lg text-ink/75 leading-relaxed max-w-2xl">
+      Honest buying guides, side-by-side comparisons, and cost planning — written by the people who install floors across the OKC metro every week.
+    </p>
+  </section>
+
+  {featured && (
+    <section class="container-x py-8">
+      <a href={`/blog/${featured.slug}`} class="group grid lg:grid-cols-2 gap-8 items-center rounded-xl2 overflow-hidden ring-1 ring-brand-100 bg-white shadow-card hover:shadow-soft transition-shadow no-underline">
+        <img src={featured.hero} alt={featured.heroAlt} width="800" height="500" class="w-full h-full max-h-80 object-cover" />
+        <div class="p-8">
+          <span class="inline-block px-3 py-1 rounded-full bg-brand-50 text-brand-800 text-xs font-semibold uppercase tracking-wide">{featured.category}</span>
+          <h2 class="mt-4 mb-3 text-brand-900 group-hover:text-brand-700">{featured.title}</h2>
+          <p class="text-ink/75 leading-relaxed">{featured.excerpt}</p>
+          <p class="mt-4 text-sm text-ink/55">{fmtDate(featured.datePublished)} · {featured.readMinutes} min read</p>
+        </div>
+      </a>
+    </section>
+  )}
+
+  <section class="container-x pb-16">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {rest.map((p) => (
+        <a href={`/blog/${p.slug}`} class="group flex flex-col rounded-xl2 overflow-hidden ring-1 ring-brand-100 bg-white shadow-card hover:shadow-soft transition-shadow no-underline">
+          <img src={p.hero} alt={p.heroAlt} loading="lazy" width="600" height="400" class="w-full h-44 object-cover" />
+          <div class="p-6 flex flex-col flex-1">
+            <span class="inline-block self-start px-3 py-1 rounded-full bg-brand-50 text-brand-800 text-xs font-semibold uppercase tracking-wide">{p.category}</span>
+            <h3 class="mt-3 mb-2 text-lg text-brand-800 group-hover:text-brand-700">{p.title}</h3>
+            <p class="text-sm text-ink/70 leading-relaxed">{p.excerpt}</p>
+            <p class="mt-4 text-xs text-ink/55">{fmtDate(p.datePublished)} · {p.readMinutes} min read</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <CtaBand
+    headline="Ready To See These Floors In Your Own Home?"
+    subline="We bring the samples to you, preview them in your rooms, then handle furniture, baseboards, install and cleanup. Lowest price guaranteed, 0% APR for 24 months, installed in as little as 24 hours."
+  />
+
+  <Fragment slot="head">
+    <BreadcrumbSchema items={breadcrumbs} />
+    <script type="application/ld+json" set:html={JSON.stringify(blogSchema)} />
+  </Fragment>
+</BaseLayout>

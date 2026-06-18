@@ -36,6 +36,7 @@ const localBusinessAreaSchema = {
  url: `${site.domain}/areas/${a.slug}`,
  image: `${site.domain}${site.logo}`,
  priceRange: site.priceRange,
+ sameAs: Object.values(site.social),
  address: {
  '@type': 'PostalAddress',
  streetAddress: site.address.street,

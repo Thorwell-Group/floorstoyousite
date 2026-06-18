@@ -26,6 +26,10 @@ export const site = {
   email: 'floorstoyouinfo@allinfloors.com',
   social: {
     facebook: 'https://www.facebook.com/profile.php?id=100088814169249',
+    // Google Business Profile (place_id verified via Birdeye listing for
+    // "Floors To You OKC", 4020 W Reno Ave, OKC 73107). Linking the GBP in
+    // sameAs is a primary local-pack/entity signal.
+    google: 'https://www.google.com/maps/place/?q=place_id:ChIJ7ZDMcfcRsocRcFVIEgs1qWY',
   },
   promises: [
     'Honest pricing - we price-match the same or similar material',

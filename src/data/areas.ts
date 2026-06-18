@@ -45,7 +45,7 @@ export const areas: Area[] = [
  ],
  mapEmbed:
  'https://www.google.com/maps?q=4020+West+Reno+Avenue,+Oklahoma+City,+OK+73107&output=embed',
- metaTitle: 'Flooring Store Oklahoma City | Carpet, Hardwood, LVP, Tile | Floors To You OKC',
+ metaTitle: 'Oklahoma City Flooring Store | Floors To You OKC',
  metaDescription:
  'Oklahoma City flooring store with the metro’s largest in-stock carpet, hardwood, LVP, laminate & tile selection. Next-day install + 0% financing. Free in-home estimate.',
  hero: '/images/photos/hero/hero.webp',
@@ -66,7 +66,7 @@ export const areas: Area[] = [
  'We work closely with several Edmond builders and have replaced flooring in hundreds of Edmond homes near UCO, Oak Tree, and Fairfax. Free in-home estimates throughout 73003, 73012, 73013, 73025, and 73034.',
  neighborhoods: ['Cheyenne Ridge', 'Coffee Creek', 'Oak Tree', 'Fairfax', 'Carriage Hill', 'Twin Bridges', 'Spring Creek', 'Iron Horse Ranch'],
  mapEmbed: 'https://www.google.com/maps?q=Edmond,+OK&output=embed',
- metaTitle: 'Flooring Store Edmond OK | Carpet, Hardwood & LVP Install | Floors To You OKC',
+ metaTitle: 'Edmond Flooring: Carpet, LVP & Tile | Floors To You OKC',
  metaDescription:
  'Edmond flooring installer with in-home estimates, next-day install on in-stock carpet, LVP, hardwood & tile. 100% guarantee + 0% financing. Free in-home estimate.',
  hero: '/images/photos/hardwood/hardwoodmodernhome.webp',
@@ -87,7 +87,7 @@ export const areas: Area[] = [
  "From Surrey Hills to Mulberry Park, we've installed thousands of square feet across Yukon's newest neighborhoods. Free in-home estimates for ZIPs 73085 and 73099.",
  neighborhoods: ['Surrey Hills', 'Mulberry Park', 'Spanish Cove', 'Castlewood', 'Brookside', 'Garth Brooks Estates'],
  mapEmbed: 'https://www.google.com/maps?q=Yukon,+OK&output=embed',
- metaTitle: 'Flooring Store Yukon OK | Carpet, LVP, Hardwood Install | Floors To You OKC',
+ metaTitle: 'Yukon Flooring: Carpet, LVP & Tile | Floors To You OKC',
  metaDescription:
  'Yukon, OK flooring installer with same-week install on in-stock carpet, LVP, laminate, hardwood & tile. Free in-home estimate + 0% financing. Free in-home estimate.',
  hero: '/images/photos/laminate/dogonlaminate.webp',
@@ -108,7 +108,7 @@ export const areas: Area[] = [
  "Our installers are in Mustang weekly, working homes from Mustang Creek Estates to Trail's End. Free in-home estimate anywhere in 73064.",
  neighborhoods: ["Mustang Creek Estates", "Trail's End", 'Silver Falls', 'Belmont Park', 'Eagle Lake', 'Heritage Park'],
  mapEmbed: 'https://www.google.com/maps?q=Mustang,+OK&output=embed',
- metaTitle: 'Flooring Store Mustang OK | Carpet, LVP & Tile Install | Floors To You OKC',
+ metaTitle: 'Mustang Flooring: LVP, Carpet & Tile | Floors To You OKC',
  metaDescription:
  'Mustang, OK flooring installer with next-day install on in-stock LVP, carpet, laminate & tile. 100% guarantee + 0% financing. Free in-home estimate.',
  hero: '/images/photos/lvp/vinyllivingroom.webp',
@@ -129,7 +129,7 @@ export const areas: Area[] = [
  "We've installed flooring in hundreds of Midwest City homes near Tinker AFB, Heritage Park Mall, and the Soldier Creek corridor. Active-duty and veteran discount available.",
  neighborhoods: ['Tinker AFB housing', 'Soldier Creek', 'Heritage Park', 'Bridgeport', 'Ridgecrest', 'Sooner Rose'],
  mapEmbed: 'https://www.google.com/maps?q=Midwest+City,+OK&output=embed',
- metaTitle: 'Flooring Store Midwest City OK | LVP, Carpet, Tile | Floors To You OKC',
+ metaTitle: 'Midwest City Flooring: LVP & Carpet | Floors To You OKC',
  metaDescription:
  'Midwest City flooring installer serving Tinker AFB families. Pet-proof LVP, carpet, hardwood & tile. Military discount + 0% financing. Free in-home estimate.',
  hero: '/images/photos/carpet/babysfeetoncarpet.webp',
@@ -150,7 +150,7 @@ export const areas: Area[] = [
  'We make the 35-minute drive from West Reno to Guthrie weekly, with same-day measure for most jobs. Free in-home estimate throughout 73044 and the surrounding Logan County.',
  neighborhoods: ['Historic Downtown', 'Cottonwood Creek', 'Cedar Valley', 'Spring Creek', 'Liberty Lake'],
  mapEmbed: 'https://www.google.com/maps?q=Guthrie,+OK&output=embed',
- metaTitle: 'Flooring Store Guthrie OK | Hardwood, LVP & Tile Install | Floors To You OKC',
+ metaTitle: 'Guthrie Flooring: Hardwood, LVP & Tile | Floors To You OKC',
  metaDescription:
  'Guthrie, OK flooring installer specializing in engineered hardwood, LVP & tile for historic and new builds. Free estimate + 0% financing. Free in-home estimate.',
  hero: '/images/photos/hardwood/herringbonefloors.webp',
@@ -171,7 +171,7 @@ export const areas: Area[] = [
  'Hundreds of Moore homes installed since 2018, from Eastlake Estates to Southfork. Insurance-friendly itemized quotes available for storm rebuilds.',
  neighborhoods: ['Eastlake Estates', 'Southfork', 'Brookhaven', 'Stonebridge', 'Country Estates'],
  mapEmbed: 'https://www.google.com/maps?q=Moore,+OK&output=embed',
- metaTitle: 'Flooring Store Moore OK | LVP, Carpet & Tile Install | Floors To You OKC',
+ metaTitle: 'Moore Flooring: LVP, Carpet & Tile | Floors To You OKC',
  metaDescription:
  'Moore, OK flooring installer with waterproof LVP, carpet, hardwood & tile. Insurance-claim-friendly. Next-day install + 0% financing. Free in-home estimate.',
  hero: '/images/photos/tile/tileluxuryhome.webp',
@@ -192,7 +192,7 @@ export const areas: Area[] = [
  'Hundreds of installs across Norman, including landlord packages near OU and family homes in Trail Woods and Brookhaven. Free in-home estimate throughout 73019 – 73072.',
  neighborhoods: ['Trail Woods', 'Brookhaven', 'Rose Rock', 'Greystone', 'OU Campus area', 'Lake Thunderbird'],
  mapEmbed: 'https://www.google.com/maps?q=Norman,+OK&output=embed',
- metaTitle: 'Flooring Store Norman OK | Carpet, LVP & Hardwood | Floors To You OKC',
+ metaTitle: 'Norman Flooring: Carpet, LVP & Hardwood | Floors To You OKC',
  metaDescription:
  'Norman, OK flooring installer with rental-grade LVP, family carpet, hardwood & tile. Same-week install + 0% financing. Free in-home estimate.',
  hero: '/images/photos/laminate/laminateluxuryhome.webp',
