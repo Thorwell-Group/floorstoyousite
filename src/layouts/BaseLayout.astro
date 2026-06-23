@@ -31,11 +31,12 @@ const { title, description, canonical, image, noindex, includeLocalBusiness = tr
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Non-render-blocking web fonts: preload as style, then swap to stylesheet on load. -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" /></noscript>
+    <!-- Self-hosted fonts (see @font-face in global.css). Preloading the woff2
+         the LCP heading/paragraph need makes the real font available before
+         first paint, so the text paints immediately with no render delay or
+         flash — and no cross-origin trip to Google. -->
+    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin />
     <meta name="theme-color" content="#bd9454" />
     <SEO title={title} description={description} canonical={canonical} image={image} noindex={noindex} />
     {includeLocalBusiness && <LocalBusinessSchema />}
