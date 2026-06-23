@@ -33,19 +33,12 @@ const { title, description, canonical, image, noindex, includeLocalBusiness = tr
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" />
+    <!-- Non-render-blocking web fonts: preload as style, then swap to stylesheet on load. -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" /></noscript>
     <meta name="theme-color" content="#bd9454" />
     <SEO title={title} description={description} canonical={canonical} image={image} noindex={noindex} />
     {includeLocalBusiness && <LocalBusinessSchema />}
-    <script
-      is:inline
-      async
-      id="roomvoAssistant"
-      type="text/javascript"
-      data-locale="en-us"
-      data-position="bottom-right"
-      src="https://www.roomvo.com/static/scripts/b2b/common/assistant.js"
-    ></script>
     <slot name="head" />
   </head>
   <body>
@@ -56,5 +49,37 @@ const { title, description, canonical, image, noindex, includeLocalBusiness = tr
       <slot />
     </main>
     <Footer />
+    <script is:inline>
+      // Defer the Roomvo visualizer assistant until the page is idle or the user
+      // first interacts — keeps its script + visitor ping off the critical path
+      // (faster FCP/LCP, no third-party error during first paint). Pages with
+      // their own in-page Roomvo embed (e.g. /catalog) already load it directly.
+      (function () {
+        function loadRoomvo() {
+          if (document.getElementById('roomvoAssistant')) return;
+          var s = document.createElement('script');
+          s.id = 'roomvoAssistant';
+          s.async = true;
+          s.type = 'text/javascript';
+          s.setAttribute('data-locale', 'en-us');
+          s.setAttribute('data-position', 'bottom-right');
+          s.src = 'https://www.roomvo.com/static/scripts/b2b/common/assistant.js';
+          document.body.appendChild(s);
+        }
+        var fired = false;
+        function go() {
+          if (fired) return;
+          fired = true;
+          if ('requestIdleCallback' in window) requestIdleCallback(loadRoomvo, { timeout: 2000 });
+          else setTimeout(loadRoomvo, 200);
+        }
+        // Load on the first real user interaction. Real visitors move/scroll
+        // within ~1s (widget appears promptly); keeps the third-party off the
+        // initial paint entirely.
+        ['scroll', 'pointermove', 'pointerdown', 'keydown', 'touchstart', 'mousemove'].forEach(function (ev) {
+          window.addEventListener(ev, go, { once: true, passive: true });
+        });
+      })();
+    </script>
   </body>
 </html>

@@ -1,19 +1,81 @@
 ---
-/** Include once per page that renders one or more <LeadForm /> embeds. */
+/**
+ * Include once per page that renders one or more <LeadForm /> embeds.
+ *
+ * Lazily activates each form: injects the GHL survey iframe + form_embed.js
+ * only when the placeholder nears the viewport or is tapped. This keeps the
+ * heavy third-party form stack (reCAPTCHA, intl-tel-input, libphonenumber) and
+ * its cookies off the initial load. Also handles the post-submit redirect.
+ */
 ---
-<script src="https://link.msgsndr.com/js/form_embed.js" is:inline async></script>
 <script is:inline>
-  const FTY_BOOK_REDIRECT = '/book-estimate';
-  let ftyRedirected = false;
-  window.addEventListener('message', (e) => {
-    if (!e.origin || !/leadconnectorhq\.com|msgsndr\.com/.test(e.origin)) return;
-    const d = e.data;
-    const submitted =
-      (typeof d === 'string' && /submit/i.test(d)) ||
-      (d && (d.type === 'form_submit_redirect' || d.type === 'survey_submit_redirect' || d.type === 'form_submit_action' || /submit/i.test(d.event || d.type || '')));
-    if (submitted && !ftyRedirected) {
-      ftyRedirected = true;
-      window.top.location.href = FTY_BOOK_REDIRECT;
+  (function () {
+    const FTY_BOOK_REDIRECT = '/book-estimate';
+    let ftyRedirected = false;
+    let embedJsRequested = false;
+
+    function loadEmbedJs() {
+      if (embedJsRequested) return;
+      embedJsRequested = true;
+      const s = document.createElement('script');
+      s.src = 'https://link.msgsndr.com/js/form_embed.js';
+      s.async = true;
+      document.body.appendChild(s);
     }
-  });
+
+    function activate(holder) {
+      if (holder.dataset.ftyActivated) return;
+      holder.dataset.ftyActivated = '1';
+      loadEmbedJs();
+      const iframe = document.createElement('iframe');
+      iframe.src = holder.dataset.src;
+      iframe.id = holder.dataset.iframeId;
+      iframe.title = holder.dataset.title || 'Estimate form';
+      iframe.setAttribute('scrolling', 'no');
+      iframe.setAttribute('style', 'border:0;width:100%;min-height:600px;display:block;background:transparent;');
+      iframe.addEventListener('load', function () {
+        const sk = holder.querySelector('.fty-form-skeleton');
+        if (sk) sk.remove();
+        holder.classList.remove('cursor-pointer');
+      });
+      holder.appendChild(iframe);
+    }
+
+    function init() {
+      const holders = Array.prototype.slice.call(document.querySelectorAll('[data-fty-form]'));
+      if (!holders.length) return;
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { activate(e.target); io.unobserve(e.target); }
+          });
+        }, { rootMargin: '600px 0px' });
+        holders.forEach(function (h) {
+          io.observe(h);
+          // Tapping the skeleton loads it instantly even before it scrolls in.
+          h.addEventListener('click', function () { activate(h); }, { once: true });
+        });
+      } else {
+        holders.forEach(activate);
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+
+    window.addEventListener('message', function (e) {
+      if (!e.origin || !/leadconnectorhq\.com|msgsndr\.com/.test(e.origin)) return;
+      const d = e.data;
+      const submitted =
+        (typeof d === 'string' && /submit/i.test(d)) ||
+        (d && (d.type === 'form_submit_redirect' || d.type === 'survey_submit_redirect' || d.type === 'form_submit_action' || /submit/i.test(d.event || d.type || '')));
+      if (submitted && !ftyRedirected) {
+        ftyRedirected = true;
+        window.top.location.href = FTY_BOOK_REDIRECT;
+      }
+    });
+  })();
 </script>
