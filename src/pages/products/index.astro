@@ -19,8 +19,14 @@ import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
   {/* Roomvo Product Catalog — the same browse + filter + visualize experience
       across our whole product line. The Roomvo assistant script (loaded in
       BaseLayout) renders the catalog widget into #roomvoCatalog and resolves
-      our store automatically. */}
-  <section class="container-x pb-16">
+      our store automatically.
+
+      Wider than the standard 1240px container on purpose: Roomvo only shows its
+      persistent left-hand filter rail (Product Family / Color / Shade / Brand)
+      above a width breakpoint just over ~1180px. Below that it collapses the
+      filters into a compact "Filters" button. The 1680px cap keeps the rail
+      visible on desktops/laptops while still collapsing cleanly on tablet/mobile. */}
+  <section class="w-full max-w-[1680px] mx-auto px-5 md:px-8 pb-16">
     <a id="catalog"></a><div id="roomvoCatalog"></div>
   </section>
 
