@@ -19,14 +19,6 @@ const { title, description, canonical, image, noindex, includeLocalBusiness = tr
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async is:inline src="https://www.googletagmanager.com/gtag/js?id=G-MCTBQF4ZLL"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-MCTBQF4ZLL');
-    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -49,6 +41,32 @@ const { title, description, canonical, image, noindex, includeLocalBusiness = tr
       <slot />
     </main>
     <Footer />
+    <script is:inline>
+      // Defer Google Analytics (gtag.js) off the critical render path. Loading it
+      // eagerly in <head> cost ~580ms of unused JS and hurt mobile FCP/LCP. We
+      // load on the first real interaction, with a 3.5s idle fallback so sessions
+      // that never interact are still counted. dataLayer is stubbed immediately
+      // so any early gtag() calls queue and replay once the library loads.
+      (function () {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { dataLayer.push(arguments); };
+        gtag('js', new Date());
+        gtag('config', 'G-MCTBQF4ZLL');
+        var done = false;
+        function loadGA() {
+          if (done) return;
+          done = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MCTBQF4ZLL';
+          document.head.appendChild(s);
+        }
+        ['scroll', 'pointerdown', 'keydown', 'touchstart', 'mousemove'].forEach(function (ev) {
+          window.addEventListener(ev, loadGA, { once: true, passive: true });
+        });
+        setTimeout(loadGA, 3500);
+      })();
+    </script>
     <script is:inline>
       // Defer the Roomvo visualizer assistant until the page is idle or the user
       // first interacts — keeps its script + visitor ping off the critical path
