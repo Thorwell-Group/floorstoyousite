@@ -24,6 +24,15 @@ export function getStaticPaths() {
 }
 const { area: a, service: s } = Astro.props;
 
+// Cannibalization fix (finding 155): the Oklahoma City service pages duplicate
+// the metro-wide /services/{product}/ pages (which are themselves OKC-focused).
+// Point each /oklahoma-city/{product}/ page's canonical at its /services/{product}/
+// equivalent so the /services/ set stays primary. Suburb pages keep self-canonical.
+const canonical =
+ a.slug === 'oklahoma-city'
+ ? new URL(`/services/${s.slug}/`, site.domain).toString()
+ : undefined;
+
 const breadcrumbs = [
  { name: 'Home', url: '/' },
  { name: a.city, url: `/areas/${a.slug}` },
@@ -69,7 +78,7 @@ const serviceSchema = {
  image: `${site.domain}${s.hero}`,
 };
 ---
-<BaseLayout title={title} description={description} includeLocalBusiness={false}>
+<BaseLayout title={title} description={description} canonical={canonical} includeLocalBusiness={false}>
  <Breadcrumb items={breadcrumbs} />
 
  <Hero
