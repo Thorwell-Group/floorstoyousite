@@ -39,6 +39,9 @@ export const site = {
     'We handle prep, install, baseboard & cleanup',
     '100% product & labor guarantee',
   ],
+  // Synchrony applicant portal for Floors To You OKC (merchant MI229131700).
+  // Single source of truth — used by the /financing apply buttons.
+  financingUrl: 'https://www.mysynchrony.com/mmc/MI229131700',
   serviceRadiusMiles: 50,
   foundingDate: '2018',
   paymentAccepted: ['Cash', 'Credit Card', 'Financing', 'Synchrony'],

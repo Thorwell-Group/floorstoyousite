@@ -9,7 +9,7 @@ const steps = [
  { n: '01', t: 'Book From The Couch', d: '60-second form. We call within one business hour to confirm and schedule - you do not lift a finger.', img: '/images/photos/install/measuringflooring.webp', alt: 'Floors To You OKC consultant measuring a room for a new floor estimate' },
  { n: '02', t: 'We Bring The Showroom', d: 'Our consultant arrives at your home with samples already matched to your light, your trim, and your lifestyle - so you see your new floor before you commit.', img: '/images/photos/showroom/showroomsamples.webp', alt: 'In-stock flooring samples in the Floors To You OKC showroom' },
  { n: '03', t: 'Same-Day Written Quote', d: 'Material, pad, labor, removal, and disposal - all itemized in writing on the spot. Zero pressure, zero surprises.', img: '/images/photos/install/flooringinstallation.webp', alt: 'Itemized flooring quote prepared by Floors To You OKC' },
- { n: '04', t: 'Finance In 60 Seconds', d: 'Optional 0% APR financing for 24 months through Synchrony. Pre-qualify with no credit impact.', img: '/images/photos/rooms/kitchenfloors.webp', alt: 'OKC kitchen flooring financed at 0% APR through Synchrony' },
+ { n: '04', t: 'Finance In 60 Seconds', d: 'Optional 0% APR financing for 24 months through Synchrony. Pre-qualify with no credit impact.', img: '/images/photos/rooms/kitchenfloors.webp', alt: 'OKC kitchen flooring financed at 0% APR through Synchrony', link: { href: '/financing', label: 'See financing options →' } },
  { n: '05', t: 'We Handle Every Inch', d: 'Our W-2 installers handle prep, install, baseboard, and cleanup. Most whole-room jobs finish in a single day - some next-day from sign to step.', img: '/images/photos/install/floorinstalling.webp', alt: 'Floors To You OKC installer fitting new flooring in an Oklahoma City home' },
  { n: '06', t: 'The Walk-In Moment', d: "You walk in. You stop. You realize these are actually your floors now. Then you wait for friends and family to do the same - backed by our 100% guarantee for as long as you own the home.", img: '/images/photos/hardwood/closeuphardwood.webp', alt: 'Close-up of a finished hardwood install backed by the Floors To You OKC guarantee' },
 ];
@@ -37,6 +37,7 @@ const steps = [
  <div class="font-display text-4xl text-brand-300 mb-3">{s.n}</div>
  <h3 class="text-xl mb-2">{s.t}</h3>
  <p class="text-ink/75 leading-relaxed">{s.d}</p>
+ {s.link && <a href={s.link.href} class="inline-block mt-3 font-semibold text-brand-700 hover:text-brand-500 no-underline">{s.link.label}</a>}
  </div>
  </article>
  ))}

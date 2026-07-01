@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import CtaBand from '../components/CtaBand.astro';
 import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
+import { site } from '../data/site';
 ---
 <BaseLayout
  title="0% Financing on New Floors | Synchrony Financing | Floors To You OKC"
@@ -21,14 +22,14 @@ import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
  <li class="flex gap-3"><span class="text-brand-500" aria-hidden>✓</span> No prepayment penalty - pay off any time</li>
  <li class="flex gap-3"><span class="text-brand-500" aria-hidden>✓</span> Up to 60-month plans for larger projects</li>
  </ul>
- <a href="https://www.synchrony.com/mmc/MI229131700" target="_blank" rel="nofollow noopener" class="btn-primary">Apply For Financing</a>
+ <a href={site.financingUrl} target="_blank" rel="nofollow noopener" class="btn-primary">Apply For Financing</a>
  </div>
  <img src="/images/photos/rooms/kitchenfloors.webp" alt="Newly installed kitchen flooring financed at 0% APR through Floors To You OKC" width="800" height="600" loading="lazy" class="rounded-xl2 shadow-soft w-full h-auto object-cover aspect-[4/3]" />
  </section>
 
  <section class="bg-brand-50">
  <div class="container-x py-16 grid md:grid-cols-3 gap-8">
- <div class="card p-6"><h3 class="text-xl mb-2">Step 1 - Apply</h3><p class="text-ink/75">Fill out the quick Synchrony application - most decisions come back in under 60 seconds.</p></div>
+ <div class="card p-6"><h3 class="text-xl mb-2">Step 1 - Apply</h3><p class="text-ink/75 mb-4">Fill out the quick Synchrony application - most decisions come back in under 60 seconds.</p><a href={site.financingUrl} target="_blank" rel="nofollow noopener" class="btn-primary">Apply Now</a></div>
  <div class="card p-6"><h3 class="text-xl mb-2">Step 2 - Pick Your Floor</h3><p class="text-ink/75">Use your approved credit limit on any in-stock or special-order flooring in the showroom.</p></div>
  <div class="card p-6"><h3 class="text-xl mb-2">Step 3 - Install</h3><p class="text-ink/75">Schedule install - often within 5 business days - and pay over time at 0% APR.</p></div>
  </div>
