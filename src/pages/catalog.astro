@@ -9,13 +9,35 @@ import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
 >
   <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Catalog', url: '/catalog' }]} />
 
-  <section class="container-x py-12">
+  <section class="container-x pt-12 pb-6">
     <p class="eyebrow mb-3">Catalog</p>
     <h1 class="mb-5">Browse Our Flooring Catalog</h1>
-    <p class="text-lg text-ink/80 leading-relaxed mb-8 max-w-3xl">Explore every product we carry — hardwood, carpet, tile, vinyl, and luxury vinyl plank. Use the visualizer to see exactly how each style looks in a room like yours before you book your free in-home estimate.</p>
+    <p class="text-lg text-ink/80 leading-relaxed max-w-3xl">Explore every product we carry — hardwood, carpet, tile, vinyl, and luxury vinyl plank. Use the visualizer to see exactly how each style looks in a room like yours before you book your free in-home estimate.</p>
+  </section>
 
+  {/* Full-width wrapper: Roomvo's catalog renders its persistent left-hand
+      filter sidebar when the embed container is wide enough, so this section
+      intentionally breaks out of the 1240px content container. */}
+  <section class="w-full px-3 sm:px-4 lg:px-6 pb-16">
     <a id='catalog'></a><div id='roomvoCatalog'></div>
   </section>
+
+  {/* The catalog is this page's primary content, so load Roomvo immediately
+      here instead of waiting for the site-wide deferred loader (matches how
+      okfloorpro loads it). Guarded against the BaseLayout loader's same id. */}
+  <script is:inline>
+    (function () {
+      if (document.getElementById('roomvoAssistant')) return;
+      var s = document.createElement('script');
+      s.id = 'roomvoAssistant';
+      s.async = true;
+      s.type = 'text/javascript';
+      s.setAttribute('data-locale', 'en-us');
+      s.setAttribute('data-position', 'bottom-right');
+      s.src = 'https://www.roomvo.com/static/scripts/b2b/common/assistant.js';
+      document.body.appendChild(s);
+    })();
+  </script>
 
   <Fragment slot="head">
     <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'Catalog', url: '/catalog' }]} />
