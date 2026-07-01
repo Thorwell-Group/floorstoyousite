@@ -3,7 +3,7 @@ import { site } from '../data/site';
 const perks = [
   { label: 'Complimentary In-Home Design Visit' },
   { label: 'Samples Hand-Matched To Your Home' },
-  { label: '0% Financing Available', href: '/financing' },
+  { label: '0% Financing Available', href: site.financingUrl, external: true },
   { label: 'Next-Day Installation' },
 ];
 ---
@@ -14,7 +14,7 @@ const perks = [
         <li class="flex items-center gap-1.5">
           <span class="text-brand-300" aria-hidden>✓</span>
           {p.href
-            ? <a href={p.href} class="text-white/90 hover:text-brand-300 no-underline">{p.label}</a>
+            ? <a href={p.href} target={p.external ? '_blank' : undefined} rel={p.external ? 'nofollow noopener' : undefined} class="text-white/90 hover:text-brand-300 no-underline">{p.label}</a>
             : <span class="text-white/90">{p.label}</span>}
         </li>
       ))}
