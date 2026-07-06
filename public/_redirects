@@ -1,1 +1,7 @@
+# NOTE: Cloudflare Pages _redirects does NOT support domain-level (absolute-URL
+# source) rules, so the line below is documentation of intent only — it will not
+# fire. The www -> apex 301 must be configured as a Redirect Rule (or Bulk
+# Redirect) in the Cloudflare dashboard for the floorstoyouokc.com zone:
+#   when http.host eq "www.floorstoyouokc.com"
+#   -> 301 to concat("https://floorstoyouokc.com", http.request.uri.path)
 https://www.floorstoyouokc.com/* https://floorstoyouokc.com/:splat 301
