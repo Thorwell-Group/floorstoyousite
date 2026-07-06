@@ -16,8 +16,8 @@ const others = posts.filter((o) => o.slug !== p.slug).slice(0, 2);
 
 const breadcrumbs = [
   { name: 'Home', url: '/' },
-  { name: 'Flooring Blog', url: '/blog' },
-  { name: p.title, url: `/blog/${p.slug}` },
+  { name: 'Flooring Blog', url: '/blog/' },
+  { name: p.title, url: `/blog/${p.slug}/` },
 ];
 
 const fmtDate = (iso: string) =>
@@ -86,7 +86,7 @@ const blogPostingSchema = {
       <h2 class="mb-6">More Flooring Guides</h2>
       <div class="grid sm:grid-cols-2 gap-6">
         {others.map((o) => (
-          <a href={`/blog/${o.slug}`} class="group flex gap-4 items-center rounded-xl2 overflow-hidden ring-1 ring-brand-100 bg-white shadow-card hover:shadow-soft transition-shadow no-underline p-3">
+          <a href={`/blog/${o.slug}/`} class="group flex gap-4 items-center rounded-xl2 overflow-hidden ring-1 ring-brand-100 bg-white shadow-card hover:shadow-soft transition-shadow no-underline p-3">
             <img src={o.hero} alt={o.heroAlt} loading="lazy" width="160" height="120" class="w-28 h-24 object-cover rounded-lg flex-none" />
             <div>
               <h3 class="text-base text-brand-800 group-hover:text-brand-700">{o.title}</h3>

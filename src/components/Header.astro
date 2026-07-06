@@ -23,10 +23,10 @@ import { site } from '../data/site';
  <div class="absolute left-0 top-full pt-3 hidden group-hover:block">
  <ul class="card p-2 w-72">
  {services.map((s) => (
- <li><a href={`/services/${s.slug}`} class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-ink">{s.shortName}</a></li>
+ <li><a href={`/services/${s.slug}/`} class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-ink">{s.shortName}</a></li>
  ))}
  <li class="border-t border-brand-100 mt-1 pt-1">
- <a href="/services" class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-brand-700 font-semibold">All Flooring →</a>
+ <a href="/services/" class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-brand-700 font-semibold">All Flooring →</a>
  </li>
  </ul>
  </div>
@@ -41,7 +41,7 @@ import { site } from '../data/site';
  <li><a href={'/catalog/?product_type=1&prefilter={"productSubtypes":[4]}'} class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-ink">Luxury Vinyl</a></li>
  <li><a href={'/catalog/?product_type=1&prefilter={"productSubtypes":[5]}'} class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-ink">Carpet</a></li>
  <li class="border-t border-brand-100 mt-1 pt-1">
- <a href="/catalog" class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-brand-700 font-semibold">Full Catalog →</a>
+ <a href="/catalog/" class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-brand-700 font-semibold">Full Catalog →</a>
  </li>
  </ul>
  </div>
@@ -52,10 +52,10 @@ import { site } from '../data/site';
  <div class="absolute left-0 top-full pt-3 hidden group-hover:block">
  <ul class="card p-2 w-64">
  {areas.map((a) => (
- <li><a href={`/areas/${a.slug}`} class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-ink">{a.city}</a></li>
+ <li><a href={`/areas/${a.slug}/`} class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-ink">{a.city}</a></li>
  ))}
  <li class="border-t border-brand-100 mt-1 pt-1">
- <a href="/areas" class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-brand-700 font-semibold">All Areas →</a>
+ <a href="/areas/" class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-brand-700 font-semibold">All Areas →</a>
  </li>
  </ul>
  </div>
@@ -63,15 +63,15 @@ import { site } from '../data/site';
 
  <a href={site.financingUrl} target="_blank" rel="nofollow noopener" class="text-ink hover:text-brand-700">Financing</a>
 
- <a href="/blog" class="text-ink hover:text-brand-700">Blog</a>
+ <a href="/blog/" class="text-ink hover:text-brand-700">Blog</a>
 
  <div class="relative group">
  <button class="flex items-center gap-1 text-ink hover:text-brand-700">Company <span aria-hidden>▾</span></button>
  <div class="absolute right-0 top-full pt-3 hidden group-hover:block">
  <ul class="card p-2 w-48">
- <li><a href="/products" class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-ink">Shop</a></li>
- <li><a href="/the-proof" class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-ink">The Proof</a></li>
- <li><a href="/about" class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-ink">About</a></li>
+ <li><a href="/products/" class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-ink">Shop</a></li>
+ <li><a href="/the-proof/" class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-ink">The Proof</a></li>
+ <li><a href="/about/" class="block px-3 py-2 rounded-lg hover:bg-brand-50 no-underline text-ink">About</a></li>
  </ul>
  </div>
  </div>
@@ -82,7 +82,7 @@ import { site } from '../data/site';
  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
  {site.phone}
  </a>
- <a href="/book" class="btn-primary text-sm py-2.5">Free Estimate</a>
+ <a href="/book/" class="btn-primary text-sm py-2.5">Free Estimate</a>
  <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 text-ink" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
  <svg id="mobile-menu-icon-open" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
  <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
@@ -103,9 +103,9 @@ import { site } from '../data/site';
  </summary>
  <div class="pb-3 pl-2 space-y-1">
  {services.map((s) => (
- <a href={`/services/${s.slug}`} class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">{s.shortName}</a>
+ <a href={`/services/${s.slug}/`} class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">{s.shortName}</a>
  ))}
- <a href="/services" class="block px-3 py-2 rounded-lg text-brand-700 font-semibold hover:bg-brand-50 no-underline">All Flooring →</a>
+ <a href="/services/" class="block px-3 py-2 rounded-lg text-brand-700 font-semibold hover:bg-brand-50 no-underline">All Flooring →</a>
  </div>
  </details>
 
@@ -119,7 +119,7 @@ import { site } from '../data/site';
  <a href={'/catalog/?product_type=1&prefilter={"productSubtypes":[2]}'} class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">Tile</a>
  <a href={'/catalog/?product_type=1&prefilter={"productSubtypes":[4]}'} class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">Luxury Vinyl</a>
  <a href={'/catalog/?product_type=1&prefilter={"productSubtypes":[5]}'} class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">Carpet</a>
- <a href="/catalog" class="block px-3 py-2 rounded-lg text-brand-700 font-semibold hover:bg-brand-50 no-underline">Full Catalog →</a>
+ <a href="/catalog/" class="block px-3 py-2 rounded-lg text-brand-700 font-semibold hover:bg-brand-50 no-underline">Full Catalog →</a>
  </div>
  </details>
 
@@ -130,15 +130,15 @@ import { site } from '../data/site';
  </summary>
  <div class="pb-3 pl-2 space-y-1">
  {areas.map((a) => (
- <a href={`/areas/${a.slug}`} class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">{a.city}</a>
+ <a href={`/areas/${a.slug}/`} class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">{a.city}</a>
  ))}
- <a href="/areas" class="block px-3 py-2 rounded-lg text-brand-700 font-semibold hover:bg-brand-50 no-underline">All Areas →</a>
+ <a href="/areas/" class="block px-3 py-2 rounded-lg text-brand-700 font-semibold hover:bg-brand-50 no-underline">All Areas →</a>
  </div>
  </details>
 
  <a href={site.financingUrl} target="_blank" rel="nofollow noopener" class="block border-b border-brand-100 py-3 text-ink no-underline">Financing</a>
 
- <a href="/blog" class="block border-b border-brand-100 py-3 text-ink no-underline">Blog</a>
+ <a href="/blog/" class="block border-b border-brand-100 py-3 text-ink no-underline">Blog</a>
 
  <details class="group border-b border-brand-100">
  <summary class="flex items-center justify-between py-3 cursor-pointer text-ink list-none">
@@ -146,13 +146,13 @@ import { site } from '../data/site';
  <span class="text-brand-700 transition-transform group-open:rotate-45 text-xl leading-none" aria-hidden="true">+</span>
  </summary>
  <div class="pb-3 pl-2 space-y-1">
- <a href="/products" class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">Shop</a>
- <a href="/the-proof" class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">The Proof</a>
- <a href="/about" class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">About</a>
+ <a href="/products/" class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">Shop</a>
+ <a href="/the-proof/" class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">The Proof</a>
+ <a href="/about/" class="block px-3 py-2 rounded-lg text-ink hover:bg-brand-50 no-underline">About</a>
  </div>
  </details>
 
- <a href="/book" class="btn-primary block text-center mt-4">Free Estimate</a>
+ <a href="/book/" class="btn-primary block text-center mt-4">Free Estimate</a>
  <a href={`tel:${site.phoneE164}`} class="block text-center mt-2 py-3 text-brand-700 font-semibold no-underline">{site.phone}</a>
  </nav>
  </div>

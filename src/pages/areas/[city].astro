@@ -23,8 +23,8 @@ const { area: a } = Astro.props;
 
 const breadcrumbs = [
  { name: 'Home', url: '/' },
- { name: 'Service Areas', url: '/areas' },
- { name: a.city, url: `/areas/${a.slug}` },
+ { name: 'Service Areas', url: '/areas/' },
+ { name: a.city, url: `/areas/${a.slug}/` },
 ];
 
 const localBusinessAreaSchema = {
@@ -89,8 +89,8 @@ const areaFaqs = [
  subtitle={a.intro}
  image={a.hero}
  imageAlt={a.heroAlt}
- ctaPrimary={{ label: `Free ${a.city} Estimate`, href: '/book' }}
- ctaSecondary={{ label: 'Browse Flooring', href: '/services' }}
+ ctaPrimary={{ label: `Free ${a.city} Estimate`, href: '/book/' }}
+ ctaSecondary={{ label: 'Browse Flooring', href: '/services/' }}
  />
 
  <section class="container-x py-16 grid lg:grid-cols-3 gap-8 items-start">
@@ -113,7 +113,7 @@ const areaFaqs = [
  <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Drive to showroom</dt><dd class="text-brand-800 font-semibold">{a.drivingMinutes === 0 ? 'On site' : `${a.drivingMinutes} min`}</dd></div>
  <div class="flex justify-between"><dt class="text-ink/70">Service radius</dt><dd class="text-brand-800 font-semibold">{site.serviceRadiusMiles} mi</dd></div>
  </dl>
- <a href="/book" class="btn-primary w-full mt-6">Free {a.city} Estimate</a>
+ <a href="/book/" class="btn-primary w-full mt-6">Free {a.city} Estimate</a>
  </aside>
  </section>
 

@@ -8,7 +8,7 @@ import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
   title="Shop All Flooring | Browse Carpet, Wood, Tile & Vinyl | Floors To You OKC"
   description="Browse our full flooring catalog — carpet, engineered wood, laminate, tile and vinyl. Filter by type and color, then preview any style in your own room with the visualizer. Free in-home estimate."
 >
-  <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Shop Flooring', url: '/products' }]} />
+  <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Shop Flooring', url: '/products/' }]} />
 
   <section class="container-x pt-10 pb-6">
     <p class="eyebrow mb-3">Shop The Showroom</p>
@@ -33,6 +33,6 @@ import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
   <CtaBand headline="See a floor you love?" subline="Book a free in-home estimate and we'll bring samples to match your light + trim." />
 
   <Fragment slot="head">
-    <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'Shop Flooring', url: '/products' }]} />
+    <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'Shop Flooring', url: '/products/' }]} />
   </Fragment>
 </BaseLayout>

@@ -7,7 +7,7 @@ import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
   title="Flooring Catalog | Browse Hardwood, Carpet, Tile & More | Floors To You OKC"
   description="Browse our full flooring catalog with visualizer. Filter by hardwood, carpet, tile, vinyl and luxury vinyl plank — see how each style looks in your space before you buy."
 >
-  <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Catalog', url: '/catalog' }]} />
+  <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Catalog', url: '/catalog/' }]} />
 
   <section class="container-x pt-12 pb-6">
     <p class="eyebrow mb-3">Catalog</p>
@@ -40,6 +40,6 @@ import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
   </script>
 
   <Fragment slot="head">
-    <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'Catalog', url: '/catalog' }]} />
+    <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'Catalog', url: '/catalog/' }]} />
   </Fragment>
 </BaseLayout>

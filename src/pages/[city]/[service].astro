@@ -35,8 +35,8 @@ const canonical =
 
 const breadcrumbs = [
  { name: 'Home', url: '/' },
- { name: a.city, url: `/areas/${a.slug}` },
- { name: s.shortName, url: `/${a.slug}/${s.slug}` },
+ { name: a.city, url: `/areas/${a.slug}/` },
+ { name: s.shortName, url: `/${a.slug}/${s.slug}/` },
 ];
 
 const title = `${s.shortName} ${a.city === 'Oklahoma City' ? 'Oklahoma City' : `${a.city}, OK`} | ${s.shortName} Installation | Floors To You OKC`;
@@ -87,8 +87,8 @@ const serviceSchema = {
  subtitle={`${s.intro.split('.')[0]}. We've installed ${s.shortName.toLowerCase()} in hundreds of ${a.city} homes - yours is next.`}
  image={s.hero}
  imageAlt={`${s.shortName} installed by Floors To You OKC in a ${a.city}, Oklahoma home`}
- ctaPrimary={{ label: `Free ${a.city} Quote`, href: '/book' }}
- ctaSecondary={{ label: `All ${a.city} Flooring`, href: `/areas/${a.slug}` }}
+ ctaPrimary={{ label: `Free ${a.city} Quote`, href: '/book/' }}
+ ctaSecondary={{ label: `All ${a.city} Flooring`, href: `/areas/${a.slug}/` }}
  />
 
  <section class="container-x py-16 grid lg:grid-cols-3 gap-10 items-start">
@@ -119,21 +119,21 @@ const serviceSchema = {
  <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Drive from showroom</dt><dd class="text-brand-800 font-semibold">{a.drivingMinutes === 0 ? 'On site' : `${a.drivingMinutes} min`}</dd></div>
  <div class="flex justify-between"><dt class="text-ink/70">Install turnaround</dt><dd class="text-brand-800 font-semibold">As fast as 24 hr</dd></div>
  </dl>
- <a href="/book" class="btn-primary w-full mt-5">Free {a.city} Quote</a>
+ <a href="/book/" class="btn-primary w-full mt-5">Free {a.city} Quote</a>
  </div>
  <div class="card p-6">
  <h4 class="text-lg mb-2">Other {a.city} Flooring</h4>
  <ul class="text-sm space-y-1">
  {services.filter((x) => x.slug !== s.slug).map((x) => (
- <li><a href={`/${a.slug}/${x.slug}`} class="text-brand-700 hover:text-brand-500 no-underline">{x.shortName} in {a.city}</a></li>
+ <li><a href={`/${a.slug}/${x.slug}/`} class="text-brand-700 hover:text-brand-500 no-underline">{x.shortName} in {a.city}</a></li>
  ))}
  </ul>
  </div>
  <div class="card p-6">
  <h4 class="text-lg mb-2">Related</h4>
  <ul class="text-sm space-y-1">
- <li><a href={`/areas/${a.slug}`} class="text-brand-700 hover:text-brand-500 no-underline">All flooring in {a.city}</a></li>
- <li><a href={`/services/${s.slug}`} class="text-brand-700 hover:text-brand-500 no-underline">{s.shortName} across the OKC metro</a></li>
+ <li><a href={`/areas/${a.slug}/`} class="text-brand-700 hover:text-brand-500 no-underline">All flooring in {a.city}</a></li>
+ <li><a href={`/services/${s.slug}/`} class="text-brand-700 hover:text-brand-500 no-underline">{s.shortName} across the OKC metro</a></li>
  <li><a href={site.financingUrl} target="_blank" rel="nofollow noopener" class="text-brand-700 hover:text-brand-500 no-underline">0% APR financing</a></li>
  </ul>
  </div>
@@ -147,7 +147,7 @@ const serviceSchema = {
  <div>
  <h2 class="mb-3">{a.city} Service Area Map</h2>
  <p class="text-ink/80 leading-relaxed mb-6">Floors To You OKC installs in every ZIP across {a.city} ({a.zipCodes.join(', ')}). Schedule a free in-home {s.shortName.toLowerCase()} estimate today.</p>
- <a href="/book" class="btn-primary">Book My Free Estimate</a>
+ <a href="/book/" class="btn-primary">Book My Free Estimate</a>
  </div>
  <GoogleMap src={a.mapEmbed} title={`${s.shortName} installation map for ${a.city}, OK`} />
  </div>

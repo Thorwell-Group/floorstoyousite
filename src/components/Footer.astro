@@ -32,7 +32,7 @@ const year = new Date().getFullYear();
  <h4 class="text-white font-display text-lg mb-4">Flooring</h4>
  <ul class="space-y-2 text-sm">
  {services.map((s) => (
- <li><a href={`/services/${s.slug}`} class="text-white/80 hover:text-brand-300 no-underline">{s.shortName}</a></li>
+ <li><a href={`/services/${s.slug}/`} class="text-white/80 hover:text-brand-300 no-underline">{s.shortName}</a></li>
  ))}
  </ul>
  </div>
@@ -41,7 +41,7 @@ const year = new Date().getFullYear();
  <h4 class="text-white font-display text-lg mb-4">Service Areas</h4>
  <ul class="space-y-2 text-sm">
  {areas.map((a) => (
- <li><a href={`/areas/${a.slug}`} class="text-white/80 hover:text-brand-300 no-underline">{a.city}, OK</a></li>
+ <li><a href={`/areas/${a.slug}/`} class="text-white/80 hover:text-brand-300 no-underline">{a.city}, OK</a></li>
  ))}
  </ul>
  </div>
@@ -49,15 +49,15 @@ const year = new Date().getFullYear();
  <div>
  <h4 class="text-white font-display text-lg mb-4">Company</h4>
  <ul class="space-y-2 text-sm">
- <li><a href="/products" class="text-white/80 hover:text-brand-300 no-underline">Shop All Flooring</a></li>
- <li><a href="/about" class="text-white/80 hover:text-brand-300 no-underline">About</a></li>
- <li><a href="/how-it-works" class="text-white/80 hover:text-brand-300 no-underline">How It Works</a></li>
- <li><a href="/blog" class="text-white/80 hover:text-brand-300 no-underline">Blog</a></li>
+ <li><a href="/products/" class="text-white/80 hover:text-brand-300 no-underline">Shop All Flooring</a></li>
+ <li><a href="/about/" class="text-white/80 hover:text-brand-300 no-underline">About</a></li>
+ <li><a href="/how-it-works/" class="text-white/80 hover:text-brand-300 no-underline">How It Works</a></li>
+ <li><a href="/blog/" class="text-white/80 hover:text-brand-300 no-underline">Blog</a></li>
  <li><a href={site.financingUrl} target="_blank" rel="nofollow noopener" class="text-white/80 hover:text-brand-300 no-underline">Financing</a></li>
- <li><a href="/book" class="text-white/80 hover:text-brand-300 no-underline">Free Estimate</a></li>
- <li><a href="/reviews" class="text-white/80 hover:text-brand-300 no-underline">Reviews</a></li>
- <li><a href="/flooring-faq" class="text-white/80 hover:text-brand-300 no-underline">FAQ</a></li>
- <li><a href="/contact" class="text-white/80 hover:text-brand-300 no-underline">Contact</a></li>
+ <li><a href="/book/" class="text-white/80 hover:text-brand-300 no-underline">Free Estimate</a></li>
+ <li><a href="/reviews/" class="text-white/80 hover:text-brand-300 no-underline">Reviews</a></li>
+ <li><a href="/flooring-faq/" class="text-white/80 hover:text-brand-300 no-underline">FAQ</a></li>
+ <li><a href="/contact/" class="text-white/80 hover:text-brand-300 no-underline">Contact</a></li>
  </ul>
  </div>
  </div>
@@ -68,7 +68,7 @@ const year = new Date().getFullYear();
  <div class="text-xs text-white/60 leading-relaxed text-center sm:text-left">
  © {year} {site.legalName}. All rights reserved.
  <div class="mt-1 text-[10px] opacity-80">
- <a href="/privacy" class="hover:text-white no-underline">Privacy</a>
+ <a href="/privacy/" class="hover:text-white no-underline">Privacy</a>
  <span class="mx-2 opacity-40">·</span>
  <a href="/sitemap-index.xml" class="hover:text-white no-underline">Sitemap</a>
  </div>

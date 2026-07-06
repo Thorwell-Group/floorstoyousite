@@ -15,6 +15,18 @@ export default defineConfig({
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),
+      // The 6 /oklahoma-city/{service}/ pages canonical to their /services/{service}/
+      // twins (cannibalization fix) — keep the pages live, but don't advertise URLs
+      // whose canonical points elsewhere in the sitemap.
+      filter: (page) =>
+        ![
+          'https://floorstoyouokc.com/oklahoma-city/carpet/',
+          'https://floorstoyouokc.com/oklahoma-city/laminate/',
+          'https://floorstoyouokc.com/oklahoma-city/tile/',
+          'https://floorstoyouokc.com/oklahoma-city/engineered-wood/',
+          'https://floorstoyouokc.com/oklahoma-city/vinyl-click/',
+          'https://floorstoyouokc.com/oklahoma-city/vinyl-glue/',
+        ].includes(page),
     }),
     partytown({ config: { forward: ['dataLayer.push', 'gtag'] } }),
     robotsTxt({

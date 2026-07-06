@@ -21,8 +21,8 @@ const others = proofTopics.filter((o) => o.slug !== t.slug);
 
 const breadcrumbs = [
   { name: 'Home', url: '/' },
-  { name: 'The Proof', url: '/the-proof' },
-  { name: t.label, url: `/proof/${t.slug}` },
+  { name: 'The Proof', url: '/the-proof/' },
+  { name: t.label, url: `/proof/${t.slug}/` },
 ];
 ---
 <BaseLayout title={t.metaTitle} description={t.metaDescription}>
@@ -34,8 +34,8 @@ const breadcrumbs = [
     subtitle={t.intro}
     image={t.hero}
     imageAlt={t.heroAlt}
-    ctaPrimary={{ label: 'Get My Free Estimate', href: '/book' }}
-    ctaSecondary={{ label: 'See It In Your Room', href: '/catalog' }}
+    ctaPrimary={{ label: 'Get My Free Estimate', href: '/book/' }}
+    ctaSecondary={{ label: 'See It In Your Room', href: '/catalog/' }}
   />
 
   {/* Headline stat strip */}
@@ -104,7 +104,7 @@ const breadcrumbs = [
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
         {others.map((o) => (
-          <a href={`/proof/${o.slug}`} class="group block rounded-xl2 overflow-hidden ring-1 ring-brand-100 bg-white shadow-card hover:shadow-soft transition-shadow no-underline">
+          <a href={`/proof/${o.slug}/`} class="group block rounded-xl2 overflow-hidden ring-1 ring-brand-100 bg-white shadow-card hover:shadow-soft transition-shadow no-underline">
             <img src={o.hero} alt={o.heroAlt} loading="lazy" width="600" height="400" class="w-full h-40 object-cover" />
             <div class="p-5">
               <h3 class="text-lg text-brand-800 group-hover:text-brand-700">{o.label}</h3>

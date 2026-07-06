@@ -22,9 +22,9 @@ const description = `${p.name} ${category?.label.toLowerCase() ?? 'flooring'} in
 
 const breadcrumbs = [
  { name: 'Home', url: '/' },
- { name: 'Shop Flooring', url: '/products' },
- { name: category?.label ?? 'Flooring', url: `/services/${p.service}` },
- { name: p.name, url: `/products/${p.slug}` },
+ { name: 'Shop Flooring', url: '/products/' },
+ { name: category?.label ?? 'Flooring', url: `/services/${p.service}/` },
+ { name: p.name, url: `/products/${p.slug}/` },
 ];
 
 const productSchema = {
@@ -89,11 +89,11 @@ const productSchema = {
  </dl>
 
  <div class="flex flex-wrap gap-3 mb-8">
- <a href="/book" class="btn-primary">Book Free Estimate</a>
+ <a href="/book/" class="btn-primary">Book Free Estimate</a>
  </div>
 
  <div class="text-sm text-ink/65 leading-relaxed">
- Available across the OKC metro - Oklahoma City, Edmond, Yukon, Mustang, Midwest City, Moore, Norman, and Guthrie. <a href={`/services/${p.service}`} class="text-brand-700 hover:text-brand-500">Learn more about {category?.label.toLowerCase()} installation →</a>
+ Available across the OKC metro - Oklahoma City, Edmond, Yukon, Mustang, Midwest City, Moore, Norman, and Guthrie. <a href={`/services/${p.service}/`} class="text-brand-700 hover:text-brand-500">Learn more about {category?.label.toLowerCase()} installation →</a>
  </div>
  </div>
  </section>
