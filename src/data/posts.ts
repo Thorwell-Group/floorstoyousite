@@ -97,9 +97,9 @@ export const posts: Post[] = [
       },
     ],
     related: [
-      { label: 'Click-Lock Vinyl (LVP) installation', href: '/services/vinyl-click' },
-      { label: 'Laminate flooring installation', href: '/services/laminate' },
-      { label: 'Flooring across Oklahoma City', href: '/areas/oklahoma-city' },
+      { label: 'Click-Lock Vinyl (LVP) installation', href: '/services/vinyl-click/' },
+      { label: 'Laminate flooring installation', href: '/services/laminate/' },
+      { label: 'Flooring across Oklahoma City', href: '/areas/oklahoma-city/' },
     ],
     metaTitle: 'LVP vs. Laminate Flooring in Oklahoma | Floors To You OKC',
     metaDescription:
@@ -174,9 +174,9 @@ export const posts: Post[] = [
       },
     ],
     related: [
-      { label: 'Engineered wood installation', href: '/services/engineered-wood' },
-      { label: 'Tile flooring installation', href: '/services/tile' },
-      { label: 'Waterproof LVP installation', href: '/services/vinyl-click' },
+      { label: 'Engineered wood installation', href: '/services/engineered-wood/' },
+      { label: 'Tile flooring installation', href: '/services/tile/' },
+      { label: 'Waterproof LVP installation', href: '/services/vinyl-click/' },
     ],
     metaTitle: "Best Flooring for Oklahoma's Climate | Floors To You OKC",
     metaDescription:
@@ -247,9 +247,9 @@ export const posts: Post[] = [
       },
     ],
     related: [
-      { label: 'Book a free in-home estimate', href: '/book' },
-      { label: 'Financing options', href: '/financing' },
-      { label: 'Browse all flooring types', href: '/services' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+      { label: 'Financing options', href: '/financing/' },
+      { label: 'Browse all flooring types', href: '/services/' },
     ],
     metaTitle: 'Flooring Installation Cost in Oklahoma City | Floors To You OKC',
     metaDescription:

@@ -10,7 +10,7 @@ import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
  title="About Floors To You OKC | Family-Owned OKC Flooring Store | Since 2018"
  description="Floors To You OKC is Oklahoma City's locally-owned flooring showroom on West Reno Ave. Meet our installers, design consultants, and 100% product + labor guarantee."
 >
- <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'About', url: '/about' }]} />
+ <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'About', url: '/about/' }]} />
 
  <section class="container-x py-12 grid lg:grid-cols-2 gap-12 items-center">
  <div>
@@ -18,7 +18,7 @@ import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
  <h1 class="mb-5">We Built A Showroom That Comes To You.</h1>
  <p class="text-lg text-ink/80 leading-relaxed mb-4">Floors To You OKC opened on West Reno Avenue in 2018 with a simple idea: stop making Oklahoma homeowners drive store to store, squinting at sample chips under fluorescent lights. Bring the showroom to them - in their living room, in their actual light - and let the floor do the convincing.</p>
  <p class="text-ink/80 leading-relaxed mb-4">2,500+ local installs later, that's still what we do. We pull the samples, we deliver, we install, we sweep up. You just point at the one you love and wait for the moment friends walk in and say, <em>"wait, these are new?"</em></p>
- <a href="/book" class="btn-primary mt-4">Have Us Come To You</a>
+ <a href="/book/" class="btn-primary mt-4">Have Us Come To You</a>
  </div>
  <img src="/images/photos/team/teamworking.webp" alt="Floors To You OKC installation team measuring and laying new floors in an Oklahoma City home" width="900" height="700" loading="lazy" class="rounded-xl2 shadow-soft w-full h-auto object-cover aspect-[4/3]" />
  </section>
@@ -46,6 +46,6 @@ import BreadcrumbSchema from '../components/schema/BreadcrumbSchema.astro';
  <CtaBand />
 
  <Fragment slot="head">
- <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'About', url: '/about' }]} />
+ <BreadcrumbSchema items={[{ name: 'Home', url: '/' }, { name: 'About', url: '/about/' }]} />
  </Fragment>
 </BaseLayout>

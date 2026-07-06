@@ -24,8 +24,8 @@ const serviceProducts = productsByService(s.slug);
 
 const breadcrumbs = [
  { name: 'Home', url: '/' },
- { name: 'Flooring', url: '/services' },
- { name: s.shortName, url: `/services/${s.slug}` },
+ { name: 'Flooring', url: '/services/' },
+ { name: s.shortName, url: `/services/${s.slug}/` },
 ];
 ---
 <BaseLayout title={s.metaTitle} description={s.metaDescription}>
@@ -37,8 +37,8 @@ const breadcrumbs = [
  subtitle={s.intro}
  image={s.hero}
  imageAlt={s.heroAlt}
- ctaPrimary={{ label: 'Get My Free Estimate', href: '/book' }}
- ctaSecondary={{ label: 'See All Flooring', href: '/services' }}
+ ctaPrimary={{ label: 'Get My Free Estimate', href: '/book/' }}
+ ctaSecondary={{ label: 'See All Flooring', href: '/services/' }}
  />
 
  <section class="container-x py-16 md:py-20 grid lg:grid-cols-2 gap-12 items-start">

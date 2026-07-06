@@ -12,7 +12,7 @@ const { serviceSlug, serviceName } = Astro.props;
     </div>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {areas.map((a) => (
-        <a href={serviceSlug ? `/${a.slug}/${serviceSlug}` : `/areas/${a.slug}`} class="card p-5 no-underline hover:shadow-soft transition-shadow">
+        <a href={serviceSlug ? `/${a.slug}/${serviceSlug}/` : `/areas/${a.slug}/`} class="card p-5 no-underline hover:shadow-soft transition-shadow">
           <h3 class="text-lg text-brand-800 mb-1">{a.city}, {a.state}</h3>
           <p class="text-sm text-ink/65">{a.drivingMinutes === 0 ? 'Our showroom' : `${a.drivingMinutes} min from showroom`}</p>
         </a>
