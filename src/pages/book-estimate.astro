@@ -103,6 +103,14 @@ const description = 'Pick the time that works for you. Free in-home flooring est
     if (typeof fbq === 'function') {
       fbq('track', 'Lead');
     }
+    // GA4 lead conversion — mirrors the Meta Lead above so Analytics/GSC can
+    // count organic leads. Mark "generate_lead" as a Key Event in GA4 Admin.
+    if (typeof gtag === 'function') {
+      gtag('event', 'generate_lead', {
+        form: 'in_home_estimate',
+        page_location: '/book-estimate',
+      });
+    }
 
     // Watch for booking-confirmed message from the GHL calendar widget.
     let ftyBookingHandled = false;
@@ -128,6 +136,14 @@ const description = 'Pick the time that works for you. Free in-home flooring est
         if (typeof fbq === 'function') {
           fbq('track', 'PageView');
           fbq('track', 'Schedule');
+        }
+        // GA4 booking conversion — the strongest signal (appointment locked in).
+        // Mark "book_appointment" as a Key Event in GA4 Admin.
+        if (typeof gtag === 'function') {
+          gtag('event', 'book_appointment', {
+            form: 'in_home_estimate',
+            page_location: '/book-estimate/booked',
+          });
         }
         const modal = document.getElementById('fty-confirm');
         if (modal) {

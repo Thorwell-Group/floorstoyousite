@@ -255,6 +255,155 @@ export const posts: Post[] = [
     metaDescription:
       'What really drives flooring installation cost in OKC — material, subfloor prep, removal, and square footage — plus how to read an itemized estimate.',
   },
+  {
+    slug: 'affordable-flooring-okc',
+    title: 'Affordable Flooring in OKC: How to Get Floors You Love Without Overpaying',
+    category: 'Cost & Planning',
+    excerpt:
+      'Budget flooring does not have to mean cheap flooring. Here is how Oklahoma City homeowners get durable, good-looking floors for less — and the shortcuts that quietly cost more later.',
+    hero: '/images/photos/lvp/luxuryvinly.webp',
+    heroAlt: 'Affordable wood-look vinyl plank flooring in an Oklahoma City living room',
+    datePublished: '2026-07-13',
+    dateModified: '2026-07-13',
+    readMinutes: 6,
+    intro:
+      "Searching for budget or discount flooring in OKC usually turns up two kinds of results: rock-bottom prices on thin product that wears out fast, and showroom sticker prices that feel out of reach. There is a better middle. The goal is value — the most durable, best-looking floor for what you actually spend — and a few decisions make far more difference to your bill than the shelf price ever does.",
+    sections: [
+      {
+        heading: 'Why showroom prices run high in the first place',
+        paragraphs: [
+          'A traditional flooring store carries the cost of a large retail showroom, floor staff, and inventory that sits for months — and that overhead is baked into every square foot you buy. Driving to several stores to compare also tends to push people toward whoever is most convenient, not whoever is priced best.',
+          'Our shop-at-home model skips the retail markup. We bring the samples to your living room, measure on site, and quote from in-stock rolls and boxes, which is how we can hold a lowest-price guarantee against any written quote on the same or comparable material.',
+        ],
+      },
+      {
+        heading: 'The materials that give the most floor for your money',
+        paragraphs: [
+          'For most OKC homes on a budget, laminate and click-lock luxury vinyl plank (LVP) deliver the best cost-to-durability ratio. Both give a convincing wood look, install fast over most subfloors, and hold up to kids, pets, and daily traffic.',
+          'Laminate is often the lowest entry price for a wood look and feels firm and realistic underfoot in dry living spaces. LVP costs a little more but adds a waterproof core, which pays for itself in kitchens, bathrooms, and laundry rooms where a cheaper floor would be the wrong pick.',
+        ],
+        bullets: [
+          'Tightest budget, dry rooms → quality laminate',
+          'A little more, whole-home and wet areas → click-lock LVP',
+          'Bedrooms and stairs → in-stock carpet is usually the lowest cost per room',
+        ],
+      },
+      {
+        heading: 'Where cutting cost actually costs you more',
+        paragraphs: [
+          'Two hidden shortcuts turn a cheap floor into an expensive mistake: a wear layer that is too thin, and skipping proper subfloor prep or pad. A thin wear layer scratches and dulls within a couple of years, and a floor installed over an unlevel or unclean subfloor can telegraph every flaw and void the warranty.',
+          'Spending a little on the right wear layer, the right underlayment or carpet pad, and honest prep is what makes an affordable floor last a decade instead of a couple of years. A good estimate itemizes all of it so you can see exactly what you are paying for.',
+        ],
+      },
+      {
+        heading: 'Ways to lower the total without lowering quality',
+        paragraphs: [
+          'You can trim the bill without buying disposable product. Choosing an in-stock line avoids special-order lead time and pricing, phasing the project room by room spreads the cost, and 0% financing lets you install the floor you want now and pay over time instead of settling for a lesser material.',
+        ],
+        bullets: [
+          'Pick from in-stock colors for the best pricing and next-day install',
+          'Phase high-traffic rooms first, bedrooms later',
+          'Use 0% financing instead of downgrading the material',
+          'Get a written quote elsewhere and bring it — we will beat it',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the cheapest flooring that still holds up in Oklahoma?',
+        a: 'Quality laminate is usually the lowest entry price for a durable wood look in dry rooms, and in-stock carpet is often the least expensive way to finish bedrooms. For wet areas, click-lock LVP costs a little more but avoids water damage that would make a cheaper floor a false economy.',
+      },
+      {
+        q: 'Do you offer discounts or price matching in OKC?',
+        a: 'We hold a lowest-price guarantee: bring a written quote on the same or comparable material and we will beat it. Because we shop at your home instead of running a large showroom, we start from a lower cost base.',
+      },
+      {
+        q: 'Can I finance an affordable flooring project?',
+        a: 'Yes. We offer 0% financing so you can install the floor you actually want and pay over time, rather than downgrading to a thinner product to fit a cash budget.',
+      },
+    ],
+    related: [
+      { label: 'Laminate flooring installation', href: '/services/laminate/' },
+      { label: 'Click-Lock Vinyl (LVP) installation', href: '/services/vinyl-click/' },
+      { label: 'Financing options', href: '/financing/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Affordable Flooring in OKC | Budget Floors Done Right | Floors To You',
+    metaDescription:
+      'Get durable, good-looking floors in Oklahoma City without overpaying. How to choose budget flooring that lasts, where cheap floors cost more, and 0% financing.',
+  },
+  {
+    slug: 'choosing-carpet-oklahoma-city',
+    title: 'Choosing Carpet in Oklahoma City: Fibers, Styles & Where It Still Wins',
+    category: 'Buying Guide',
+    excerpt:
+      'Hard-surface floors get all the attention, but carpet is still the right call for bedrooms, stairs, and basements. Here is how to pick a fiber and style that lasts in an Oklahoma home.',
+    hero: '/images/photos/carpet/moderncarpetmatt.webp',
+    heroAlt: 'Plush modern carpet installed in an Oklahoma City bedroom',
+    datePublished: '2026-07-13',
+    dateModified: '2026-07-13',
+    readMinutes: 6,
+    intro:
+      'With vinyl and laminate everywhere, it is easy to forget carpet — but there are rooms where nothing else feels right. Carpet is warm underfoot on a cold slab, it quiets a busy house, and it is the safest, softest surface for bedrooms and stairs. The trick is matching the fiber and style to how the room is actually used, because that is what decides how the carpet looks in three years.',
+    sections: [
+      {
+        heading: 'Where carpet still beats hard surface',
+        paragraphs: [
+          'Carpet earns its place in the rooms where comfort and quiet matter more than waterproofing. Bedrooms feel warmer and softer, stairs are safer and quieter with carpet, and basements and bonus rooms get cozy instead of cold and echoey.',
+          'For a slab-built Oklahoma home, carpet also takes the chill off in winter without the cost of heated floors, which is part of why so many homeowners keep it in the private half of the house even after switching the main living areas to LVP.',
+        ],
+        bullets: [
+          'Bedrooms → warmth and softness',
+          'Stairs → safety, grip, and sound',
+          'Basements and bonus rooms → comfort over a cold slab',
+        ],
+      },
+      {
+        heading: 'The fiber decides how it wears',
+        paragraphs: [
+          'Fiber is the single biggest factor in how carpet holds up. Nylon is the most durable and resilient, springing back in high-traffic areas and on stairs. Polyester (PET) is soft and naturally stain-resistant with rich color, and is a strong value pick for lower-traffic bedrooms. Triexta blends softness with excellent stain resistance and is a popular choice for family homes with kids and pets.',
+          'Most of the stain-resistant fibers we stock are built for Oklahoma family life, and many lines carry lifetime pet stain and soil warranties — worth asking about if you have animals.',
+        ],
+      },
+      {
+        heading: 'Do not skip the pad',
+        paragraphs: [
+          'The pad under the carpet does more work than people expect. It cushions every step, absorbs sound, and protects the carpet backing from wear, so a good pad is what keeps a mid-priced carpet feeling and looking new for years. An undersized pad is one of the quiet reasons a carpet flattens early.',
+          'Pad selection is included with every one of our quotes, and we match the pad to the room — firmer and denser on stairs and traffic lanes, plusher in bedrooms.',
+        ],
+      },
+      {
+        heading: 'Style, texture, and what installation includes',
+        paragraphs: [
+          'Plush and textured cut-pile carpets feel luxurious in bedrooms, while looped and patterned Berber styles hide footprints and hold up on stairs and in busy rooms. We keep hundreds of in-stock colors and textures so most rooms can be measured and installed on a next-day timeline.',
+          'A professional carpet install is more than rolling it out: our installers handle subfloor prep, tack strip, pad, seaming, and stair wrap so the finished room looks built-in. Most whole-home carpet jobs finish in a single day.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best carpet fiber for a house with pets and kids?',
+        a: 'Triexta and quality nylon are the most forgiving for pets and kids — both resist crushing and staining, and many lines add lifetime pet stain and soil warranties. Polyester is a softer, budget-friendly option for lower-traffic bedrooms.',
+      },
+      {
+        q: 'How fast can you install carpet in Oklahoma City?',
+        a: 'Most in-stock carpet can be installed on a next-day timeline, and whole-home jobs typically finish in one day. We measure at your home and quote from styles we keep in stock.',
+      },
+      {
+        q: 'Does carpet make sense if I already have vinyl or hardwood downstairs?',
+        a: 'Very often, yes. Many OKC homeowners keep hard surface in the main living areas and use carpet in bedrooms, on stairs, and in basements for warmth, quiet, and comfort. We can match both in one in-home visit.',
+      },
+    ],
+    related: [
+      { label: 'Carpet flooring & installation', href: '/services/carpet/' },
+      { label: 'Flooring across Oklahoma City', href: '/areas/oklahoma-city/' },
+      { label: 'How our in-home process works', href: '/how-it-works/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Choosing Carpet in Oklahoma City | Fibers, Styles & Install | Floors To You',
+    metaDescription:
+      'A practical guide to buying carpet in OKC: which fibers last, why the pad matters, where carpet beats hard surface, and next-day in-stock installation.',
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
