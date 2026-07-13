@@ -68,18 +68,23 @@ const { title, description, canonical, image, noindex, includeLocalBusiness = tr
       })();
     </script>
     <script is:inline>
-      // Track click-to-call as a GA4 lead. Phone calls are the #1 lead channel
-      // for flooring, and were previously invisible in Analytics. The gtag() stub
-      // queues this even before gtag.js finishes loading (the click's own
-      // pointerdown triggers the loader above), so it replays once ready.
-      document.addEventListener('click', function (e) {
-        var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
-        if (!a || typeof gtag !== 'function') return;
-        gtag('event', 'phone_call_click', {
-          phone_number: a.getAttribute('href').replace('tel:', ''),
-          link_location: a.closest('footer') ? 'footer' : (a.closest('header') ? 'header' : 'body'),
-        });
-      }, { passive: true });
+      // First-touch traffic source for the session (same logic as FunnelLayout).
+      // Recorded here so a visitor who enters on the main site is correctly tagged
+      // before they reach the /book funnel. Keeps GA4 leads organic-only; paid /
+      // Facebook-ad sessions stay on the Meta Pixel. First touch wins.
+      (function () {
+        try {
+          if (sessionStorage.getItem('fty_src')) return;
+          var p = new URLSearchParams(location.search);
+          var adClick = ['fbclid','gclid','gbraid','wbraid','msclkid','ttclid'].some(function (k) { return p.has(k); });
+          var med = (p.get('utm_medium') || '').toLowerCase();
+          var src = (p.get('utm_source') || '').toLowerCase();
+          var paidMed = /cpc|ppc|paid|display|social/.test(med);
+          var paidSrc = /facebook|fb|instagram|ig|meta|adwords|googleads|google-ads|bing|tiktok/.test(src);
+          var socialRef = /facebook\.com|instagram\.com|fb\.com|l\.facebook|lm\.facebook|t\.co/.test(document.referrer || '');
+          sessionStorage.setItem('fty_src', (adClick || paidMed || paidSrc || socialRef) ? 'paid' : 'organic');
+        } catch (e) {}
+      })();
     </script>
     <script is:inline>
       // Defer the Roomvo visualizer assistant until the page is idle or the user

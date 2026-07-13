@@ -103,13 +103,15 @@ const description = 'Pick the time that works for you. Free in-home flooring est
     if (typeof fbq === 'function') {
       fbq('track', 'Lead');
     }
-    // GA4 lead conversion — mirrors the Meta Lead above so Analytics/GSC can
-    // count organic leads. Mark "generate_lead" as a Key Event in GA4 Admin.
-    if (typeof gtag === 'function') {
-      gtag('event', 'generate_lead', {
-        form: 'in_home_estimate',
-        page_location: '/book-estimate',
-      });
+    // GA4 generate_lead — ORGANIC ONLY. Paid/Facebook-ad leads are tracked by the
+    // Meta Pixel above and must NOT count in GA4 (matches our other clients). The
+    // session's first-touch source was recorded by the layout; if it was a paid /
+    // Facebook ad click, we stay silent here so GA4's lead count is organic only.
+    function ftyIsPaidSession() {
+      try { return sessionStorage.getItem('fty_src') === 'paid'; } catch (e) { return false; }
+    }
+    if (typeof gtag === 'function' && !ftyIsPaidSession()) {
+      gtag('event', 'generate_lead', { form: 'in_home_estimate' });
     }
 
     // Watch for booking-confirmed message from the GHL calendar widget.
@@ -137,14 +139,8 @@ const description = 'Pick the time that works for you. Free in-home flooring est
           fbq('track', 'PageView');
           fbq('track', 'Schedule');
         }
-        // GA4 booking conversion — the strongest signal (appointment locked in).
-        // Mark "book_appointment" as a Key Event in GA4 Admin.
-        if (typeof gtag === 'function') {
-          gtag('event', 'book_appointment', {
-            form: 'in_home_estimate',
-            page_location: '/book-estimate/booked',
-          });
-        }
+        // Booking confirmation stays Pixel-only — the GA4 lead already counted on
+        // land, and we keep GA4 to the single generate_lead event.
         const modal = document.getElementById('fty-confirm');
         if (modal) {
           modal.style.display = 'flex';
