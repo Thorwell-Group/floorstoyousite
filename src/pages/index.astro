@@ -257,6 +257,47 @@ const galleryItems = [
 
  <Gallery items={galleryItems} />
  <AreaGrid />
+
+ {/* ───────── HAPPY HOMEOWNERS ───────── */}
+ <section class="bg-cream py-16 md:py-24">
+ <div class="container-x grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+ {/* Photo */}
+ <div class="relative order-1 lg:order-none">
+ <div aria-hidden class="pointer-events-none absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-brand-300/40 to-brand-500/20 blur-2xl"></div>
+ <img
+ src="/images/photos/carpet/happy-homeowners-carpet-okc.webp"
+ alt="Happy Oklahoma City homeowners standing in their living room on brand-new carpet installed by Floors To You OKC"
+ loading="lazy"
+ width="1050"
+ height="1400"
+ class="relative w-full max-w-md mx-auto lg:max-w-lg h-full object-cover rounded-xl2 shadow-soft"
+ />
+ <div class="hidden sm:flex absolute -bottom-6 -left-4 lg:-left-8 z-10 items-center gap-3 bg-white rounded-xl2 shadow-soft px-5 py-4 max-w-xs">
+ <div class="grid place-items-center w-11 h-11 rounded-full bg-brand-500 text-white font-display text-lg" aria-hidden>2.5k</div>
+ <div>
+ <p class="font-semibold text-brand-800 leading-tight">2,500+ happy OKC families</p>
+ <p class="text-xs text-ink/65">Welcomed home since 2018</p>
+ </div>
+ </div>
+ </div>
+
+ {/* Copy */}
+ <div>
+ <p class="eyebrow mb-3">Real OKC Homeowners</p>
+ <h2 class="mb-5">The Best Part Of Our Job Is The Day You Get Yours Back.</h2>
+ <p class="text-lg text-ink/80 leading-relaxed mb-6 max-w-xl">
+ New carpet, first steps taken, and a living room that finally feels like home. Every install ends the same way - with a family standing on floors they love, in a space they can't wait to use. That moment is exactly what we're here for.
+ </p>
+ <ul class="space-y-3 text-ink/75 mb-8">
+ <li class="flex items-start gap-3"><span class="text-brand-500 mt-0.5 flex-none" aria-hidden>✓</span> Soft, stain-resistant carpet in colors matched to your home</li>
+ <li class="flex items-start gap-3"><span class="text-brand-500 mt-0.5 flex-none" aria-hidden>✓</span> Our own installers - furniture moved, room finished, mess cleaned up</li>
+ <li class="flex items-start gap-3"><span class="text-brand-500 mt-0.5 flex-none" aria-hidden>✓</span> Most whole-home carpet jobs done in a single day</li>
+ </ul>
+ <a href="/book/" class="btn-primary">Start My Happy-Home Moment</a>
+ </div>
+ </div>
+ </section>
+
  <Testimonials />
  <CtaBand />
  <FAQ faqs={generalFaqs} heading="Flooring FAQ Oklahoma City Homeowners Ask Most" />
