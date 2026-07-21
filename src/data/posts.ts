@@ -78,7 +78,7 @@ export const posts: Post[] = [
         heading: 'Bottom line for OKC homeowners',
         paragraphs: [
           'If you want one floor you can run through the whole house — including wet rooms — without worrying about spills, choose click-lock LVP. If you are flooring dry living spaces and want the most authentic wood feel, laminate is a strong, value-friendly pick.',
-          'The best way to decide is to see both in your own light and trim. We bring samples to your home as part of a free in-home estimate so you can compare them on your actual floors before you commit.',
+          'The best way to decide is to see both in your own light and trim. As an <a href="/areas/oklahoma-city/">OKC flooring store</a> that shops at your home, we bring samples to you as part of a free in-home estimate so you can compare them on your actual floors before you commit.',
         ],
       },
     ],
@@ -155,7 +155,7 @@ export const posts: Post[] = [
       {
         heading: 'A simple room-by-room starting point',
         paragraphs: [
-          'For most OKC homes we suggest waterproof LVP through the high-traffic main areas, tile in wet rooms and entries, engineered wood where you want a premium real-wood look, and carpet in bedrooms. From there it is about matching colors, budget, and how the floor feels in your own light.',
+          'For most OKC homes we suggest waterproof LVP through the high-traffic main areas, tile in wet rooms and entries, engineered wood where you want a premium real-wood look, and carpet in bedrooms. From there it is about matching colors, budget, and how the floor feels in your own light. See how we handle <a href="/areas/oklahoma-city/">flooring in Oklahoma City</a> from the in-home measure through install.',
         ],
       },
     ],
@@ -228,7 +228,7 @@ export const posts: Post[] = [
         heading: 'How to read a flooring estimate',
         paragraphs: [
           'A trustworthy quote is itemized: material, prep, removal, installation, trim and transitions, and any add-ons are listed separately so you can see exactly what you are paying for. That makes it easy to compare two bids fairly and to adjust scope if needed.',
-          'We provide a written, itemized estimate after a free in-home measure, and we offer 0% financing for 24 months so the project can fit your budget. There is no charge to find out what your specific rooms would cost.',
+          'As an <a href="/areas/oklahoma-city/">OKC flooring store</a> that measures in your home, we provide a written, itemized estimate after a free in-home measure, and we offer 0% financing for 24 months so the project can fit your budget. There is no charge to find out what your specific rooms would cost.',
         ],
       },
     ],
@@ -273,7 +273,7 @@ export const posts: Post[] = [
         heading: 'Why showroom prices run high in the first place',
         paragraphs: [
           'A traditional flooring store carries the cost of a large retail showroom, floor staff, and inventory that sits for months — and that overhead is baked into every square foot you buy. Driving to several stores to compare also tends to push people toward whoever is most convenient, not whoever is priced best.',
-          'Our shop-at-home model skips the retail markup. We bring the samples to your living room, measure on site, and quote from in-stock rolls and boxes, which is how we can hold a lowest-price guarantee against any written quote on the same or comparable material.',
+          'Our shop-at-home model skips the retail markup that a typical <a href="/areas/oklahoma-city/">flooring store in Oklahoma City</a> bakes into every square foot. We bring the samples to your living room, measure on site, and quote from in-stock rolls and boxes, which is how we can hold a lowest-price guarantee against any written quote on the same or comparable material.',
         ],
       },
       {
@@ -376,7 +376,7 @@ export const posts: Post[] = [
         heading: 'Style, texture, and what installation includes',
         paragraphs: [
           'Plush and textured cut-pile carpets feel luxurious in bedrooms, while looped and patterned Berber styles hide footprints and hold up on stairs and in busy rooms. We keep hundreds of in-stock colors and textures so most rooms can be measured and installed on a next-day timeline.',
-          'A professional carpet install is more than rolling it out: our installers handle subfloor prep, tack strip, pad, seaming, and stair wrap so the finished room looks built-in. Most whole-home carpet jobs finish in a single day.',
+          'A professional carpet install is more than rolling it out: our installers handle subfloor prep, tack strip, pad, seaming, and stair wrap so the finished room looks built-in — the same standard we bring to <a href="/areas/oklahoma-city/">flooring in Oklahoma City</a> homes of every kind. Most whole-home carpet jobs finish in a single day.',
         ],
       },
     ],
