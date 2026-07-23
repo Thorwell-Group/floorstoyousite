@@ -35,12 +35,9 @@ const productSchema = {
  description,
  brand: { '@type': 'Brand', name: site.legalName },
  category: category?.label ?? 'Flooring',
- offers: {
- '@type': 'Offer',
- availability: 'https://schema.org/InStock',
- seller: { '@id': `${site.domain}/#business` },
- url: `${site.domain}/products/${p.slug}`,
- },
+ url: `${site.domain}/products/${p.slug}/`,
+ // No `offers` block: showroom products are quoted per job, so we have no real
+ // price to publish. An Offer without price/priceCurrency is a Search Console error.
 };
 ---
 <BaseLayout title={title} description={description} image={p.image} includeLocalBusiness={true}>
