@@ -800,6 +800,498 @@ export const posts: Post[] = [
     metaDescription:
       'The best flooring for pets, kids, and high-traffic Oklahoma City homes — the features that matter and a room-by-room plan. From the Floors To You OKC install team.',
   },
+
+  {
+    slug: 'waterproof-flooring-okc',
+    title: 'Waterproof Flooring in OKC: What the Label Actually Promises',
+    category: 'Buying Guide',
+    excerpt:
+      'Waterproof, water-resistant, and waterproof core all mean different things. Here is what each one actually protects against in an Oklahoma City home.',
+    hero: '/images/photos/lvp/lvpkitchen.webp',
+    heroAlt: 'Waterproof luxury vinyl plank flooring in an Oklahoma City kitchen',
+    datePublished: '2026-07-27',
+    dateModified: '2026-07-27',
+    readMinutes: 6,
+    intro:
+      'Almost every floor on the market now gets sold as waterproof in one form or another, and the word is doing more work than it can support. It describes the plank, not the floor — and that difference is where homeowners get caught out. Here is what the labels actually mean and how to choose for the rooms in your house that really see water.',
+    sections: [
+      {
+        heading: 'Waterproof vs. water-resistant vs. waterproof core',
+        paragraphs: [
+          'These three phrases get used almost interchangeably in showrooms, and they are not the same claim.',
+          'The practical translation is simple: waterproof means a spill will not ruin the floor. It does not mean water cannot get past the floor.',
+        ],
+        bullets: [
+          'Water-resistant means the material tolerates moisture briefly and needs to be dried promptly. Modern laminate falls here — it shrugs off a wiped-up spill but not standing water.',
+          'Waterproof core means the plank body itself will not swell, warp, or break down when it gets wet. This is what luxury vinyl offers, because the core is plastic-based with no wood fiber to absorb anything.',
+          'Fully waterproof assembly means the whole installation, including seams and edges, keeps water out. Tile with a proper waterproofing membrane is the real example, which is why it is the only correct material for a shower.',
+        ],
+      },
+      {
+        heading: 'The part the label leaves out',
+        paragraphs: [
+          'Nearly all waterproof plank flooring installs as a floating floor. The planks lock to each other and rest on underlayment, which means there is a seam between every plank and a deliberate expansion gap around the whole perimeter, hidden by baseboard.',
+          'Water finds those seams. It travels through, spreads across the subfloor underneath, and sits in a space with no airflow. The flooring looks perfect the entire time. The problem is beneath it, and you usually find out from a smell or a soft spot rather than from looking at the floor.',
+          'So the honest framing is that waterproof flooring protects your floor from spills. It does not protect your subfloor from a leak.',
+        ],
+      },
+      {
+        heading: 'What this means room by room in Oklahoma',
+        paragraphs: [
+          'Oklahoma homes deal with a specific set of water problems — big temperature swings, storm-season humidity, and a lot of homes built on slab where moisture comes up from below rather than down from above.',
+        ],
+        bullets: [
+          'Kitchens: waterproof core is the right call. The realistic risks are a dishwasher or fridge line that leaks slowly behind an appliance where nobody notices for a while.',
+          'Bathrooms: waterproof core or tile. Shower floors and surrounds are tile with a membrane, no exceptions.',
+          'Laundry rooms: think about failure, not spills. A supply line lets go in gallons, not cups. Tile or a waterproof core floor, and a leak sensor is worth more than any flooring upgrade.',
+          'Entries and mudrooms: waterproof core handles tracked-in rain and mud without complaint.',
+          'Slab-on-grade rooms: concrete passes moisture vapor upward continuously, even with no visible water. Waterproof core products are unaffected by it where wood-based floors degrade over time.',
+          'Bedrooms and formal living: water is not the deciding factor. Choose on looks, comfort, and budget.',
+        ],
+      },
+      {
+        heading: 'The install details that matter more than the label',
+        paragraphs: [
+          'Two floors with identical waterproof ratings can perform very differently depending on how they were put in.',
+          'None of these show up on a product spec sheet, and all of them affect whether a waterproof floor actually keeps water out of your subfloor.',
+        ],
+        bullets: [
+          'Sealing the perimeter expansion gap in bathrooms and laundry rooms closes the most direct route water takes underneath.',
+          'A moisture barrier under the floor is essential over any slab. Vapor coming up has to be stopped or it collects beneath the floor.',
+          'Tighter modern locking systems resist water intrusion at seams considerably better than older click products did — worth asking about.',
+          'Flat subfloor. Gaps and flex at seams open the path that water uses.',
+        ],
+      },
+      {
+        heading: 'How we would actually spec your house',
+        paragraphs: [
+          'Very few homes need one floor everywhere. The sensible plan is waterproof material through the rooms that genuinely see water and whatever you actually want in the rooms that do not. That usually costs less than running a premium waterproof product through the entire house, and it gets you a better result in the bedrooms.',
+          'We map this room by room during the in-home estimate, looking at where water realistically shows up in your house rather than applying a blanket rule.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Is waterproof flooring really waterproof?',
+        a: 'The material almost always is — a waterproof-core plank will not swell or break down when wet. The floor as a whole usually is not, because floating floors have seams and a perimeter expansion gap that water can travel through to reach the subfloor underneath.',
+      },
+      {
+        q: 'What is the difference between waterproof and water-resistant flooring?',
+        a: 'Water-resistant means the material tolerates moisture for a limited time and should be dried promptly, which describes modern laminate. Waterproof means the material itself is not damaged by water at all, which describes luxury vinyl. Neither term makes a promise about what happens beneath the floor.',
+      },
+      {
+        q: 'Can I put waterproof flooring in a shower?',
+        a: 'No. Waterproof plank flooring is not a shower material regardless of the label. Showers need a tile assembly with a proper waterproofing membrane behind and beneath it. Floating floors have seams and perimeter gaps that make them unsuitable for continuously wet installations.',
+      },
+      {
+        q: 'What is the best waterproof flooring for a slab home?',
+        a: 'Rigid-core luxury vinyl is the usual recommendation. Concrete slabs pass moisture vapor up from the ground continuously, which degrades wood-based flooring over time, and vinyl is unaffected by it. A moisture barrier under the floor is essential either way.',
+      },
+    ],
+    related: [
+      { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
+      { label: 'Glue-down vinyl flooring', href: '/services/vinyl-glue/' },
+      { label: 'Tile flooring installation', href: '/services/tile/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Waterproof Flooring in OKC: What the Label Means | Floors To You OKC',
+    metaDescription:
+      'Waterproof, water-resistant, and waterproof core mean different things. What each protects against in an Oklahoma City home, room by room, from our install team.',
+  },
+
+  {
+    slug: 'vinyl-plank-flooring-okc',
+    title: 'Luxury Vinyl Plank in OKC: How to Compare Products Properly',
+    category: 'Buying Guide',
+    excerpt:
+      'LVP is the most-installed floor in Oklahoma City right now, and the quality range is enormous. Here are the specs that actually separate a good plank from a cheap one.',
+    hero: '/images/photos/lvp/luxuryvinly.webp',
+    heroAlt: 'Wide-plank luxury vinyl flooring in an Oklahoma City living room',
+    datePublished: '2026-07-27',
+    dateModified: '2026-07-27',
+    readMinutes: 7,
+    intro:
+      'Luxury vinyl plank has taken over the flooring market, and for good reason — it handles water, it looks convincing, and it installs fast. But the gap between entry-level LVP and quality LVP is bigger than in almost any other flooring category, and the two can look nearly identical in a showroom. Here is how to tell them apart.',
+    sections: [
+      {
+        heading: 'Wear layer is the number that matters',
+        paragraphs: [
+          'If you remember one thing from this article, make it this one.',
+          'The wear layer is the clear protective coating over the printed design layer. It is the only thing standing between your floor and every chair leg, dog nail, and piece of grit tracked in from the driveway. Thicker wear layer means longer before the floor starts looking tired.',
+          'This matters more than brand, more than price, and far more than how the sample looks under showroom lighting. Two planks that appear identical on a display rack can have very different wear layers, and they will not age the same way. A thin wear layer in a house with kids and dogs will scuff and dull within a few years. A thick one in the same house still looks good long after.',
+          'When you compare products, ask for the wear layer thickness in mils. If nobody can tell you, that is information too.',
+        ],
+      },
+      {
+        heading: 'Rigid core vs. flexible',
+        paragraphs: [
+          'Older vinyl was flexible, which meant it conformed to whatever was underneath and telegraphed every imperfection in the subfloor. Rigid core changed that.',
+          'Rigid-core planks are stiffer, bridge minor subfloor irregularities, feel more substantial underfoot, and are quieter to walk on. They are also more dimensionally stable, which matters in Oklahoma where interior temperature swings are significant — a floor that expands and contracts less is a floor with fewer seam problems.',
+          'Rigid core is not permission to skip subfloor prep. It bridges small variation; it does not fix real dips and humps.',
+        ],
+      },
+      {
+        heading: 'What makes LVP look real or look fake',
+        paragraphs: [
+          'Print quality has improved enormously, but it varies a lot by product, and there are specific things to look for.',
+        ],
+        bullets: [
+          'Pattern repeat. Cheap LVP uses only a handful of unique plank images, so the same "board" shows up over and over across a floor and your eye picks it up immediately. Better product uses many more.',
+          'Embossed-in-register texture, where the surface texture lines up with the printed grain, so a knot you can see is also a knot you can feel. This is the single biggest tell between convincing and obviously printed.',
+          'Beveled edges, which create a shadow line between planks and read as individual boards rather than a printed sheet.',
+          'Plank width and length. Longer, wider planks look more like real wood and make rooms feel larger. Short narrow planks read as vinyl.',
+        ],
+      },
+      {
+        heading: 'Click-lock or glue-down?',
+        paragraphs: [
+          'Both are legitimate, and the right answer depends on the room.',
+          'Click-lock floats over the subfloor with planks locking to each other. It installs faster, needs no adhesive cure time, tolerates minor subfloor imperfection better, and individual planks can be lifted and replaced. It is the default for most residential rooms. See our click-lock LVP page for details.',
+          'Glue-down bonds directly to the subfloor. It feels completely solid with no hollow sound, handles very large open areas without expansion concerns, and stands up better to rolling loads and heavy furniture. It is the stronger choice for commercial spaces and for large open floor plans where a floating floor would need transitions.',
+        ],
+      },
+      {
+        heading: 'Where LVP belongs, and where it does not',
+        paragraphs: [
+          'Being straight about the limits is more useful than selling it as universal.',
+        ],
+        bullets: [
+          'Excellent: kitchens, entries, mudrooms, laundry, bathrooms, basements, slab-on-grade rooms, and anywhere pets spend real time.',
+          'Very good: living rooms, hallways, family rooms, bedrooms, and rental properties where durability and easy replacement matter.',
+          'Worth reconsidering: rooms with intense, sustained direct sun through large glass, since prolonged heat and UV can affect some products. And formal spaces where you specifically want the character and resale story of real wood.',
+          'Not suitable: shower floors and surrounds. That is tile with a membrane.',
+        ],
+      },
+      {
+        heading: 'What LVP cannot do',
+        paragraphs: [
+          'It cannot be refinished. When a vinyl floor wears out it gets replaced rather than sanded and renewed, where a real hardwood floor can be brought back several times across its life. That is the genuine trade-off against wood, and it is worth weighing honestly if you are choosing between the two.',
+          'Our hardwood vs. luxury vinyl comparison goes through that decision in detail.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What wear layer thickness should I look for in LVP?',
+        a: 'Thicker is better, and the right amount depends on traffic. A light-use bedroom can take a thinner wear layer than a hallway with dogs and kids running through it. The important thing is to compare the actual number between products rather than assuming price or brand tells you.',
+      },
+      {
+        q: 'Is click-lock or glue-down vinyl better?',
+        a: 'Neither is universally better. Click-lock installs faster, tolerates minor subfloor imperfection, and lets individual planks be replaced, which suits most residential rooms. Glue-down feels more solid, has no hollow sound, and handles very large open areas and heavy rolling loads better, which suits commercial spaces and big open floor plans.',
+      },
+      {
+        q: 'Can luxury vinyl plank be installed over existing flooring?',
+        a: 'Often yes, if the existing surface is flat, sound, and clean. That is one of LVP’s real advantages. The subfloor still has to be assessed first, because dips, humps, and texture underneath can telegraph through, especially with thinner products.',
+      },
+      {
+        q: 'Does LVP scratch?',
+        a: 'It can, and the wear layer is what determines how easily. Sharp grit tracked in from outside is the main culprit rather than pet claws, which is why entry mats and regular sweeping do more to protect a vinyl floor than anything else. Felt pads under furniture legs handle the rest.',
+      },
+    ],
+    related: [
+      { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
+      { label: 'Glue-down vinyl flooring', href: '/services/vinyl-glue/' },
+      { label: 'Hardwood vs. luxury vinyl in OKC', href: '/blog/hardwood-vs-luxury-vinyl-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Luxury Vinyl Plank Flooring in OKC: Buyer’s Guide | Floors To You OKC',
+    metaDescription:
+      'How to compare luxury vinyl plank properly in Oklahoma City — wear layer, rigid core, click-lock vs. glue-down, and what makes LVP look real. From our install team.',
+  },
+
+  {
+    slug: 'engineered-wood-flooring-okc',
+    title: 'Engineered Wood Flooring in OKC: Real Wood That Handles the Climate',
+    category: 'Buying Guide',
+    excerpt:
+      'Engineered wood gives you a genuine hardwood surface with far better stability than solid wood — which matters a lot in Oklahoma. Here is how to choose it.',
+    hero: '/images/photos/hardwood/wideplank.webp',
+    heroAlt: 'Wide-plank engineered wood flooring in an Oklahoma City home',
+    datePublished: '2026-07-27',
+    dateModified: '2026-07-27',
+    readMinutes: 7,
+    intro:
+      'Engineered wood gets misunderstood constantly. People hear "engineered" and assume it is a lookalike product like laminate or vinyl. It is not — the surface you walk on is genuine hardwood. What is engineered is the layer underneath, and in an Oklahoma climate that engineering is exactly why it often outperforms solid wood.',
+    sections: [
+      {
+        heading: 'What engineered wood actually is',
+        paragraphs: [
+          'An engineered board has a real hardwood wear layer on top — actual oak, hickory, walnut, whatever species you chose — bonded to a core of plywood or high-density fiberboard beneath it.',
+          'The core layers are cross-oriented, meaning the grain of each layer runs perpendicular to the one above. That cross-lamination is what stops the board from expanding and contracting across its width the way a solid plank does. The wood on top is real; the stability underneath is engineered.',
+          'This is a completely different product from laminate or vinyl, both of which use a printed image of wood. With engineered, you are looking at wood grain because it is wood.',
+        ],
+      },
+      {
+        heading: 'Why stability matters in Oklahoma',
+        paragraphs: [
+          'Wood is hygroscopic — it absorbs and releases moisture from the surrounding air, expanding and contracting as it does. Oklahoma puts real stress on that behavior. Humid stretches in spring and summer, dry heated air in winter, and significant temperature swings that can happen inside a single week.',
+          'Solid hardwood responds to all of that by moving across its width. In practice that means gaps opening between boards in winter and boards pressing tight in summer. Manage it well and it is a non-issue; manage it poorly and it is visible year-round.',
+          'Engineered wood moves substantially less because the cross-laminated core resists it. That makes it more forgiving of humidity swings, and it is why engineered has become the more practical choice in a lot of Oklahoma homes.',
+        ],
+      },
+      {
+        heading: 'The slab question',
+        paragraphs: [
+          'A great many Oklahoma City homes are built on a concrete slab, and this is where engineered wood has a decisive advantage.',
+          'Solid hardwood is generally not recommended directly over concrete. Slabs pass moisture vapor upward from the ground continuously, and solid wood reacts badly to that over time. Engineered wood can be installed over a slab — glued down or floated — because the cross-laminated core handles the moisture exposure that would ruin solid boards.',
+          'If you want real wood in a slab-on-grade home, engineered is usually the only sensible way to get it. A moisture test on the slab before installation is worth doing regardless.',
+        ],
+      },
+      {
+        heading: 'Wear layer thickness decides everything',
+        paragraphs: [
+          'This is the single most important spec in engineered wood, and it is the one that separates a floor you can keep for decades from one you will replace.',
+          'The wear layer is the real hardwood on top. Its thickness determines whether the floor can ever be sanded and refinished, and how many times.',
+          'A thick wear layer can be refinished once or twice, which means the floor can be brought back when it gets tired rather than torn out. A thin wear layer cannot be sanded at all — sanding goes straight through the real wood into the core beneath, and that is the end of the floor.',
+          'Ask for the wear layer thickness before anything else. If a product is being sold as real wood but cannot ever be refinished, that changes the value proposition significantly, and you should know it going in.',
+        ],
+      },
+      {
+        heading: 'Species and finish still matter',
+        paragraphs: [
+          'Because the top layer is genuine hardwood, all the normal wood decisions apply.',
+        ],
+        bullets: [
+          'Oak is the most common for good reason — hard, available, and its strong grain hides scratches and dents better than smoother species.',
+          'Hickory is harder still, with dramatic color variation board to board, which suits busy households and reads more rustic.',
+          'Walnut is beautiful and naturally dark, and noticeably softer, so it belongs in formal rooms rather than mudrooms.',
+          'Prefinished factory coatings are generally more durable than site-applied finish, and they let you see exactly what you are getting before installation.',
+          'Wider planks read modern and show off grain. Engineered handles wide plank far better than solid does, because width is exactly where solid wood movement shows up.',
+        ],
+      },
+      {
+        heading: 'Engineered vs. solid, honestly',
+        paragraphs: [
+          'Solid hardwood wins on one significant point: it can be sanded and refinished many times over a very long life, which is why century-old floors still exist. If you are in a house you intend to keep indefinitely, over a wood subfloor, above grade, that longevity is real.',
+          'Engineered wins on stability, on slab compatibility, on wide-plank options, and on installation flexibility. In an Oklahoma home, especially one on a slab, those advantages usually outweigh the refinishing ceiling.',
+          'If you are weighing real wood against a wood-look product, our hardwood vs. luxury vinyl comparison covers that side of the decision.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Is engineered wood real wood?',
+        a: 'Yes. The surface you walk on is genuine hardwood — real oak, hickory, or whatever species you selected. What is engineered is the cross-laminated core beneath it, which gives the board far better dimensional stability than a solid plank. It is a completely different product from laminate or vinyl, which use a printed image.',
+      },
+      {
+        q: 'Can engineered wood be refinished?',
+        a: 'It depends entirely on the wear layer thickness. A thick wear layer can typically be sanded and refinished once or twice. A thin one cannot be refinished at all, because sanding would cut through the real wood into the core. This is the most important spec to ask about before buying.',
+      },
+      {
+        q: 'Can engineered wood go over a concrete slab?',
+        a: 'Yes, which is one of its main advantages in Oklahoma City where many homes are slab-on-grade. It can be glued down or floated over concrete because the cross-laminated core tolerates the moisture vapor a slab passes upward. Solid hardwood directly over concrete is generally not recommended.',
+      },
+      {
+        q: 'Is engineered wood better than solid hardwood in Oklahoma?',
+        a: 'Often, yes. Oklahoma humidity and temperature swings cause solid wood to expand and contract noticeably across its width, while engineered moves much less. Combined with slab compatibility and better wide-plank performance, engineered is the more practical choice in many local homes, with the trade-off being limited refinishing.',
+      },
+    ],
+    related: [
+      { label: 'Engineered wood flooring', href: '/services/engineered-wood/' },
+      { label: 'Hardwood vs. luxury vinyl in OKC', href: '/blog/hardwood-vs-luxury-vinyl-okc/' },
+      { label: 'Best flooring for the Oklahoma climate', href: '/blog/best-flooring-oklahoma-climate/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Engineered Wood Flooring in OKC: Buyer’s Guide | Floors To You OKC',
+    metaDescription:
+      'Engineered wood gives you real hardwood with the stability Oklahoma’s climate demands. Wear layers, slab installs, and species — from the Floors To You OKC team.',
+  },
+
+  {
+    slug: 'kitchen-flooring-okc',
+    title: 'Kitchen Flooring in OKC: What Actually Survives a Kitchen',
+    category: 'Buying Guide',
+    excerpt:
+      'Kitchens punish flooring harder than any other room. Here is what holds up to spills, dropped pans, and standing at the counter — and what to skip.',
+    hero: '/images/photos/hardwood/hardwoodkitchen.webp',
+    heroAlt: 'Wood-look flooring running through an Oklahoma City kitchen',
+    datePublished: '2026-07-27',
+    dateModified: '2026-07-27',
+    readMinutes: 6,
+    intro:
+      'The kitchen asks more of a floor than any other room in the house. Water, grease, dropped cast iron, chair legs scraping, and hours of standing in one spot. Choosing well here matters more than almost anywhere else, and the popular answer is not always the right one.',
+    sections: [
+      {
+        heading: 'The four things a kitchen floor has to handle',
+        paragraphs: [
+          'Before comparing materials, it helps to be clear about what you are actually specifying for.',
+        ],
+        bullets: [
+          'Water, and not just spills. The realistic risk in a kitchen is a dishwasher or refrigerator line leaking slowly behind an appliance where nobody sees it for days.',
+          'Impact. Things get dropped in kitchens, and some floors chip or crack while others absorb it.',
+          'Standing comfort. If you cook seriously, you spend real time on your feet in one place, and hard floors are noticeably harder on your back and legs.',
+          'Cleaning. Grease and food get on a kitchen floor constantly, so it needs to take repeated cleaning without degrading.',
+        ],
+      },
+      {
+        heading: 'Luxury vinyl plank: the default for good reason',
+        paragraphs: [
+          'LVP is the most common kitchen floor we install in the OKC metro, and it earns that position by being strong on every one of those four criteria.',
+          'The waterproof core means a slow appliance leak does not destroy the floor. It has enough give that standing is comfortable and dropped dishes sometimes survive. It cleans easily. And it runs seamlessly into adjacent living areas, which matters a great deal in the open floor plans common in newer Oklahoma City homes.',
+          'The main thing to get right is the wear layer, since kitchens see chair movement and heavy traffic. Our LVP buying guide covers how to compare products properly.',
+        ],
+      },
+      {
+        heading: 'Tile: the most durable, the least comfortable',
+        paragraphs: [
+          'Porcelain tile handles everything a kitchen produces and will outlast the kitchen itself. Water is a non-issue, heat is a non-issue, and it cleans up indefinitely.',
+          'The trade-offs are genuine and worth weighing rather than dismissing. Tile is hard on your legs and back over long cooking sessions. Anything dropped on it breaks, including the tile occasionally. It is cold underfoot, which matters in an Oklahoma winter. And grout is the part that ages — unsealed grout in a kitchen absorbs grease and stains and will discolor.',
+          'If you want tile in a kitchen, a mid-tone grout and diligent sealing solves most of the maintenance complaint. Our tile flooring ideas post covers layout and format choices.',
+        ],
+      },
+      {
+        heading: 'Wood in a kitchen: possible, with conditions',
+        paragraphs: [
+          'Plenty of beautiful kitchens have wood floors, and there is no reason to rule it out — but be clear about the trade.',
+          'Real wood in a kitchen means accepting that a significant leak is a serious event, and that spills need attention promptly rather than eventually. Engineered wood is the more sensible version here, since its cross-laminated core handles humidity swings and minor moisture far better than solid wood, and it works over a slab. Our engineered wood guide goes into it.',
+          'The upside is genuine: wood running continuously from a living area into an open kitchen looks better than a transition, and real wood can be refinished when it eventually shows wear.',
+        ],
+      },
+      {
+        heading: 'What to skip',
+        paragraphs: [
+          'Two categories we would steer you away from in a kitchen specifically.',
+        ],
+        bullets: [
+          'Laminate. The wood-fiber core swells if water sits on a seam, and a kitchen is exactly where slow undetected leaks happen. It is a good floor in dry rooms and a risky one here.',
+          'Carpet. Self-evidently, but it still turns up in older homes and it is worth replacing.',
+        ],
+      },
+      {
+        heading: 'Open floor plans change the calculation',
+        paragraphs: [
+          'A lot of newer Oklahoma City homes run kitchen, dining, and living space together with no wall between them. When that is the case, the kitchen floor is also the living room floor, and picking a material purely on kitchen criteria can leave you with something you do not love in the space you spend the most time.',
+          'The usual resolution is a waterproof-core product that looks good enough for the living area and performs well enough for the kitchen — which is a large part of why LVP dominates in these layouts. Running one material throughout also avoids transition strips in the middle of an open room, which always look like an afterthought.',
+          'We map this out during the in-home estimate, since the right answer depends on your actual layout rather than a general rule.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best flooring for a kitchen?',
+        a: 'Waterproof luxury vinyl plank is the best all-around choice for most kitchens, because it handles leaks, is comfortable to stand on, cleans easily, and runs seamlessly into adjacent living space. Porcelain tile is more durable still but harder on your legs and colder underfoot.',
+      },
+      {
+        q: 'Can I put hardwood in my kitchen?',
+        a: 'Yes, with realistic expectations. A significant leak is a serious event for a wood floor, and spills need prompt attention. Engineered wood is the more practical version because its core handles humidity and minor moisture better than solid wood and it works over a slab.',
+      },
+      {
+        q: 'Is laminate a bad choice for kitchens?',
+        a: 'It is the riskiest common option for a kitchen specifically. Laminate has a wood-fiber core that swells if water sits on a seam, and kitchens are where slow undetected appliance leaks happen. Laminate is a good floor in dry rooms; a kitchen is not the place to use it.',
+      },
+      {
+        q: 'Should my kitchen floor match my living room?',
+        a: 'In an open floor plan, running one material throughout is usually the better result. It avoids transition strips in the middle of an open room and makes the whole space feel larger. That means choosing a material that performs well enough for the kitchen and looks good enough for the living area.',
+      },
+    ],
+    related: [
+      { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
+      { label: 'Tile flooring installation', href: '/services/tile/' },
+      { label: 'Engineered wood flooring', href: '/services/engineered-wood/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Best Kitchen Flooring in OKC: What Survives a Kitchen | Floors To You OKC',
+    metaDescription:
+      'What actually holds up in an Oklahoma City kitchen — spills, dropped pans, and standing comfort compared across LVP, tile, and wood. From the Floors To You team.',
+  },
+
+  {
+    slug: 'bathroom-flooring-okc',
+    title: 'Bathroom Flooring in OKC: Wet Rooms Need Different Rules',
+    category: 'Buying Guide',
+    excerpt:
+      'A bathroom is the one room where getting flooring wrong causes real damage. What works, what does not, and why the shower is a separate question entirely.',
+    hero: '/images/photos/tile/marbeltilebathroom.webp',
+    heroAlt: 'Tile flooring in a renovated Oklahoma City bathroom',
+    datePublished: '2026-07-27',
+    dateModified: '2026-07-27',
+    readMinutes: 6,
+    intro:
+      'Bathrooms are the least forgiving room in the house for flooring. Water is constant rather than accidental, humidity is high, and the consequences of a bad choice are structural rather than cosmetic. The good news is that the right answers are clear, and there are only a few of them.',
+    sections: [
+      {
+        heading: 'The shower is not a flooring decision',
+        paragraphs: [
+          'Worth stating first because it comes up constantly: shower floors and surrounds are tile installed over a waterproofing membrane. That is a wet-area assembly, not a flooring choice, and no plank product belongs there regardless of what its label says about being waterproof.',
+          'Floating floors have seams between planks and an expansion gap around the perimeter. In a continuously wet installation, water goes through both. The rest of this article is about the bathroom floor outside the shower.',
+        ],
+      },
+      {
+        heading: 'Tile: the traditional answer, still valid',
+        paragraphs: [
+          'Porcelain tile is the default bathroom floor for good reason. It is genuinely unaffected by water, it lasts indefinitely, and it handles the humidity a bathroom generates without complaint.',
+          'Two things to plan for. First, tile is cold, and in a room where you are barefoot that is the complaint people actually voice. Radiant floor heating underneath solves it completely and pairs better with tile than with any other material — if you are renovating down to the subfloor anyway, it is the moment to consider it.',
+          'Second, slip resistance matters here more than anywhere. A polished tile that looks stunning dry can be genuinely hazardous with wet feet on it. Textured surfaces and smaller formats with more grout lines both give better grip.',
+        ],
+      },
+      {
+        heading: 'Luxury vinyl: warmer, softer, very capable',
+        paragraphs: [
+          'Waterproof-core vinyl has become a common bathroom floor and it performs well. The material is unaffected by water, it is warmer underfoot than tile because it does not conduct heat away from your feet, and it is more comfortable to stand on at a sink.',
+          'It is also considerably faster and less expensive to install than tile, which matters in a renovation where the room is out of service.',
+          'The caveat is the same one that applies to all floating floors: water can eventually reach the subfloor through seams and the perimeter gap. In a bathroom, sealing that perimeter gap at installation is worth doing, and it is a detail that separates a careful install from a quick one.',
+        ],
+      },
+      {
+        heading: 'Luxury vinyl tile: the compromise that often wins',
+        paragraphs: [
+          'LVT deserves specific mention for bathrooms because it addresses the exact complaint people have about tile.',
+          'It gives you a stone or ceramic look with vinyl’s warmth and give underfoot. In a bathroom, where you are barefoot and standing at a sink, that difference is noticeable every single day, particularly on an Oklahoma winter morning.',
+          'Most LVT installs without grout too, which removes the maintenance item that makes bathroom tile floors look tired over time.',
+        ],
+      },
+      {
+        heading: 'What does not belong in a bathroom',
+        paragraphs: [
+          'Short list, and worth being firm about.',
+        ],
+        bullets: [
+          'Laminate. The wood-fiber core swells when water sits on it, and a bathroom guarantees water sitting on it eventually. Swelling is not reversible.',
+          'Solid hardwood. Humidity cycling plus standing water is the worst combination for solid wood, and bathrooms deliver both continuously.',
+          'Carpet. Padding holds moisture, nothing underneath gets airflow, and it does not dry properly. It still turns up in older homes and it is worth replacing.',
+        ],
+      },
+      {
+        heading: 'The details that prevent damage',
+        paragraphs: [
+          'In a bathroom, the installation details matter as much as the material.',
+        ],
+        bullets: [
+          'Seal the perimeter expansion gap with the appropriate sealant. This closes the most direct path water takes to the subfloor.',
+          'Pay attention to the toilet flange and the area around it, which is where slow leaks originate more often than anywhere else in the room.',
+          'Run a proper exhaust fan. Bathroom humidity that has nowhere to go affects everything in the room, and a fan that actually vents outside is worth more than most flooring upgrades.',
+          'Deal with any water event quickly. Even with waterproof flooring, water that has gotten underneath needs to come out, and lifting a few planks early is a far smaller job than replacing a subfloor later.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best flooring for a bathroom?',
+        a: 'Porcelain tile and waterproof-core luxury vinyl are both excellent. Tile is the most durable and handles humidity indefinitely but is cold and hard underfoot. Vinyl is warmer, softer to stand on, faster to install, and still fully waterproof as a material. Luxury vinyl tile combines the stone look with vinyl comfort.',
+      },
+      {
+        q: 'Can I use luxury vinyl plank in a bathroom?',
+        a: 'Yes, and it is a common choice. The material is waterproof and it is more comfortable and warmer than tile. Because it is a floating floor, sealing the perimeter expansion gap at installation is worth doing, since that is the main route water uses to reach the subfloor.',
+      },
+      {
+        q: 'Why is laminate a bad choice for bathrooms?',
+        a: 'Laminate has a wood-fiber core that absorbs water and swells, and swelling is permanent. A bathroom guarantees that water will sit on the floor at some point. Even water-resistant laminate lines are designed for spills that get wiped up, not for the standing water a bathroom eventually produces.',
+      },
+      {
+        q: 'Is heated flooring worth it in a bathroom?',
+        a: 'For many homeowners it is the single best upgrade in the room, because it turns tile’s biggest drawback into its biggest advantage. It pairs better with tile than any other flooring material. If you are renovating down to the subfloor anyway, that is the moment to decide, since retrofitting later means pulling the floor up again.',
+      },
+    ],
+    related: [
+      { label: 'Tile flooring installation', href: '/services/tile/' },
+      { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
+      { label: 'Waterproof flooring in OKC', href: '/blog/waterproof-flooring-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Best Bathroom Flooring in OKC: What Works in Wet Rooms | Floors To You OKC',
+    metaDescription:
+      'What holds up in an Oklahoma City bathroom and what causes real damage — tile, luxury vinyl, and the details that prevent leaks. From the Floors To You OKC team.',
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
