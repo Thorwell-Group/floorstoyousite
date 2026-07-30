@@ -12,9 +12,10 @@ export interface Props {
   canonical?: string;
   image?: string;
   noindex?: boolean;
+  noindexFollow?: boolean;
   includeLocalBusiness?: boolean;
 }
-const { title, description, canonical, image, noindex, includeLocalBusiness = true } = Astro.props;
+const { title, description, canonical, image, noindex, noindexFollow, includeLocalBusiness = true } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -29,7 +30,7 @@ const { title, description, canonical, image, noindex, includeLocalBusiness = tr
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" /></noscript>
     <meta name="theme-color" content="#bd9454" />
-    <SEO title={title} description={description} canonical={canonical} image={image} noindex={noindex} />
+    <SEO title={title} description={description} canonical={canonical} image={image} noindex={noindex} noindexFollow={noindexFollow} />
     {includeLocalBusiness && <LocalBusinessSchema />}
     <slot name="head" />
   </head>

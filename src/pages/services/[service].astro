@@ -76,6 +76,23 @@ const breadcrumbs = [
  </div>
  </section>
 
+ {s.related && s.related.length > 0 && (
+ <section class="container-x pb-4">
+ <div class="card p-6 md:p-8 bg-brand-50">
+ <p class="eyebrow mb-3">Comparing Your Options</p>
+ <h2 class="text-2xl mb-5">Not sure {s.shortName.toLowerCase()} is the right floor?</h2>
+ <ul class="space-y-4">
+ {s.related.map((r) => (
+ <li class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
+ <a href={r.href} class="font-semibold text-brand-700 hover:text-brand-500 whitespace-nowrap">{r.label} →</a>
+ <span class="text-ink/75">{r.note}</span>
+ </li>
+ ))}
+ </ul>
+ </div>
+ </section>
+ )}
+
  <Gallery items={s.gallery} eyebrow={`${s.shortName} Gallery`} heading={`Recent ${s.shortName} Installs Across OKC`} subhead={`Snapshots from ${s.shortName.toLowerCase()} projects we've completed across Oklahoma City and the metro.`} />
 
  <VisualizerBand />
