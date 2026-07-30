@@ -55,7 +55,7 @@ export const proofTopics: ProofTopic[] = [
     ctaHeadline: 'Floors Your Pets Can Actually Live On.',
     ctaSubline:
       "We bring scratch- and stain-proof samples to your home, match them to your light and trim, then handle furniture, install and cleanup. Lifetime warranties, 0% APR for 24 months, installed in as little as 24 hours.",
-    metaTitle: 'Pet-Proof Flooring Oklahoma City | Scratch & Stain Proof | Floors To You OKC',
+    metaTitle: 'Pet-Proof Flooring Oklahoma City | Floors To You OKC',
     metaDescription:
       'Pet-proof flooring installed across Oklahoma City - scratch-resistant, 100% waterproof, odor- and stain-proof with lifetime pet warranties. Free in-home estimate. 0% financing.',
     faqs: [
@@ -95,7 +95,7 @@ export const proofTopics: ProofTopic[] = [
     ctaHeadline: 'Floors That Survive Everything Your Family Throws At Them.',
     ctaSubline:
       "We bring kid- and family-tested samples to your living room, match them to your home, then handle furniture, install and cleanup. Lifetime warranties, 0% APR for 24 months, installed in as little as 24 hours.",
-    metaTitle: 'Family-Proof Flooring Oklahoma City | Kid-Friendly Floors | Floors To You OKC',
+    metaTitle: 'Kid-Friendly Flooring Oklahoma City | Floors To You OKC',
     metaDescription:
       'Family-proof flooring installed across Oklahoma City - dent-resistant, stain-proof and soft underfoot for kids and daily traffic. Lifetime warranties. Free in-home estimate.',
     faqs: [
@@ -135,7 +135,7 @@ export const proofTopics: ProofTopic[] = [
     ctaHeadline: 'Floors That Still Stop People Mid-Sentence In 10 Years.',
     ctaSubline:
       "We bring wear-tested samples to your home, match them to your light and trim, then handle furniture, install and cleanup. Lifetime warranty, 0% APR for 24 months, installed in as little as 24 hours.",
-    metaTitle: 'Life-Proof Flooring Oklahoma City | Dent & Fade Resistant | Floors To You OKC',
+    metaTitle: 'Life-Proof Flooring Oklahoma City | Floors To You OKC',
     metaDescription:
       'Life-proof flooring installed across Oklahoma City - dent-, scuff- and fade-resistant with commercial-grade wear layers and a lifetime installation warranty. Free in-home estimate.',
     faqs: [
@@ -175,7 +175,7 @@ export const proofTopics: ProofTopic[] = [
     ctaHeadline: 'Spill It, Track It, Wipe It Clean.',
     ctaSubline:
       "We bring 100% waterproof, stain-proof samples to your home, match them to your space, then handle furniture, install and cleanup. Lifetime warranty, 0% APR for 24 months, installed in as little as 24 hours.",
-    metaTitle: 'Mess-Proof Flooring Oklahoma City | Waterproof & Stain-Proof | Floors To You OKC',
+    metaTitle: 'Waterproof Flooring Oklahoma City | Floors To You OKC',
     metaDescription:
       'Mess-proof flooring installed across Oklahoma City - 100% waterproof, stain-proof and wipe-clean against wine, mud and spills. No sealing required. Free in-home estimate.',
     faqs: [
@@ -215,7 +215,7 @@ export const proofTopics: ProofTopic[] = [
     ctaHeadline: 'One Floor. Pet-Proof, Family-Proof, Life-Proof & Mess-Proof.',
     ctaSubline:
       "We bring the showroom to your living room and match an everything-proof floor to your home, then handle furniture, install and cleanup. Lifetime warranty, 0% APR for 24 months, installed in as little as 24 hours.",
-    metaTitle: 'Everything-Proof Flooring Oklahoma City | Pet, Kid & Waterproof | Floors To You OKC',
+    metaTitle: 'Durable Flooring Oklahoma City | Floors To You OKC',
     metaDescription:
       'Everything-proof flooring installed across Oklahoma City - pet-proof, family-proof, life-proof and mess-proof in one 100% waterproof floor backed for life. Free in-home estimate.',
     faqs: [

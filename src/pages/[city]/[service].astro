@@ -39,7 +39,11 @@ const breadcrumbs = [
  { name: s.shortName, url: `/${a.slug}/${s.slug}/` },
 ];
 
-const title = `${s.shortName} ${a.city === 'Oklahoma City' ? 'Oklahoma City' : `${a.city}, OK`} | ${s.shortName} Installation | Floors To You OKC`;
+// Keep this under ~60 chars or Google truncates it in the SERP. The old pattern
+// repeated shortName twice ("Vinyl Click Oklahoma City | Vinyl Click Installation
+// | Floors To You OKC" = 72 chars) and ran to 88 once the service names were
+// rewritten to the longer terms homeowners actually search.
+const title = `${s.shortName} in ${a.city}, OK | Floors To You OKC`;
 // Unique per (city, service): the head term stays in front for CTR, then we
 // pull real, city-specific signals (neighborhoods + ZIPs from areas.ts) so no
 // two of the 48 service-city pages share a templated meta description.

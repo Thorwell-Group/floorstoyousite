@@ -17,6 +17,12 @@ export type Service = {
  faqs: { q: string; a: string }[];
  gallery: { src: string; alt: string }[];
  installImage: { src: string; alt: string };
+ /**
+  * Contextual hand-off to a closely related floor. Exists so pages that share
+  * vocabulary (hardwood ↔ engineered wood) tell Google and the reader which page
+  * answers which question, instead of quietly competing for the same query.
+  */
+ related?: { label: string; href: string; note: string }[];
 };
 
 export const services: Service[] = [
@@ -43,7 +49,7 @@ export const services: Service[] = [
  'Vacuum twice a week in traffic lanes, blot spills with cool water, and schedule a deep clean every 12–18 months to protect your warranty.',
  priceFrom: '',
  warranty: 'Lifetime stain + 100% labor guarantee',
- metaTitle: 'Carpet Flooring Oklahoma City | In-Stock Carpet & Install | Floors To You OKC',
+ metaTitle: 'Carpet Flooring Oklahoma City | Floors To You OKC',
  metaDescription:
  'Shop in-stock carpet in Oklahoma City with next-day installation, lifetime stain warranty, and 0% financing. Free in-home estimate.',
  faqs: [
@@ -71,6 +77,82 @@ export const services: Service[] = [
  installImage: { src: '/images/photos/carpet/carpet.webp', alt: 'Freshly installed bedroom carpet in an Oklahoma City home' },
  },
  {
+ // Category hub for the "hardwood / wood flooring" demand. GSC shows 52 distinct
+ // hardwood queries (~350 impressions/mo, avg position 31) landing on pages that
+ // were never about hardwood, because the site had no hardwood page at all — the
+ // word only existed in the nav as a Roomvo catalog filter. This page owns the
+ // broad term honestly and hands off to /services/engineered-wood/ for the
+ // specific in-stock product, so the two do not compete for the same query.
+ slug: 'hardwood',
+ name: 'Hardwood Flooring & Installation',
+ shortName: 'Hardwood',
+ category: 'hard',
+ hero: '/images/photos/hardwood/hardwoodmodernhome.webp',
+ heroAlt: 'Wide-plank hardwood flooring running through a modern Oklahoma City home',
+ intro:
+ 'Real wood floors for Oklahoma City homes - warm, timeless, and the flooring buyers ask about first at resale. We help you choose between solid hardwood and engineered hardwood based on how your OKC home is actually built, then handle the whole install.',
+ benefits: [
+ 'The look and resale value buyers want most',
+ 'Oak, hickory, walnut and maple in wide-plank and herringbone',
+ 'Engineered options rated for slab-built OKC homes',
+ 'Refinishable - a hardwood floor can outlive the house',
+ 'Straight answers on solid vs engineered before you spend a dollar',
+ ],
+ bestFor: ['Living rooms', 'Dining rooms', 'Entryways', 'Hallways', 'Open-concept main floors', 'Staircases'],
+ installation:
+ 'Every hardwood job starts with moisture readings on your subfloor - that single step is what separates a floor that lasts from one that cups two summers in. We acclimate the wood in your home, set proper expansion gaps, and nail, glue, or float depending on what your subfloor calls for.',
+ care:
+ 'Sweep or vacuum on a hard-floor setting, damp-mop with a wood-safe cleaner (never a steam mop), keep indoor humidity between 35–55% year-round, and put felt pads under every piece of furniture that moves.',
+ priceFrom: '',
+ warranty: 'Up to 50-year finish + lifetime structural',
+ metaTitle: 'Hardwood Flooring Oklahoma City | Floors To You OKC',
+ metaDescription:
+ 'Hardwood flooring in Oklahoma City - solid and engineered wood floors installed across OKC, Edmond, Yukon, Moore & Norman. Free in-home estimate, 0% financing.',
+ faqs: [
+ {
+ q: 'Solid hardwood or engineered wood - which is better for an Oklahoma City home?',
+ a: 'It depends on your subfloor. Oklahoma swings from humid summers to dry winters, and a lot of OKC homes are built on a concrete slab. Solid hardwood cannot be nailed to a slab and is more prone to gapping and cupping through those swings, so for slab-built homes and basements we usually recommend engineered wood - a real wood top layer over a stable plywood core. If your home has a plywood subfloor and you want a floor you can refinish for decades, solid hardwood is absolutely on the table. We check your subfloor at the free in-home measure and tell you honestly which one fits.',
+ },
+ {
+ q: 'Can you install hardwood over a concrete slab?',
+ a: 'Engineered hardwood, yes - it floats or glues directly over concrete once we confirm the moisture reading is in range. Solid hardwood over slab requires building up a plywood subfloor first, which adds height and cost. We measure the slab and walk you through both options before you commit.',
+ },
+ {
+ q: 'How long does a hardwood floor installation take in OKC?',
+ a: 'Most single-room hardwood installs finish in a day; whole main floors typically run two to three days. Wood also needs to acclimate in your home before it goes down, so plan for a few days between delivery and install - we schedule that for you.',
+ },
+ {
+ q: 'Is hardwood a bad idea with dogs and kids?',
+ a: 'Not at all, but finish matters more than species. A matte or wire-brushed finish hides scratches and paw marks far better than a high-gloss one, and harder species like hickory take more abuse. If your household is especially hard on floors, we will also show you waterproof options that look like wood so you can compare side by side.',
+ },
+ {
+ q: 'Do you refinish existing hardwood floors?',
+ a: 'Bring us photos of what you have at the free in-home estimate and we will tell you honestly whether your existing floor is a candidate for a refinish or whether replacing it is the better spend.',
+ },
+ ],
+ gallery: [
+ { src: '/images/photos/hardwood/hardwood-full-home.webp', alt: 'Hardwood flooring running through the main floor of an Oklahoma City home' },
+ { src: '/images/photos/hardwood/wideplank.webp', alt: 'Wide-plank hardwood flooring installed in an OKC living space' },
+ { src: '/images/photos/hardwood/herringbonefloors.webp', alt: 'Herringbone hardwood floor pattern installed by Floors To You OKC' },
+ { src: '/images/photos/hardwood/hardwoodkitchen1.webp', alt: 'Hardwood flooring in an Oklahoma City kitchen and dining area' },
+ { src: '/images/photos/hardwood/hardwoodinsun1.webp', alt: 'Sunlight across a newly installed hardwood floor in an OKC home' },
+ { src: '/images/photos/hardwood/closeuphardwood.webp', alt: 'Close-up of the grain on a hardwood plank stocked at Floors To You OKC' },
+ ],
+ installImage: { src: '/images/photos/hardwood/hardwoodinstall.webp', alt: 'Floors To You OKC installer fitting a hardwood plank during an Oklahoma City install' },
+ related: [
+ {
+ label: 'Engineered wood flooring',
+ href: '/services/engineered-wood/',
+ note: 'What we stock and recommend for most slab-built OKC homes - real wood over a stable core.',
+ },
+ {
+ label: 'Luxury vinyl plank (LVP)',
+ href: '/services/vinyl-click/',
+ note: 'Waterproof, pet-proof, and convincingly wood-look if hardwood is not right for the room.',
+ },
+ ],
+ },
+ {
  slug: 'engineered-wood',
  name: 'Engineered Wood Flooring & Installation',
  shortName: 'Engineered Wood',
@@ -93,7 +175,7 @@ export const services: Service[] = [
  "Sweep daily, damp-mop with a wood-safe cleaner monthly, keep humidity between 35–55%, and add felt pads under furniture to keep your finish factory-fresh.",
  priceFrom: '',
  warranty: 'Up to 50-year finish + lifetime structural',
- metaTitle: 'Engineered Wood Flooring Oklahoma City | Installer | Floors To You OKC',
+ metaTitle: 'Engineered Wood Flooring OKC | Floors To You OKC',
  metaDescription:
  'Engineered wood floors installed across Oklahoma City. In-stock oak, hickory & walnut, slab-friendly, lifetime structural warranty, 0% financing. Free in-home estimate.',
  faqs: [
@@ -116,6 +198,13 @@ export const services: Service[] = [
  { src: '/images/photos/hardwood/hardwood-staircase-and-living-area.webp', alt: 'Engineered wood staircase and living area install in OKC' },
  ],
  installImage: { src: '/images/photos/hardwood/hardwoodinstall.webp', alt: 'Floors To You OKC installer fitting a wide-plank engineered wood board' },
+ related: [
+ {
+ label: 'Hardwood flooring in OKC',
+ href: '/services/hardwood/',
+ note: 'Start here if you are still deciding between solid hardwood and engineered wood.',
+ },
+ ],
  },
  {
  slug: 'laminate',
@@ -140,7 +229,7 @@ export const services: Service[] = [
  'Sweep often, damp-mop with a laminate-safe cleaner, and avoid steam mops - water sitting at plank seams is the only thing that can damage modern laminate.',
  priceFrom: '',
  warranty: 'Up to 30-year residential wear',
- metaTitle: 'Laminate Flooring Oklahoma City | Scratch-Proof Wood-Look | Floors To You OKC',
+ metaTitle: 'Laminate Flooring Oklahoma City | Floors To You OKC',
  metaDescription:
  'Durable wood-look laminate flooring installed across Oklahoma City. AC4-rated, pet-friendly, in-stock with next-day install. 0% financing. Free in-home estimate.',
  faqs: [
@@ -187,7 +276,7 @@ export const services: Service[] = [
  'Sweep, mop with pH-neutral cleaner, and re-seal grout lines every 2–3 years for an as-new look. Avoid bleach and ammonia on natural stone.',
  priceFrom: '',
  warranty: 'Lifetime tile + 5-year installation',
- metaTitle: 'Tile Flooring Oklahoma City | Porcelain & Ceramic Install | Floors To You OKC',
+ metaTitle: 'Tile Flooring Oklahoma City | Floors To You OKC',
  metaDescription:
  'Porcelain, ceramic & stone tile flooring installed across Oklahoma City. Showers, kitchens & baths. Lifetime tile warranty. 0% financing. Free in-home estimate.',
  faqs: [
@@ -212,9 +301,12 @@ export const services: Service[] = [
  installImage: { src: '/images/photos/tile/tileinstaller.webp', alt: 'Floors To You OKC tile installer setting porcelain in an OKC bathroom' },
  },
  {
+ // See the note on vinyl-click: surfaced wording follows homeowner search language
+ // ("luxury vinyl tile", "LVT"), while the glue-down detail stays in the body copy
+ // where it belongs. Slug unchanged to preserve existing rankings.
  slug: 'vinyl-glue',
- name: 'Glue-Down Vinyl Flooring (LVT)',
- shortName: 'Vinyl Glue',
+ name: 'Luxury Vinyl Tile (LVT) Flooring',
+ shortName: 'Luxury Vinyl Tile',
  category: 'hard',
  hero: '/images/photos/lvp/vinyl1.webp',
  heroAlt: 'Glue-down luxury vinyl tile (LVT) installed in an Oklahoma City home',
@@ -234,7 +326,7 @@ export const services: Service[] = [
  'Sweep, damp-mop with vinyl-safe cleaner, and skip wax or polish - LVT is finished for life. Add felt pads to chair legs to keep wear layers pristine.',
  priceFrom: '',
  warranty: 'Lifetime residential waterproof',
- metaTitle: 'Glue-Down Vinyl (LVT) Oklahoma City | Vinyl Plank Install | Floors To You OKC',
+ metaTitle: 'Luxury Vinyl Tile Flooring OKC | LVT Install | Floors To You OKC',
  metaDescription:
  'Glue-down luxury vinyl tile (LVT) installed across Oklahoma City. 100% waterproof, commercial-grade wear, lifetime warranty. 0% financing. Free in-home estimate.',
  faqs: [
@@ -259,9 +351,13 @@ export const services: Service[] = [
  installImage: { src: '/images/photos/lvp/flooringpasteinstall.webp', alt: 'Floors To You OKC installer troweling adhesive for a glue-down vinyl install' },
  },
  {
+ // Named for how homeowners search, not for how installers talk. "Vinyl click" and
+ // "click-lock" are trade terms with effectively no search demand; the volume is on
+ // "luxury vinyl plank", "LVP" and "vinyl plank flooring". The URL keeps its slug
+ // because it already holds rankings — only the surfaced wording changes.
  slug: 'vinyl-click',
- name: 'Click-Lock Vinyl Flooring (LVP / SPC)',
- shortName: 'Vinyl Click',
+ name: 'Luxury Vinyl Plank (LVP) Flooring',
+ shortName: 'Luxury Vinyl Plank',
  category: 'hard',
  hero: '/images/photos/lvp/lvpkitchen.webp',
  heroAlt: 'Waterproof click-lock luxury vinyl plank flooring in an Oklahoma City kitchen',
@@ -281,9 +377,9 @@ export const services: Service[] = [
  'Sweep, damp-mop with vinyl-safe cleaner, and skip wax or polish - LVP is finished for life. Add felt pads to chair legs to keep wear layers pristine.',
  priceFrom: '',
  warranty: 'Lifetime residential waterproof',
- metaTitle: 'Click-Lock Vinyl (LVP) Oklahoma City | Waterproof Floors | Floors To You OKC',
+ metaTitle: 'Luxury Vinyl Plank Flooring OKC | Floors To You OKC',
  metaDescription:
- '100% waterproof click-lock LVP flooring installed across Oklahoma City. SPC rigid core, pet-proof, lifetime warranty. Next-day install + 0% financing. Free in-home estimate.',
+ 'Luxury vinyl plank (LVP) flooring in Oklahoma City - 100% waterproof, pet-proof rigid core, installed next-day. Vinyl plank for kitchens, baths & whole-home. Free in-home estimate.',
  faqs: [
  {
  q: 'What is the difference between SPC, WPC, and standard LVP?',

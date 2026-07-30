@@ -39,12 +39,12 @@ export const productCategories: ProductCategory[] = [
   {
     "slug": "vinyl-glue",
     "service": "vinyl-glue",
-    "label": "Vinyl Glue (LVT)"
+    "label": "Luxury Vinyl Tile (LVT)"
   },
   {
     "slug": "vinyl-click",
     "service": "vinyl-click",
-    "label": "Vinyl Click (LVP / SPC)"
+    "label": "Luxury Vinyl Plank (LVP)"
   }
 ];
 
