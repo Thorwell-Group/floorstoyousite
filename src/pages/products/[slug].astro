@@ -7,6 +7,7 @@ import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
 import { products, productCategories, productsByCategory } from '../../data/products';
 import { services } from '../../data/services';
 import { site } from '../../data/site';
+import { CATEGORY, CATEGORY_LABEL, openingLine, orderedFacts, derive } from '../../data/product-context';
 
 export function getStaticPaths() {
  return products.map((p) => ({ params: { slug: p.slug }, props: { product: p } }));
@@ -22,6 +23,15 @@ const { product: p } = Astro.props;
 const category = productCategories.find((c) => c.slug === p.category);
 const service = services.find((s) => s.slug === p.service);
 const related = productsByCategory(p.category).filter((x) => x.slug !== p.slug).slice(0, 10);
+
+// Per-product content. Attributes are read from the product NAME (suppliers encode
+// format, species and tone there deliberately) — nothing is claimed that the name
+// does not state. Category guidance is true of the whole category and genuinely
+// useful to someone deciding. See src/data/product-context.ts.
+const attrs = derive(p.name);
+const intro = openingLine(p.name, p.category);
+const catInfo = CATEGORY[p.category];
+const facts = orderedFacts(p.category, p.slug);
 
 const title = `${p.name} ${category?.label ?? ''} | In-Stock at Floors To You OKC`;
 const description = `${p.name} ${category?.label.toLowerCase() ?? 'flooring'} in stock at Floors To You OKC - Oklahoma City's largest flooring showroom. Free in-home estimate.`;
@@ -65,8 +75,9 @@ const productSchema = {
  <p class="eyebrow mb-3">{category?.label} · In Stock</p>
  <h1 class="mb-4">{p.name}</h1>
  <p class="text-lg text-ink/80 leading-relaxed mb-6">
- {p.name} is one of {productsByCategory(p.category).length} in-stock {category?.label.toLowerCase()} options at Floors To You OKC - ready for next-day install in Oklahoma City and the surrounding metro.
+ {intro}
  </p>
+ {catInfo && <p class="text-ink/75 leading-relaxed mb-6">{catInfo.what}</p>}
 
  <dl class="grid grid-cols-2 gap-4 mb-8">
  <div class="card p-4">
@@ -103,10 +114,31 @@ const productSchema = {
 
  <ProductGrid
  products={related}
+
  eyebrow="Related"
  heading={`More ${category?.label} In Stock`}
  subhead={`Other ${category?.label.toLowerCase()} options from the Floors To You OKC showroom.`}
  />
+
+ {facts.length > 0 && (
+ <section class="container-x py-12 border-t border-brand-100">
+ <div class="max-w-3xl">
+ <p class="eyebrow mb-3">Choosing {CATEGORY_LABEL[p.category] ?? 'this floor'}</p>
+ <h2 class="mb-6">What to know before you pick {p.name}</h2>
+ <div class="space-y-6">
+ {facts.map((f) => (
+ <div>
+ <h3 class="text-lg font-semibold text-brand-800 mb-2">{f.heading}</h3>
+ <p class="text-ink/80 leading-relaxed">{f.body}</p>
+ </div>
+ ))}
+ </div>
+ <p class="mt-8 text-ink/70 leading-relaxed">
+ We bring samples of {p.name} to your home so you can see it in your own light, next to your own trim, before you commit to anything. <a href="/book/" class="text-brand-700 hover:text-brand-500">Book a free in-home estimate</a>.
+ </p>
+ </div>
+ </section>
+ )}
 
  <CtaBand headline={`Love ${p.name}? Book your free estimate.`} subline="Our consultant will bring samples to match your light, trim, and lifestyle - no pressure." />
 
