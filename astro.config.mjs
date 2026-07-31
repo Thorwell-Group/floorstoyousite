@@ -18,16 +18,11 @@ export default defineConfig({
       // The 6 /oklahoma-city/{service}/ pages canonical to their /services/{service}/
       // twins (cannibalization fix) — keep the pages live, but don't advertise URLs
       // whose canonical points elsewhere in the sitemap.
-      //
-      // Individual /products/{slug}/ SKU pages are also excluded: ~190 near-duplicate
-      // stubs that were 70% of the sitemap and earned ~0 clicks. They are noindex,follow
-      // now (see src/pages/products/[slug].astro). The /products/ index itself STAYS —
-      // it is a real category hub with genuine "shop flooring" intent.
       // Pattern-matched, not a hardcoded list: the previous explicit array silently
       // missed /oklahoma-city/hardwood/ the moment a new service was added.
+      // NOTE: /products/{slug}/ pages are NOT filtered — all 190 stay in the sitemap.
       filter: (page) =>
-        !/^https:\/\/floorstoyouokc\.com\/oklahoma-city\/.+/.test(page) &&
-        !/^https:\/\/floorstoyouokc\.com\/products\/.+/.test(page),
+        !/^https:\/\/floorstoyouokc\.com\/oklahoma-city\/.+/.test(page),
     }),
     partytown({ config: { forward: ['dataLayer.push', 'gtag'] } }),
     robotsTxt({

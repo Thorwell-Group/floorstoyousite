@@ -13,14 +13,11 @@ export function getStaticPaths() {
 }
 const { product: p } = Astro.props;
 
-// These SKU stubs are noindex,follow (see BaseLayout call below) and are kept out
-// of the sitemap in astro.config.mjs. Reason: there are ~190 of them and they were
-// 70% of every URL we advertised to Google, yet each carries only one templated
-// sentence of unique copy ("{name} is one of N in-stock {category} options...").
-// Nobody searches "clove" or "a950-beige" — GSC shows single-digit impressions and
-// zero clicks across the whole set — so they added no traffic while making the
-// majority of the site look thin. They stay live, linked, and crawlable for
-// showroom browsing; they just no longer dilute the site-quality signal.
+// These 190 SKU pages stay INDEXED and in the sitemap. I briefly noindexed them
+// (2026-07-30) on the theory that thin near-duplicates drag site quality; that was
+// reverted the same day. They carry only one templated sentence of unique copy
+// today ('{name} is one of N in-stock {category} options...'), so the fix is to
+// give each one real distinct content, not to hide it from Google.
 
 const category = productCategories.find((c) => c.slug === p.category);
 const service = services.find((s) => s.slug === p.service);
@@ -49,7 +46,7 @@ const productSchema = {
  // price to publish. An Offer without price/priceCurrency is a Search Console error.
 };
 ---
-<BaseLayout title={title} description={description} image={p.image} noindexFollow={true} includeLocalBusiness={true}>
+<BaseLayout title={title} description={description} image={p.image} includeLocalBusiness={true}>
  <Breadcrumb items={breadcrumbs} />
 
  <section class="container-x py-10 grid lg:grid-cols-[1fr_1.1fr] gap-12 items-start">
