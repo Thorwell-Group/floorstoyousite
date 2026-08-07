@@ -120,21 +120,26 @@ fbq('track', 'PageView');`} />
     </script>
   </head>
   <body class="min-h-screen flex flex-col bg-cream">
-    {/* Top urgency banner - lowest price guaranteed claim. */}
-    <div class="bg-brand-500 text-white text-center px-3 py-2 text-[11px] sm:text-xs font-bold uppercase tracking-[0.18em]">
-      <span aria-hidden="true">🔒</span> Lowest Price Guaranteed · We Beat Any Written Quote
+    {/*
+      Top urgency banner - lowest price guaranteed claim.
+      Mobile keeps it to a SINGLE line (short copy, tighter tracking): the full
+      sentence wrapped to two lines on a phone and cost ~20px of the space the
+      funnel form needs above the fold.
+    */}
+    <div class="bg-brand-500 text-white text-center px-3 py-1.5 sm:py-2 text-[10px] sm:text-xs font-bold uppercase leading-[1.4] tracking-[0.12em] sm:tracking-[0.18em]">
+      <span aria-hidden="true">🔒</span> Lowest Price Guaranteed<span class="hidden sm:inline"> · We Beat Any Written Quote</span>
     </div>
 
     {/* Stripped header - centered logo, no link back, no CTA. Keeps visitors on the funnel. */}
     <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-brand-100 shadow-sm">
-      <div class="container-x flex items-center justify-center py-2 lg:py-3">
+      <div class="container-x flex items-center justify-center py-1.5 sm:py-2 lg:py-3">
         <div class="flex items-center" aria-label={site.name}>
           <img
             src="/images/brand/floors-to-you-logo.webp"
             alt="Floors To You - Where We Bring The Showroom To You"
             width="617"
             height="255"
-            class="h-9 sm:h-10 lg:h-12 w-auto"
+            class="h-8 sm:h-10 lg:h-12 w-auto"
             fetchpriority="high"
             decoding="async"
           />

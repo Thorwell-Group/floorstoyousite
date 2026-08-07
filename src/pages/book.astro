@@ -10,79 +10,83 @@ const description = `Qualified Oklahoma homeowners save big on new floors with 0
 ---
 <FunnelLayout title={title} description={description}>
 
-  {/* ───────── HERO (form embedded) ───────── */}
+  {/*
+    ───────── HERO — compact intake header + form ─────────
+    Same shape as the F&F Surface funnel step 1: a short centered header, then
+    the survey immediately under it. Everything that used to sit above the form
+    (reviews badge, price seal, countdown, value bullets) now sits BELOW it, so
+    on a phone the whole first question is inside the opening screen with no
+    scroll. Desktop keeps the fuller sentence and the richer proof stack.
+  */}
   <section class="relative isolate overflow-hidden bg-gradient-to-br from-cream via-brand-50 to-cream">
     <div class="absolute -top-32 -right-32 -z-10 h-[36rem] w-[36rem] rounded-full bg-brand-300/30 blur-3xl" aria-hidden="true"></div>
     <div class="absolute -bottom-32 -left-32 -z-10 h-[28rem] w-[28rem] rounded-full bg-brand-500/10 blur-3xl" aria-hidden="true"></div>
 
-    <div class="container-x pt-4 pb-12 lg:pt-12 lg:pb-16">
-      {/* TOP ROW: headline · arrow · form on desktop. Form first on mobile so it's instantly visible. */}
-      <div class="grid lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-6 items-center">
+    <div class="container-x pt-2 pb-10 lg:pt-10 lg:pb-16">
 
-        {/* Headline - first on mobile (heading → form → value points) */}
-        <div class="order-1 lg:order-1 text-center lg:text-left">
-          <GoogleReviewsBadge class="mb-5" label="Reviewed by OKC Homeowners" />
+      {/*
+        HEADER - deliberately short on mobile: every line here pushes the form
+        down. The eyebrow, h1 and subcopy are budgeted to ~100px combined so the
+        survey's first question clears the fold on a 664px-tall phone viewport.
+        Note the explicit leading-* on the eyebrow: the .eyebrow component class
+        carries text-sm's 20px line-height, which a font-size utility alone does
+        not override.
+      */}
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="inline-flex items-center justify-center uppercase font-bold text-brand-500 text-[10px] leading-[1.4] tracking-[0.16em] mb-1 sm:text-xs sm:leading-5 sm:tracking-[0.2em] sm:mb-3 lg:text-sm">
+          Step 1 of 2 · Free In-Home Estimate
+        </p>
 
+        <h1 class="font-display font-bold tracking-tight text-brand-800 text-balance text-[26px] leading-[1.12] sm:text-4xl sm:leading-tight lg:text-5xl xl:text-6xl">
+          Tell Us About Your Flooring Project
+        </h1>
 
-          <h1 class="font-display font-bold leading-[1.02] tracking-tight text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-brand-800">
-            Lowest Price
-            <span class="block text-brand-500">Guaranteed.</span>
-            <span class="block mt-2">Get Your Estimate.</span>
-          </h1>
-
-          <p class="mt-4 text-sm sm:text-lg text-ink/80 leading-relaxed max-w-xl mx-auto lg:mx-0">
-            <strong class="text-brand-800">0% APR for 24 months · Installed in as little as 24 hours.</strong> Free in-home measure across the entire OKC metro.
-          </p>
-
-          <p class="mt-6 font-display font-semibold text-brand-700 text-sm sm:text-base hidden lg:block">
-            Oklahoma's Largest In-Stock Flooring Showroom
-          </p>
-
-          {/* Desktop only - on mobile this badge sits below the form (see order-4 block) */}
-          <div class="mt-7 hidden lg:flex lg:justify-start">
-            <PriceGuaranteeBadge />
-          </div>
-        </div>
-
-        {/* Pulsing arrow - sits between headline and form on desktop only. */}
-        <div class="hidden lg:flex order-2 items-center justify-center px-2" aria-hidden="true">
-          <div class="fty-arrow-pulse text-brand-500">
-            <svg width="72" height="36" viewBox="0 0 72 36" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 18 L60 18" />
-              <polyline points="46 6 60 18 46 30" />
-            </svg>
-          </div>
-        </div>
-
-        {/* Form card - sits right under the heading on mobile, right column on desktop. */}
-        <div id="form" class="order-2 lg:order-3 scroll-mt-20 mt-1 lg:mt-14">
-          <iframe
-            src="https://api.leadconnectorhq.com/widget/survey/jWARw7xCkBcUAI4uUldA"
-            scrolling="no"
-            id="jWARw7xCkBcUAI4uUldA"
-            title="Book a free in-home flooring estimate"
-            loading="eager"
-            fetchpriority="high"
-            style="border:0;width:100%;min-height:600px;display:block;background:transparent;"
-          ></iframe>
-          <p class="mt-3 text-center text-[11px] sm:text-xs text-ink/55 leading-relaxed">
-            By submitting, you agree to be contacted by Floors To You OKC. We never share your info.
-          </p>
-          <Countdown class="mt-6 flex justify-center" />
-        </div>
-
-        {/* Lowest Price Guaranteed seal - below the form on mobile only (desktop shows it in the headline column). */}
-        <div class="order-3 mt-8 flex justify-center lg:hidden">
-          <PriceGuaranteeBadge />
-        </div>
-
+        {/* Mobile gets one tight line; desktop gets the full sentence. */}
+        <p class="mt-1 text-[13px] leading-[1.35] text-ink/75 sm:hidden">
+          Under a minute — then you pick your time.
+        </p>
+        <p class="mt-4 hidden sm:block text-base lg:text-lg text-ink/80 leading-relaxed max-w-2xl mx-auto">
+          Answer a few quick questions so we can match you with the right crew and prep your quote.
+          It takes under a minute — then you'll pick a time that works for you.
+        </p>
       </div>
 
-      {/* BOTTOM ROW: 3 value bullets, horizontal on desktop, stacked on mobile. */}
-      <ul class="mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-center sm:flex-wrap gap-3 sm:gap-x-8 sm:gap-y-3 text-sm sm:text-base text-ink/85 max-w-4xl mx-auto">
-        <li class="flex items-center gap-2 justify-center"><span class="text-brand-500 flex-none" aria-hidden>✓</span> Lowest price guaranteed - we'll beat any written quote</li>
-        <li class="flex items-center gap-2 justify-center"><span class="text-brand-500 flex-none" aria-hidden>✓</span> Next-day install on in-stock material</li>
-        <li class="flex items-center gap-2 justify-center"><span class="text-brand-500 flex-none" aria-hidden>✓</span> 100% product &amp; labor guarantee</li>
+      {/* FORM */}
+      <div id="form" class="mt-2 sm:mt-8 max-w-3xl mx-auto scroll-mt-20">
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/survey/jWARw7xCkBcUAI4uUldA"
+          scrolling="no"
+          id="jWARw7xCkBcUAI4uUldA"
+          title="Book a free in-home flooring estimate"
+          loading="eager"
+          fetchpriority="high"
+          class="fty-survey-frame"
+          style="border:0;width:100%;display:block;background:transparent;"
+        ></iframe>
+        <p class="mt-3 text-center text-[11px] sm:text-xs text-ink/55 leading-relaxed">
+          By submitting, you agree to be contacted by Floors To You OKC. We never share your info.
+        </p>
+      </div>
+
+      {/* PROOF STACK - all below the form now. */}
+      <div class="mt-8 flex flex-col items-center gap-6">
+        <GoogleReviewsBadge label="Reviewed by OKC Homeowners" />
+        <PriceGuaranteeBadge />
+        <Countdown class="flex justify-center" />
+      </div>
+
+      <p class="mt-8 text-center font-display font-semibold text-brand-700 text-sm sm:text-base">
+        Oklahoma's Largest In-Stock Flooring Showroom
+      </p>
+
+      {/* 3 value bullets, horizontal on desktop, stacked on mobile. */}
+      {/* Mobile stacks these left-aligned in a narrow column so the checkmarks line
+          up even when a bullet wraps; desktop keeps the centered single row. */}
+      <ul class="mt-5 mx-auto w-fit max-w-xs sm:max-w-4xl flex flex-col sm:flex-row sm:items-center sm:justify-center sm:flex-wrap gap-2.5 sm:gap-x-8 sm:gap-y-3 text-sm sm:text-base text-ink/85">
+        <li class="flex items-start sm:items-center gap-2"><span class="text-brand-500 flex-none" aria-hidden>✓</span> Lowest price guaranteed - we'll beat any written quote</li>
+        <li class="flex items-start sm:items-center gap-2"><span class="text-brand-500 flex-none" aria-hidden>✓</span> Next-day install on in-stock material</li>
+        <li class="flex items-start sm:items-center gap-2"><span class="text-brand-500 flex-none" aria-hidden>✓</span> 100% product &amp; labor guarantee</li>
+        <li class="flex items-start sm:items-center gap-2"><span class="text-brand-500 flex-none" aria-hidden>✓</span> 0% APR financing for 24 months</li>
       </ul>
     </div>
 
@@ -235,17 +239,15 @@ const description = `Qualified Oklahoma homeowners save big on new floors with 0
   </section>
 
   <style>
-    @keyframes fty-arrow-shoot {
-      0%   { transform: translateX(-12px) scale(1);   opacity: 0.55; }
-      50%  { transform: translateX(8px)   scale(1.08); opacity: 1; }
-      100% { transform: translateX(-12px) scale(1);   opacity: 0.55; }
-    }
-    .fty-arrow-pulse {
-      animation: fty-arrow-shoot 1.2s ease-in-out infinite;
-      filter: drop-shadow(0 4px 12px rgba(189, 148, 84, 0.4));
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .fty-arrow-pulse { animation: none; }
+    /*
+      Placeholder height only - form_embed.js measures the survey and sets an
+      inline height once it loads. Kept low on phones so the reserved box never
+      pushes the first question off the opening screen; the desktop floor is the
+      old 600px because there is room for it there.
+    */
+    .fty-survey-frame { min-height: 460px; }
+    @media (min-width: 640px) {
+      .fty-survey-frame { min-height: 600px; }
     }
   </style>
 </FunnelLayout>
