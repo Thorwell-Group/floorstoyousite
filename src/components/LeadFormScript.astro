@@ -32,7 +32,10 @@
       iframe.id = holder.dataset.iframeId;
       iframe.title = holder.dataset.title || 'Estimate form';
       iframe.setAttribute('scrolling', 'no');
-      iframe.setAttribute('style', 'border:0;width:100%;min-height:600px;display:block;background:transparent;');
+      // 470px matches what the survey actually renders at; form_embed.js sets the
+      // real height on load. The old 600px floor was taller than the form, so it
+      // padded a dead band of empty space under the submit bar.
+      iframe.setAttribute('style', 'border:0;width:100%;min-height:470px;display:block;background:transparent;');
       iframe.addEventListener('load', function () {
         const sk = holder.querySelector('.fty-form-skeleton');
         if (sk) sk.remove();

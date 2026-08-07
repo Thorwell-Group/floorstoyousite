@@ -18,7 +18,7 @@
 export interface Props { instance: string; class?: string; eager?: boolean; }
 const { instance, class: cls = '' } = Astro.props;
 const iframeId = `fty-survey-${instance}`;
-const surveySrc = 'https://api.leadconnectorhq.com/widget/survey/jWARw7xCkBcUAI4uUldA';
+const surveySrc = 'https://api.leadconnectorhq.com/widget/survey/vycAfKp5EIUhWwIGzbbc';
 ---
 <div class={cls}>
   <div
@@ -27,7 +27,7 @@ const surveySrc = 'https://api.leadconnectorhq.com/widget/survey/jWARw7xCkBcUAI4
     data-src={surveySrc}
     data-iframe-id={iframeId}
     data-title="Book a free in-home flooring estimate"
-    style="min-height:600px;"
+    style="min-height:470px;"
   >
     <div class="fty-form-skeleton absolute inset-0 grid place-items-center rounded-xl2 bg-white/80 ring-1 ring-brand-100">
       <div class="flex flex-col items-center gap-3 text-ink/60">
