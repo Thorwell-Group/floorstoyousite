@@ -21,8 +21,13 @@ const iframeId = `fty-survey-${instance}`;
 const surveySrc = 'https://api.leadconnectorhq.com/widget/survey/vycAfKp5EIUhWwIGzbbc';
 ---
 <div class={cls}>
+  {/*
+    rounded + overflow-hidden clips the iframe's corners. The survey renders its
+    own white panel with a square-cornered submit bar, and unclipped it read as a
+    bare white rectangle dropped on the cream background rather than a card.
+  */}
   <div
-    class="fty-form-embed relative w-full cursor-pointer"
+    class="fty-form-embed relative w-full cursor-pointer rounded-xl2 overflow-hidden bg-white ring-1 ring-brand-200 shadow-soft"
     data-fty-form
     data-src={surveySrc}
     data-iframe-id={iframeId}
