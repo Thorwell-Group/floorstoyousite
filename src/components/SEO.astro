@@ -21,8 +21,22 @@ export interface Props {
 const { title, description, canonical, image = '/images/brand/floors-to-you-okc-og.webp', type = 'website', noindex = false, noindexFollow = false } = Astro.props;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, site.domain).toString();
 const imageUrl = new URL(image, site.domain).toString();
+
+// Titles longer than ~60 characters get cut in the SERP, and the part that gets
+// cut is the brand — which is the least useful part. Drop the trailing brand
+// segment ourselves so the descriptive, keyword-carrying half always survives.
+function fitTitle(t, max = 60) {
+  const text = String(t ?? '').trim().replace(/\s+/g, ' ');
+  if (text.length <= max) return text;
+  const m = text.match(/^(.*?)(\s+[|·–-]\s+[^|·–]+)$/);
+  if (m && m[1].trim().length >= 30) {
+    const head = m[1].trim();
+    return head.length <= max ? head : fitTitle(head, max);
+  }
+  return text;
+}
 ---
-<title>{title}</title>
+<title>{fitTitle(title)}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalUrl} />
 {noindex && <meta name="robots" content="noindex,nofollow" />}
@@ -30,14 +44,14 @@ const imageUrl = new URL(image, site.domain).toString();
 
 <meta property="og:type" content={type} />
 <meta property="og:site_name" content={site.name} />
-<meta property="og:title" content={title} />
+<meta property="og:title" content={fitTitle(title)} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonicalUrl} />
 <meta property="og:image" content={imageUrl} />
 <meta property="og:locale" content="en_US" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content={title} />
+<meta name="twitter:title" content={fitTitle(title)} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={imageUrl} />
 

@@ -251,7 +251,7 @@ export const posts: Post[] = [
       { label: 'Financing options', href: '/financing/' },
       { label: 'Browse all flooring types', href: '/services/' },
     ],
-    metaTitle: 'Flooring Installation Cost in Oklahoma City | Floors To You OKC',
+    metaTitle: 'Flooring Installation Cost in Oklahoma City',
     metaDescription:
       'What really drives flooring installation cost in OKC — material, subfloor prep, removal, and square footage — plus how to read an itemized estimate.',
   },
@@ -328,7 +328,7 @@ export const posts: Post[] = [
       { label: 'Financing options', href: '/financing/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
-    metaTitle: 'Affordable Flooring in OKC | Budget Floors Done Right | Floors To You',
+    metaTitle: 'Affordable Flooring in OKC | Budget Floors Done Right',
     metaDescription:
       'Get durable, good-looking floors in Oklahoma City without overpaying. How to choose budget flooring that lasts, where cheap floors cost more, and 0% financing.',
   },
@@ -400,7 +400,7 @@ export const posts: Post[] = [
       { label: 'How our in-home process works', href: '/how-it-works/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
-    metaTitle: 'Choosing Carpet in Oklahoma City | Fibers, Styles & Install | Floors To You',
+    metaTitle: 'Choosing Carpet in Oklahoma City | Fibers, Styles & Install',
     metaDescription:
       'A practical guide to buying carpet in OKC: which fibers last, why the pad matters, where carpet beats hard surface, and next-day in-stock installation.',
   },
@@ -479,7 +479,7 @@ export const posts: Post[] = [
       { label: 'Flooring across Oklahoma City', href: '/areas/oklahoma-city/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
-    metaTitle: 'What to Look For in an OKC Flooring Store | Floors To You OKC',
+    metaTitle: 'What to Look For in an OKC Flooring Store',
     metaDescription:
       'How to judge an Oklahoma City flooring store: selection, itemized pricing, who installs the floor, local knowledge, and guarantees. A buyer’s guide from Floors To You OKC.',
   },
@@ -559,7 +559,7 @@ export const posts: Post[] = [
       { label: 'What affects flooring installation cost', href: '/blog/flooring-installation-cost-okc/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
-    metaTitle: 'Laminate Flooring in OKC: Pros, Cons & Cost | Floors To You OKC',
+    metaTitle: 'Laminate Flooring in OKC: Pros, Cons & Cost',
     metaDescription:
       'An honest guide to laminate flooring in Oklahoma City — where it wins, its one real limitation, and what drives the cost. From the Floors To You OKC install team.',
   },
@@ -717,7 +717,7 @@ export const posts: Post[] = [
       { label: 'Best flooring for Oklahoma’s climate', href: '/blog/best-flooring-oklahoma-climate/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
-    metaTitle: 'Tile Flooring Ideas for Oklahoma City Homes | Floors To You OKC',
+    metaTitle: 'Tile Flooring Ideas for Oklahoma City Homes',
     metaDescription:
       'Tile flooring ideas for OKC homes — wood-look plank, large-format porcelain, marble looks, and mosaics — plus what makes a tile install last. From Floors To You OKC.',
   },
@@ -796,7 +796,7 @@ export const posts: Post[] = [
       { label: 'Carpet flooring & installation', href: '/services/carpet/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
-    metaTitle: 'Best Flooring for Pets, Kids & High-Traffic OKC Homes | Floors To You OKC',
+    metaTitle: 'Best Flooring for Pets, Kids & High-Traffic OKC Homes',
     metaDescription:
       'The best flooring for pets, kids, and high-traffic Oklahoma City homes — the features that matter and a room-by-room plan. From the Floors To You OKC install team.',
   },
@@ -894,7 +894,7 @@ export const posts: Post[] = [
       { label: 'Tile flooring installation', href: '/services/tile/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
-    metaTitle: 'Waterproof Flooring in OKC: What the Label Means | Floors To You OKC',
+    metaTitle: 'Waterproof Flooring in OKC: What the Label Means',
     metaDescription:
       'Waterproof, water-resistant, and waterproof core mean different things. What each protects against in an Oklahoma City home, room by room, from our install team.',
   },
@@ -994,7 +994,7 @@ export const posts: Post[] = [
       { label: 'Hardwood vs. luxury vinyl in OKC', href: '/blog/hardwood-vs-luxury-vinyl-okc/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
-    metaTitle: 'Luxury Vinyl Plank Flooring in OKC: Buyer’s Guide | Floors To You OKC',
+    metaTitle: 'Luxury Vinyl Plank Flooring in OKC: Buyer’s Guide',
     metaDescription:
       'How to compare luxury vinyl plank properly in Oklahoma City — wear layer, rigid core, click-lock vs. glue-down, and what makes LVP look real. From our install team.',
   },
@@ -1092,7 +1092,7 @@ export const posts: Post[] = [
       { label: 'Best flooring for the Oklahoma climate', href: '/blog/best-flooring-oklahoma-climate/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
-    metaTitle: 'Engineered Wood Flooring in OKC: Buyer’s Guide | Floors To You OKC',
+    metaTitle: 'Engineered Wood Flooring in OKC: Buyer’s Guide',
     metaDescription:
       'Engineered wood gives you real hardwood with the stability Oklahoma’s climate demands. Wear layers, slab installs, and species — from the Floors To You OKC team.',
   },
@@ -1190,7 +1190,7 @@ export const posts: Post[] = [
       { label: 'Engineered wood flooring', href: '/services/engineered-wood/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
-    metaTitle: 'Best Kitchen Flooring in OKC: What Survives a Kitchen | Floors To You OKC',
+    metaTitle: 'Best Kitchen Flooring in OKC: What Survives a Kitchen',
     metaDescription:
       'What actually holds up in an Oklahoma City kitchen — spills, dropped pans, and standing comfort compared across LVP, tile, and wood. From the Floors To You team.',
   },
@@ -1288,7 +1288,7 @@ export const posts: Post[] = [
       { label: 'Waterproof flooring in OKC', href: '/blog/waterproof-flooring-okc/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
-    metaTitle: 'Best Bathroom Flooring in OKC: What Works in Wet Rooms | Floors To You OKC',
+    metaTitle: 'Best Bathroom Flooring in OKC: What Works in Wet Rooms',
     metaDescription:
       'What holds up in an Oklahoma City bathroom and what causes real damage — tile, luxury vinyl, and the details that prevent leaks. From the Floors To You OKC team.',
   },
