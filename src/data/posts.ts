@@ -1292,6 +1292,418 @@ export const posts: Post[] = [
     metaDescription:
       'What holds up in an Oklahoma City bathroom and what causes real damage — tile, luxury vinyl, and the details that prevent leaks. From the Floors To You OKC team.',
   },
+{
+    slug: 'ceramic-vs-porcelain-vs-natural-stone-okc',
+    title: 'Ceramic vs. Porcelain vs. Natural Stone for OKC Bathrooms',
+    category: 'Comparison',
+    excerpt:
+      'They look similar on a showroom wall and behave very differently in a bathroom. What separates ceramic, porcelain and natural stone once water is involved.',
+    hero: '/images/photos/tile/marbeltilebathroom.webp',
+    heroAlt: 'Marble-look tile flooring in a bright renovated bathroom',
+    datePublished: '2026-08-10',
+    dateModified: '2026-08-10',
+    readMinutes: 7,
+    intro:
+      'Three tile options, three price points, and a showroom wall that makes them look almost interchangeable. The differences that matter in a bathroom are not the ones you can see standing up — they are density, water absorption and what each one asks of you once it is installed. Here is how we talk Oklahoma City homeowners through the choice.',
+    sections: [
+      {
+        heading: 'The real dividing line is density',
+        paragraphs: [
+          'Ceramic and porcelain are both fired clay. The difference is how densely they are pressed and how hot they are fired. Porcelain comes out denser and absorbs far less water, which is the property that matters in a room where water lands on the floor regularly.',
+          'Natural stone is a different category entirely. It is quarried rather than manufactured, so no two pieces match and the material is porous by nature. That porosity is why stone is the option that comes with ongoing maintenance attached.',
+        ],
+      },
+      {
+        heading: 'Ceramic: the budget-sensible choice with a caveat',
+        paragraphs: [
+          'Ceramic is easier to cut and generally cheaper, which keeps both material and labour down. For a guest bathroom or a powder room that sees light use, it is a perfectly sound choice and we install a lot of it.',
+          'The caveat is that ceramic is softer and more absorbent than porcelain. In a main bathroom used by a whole family, or anywhere a shower door drips onto the floor daily, the extra density of porcelain earns its cost difference over the life of the floor.',
+        ],
+      },
+      {
+        heading: 'Porcelain: the default for wet rooms',
+        paragraphs: [
+          'For most Oklahoma City bathrooms, porcelain is where we land. It is dense enough that water sitting on it is a non-event, hard enough that it does not scuff, and modern printing means the wood-look and stone-look ranges are genuinely convincing rather than obviously fake.',
+          'Through-body porcelain, where the colour runs the full thickness rather than sitting on a printed surface, is worth asking about for a floor that will see heavy use. A chip on a printed tile shows the body underneath; on a through-body tile it barely registers.',
+        ],
+        bullets: [
+          'Lower water absorption than ceramic, which is the point in a bathroom.',
+          'Harder wearing, so it holds up in a main bathroom rather than just a guest one.',
+          'Wood-look and stone-look ranges give you the appearance without the upkeep.',
+          'Costs more to cut and set, so labour is slightly higher than ceramic.',
+        ],
+      },
+      {
+        heading: 'Natural stone: beautiful, and a commitment',
+        paragraphs: [
+          'Marble, travertine and slate bring something manufactured tile cannot fake, because the variation is real. If that is what you want, nothing else will satisfy.',
+          'What you are signing up for is sealing. Stone is porous, so it needs sealing on installation and re-sealing periodically for as long as you own it. Skip that and it stains — and in a bathroom the staining agents are everyday products. It is also softer than porcelain, so acidic cleaners will etch it. If nobody in the house is going to keep up with that, porcelain that looks like stone is the honest recommendation.',
+        ],
+      },
+      {
+        heading: 'What matters more than the tile you pick',
+        paragraphs: [
+          'Bathrooms fail at the joints and the substrate, not in the middle of a tile. Whichever material you choose, the waterproofing behind it and the quality of the substrate underneath decide whether the floor is sound in fifteen years.',
+          'Slip resistance is the other thing to raise in the showroom. A polished finish that looks superb dry can be genuinely unsafe wet, and bathroom floors get wet. There are textured and honed finishes in every one of these three materials that solve it without costing you the look.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: 'Is porcelain always better than ceramic?', a: 'Not always — it is better in wet, high-traffic rooms, which is why we default to it for main bathrooms. In a powder room or a guest bathroom that sees light use, ceramic does the job for less money and the difference will never show. The decision should follow how the room is actually used.' },
+      { q: 'How often does natural stone need resealing?', a: 'It depends on the stone, the sealer and how heavily the room is used, so we would rather advise you on your specific material than quote a blanket interval. The important thing to know before you buy is that resealing is a permanent commitment, not a one-time step at installation.' },
+      { q: 'Can I put tile over my existing bathroom floor?', a: 'Sometimes, but it is worth resisting. Tiling over old tile raises the floor height, which affects the door and the transition, and it means you never find out what condition the substrate is in. In a bathroom, the substrate is exactly where problems hide.' },
+      { q: 'Which is best for a bathroom that gets a lot of use?', a: 'Through-body porcelain in a textured finish, in most cases. It handles the water, resists chipping, and the texture gives you grip when the floor is wet. Bring the room dimensions and a photo to the showroom and we will show you the ranges that fit.' },
+    ],
+    related: [
+      { label: 'Tile Flooring', href: '/services/tile/' },
+      { label: 'Bathroom Flooring in OKC', href: '/blog/bathroom-flooring-okc/' },
+      { label: 'Oklahoma City', href: '/areas/oklahoma-city/' },
+    ],
+    metaTitle: 'Ceramic vs. Porcelain vs. Stone for OKC Bathrooms',
+    metaDescription:
+      'Ceramic, porcelain and natural stone look alike in a showroom and behave differently once water is involved. How to choose for an Oklahoma City bathroom.',
+  },
+  {
+    slug: 'oklahoma-clay-soil-and-your-floors',
+    title: 'Oklahoma Clay Soil and What It Does to Your Floors',
+    category: 'Buying Guide',
+    excerpt:
+      'Central Oklahoma sits on expansive clay that swells and shrinks with the seasons. That movement reaches your floor, and some materials handle it far better than others.',
+    hero: '/images/photos/install/measuringflooring.webp',
+    heroAlt: 'Installer measuring a floor before a flooring installation',
+    datePublished: '2026-08-10',
+    dateModified: '2026-08-10',
+    readMinutes: 7,
+    intro:
+      'If you have lived in the Oklahoma City area for a few years you have probably seen a door that sticks in one season and swings free in another, or a hairline crack that opens and closes. That is the ground moving. Central Oklahoma has a lot of expansive clay soil, and expansive clay swells when it takes on water and shrinks when it dries out. Your floor sits on top of all that, and which floor you choose changes how much you notice.',
+    sections: [
+      {
+        heading: 'Why the ground moves here',
+        paragraphs: [
+          'Expansive clay behaves almost like a sponge. Through a wet spring it takes on water and swells; through a hot, dry Oklahoma summer it gives that water up and contracts. The movement is not uniform across a lot either — the soil under the middle of a slab stays more stable than the soil at the perimeter, which dries faster.',
+          'The result is small, seasonal, uneven movement in the structure. It is normal, it happens to well-built houses, and it is not usually a structural emergency. But it is real, and a floor spanning it has to cope.',
+        ],
+      },
+      {
+        heading: 'How that reaches the floor',
+        paragraphs: [
+          'The usual symptoms are a floor that develops a gentle dip or hump, gaps opening at seams over a season, and grout lines cracking in a consistent line rather than randomly.',
+          'Rigid materials telegraph movement most. Tile and stone are inflexible by nature, so when the substrate under them flexes, something has to give — and it gives at the grout line or the tile itself. That does not make tile a bad choice here, but it does make what is under the tile more important than the tile.',
+        ],
+      },
+      {
+        heading: 'Which floors cope best',
+        paragraphs: [
+          'Click-together luxury vinyl plank is the most forgiving option we install for this. Because it floats rather than being glued or nailed down, it can accommodate small amounts of substrate movement without transmitting it into visible damage. That flexibility is a real advantage in this soil.',
+          'Glue-down vinyl bonds to the slab, which is excellent for stability and heavy traffic but means it follows the slab exactly. Tile and stone need a genuinely sound, flat substrate and appropriate movement joints. Solid hardwood is the least forgiving of moisture-driven movement, which is why engineered hardwood is usually the better wood option here.',
+        ],
+        bullets: [
+          'Floating LVP: most tolerant of small substrate movement.',
+          'Engineered wood: real wood surface, far more dimensionally stable than solid.',
+          'Glue-down vinyl: very stable, but follows whatever the slab does.',
+          'Tile and stone: excellent floors, but only over a properly prepared substrate.',
+        ],
+      },
+      {
+        heading: 'What you can control',
+        paragraphs: [
+          'Most of what makes clay movement worse is water management around the house. Guttering that discharges next to the foundation soaks the perimeter soil; a summer where the perimeter dries out completely while the middle stays damp maximises the differential. Consistent moisture around a foundation is better than alternating extremes.',
+          'The other thing you control is substrate preparation before installation. A slab that is measured, and levelled where it needs it, gives every one of these materials its best chance. Skipping that step is the most common reason a new floor looks wrong within a year.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: 'Does clay soil mean I cannot have tile?', a: 'Not at all — plenty of Oklahoma City homes have tile floors that are perfectly sound. It means the substrate preparation and the movement joints matter more than they would elsewhere, and that a floor set on an unprepared slab is taking a risk. Choose the installer as carefully as you choose the tile.' },
+      { q: 'Will new flooring fix my uneven floor?', a: 'It will not fix the cause, and any installer who says otherwise is selling you something. What a proper installation does is assess the slab, level what can reasonably be levelled, and choose a material suited to what remains. If the movement is significant, that is a foundation conversation before it is a flooring one.' },
+      { q: 'Is floating LVP really better here?', a: 'For tolerance of small substrate movement, yes — a floating floor is not bonded to the slab, so it can accommodate a little without showing it. That is one factor among several, though. Traffic, moisture, budget and how the room is used all belong in the decision.' },
+      { q: 'How do I know if my slab needs levelling?', a: 'We check it as part of the in-home estimate rather than guessing from the surface. A floor can feel fine underfoot and still be out of tolerance for a rigid material, and it is far cheaper to find that out before the new floor goes down than after.' },
+    ],
+    related: [
+      { label: 'Luxury Vinyl (Click)', href: '/services/vinyl-click/' },
+      { label: 'Engineered Wood', href: '/services/engineered-wood/' },
+      { label: 'Best Flooring for Oklahoma Climate', href: '/blog/best-flooring-oklahoma-climate/' },
+    ],
+    metaTitle: 'Oklahoma Clay Soil and What It Does to Your Floors',
+    metaDescription:
+      'Central Oklahoma clay swells and shrinks with the seasons, and that movement reaches your floor. Which flooring copes best, and what you can control.',
+  },
+  {
+    slug: 'replacing-floors-after-water-damage-okc',
+    title: 'Replacing Floors After Water or Storm Damage in OKC',
+    category: 'Cost & Planning',
+    excerpt:
+      'What to do in the first 48 hours, what your insurer will want documented, and how to choose a replacement floor that handles it better next time.',
+    hero: '/images/photos/install/flooringremoval.webp',
+    heroAlt: 'Old flooring being removed down to the subfloor before replacement',
+    datePublished: '2026-08-10',
+    dateModified: '2026-08-10',
+    readMinutes: 7,
+    intro:
+      'Oklahoma weather does not do things by halves. Between spring storms, burst supply lines in a hard freeze and the occasional appliance that gives up, water on the floor is a common enough emergency here. What you do in the first two days makes a large difference to what the repair costs and to how much of it your insurer covers.',
+    sections: [
+      {
+        heading: 'The first 48 hours',
+        paragraphs: [
+          'Stop the water first, then document everything before you start moving things. Photograph the standing water, the affected rooms, the baseboards and anything damaged, with timestamps. Insurers assess claims on evidence, and the evidence disappears the moment you begin cleaning up.',
+          'Then get the water out and the air moving. Drying speed is what decides whether you are replacing a floor covering or also replacing subfloor and dealing with mould. Water that sits for days does substantially more damage than the same volume extracted quickly.',
+        ],
+      },
+      {
+        heading: 'What is usually salvageable and what is not',
+        paragraphs: [
+          'Carpet and pad are the most vulnerable. Pad soaks and holds water, and in a contaminated flood it should be replaced rather than dried. Carpet itself is sometimes salvageable from clean-water events if it is dried fast.',
+          'Laminate is generally the least recoverable. Its core is wood fibre, and once that swells the planks are finished. Solid hardwood may cup and can occasionally be dried and refinished if caught quickly, which is a genuinely worthwhile conversation before assuming it is a total loss. Tile and waterproof vinyl usually survive the water itself, though what is underneath them may not.',
+        ],
+      },
+      {
+        heading: 'The subfloor is the real question',
+        paragraphs: [
+          'Homeowners tend to focus on the visible floor, and the important assessment is the layer below it. A wet subfloor that gets covered over is how a water event becomes a mould problem six months later.',
+          'That means moisture readings rather than a look and a guess, and it means patience — installing a new floor over a subfloor that has not fully dried will fail, whatever the new floor is made of. Any installer willing to lay a new floor the day after a flood is doing you no favours.',
+        ],
+      },
+      {
+        heading: 'Choosing what goes back down',
+        paragraphs: [
+          'A replacement is a chance to change the outcome next time. If the room that flooded is a kitchen, laundry, bathroom or basement-adjacent space, waterproof-core luxury vinyl handles a repeat event in a way that laminate and carpet cannot.',
+          'Tile is the other genuinely water-tolerant answer, and in an entryway or utility room it is hard to beat. The trade-off is cost and the substrate preparation it needs — which, after a water event, you are having to do anyway.',
+        ],
+        bullets: [
+          'Waterproof-core LVP: the practical default for rooms that have flooded once.',
+          'Tile: excellent water tolerance, higher cost and more substrate preparation.',
+          'Laminate: avoid in any room with a repeat flooding risk.',
+          'Carpet: fine in bedrooms, a liability in a space that has already flooded.',
+        ],
+      },
+      {
+        heading: 'Working with your insurer',
+        paragraphs: [
+          'Get the documentation done before cleanup, keep every receipt including for drying equipment, and ask your adjuster what they need in writing rather than assuming. Where a claim covers replacement, it is usually written against the floor you had rather than the floor you would like, so if you are upgrading, expect to cover the difference.',
+          'We are happy to provide a written, itemised scope for a claim. An adjuster can work with a document that separates removal, subfloor remediation and new material far more easily than with a single number.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: 'Can hardwood be saved after flooding?', a: 'Sometimes, if it is dried quickly and properly. Wood that has cupped may flatten as it dries and can then be sanded and refinished. It is genuinely worth an assessment before writing it off, because refinishing a salvageable floor costs considerably less than replacing it.' },
+      { q: 'How long before new flooring can be installed?', a: 'Until the subfloor is dry to the correct moisture level, which is measured rather than estimated. Rushing this is the single most common way a repaired floor fails a second time, and the delay is far cheaper than doing the job twice.' },
+      { q: 'Will insurance cover a flooring upgrade?', a: 'Typically a claim covers restoring what you had rather than improving it, so if you move from carpet to luxury vinyl expect to pay the difference. That is often money well spent in a room that has now flooded once. Confirm the specifics with your adjuster.' },
+      { q: 'Do you provide documentation for claims?', a: 'Yes. We can provide a written, itemised scope separating tear-out, subfloor work and new flooring, which is the format adjusters find easiest to process.' },
+    ],
+    related: [
+      { label: 'Waterproof Flooring in OKC', href: '/blog/waterproof-flooring-okc/' },
+      { label: 'Luxury Vinyl (Click)', href: '/services/vinyl-click/' },
+      { label: 'Free In-Home Estimate', href: '/free-in-home-estimate/' },
+    ],
+    metaTitle: 'Replacing Floors After Water or Storm Damage in OKC',
+    metaDescription:
+      'What to do in the first 48 hours after a flood, what your insurer needs documented, and which replacement floors handle a repeat event in Oklahoma City.',
+  },
+  {
+    slug: 'how-long-does-flooring-installation-take-okc',
+    title: 'How Long Does Flooring Installation Actually Take?',
+    category: 'Cost & Planning',
+    excerpt:
+      'The install itself is rarely the long part. Here is what actually sets the schedule, room by room, and where the delays genuinely come from.',
+    hero: '/images/photos/install/floorinstalling.webp',
+    heroAlt: 'Installer fitting new plank flooring in a home',
+    datePublished: '2026-08-10',
+    dateModified: '2026-08-10',
+    readMinutes: 6,
+    intro:
+      'It is one of the first questions we get asked and one of the hardest to answer in a sentence, because the laying of the floor is often the shortest part of the process. What actually determines how long you are living around a project is material availability, tear-out, subfloor condition and acclimation. Here is an honest walk through each.',
+    sections: [
+      {
+        heading: 'Material availability sets the outer limit',
+        paragraphs: [
+          'Nothing starts until the material is on the ground. Anything in stock can move quickly — one of the reasons we hold in-stock carpet, luxury vinyl, hardwood and tile is precisely so a job does not sit waiting on a supplier.',
+          'Special orders are a different timeline entirely, and it is worth knowing which you are choosing at the showroom rather than after you have fallen in love with a sample. If speed matters, say so early and we will show you what can move fastest.',
+        ],
+      },
+      {
+        heading: 'Tear-out varies more than people expect',
+        paragraphs: [
+          'Pulling up carpet is fast. Pulling up glued-down vinyl, or tile set in mortar over concrete, is slow and physical. Removing tile in particular can take as long as installing the new floor, and it produces a great deal of dust and debris.',
+          'If there are multiple old layers — and in older Oklahoma City homes there frequently are — each one adds time. This is the single most common reason a project runs longer than a homeowner expected, and it is knowable in advance if someone actually looks before quoting.',
+        ],
+      },
+      {
+        heading: 'Subfloor work is the wildcard',
+        paragraphs: [
+          'Once the old floor is off, the subfloor is visible for the first time. Where it is sound and flat, the new floor goes straight down. Where it needs levelling, patching or moisture remediation, that work has to happen and some of it has curing time attached that cannot be rushed.',
+          'Given central Oklahoma soil movement, a slab that needs some levelling is not unusual. We would rather build the possibility into the conversation up front than surprise you with it mid-project.',
+        ],
+      },
+      {
+        heading: 'Acclimation, and which floors need it',
+        paragraphs: [
+          'Wood-based materials need time in the house before installation so they reach equilibrium with the indoor humidity. Skipping acclimation is how a hardwood floor ends up with gaps in winter or buckling in summer.',
+          'This is dead time in the schedule but it is not optional, and the length depends on the product and the conditions. Tile and most vinyl do not need it, which is part of why those projects finish sooner.',
+        ],
+        bullets: [
+          'Carpet: fastest, minimal preparation, no acclimation.',
+          'Click LVP: quick once the subfloor is right.',
+          'Tile: slower — setting and grouting both have curing time.',
+          'Hardwood: acclimation plus installation, and site-finishing adds more.',
+        ],
+      },
+      {
+        heading: 'Living in the house while it happens',
+        paragraphs: [
+          'Most people stay put, and the practical questions are which rooms are unusable when, whether furniture is being moved by us or by you, and how dust is being contained. Tile tear-out is the dustiest phase by a distance.',
+          'We would rather give you a realistic sequence at the estimate than an optimistic start date. Knowing that the kitchen is out for a specific stretch lets you plan around it; discovering it halfway through does not.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: 'Can you install flooring in one day?', a: 'For a straightforward carpet or click-vinyl job in a limited number of rooms over a sound subfloor, sometimes yes. It depends far more on tear-out and subfloor condition than on the size of the room, which is why we look before we promise.' },
+      { q: 'Why does hardwood take longer?', a: 'Acclimation is the main reason — wood has to reach equilibrium with your home before it is fitted, or it will move afterwards. If the floor is being finished on site rather than pre-finished, sanding, staining and coating add further time with drying between coats.' },
+      { q: 'Do I need to move out?', a: 'Almost never. Most projects are managed room by room so the house stays liveable. Where the work covers most of the ground floor at once, or where dust control matters especially, we will talk through the sequence at the estimate.' },
+      { q: 'What causes most delays?', a: 'Unexpected subfloor condition, and multiple old layers of flooring that were not accounted for. Both are largely avoidable by having someone assess the job properly before quoting rather than pricing from square footage over the phone.' },
+    ],
+    related: [
+      { label: 'How It Works', href: '/how-it-works/' },
+      { label: 'Flooring Installation Cost in OKC', href: '/blog/flooring-installation-cost-okc/' },
+      { label: 'Free In-Home Estimate', href: '/free-in-home-estimate/' },
+    ],
+    metaTitle: 'How Long Does Flooring Installation Actually Take?',
+    metaDescription:
+      'Laying the floor is rarely the long part. What really sets a flooring project schedule in Oklahoma City, and where the delays actually come from.',
+  },
+  {
+    slug: 'subfloor-prep-okc',
+    title: 'Subfloor Prep: The Step That Decides Whether Your Floor Lasts',
+    category: 'Buying Guide',
+    excerpt:
+      'It is the part of the job you never see and the part that most often explains why a new floor failed. What proper preparation involves and what to ask about.',
+    hero: '/images/photos/install/flooringremoval.webp',
+    heroAlt: 'Subfloor exposed after old flooring has been removed',
+    datePublished: '2026-08-10',
+    dateModified: '2026-08-10',
+    readMinutes: 6,
+    intro:
+      'When a floor fails early, it is very rarely the flooring that failed. It is what was underneath it. Subfloor preparation is invisible on handover day, it is the easiest line to trim from a quote, and it is the thing that decides whether your floor looks right in year five. Here is what it involves and what to ask before you sign anything.',
+    sections: [
+      {
+        heading: 'Flatness is not the same as level',
+        paragraphs: [
+          'A floor can slope gently across a whole room and be perfectly fine to install over. What causes problems is local unevenness — dips and humps over short distances. Manufacturers publish flatness tolerances for their products, and installing outside them is what voids warranties.',
+          'Rigid materials are least forgiving. Tile set over a dip will crack at the grout, and a click-together plank floor over an uneven substrate will flex at the joints until the locking mechanism gives up, which is heard as a hollow spot underfoot before it is seen.',
+        ],
+      },
+      {
+        heading: 'Moisture, especially on slab',
+        paragraphs: [
+          'Concrete slabs pass moisture vapour upward, and the amount varies with the season and what is happening outside the house. Putting a moisture-sensitive floor or the wrong adhesive over a slab that is giving off vapour is a slow failure that shows up as adhesive breakdown, cupping or a smell.',
+          'The answer is to measure rather than assume, and to use the appropriate barrier or underlayment where the reading calls for it. On the clay soils common around Oklahoma City, seasonal variation in slab moisture is worth taking seriously.',
+        ],
+      },
+      {
+        heading: 'What proper preparation actually involves',
+        paragraphs: [
+          'It starts with getting the old floor and all its residue off — old adhesive, staples, tack strip, and any patching material that is no longer sound. Then the substrate is checked for flatness and moisture, and corrected where needed with levelling compound or patching.',
+          'On wood subfloors it also means checking for movement and refastening where there is any. A squeaky subfloor does not stop squeaking because a new floor went over it, and once the new floor is down that opportunity has passed.',
+        ],
+        bullets: [
+          'Complete removal of old material and residue.',
+          'Flatness checked against the manufacturer tolerance, not by eye.',
+          'Moisture measured on slab, not assumed.',
+          'Loose or squeaking wood subfloor refastened before covering.',
+        ],
+      },
+      {
+        heading: 'Why cheap quotes are cheap here',
+        paragraphs: [
+          'When two quotes differ substantially on the same material, subfloor preparation is usually most of the gap. It is genuinely difficult to compare unless it is written down, because "install flooring" can mean anything from a full preparation to laying planks straight over whatever is there.',
+          'Ask any installer what their quote assumes about the subfloor and what happens if it turns out to need work. An honest answer describes how it will be assessed and how any additional work will be priced. A quote that says nothing about the subfloor is not cheaper — it just has not decided who pays yet.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: 'Can new flooring go over old flooring?', a: 'Sometimes it is technically possible, and it is usually a false economy. It raises the floor height, which affects doors and transitions, and it means nobody finds out what condition the substrate is in. In a room with any history of moisture, we would not recommend it.' },
+      { q: 'How do you check for moisture in a slab?', a: 'With a proper test rather than a look. The reading determines whether a moisture barrier is needed and which adhesives are suitable. It is a quick step that prevents a very slow and expensive kind of failure.' },
+      { q: 'Does subfloor prep add much to the cost?', a: 'It varies entirely with what we find, which is why we assess it during the in-home estimate rather than pricing it blind. What we can say is that it costs far less to do during the installation than to fix by pulling up a new floor a year later.' },
+      { q: 'Will levelling fix my sloping floor?', a: 'Levelling compound corrects local dips and unevenness, which is what actually matters for a successful installation. A whole-house slope is a structural question rather than a flooring one, and we will tell you plainly if that is what we are looking at.' },
+    ],
+    related: [
+      { label: 'How It Works', href: '/how-it-works/' },
+      { label: 'Oklahoma Clay Soil and Your Floors', href: '/blog/oklahoma-clay-soil-and-your-floors/' },
+      { label: 'Free In-Home Estimate', href: '/free-in-home-estimate/' },
+    ],
+    metaTitle: 'Subfloor Prep: The Step That Decides Your Floor',
+    metaDescription:
+      'Most early flooring failures are subfloor failures. What proper preparation involves, why cheap quotes skip it, and what to ask before you sign.',
+  },
+  {
+    slug: 'commercial-high-traffic-flooring-okc',
+    title: 'Commercial and High-Traffic Flooring in Oklahoma City',
+    category: 'Buying Guide',
+    excerpt:
+      'Shops, offices, clinics and kennels all punish floors differently. What actually survives commercial traffic, and why residential thinking gets expensive fast.',
+    hero: '/images/photos/epoxy/epoxyinstall-concretecoating.webp',
+    heroAlt: 'Epoxy concrete coating being installed on a commercial floor',
+    datePublished: '2026-08-10',
+    dateModified: '2026-08-10',
+    readMinutes: 6,
+    intro:
+      'A commercial floor is judged on different criteria than a home one. Nobody is choosing it because it feels nice underfoot; they are choosing it because it has to survive rolling loads, cleaning chemicals, spills and far more footfall than any house sees, without closing the business down to replace it. Here is how we think about it for Oklahoma City businesses.',
+    sections: [
+      {
+        heading: 'Wear layer is the number that matters',
+        paragraphs: [
+          'In resilient flooring, the wear layer is the transparent top surface that takes the abuse, and it is the single most useful spec for comparing commercial products. Residential-grade material in a commercial setting will look worn within months, and the saving disappears the first time it has to be replaced early.',
+          'This is the most common expensive mistake we see: a business owner prices flooring using residential figures, chooses on price, and replaces it in two years. Commercial-grade costs more up front and is dramatically cheaper per year of service.',
+        ],
+      },
+      {
+        heading: 'Match the floor to the actual traffic',
+        paragraphs: [
+          'A professional office with foot traffic on a defined path is a different problem from a retail floor with carts, which is different again from a workshop with rolling equipment or a veterinary space that is washed down daily.',
+          'Rolling loads are especially punishing, because they concentrate weight on a small contact area. Where carts, trolleys or equipment move regularly, that is the governing requirement and it should drive the specification.',
+        ],
+        bullets: [
+          'Offices and professional space: commercial LVT or carpet tile.',
+          'Retail with carts: harder wear layers and glue-down for stability.',
+          'Workshops and garages: epoxy and concrete coatings.',
+          'Kennels, grooming and wash-down areas: seamless, sealed, chemical-tolerant.',
+        ],
+      },
+      {
+        heading: 'Cleaning is part of the specification',
+        paragraphs: [
+          'Commercial floors get cleaned with stronger products and more aggressive equipment than domestic ones, and not every finish tolerates that. Choosing a floor without knowing what it will be cleaned with is how a good-looking installation dulls out within a year.',
+          'For wash-down environments — kennels, grooming, food preparation, clinical space — the seams are the weak point. Anywhere liquid needs to be hosed away rather than mopped, a seamless coated system is generally the right answer, because there are no joints for liquid to work into.',
+        ],
+      },
+      {
+        heading: 'Downtime is a real cost',
+        paragraphs: [
+          'For most businesses the installation schedule matters as much as the material. Every day the space is unusable is revenue, so phasing the work, or scheduling around trading hours, is often worth more than a small saving on material.',
+          'Carpet tile has a genuine advantage here that is worth knowing about: individual tiles can be lifted and replaced where they are damaged or stained, without closing an area to redo a whole floor. Over a long tenancy that adds up.',
+        ],
+      },
+      {
+        heading: 'Getting it specified properly',
+        paragraphs: [
+          'We would rather visit the space and see how it is actually used than quote from a floor plan. Where the traffic concentrates, what gets rolled across it, what it is cleaned with and what the downtime tolerance is — those four answers determine the specification more than the square footage does.',
+          'Bring us the constraints and we will show you what genuinely survives them.',
+        ],
+      },
+    ],
+    faqs: [
+      { q: 'What flooring is best for a dog kennel or grooming space?', a: 'Something seamless, sealed and tolerant of repeated wash-down and disinfectants — epoxy and concrete coating systems are the usual answer. The critical property is the absence of seams, because any joint is where liquid and odour get in and stay.' },
+      { q: 'Is commercial flooring much more expensive?', a: 'Higher up front and usually lower over the life of the floor, because it lasts substantially longer under the same traffic. The honest comparison is cost per year of service plus the disruption of replacing it early, not the price per square foot.' },
+      { q: 'Can you work outside business hours?', a: 'We schedule commercial work around trading where we can, including phasing an installation so parts of a space stay open. Tell us your downtime constraints at the walkthrough and we will build the sequence around them.' },
+      { q: 'What about epoxy for a garage or workshop?', a: 'Epoxy and concrete coatings are well suited to garages, workshops and any space with vehicles, rolling equipment or chemical exposure. The slab preparation underneath does most of the work in determining how long the coating lasts, so it is not a corner worth cutting.' },
+    ],
+    related: [
+      { label: 'Tile Flooring', href: '/services/tile/' },
+      { label: 'Luxury Vinyl (Glue-Down)', href: '/services/vinyl-glue/' },
+      { label: 'Oklahoma City', href: '/areas/oklahoma-city/' },
+    ],
+    metaTitle: 'Commercial & High-Traffic Flooring in Oklahoma City',
+    metaDescription:
+      'Shops, offices, workshops and kennels punish floors differently. What survives commercial traffic in OKC, and why residential specs get expensive fast.',
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
