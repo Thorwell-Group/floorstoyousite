@@ -34,14 +34,34 @@ const here = normalize(path);
 const matches = posts
   .filter((p) => p.related?.some((r) => normalize(r.href) === here))
   .slice(0, max);
+/**
+ * Pages with no topical match — city pages mostly, since no guide is *about*
+ * a particular town — were showing nothing and passing no authority into the
+ * blog. Fall back to a rotation seeded on the page path so different city pages
+ * surface different guides, spreading links across the whole blog rather than
+ * piling them all onto the same three posts.
+ */
+const seedOf = (str: string) => {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+  return h;
+};
+const rotated = (() => {
+  const pool = posts as any[];
+  if (!pool.length) return [];
+  const start = seedOf(here) % pool.length;
+  return Array.from({ length: Math.min(max, pool.length) }, (_, i) => pool[(start + i) % pool.length]);
+})();
+const finalMatches = matches.length ? matches : rotated;
+
 ---
 
-{matches.length > 0 && (
+{finalMatches.length > 0 && (
   <section class="container-x py-14 border-t border-ink/10">
     <p class="eyebrow mb-3">From Our Guides</p>
     <h2 class="text-2xl md:text-3xl mb-8">{title}</h2>
     <div class="grid md:grid-cols-3 gap-6">
-      {matches.map((p) => (
+      {finalMatches.map((p) => (
         <a href={`/blog/${p.slug}/`} class="card p-6 no-underline hover:shadow-soft transition-shadow flex flex-col gap-3">
           <span class="text-xs uppercase tracking-wider text-ink/50">{p.category}</span>
           <h3 class="text-lg leading-snug">{p.title}</h3>
