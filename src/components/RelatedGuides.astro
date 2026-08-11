@@ -1,0 +1,54 @@
+---
+/**
+ * Surfaces the blog posts that reference this page.
+ *
+ * Why this exists: the blog linked *out* to service and area pages, but nothing
+ * on the site linked *back in* — measured across the built site, service and area
+ * pages sent exactly zero links to blog posts. That left every guide reachable
+ * only from the blog index, so almost no internal authority reached them and
+ * they sat on page two of the results earning nothing.
+ *
+ * Rather than maintain a second hand-written mapping that will drift, this
+ * inverts the `related` links each post already declares: if a post points at
+ * /services/tile/, then /services/tile/ lists that post.
+ */
+import { posts } from '../data/posts';
+
+interface Props {
+  /** Path of the current page, e.g. "/services/tile/" or "/oklahoma-city/". */
+  path: string;
+  title?: string;
+  max?: number;
+}
+
+const { path, title = 'Guides Worth Reading', max = 3 } = Astro.props;
+
+const normalize = (u: string) => {
+  const s = (u || '').split('#')[0].split('?')[0];
+  if (!s.startsWith('/')) return '';
+  return s.endsWith('/') ? s : `${s}/`;
+};
+
+const here = normalize(path);
+
+const matches = posts
+  .filter((p) => p.related?.some((r) => normalize(r.href) === here))
+  .slice(0, max);
+---
+
+{matches.length > 0 && (
+  <section class="container-x py-14 border-t border-ink/10">
+    <p class="eyebrow mb-3">From Our Guides</p>
+    <h2 class="text-2xl md:text-3xl mb-8">{title}</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      {matches.map((p) => (
+        <a href={`/blog/${p.slug}/`} class="card p-6 no-underline hover:shadow-soft transition-shadow flex flex-col gap-3">
+          <span class="text-xs uppercase tracking-wider text-ink/50">{p.category}</span>
+          <h3 class="text-lg leading-snug">{p.title}</h3>
+          <p class="text-sm text-ink/70 leading-relaxed">{p.excerpt}</p>
+          <span class="text-sm font-semibold text-brand-700 mt-auto">Read the guide →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+)}

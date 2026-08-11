@@ -15,6 +15,7 @@ import ServiceSchema from '../../components/schema/ServiceSchema.astro';
 import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
 import FAQSchema from '../../components/schema/FAQSchema.astro';
 import { services } from '../../data/services';
+import RelatedGuides from '../../components/RelatedGuides.astro';
 
 export function getStaticPaths() {
  return services.map((s) => ({ params: { service: s.slug }, props: { service: s } }));
@@ -109,6 +110,7 @@ const breadcrumbs = [
  <AreaGrid serviceSlug={s.slug} serviceName={s.shortName} />
  <Testimonials />
  <FAQ faqs={s.faqs} heading={`${s.shortName} Questions OKC Homeowners Ask`} />
+ <RelatedGuides path={`/services/${s.slug}/`} />
  <CtaBand headline={`Fall In Love With Your New ${s.shortName}.`} subline={`We bring ${s.shortName.toLowerCase()} samples to your home, match them to your light and trim, then handle furniture, baseboards, install and cleanup. Lowest price guaranteed, 0% APR for 24 months, installed in as little as 24 hours.`} />
 
  <Fragment slot="head">

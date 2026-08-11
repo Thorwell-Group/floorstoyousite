@@ -633,6 +633,7 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'Hardwood flooring', href: '/services/hardwood/' },
       { label: 'Engineered wood installation', href: '/services/engineered-wood/' },
       { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
       { label: 'Best flooring for Oklahoma’s climate', href: '/blog/best-flooring-oklahoma-climate/' },

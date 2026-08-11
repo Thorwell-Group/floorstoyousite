@@ -11,6 +11,7 @@ import EasyBand from '../../components/EasyBand.astro';
 import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
 import FAQSchema from '../../components/schema/FAQSchema.astro';
 import { areas } from '../../data/areas';
+import RelatedGuides from '../../components/RelatedGuides.astro';
 import { services } from '../../data/services';
 import { site } from '../../data/site';
 
@@ -161,6 +162,7 @@ const serviceSchema = {
 
  <Testimonials />
  <FAQ faqs={localFaqs} heading={`${s.shortName} In ${a.city} - FAQ`} />
+ <RelatedGuides path={`/services/${s.slug}/`} title="Guides For This Floor" />
  <CtaBand
  headline={`Come Home To ${s.shortName} You Love In ${a.city}.`}
  subline={`We bring the samples to your ${a.city} home, preview them in your own rooms, then handle furniture, baseboards, install and cleanup. Lowest price guaranteed, 0% APR for 24 months, installed in as little as 24 hours.`}
