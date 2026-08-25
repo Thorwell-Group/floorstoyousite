@@ -7,7 +7,7 @@ export type PostSection = {
 export type Post = {
   slug: string;
   title: string;
-  category: 'Buying Guide' | 'Comparison' | 'Cost & Planning';
+  category: 'Buying Guide' | 'Comparison' | 'Cost & Planning' | 'How It Works';
   excerpt: string;
   hero: string;
   heroAlt: string;
@@ -100,6 +100,7 @@ export const posts: Post[] = [
       { label: 'Click-Lock Vinyl (LVP) installation', href: '/services/vinyl-click/' },
       { label: 'Laminate flooring installation', href: '/services/laminate/' },
       { label: 'Flooring across Oklahoma City', href: '/areas/oklahoma-city/' },
+      { label: 'In-stock vs. special-order flooring', href: '/blog/in-stock-vs-special-order-flooring-okc/' },
     ],
     metaTitle: 'LVP vs. Laminate Flooring in Oklahoma | Floors To You OKC',
     metaDescription:
@@ -177,6 +178,7 @@ export const posts: Post[] = [
       { label: 'Engineered wood installation', href: '/services/engineered-wood/' },
       { label: 'Tile flooring installation', href: '/services/tile/' },
       { label: 'Waterproof LVP installation', href: '/services/vinyl-click/' },
+      { label: 'Flooring installation in OKC: complete guide', href: '/blog/flooring-installation-okc-guide/' },
     ],
     metaTitle: "Best Flooring for Oklahoma's Climate | Floors To You OKC",
     metaDescription:
@@ -250,6 +252,8 @@ export const posts: Post[] = [
       { label: 'Book a free in-home estimate', href: '/book/' },
       { label: 'Financing options', href: '/financing/' },
       { label: 'Browse all flooring types', href: '/services/' },
+      { label: 'Flooring installation in OKC: complete guide', href: '/blog/flooring-installation-okc-guide/' },
+      { label: '0% flooring financing in OKC', href: '/blog/flooring-financing-okc/' },
     ],
     metaTitle: 'Flooring Installation Cost in Oklahoma City',
     metaDescription:
@@ -327,6 +331,8 @@ export const posts: Post[] = [
       { label: 'Click-Lock Vinyl (LVP) installation', href: '/services/vinyl-click/' },
       { label: 'Financing options', href: '/financing/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
+      { label: 'In-stock vs. special-order flooring', href: '/blog/in-stock-vs-special-order-flooring-okc/' },
+      { label: '0% flooring financing in OKC', href: '/blog/flooring-financing-okc/' },
     ],
     metaTitle: 'Affordable Flooring in OKC | Budget Floors Done Right',
     metaDescription:
@@ -399,6 +405,8 @@ export const posts: Post[] = [
       { label: 'Flooring across Oklahoma City', href: '/areas/oklahoma-city/' },
       { label: 'How our in-home process works', href: '/how-it-works/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
+      { label: 'What carpet installation costs in OKC', href: '/blog/carpet-installation-cost-okc/' },
+      { label: 'Next-day carpet installation', href: '/blog/next-day-carpet-installation-okc/' },
     ],
     metaTitle: 'Choosing Carpet in Oklahoma City | Fibers, Styles & Install',
     metaDescription:
@@ -478,6 +486,7 @@ export const posts: Post[] = [
       { label: 'Browse all flooring types', href: '/services/' },
       { label: 'Flooring across Oklahoma City', href: '/areas/oklahoma-city/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
+      { label: 'Why picking floors at home beats the showroom', href: '/blog/mobile-flooring-showroom-okc/' },
     ],
     metaTitle: 'What to Look For in an OKC Flooring Store',
     metaDescription:
@@ -1565,6 +1574,8 @@ export const posts: Post[] = [
       { label: 'How It Works', href: '/how-it-works/' },
       { label: 'Flooring Installation Cost in OKC', href: '/blog/flooring-installation-cost-okc/' },
       { label: 'Free In-Home Estimate', href: '/free-in-home-estimate/' },
+      { label: 'Flooring installation in OKC: complete guide', href: '/blog/flooring-installation-okc-guide/' },
+      { label: 'In-stock vs. special-order flooring', href: '/blog/in-stock-vs-special-order-flooring-okc/' },
     ],
     metaTitle: 'How Long Does Flooring Installation Actually Take?',
     metaDescription:
@@ -1629,6 +1640,7 @@ export const posts: Post[] = [
       { label: 'How It Works', href: '/how-it-works/' },
       { label: 'Oklahoma Clay Soil and Your Floors', href: '/blog/oklahoma-clay-soil-and-your-floors/' },
       { label: 'Free In-Home Estimate', href: '/free-in-home-estimate/' },
+      { label: 'Flooring installation in OKC: complete guide', href: '/blog/flooring-installation-okc-guide/' },
     ],
     metaTitle: 'Subfloor Prep: The Step That Decides Your Floor',
     metaDescription:
@@ -1704,6 +1716,556 @@ export const posts: Post[] = [
     metaTitle: 'Commercial & High-Traffic Flooring in Oklahoma City',
     metaDescription:
       'Shops, offices, workshops and kennels punish floors differently. What survives commercial traffic in OKC, and why residential specs get expensive fast.',
+  },
+  {
+    slug: 'next-day-carpet-installation-okc',
+    title: 'Next-Day Carpet Installation in OKC: How It Actually Works',
+    category: 'How It Works',
+    excerpt:
+      'Next-day install is real, but only under specific conditions. Here is exactly what has to line up, what can push your date, and how to give yourself the best shot at it.',
+    hero: '/images/photos/whychoose/next-day-install.webp',
+    heroAlt: 'Carpet being installed in an Oklahoma City home the day after selection',
+    datePublished: '2026-08-25',
+    dateModified: '2026-08-25',
+    readMinutes: 6,
+    intro:
+      'When people search for next-day carpet installation, they are usually solving a deadline: a house going on the market, a tenant moving in Friday, family arriving, or a room that just flooded. Next-day install is genuinely possible on in-stock material, but it depends on a handful of things lining up. Here is the honest version of how it works so you can tell quickly whether your job qualifies.',
+    sections: [
+      {
+        heading: 'The one thing that decides everything: is it in stock?',
+        paragraphs: [
+          'Next-day install only applies to material that is already sitting in the warehouse. If the carpet you fall in love with has to be ordered from the mill, the clock is set by freight, not by our schedule, and that is typically one to three weeks regardless of who you buy from.',
+          'That is why the very first question we ask on a rush job is not what color you want. It is how much square footage you need and whether you can work inside our in-stock range. Plenty of homeowners can, our in-stock rolls cover the neutrals and mid-tones that most rooms and most rental turns call for.',
+        ],
+        bullets: [
+          'In-stock carpet, measured today → install as soon as tomorrow',
+          'Special-order carpet → one to three weeks before install day',
+        ],
+      },
+      {
+        heading: 'What has to happen before a crew can show up',
+        paragraphs: [
+          'Three things, in this order. First, a real measure. We bring the samples to you, measure the rooms, and plan where seams will land, carpet comes in 12-foot rolls, so the layout determines how much you need and how many seams you get. Second, you pick from what is on the truck. Third, we confirm a crew and a time window.',
+          'Do all three in one visit and tomorrow is on the table. That is the whole reason we run a mobile showroom instead of asking you to drive across town, it collapses selection and measurement into a single appointment.',
+        ],
+      },
+      {
+        heading: 'What pushes your date, even with material on hand',
+        paragraphs: [
+          'A few conditions add a day or more no matter how fast the material moves. None of them are dealbreakers, but you want to know about them before you promise someone a date.',
+        ],
+        bullets: [
+          'Subfloor damage found under the old carpet, soft spots near a bathroom or exterior wall have to be repaired first',
+          'Standing water or a floor that is still drying from a leak; carpet over a wet subfloor is a mold problem, not a flooring problem',
+          'A staircase, which is a half day of work on its own and often needs its own crew slot',
+          'Whole-house jobs, where the square footage simply exceeds what one crew can install in a day',
+          'Same-day appliance or plumbing work that has to finish before we can start',
+        ],
+      },
+      {
+        heading: 'Rush does not mean rushed',
+        paragraphs: [
+          'Speed changes the schedule, not the standard. The old carpet and pad still come out and get hauled away, the tack strip still gets checked and replaced where it is corroded, the pad still gets fastened properly, and the carpet still gets power-stretched rather than kicked into place.',
+          'That last one matters most. Carpet that is not power-stretched looks fine on day one and ripples within a year or two, and fixing it means coming back to re-stretch the whole room. A tight deadline is exactly when installers are tempted to skip it. We do not.',
+        ],
+      },
+      {
+        heading: 'How to give yourself the best shot at tomorrow',
+        paragraphs: [
+          'Book the in-home measure as early in the day as you can, and have the rooms as clear as you can manage before we arrive. We move normal furniture as part of the job, but closets need to be emptied, dressers need to be emptied if they are heavy when full, and electronics should be disconnected by you.',
+          'Tell us the deadline on the first call. If your date is not realistic on the material you want, we would rather say so up front and show you an in-stock option that is, than book you and disappoint you. See <a href="/how-it-works/">how our process works</a> end to end, or <a href="/book/">book a free in-home estimate</a> and put a real date on the calendar.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Can you really install carpet the next day in Oklahoma City?',
+        a: 'Yes, on in-stock material, when the measure happens today and the subfloor is sound. Special-order carpet cannot be installed next day because the material has to ship from the mill, which typically takes one to three weeks.',
+      },
+      {
+        q: 'Does next-day installation cost extra?',
+        a: 'No. Next-day install on in-stock material is part of how we work rather than a rush fee. What changes the price is the carpet and pad you choose, the square footage, stairs, and any subfloor repair.',
+      },
+      {
+        q: 'What if you find damage under my old carpet?',
+        a: 'We will show you before we cover anything. Soft or water-damaged subfloor has to be repaired before new carpet goes down, or the new floor fails the same way the old one did. That usually adds a day.',
+      },
+      {
+        q: 'Do I have to move my own furniture?',
+        a: 'Our crew handles normal household furniture. We ask you to empty closets and dressers, disconnect electronics, and personally move anything fragile or irreplaceable such as aquariums, pianos, and curios.',
+      },
+    ],
+    related: [
+      { label: 'Carpet installation', href: '/services/carpet/' },
+      { label: 'What carpet installation costs in OKC', href: '/blog/carpet-installation-cost-okc/' },
+      { label: 'In-stock vs. special-order flooring', href: '/blog/in-stock-vs-special-order-flooring-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Next-Day Carpet Installation in OKC | Floors To You OKC',
+    metaDescription:
+      'Next-day carpet installation in Oklahoma City: what has to line up, what pushes your date, and how in-stock material makes a tomorrow install possible.',
+  },
+  {
+    slug: 'in-stock-vs-special-order-flooring-okc',
+    title: 'In-Stock vs. Special-Order Flooring: Why It Changes Your Price and Your Timeline',
+    category: 'Cost & Planning',
+    excerpt:
+      'The single decision that most affects when your floor goes in and what it costs is not the material type. It is whether the product is already in the warehouse.',
+    hero: '/images/photos/showroom/showroomsamples.webp',
+    heroAlt: 'Flooring samples laid out for an Oklahoma City homeowner to compare',
+    datePublished: '2026-08-25',
+    dateModified: '2026-08-25',
+    readMinutes: 6,
+    intro:
+      'Homeowners shopping for floors tend to compare materials: LVP against laminate, carpet against tile. That matters, but there is a second axis nobody explains in the showroom, and it moves both your timeline and your total more than the material category does. Every product is either in stock or special order, and the difference is worth understanding before you fall in love with something.',
+    sections: [
+      {
+        heading: 'What in-stock actually means',
+        paragraphs: [
+          'In-stock means full rolls and full pallets already sitting in a warehouse in the metro, bought in volume, ready to load onto a truck. Nobody is placing an order with a mill. Nobody is waiting on freight.',
+          'That has three consequences that all point the same direction: you can install almost immediately, the price reflects volume buying rather than a one-off order, and what you saw on the sample is what arrives, because it is literally the same lot.',
+        ],
+        bullets: [
+          'Install as soon as the next day',
+          'Lower cost per square foot on comparable quality',
+          'No dye-lot surprise between the sample and the delivery',
+        ],
+      },
+      {
+        heading: 'What special order buys you, and what it costs you',
+        paragraphs: [
+          'Special order opens the entire catalog. Every color, every width, every texture, exotic species, specific patterns, a plank width nobody stocks. If you have a particular look in mind and you will not be happy with an approximation, special order is how you get it, and it is a completely legitimate choice.',
+          'The costs are time and money. Freight from the mill typically runs one to three weeks and occasionally longer on specialty products, and single-order pricing does not benefit from volume. On a large job, that gap can be meaningful.',
+        ],
+      },
+      {
+        heading: 'The trap: dye lots on phased projects',
+        paragraphs: [
+          'Here is a problem that catches people who split a house into phases to spread out the cost. Flooring is manufactured in batches, and batches vary slightly in color. Buy the bedrooms now and the living room next spring, and there is a real chance the second batch will not match the first, subtly, but visibly, at the transition.',
+          'The fix is to buy all the material at once even if the installation is phased. If cost is the reason for phasing, our <a href="/financing/">financing options</a> are usually a better tool than splitting the purchase, because they let you buy one lot and install it all at once.',
+        ],
+      },
+      {
+        heading: 'When each one is the right call',
+        paragraphs: [
+          'The decision is usually easy once you name your real constraint.',
+        ],
+        bullets: [
+          'Deadline-driven, a listing, a move-in, a rental turn, a leak → in-stock, every time',
+          'Rental or investment property where durability beats specificity → in-stock',
+          'Whole-house on a budget → in-stock, and put the savings into a better pad or better material',
+          'A specific look you have already committed to → special order, and start the clock early',
+          'One feature room, a herringbone entry, a wide-plank great room → special order that room, in-stock the rest',
+        ],
+      },
+      {
+        heading: 'How to shop it properly',
+        paragraphs: [
+          'Do not start by browsing the full catalog and then asking what is available. Start by telling us your date. If you have a hard deadline, we will show you the in-stock range first and you can decide whether it works before you have emotionally committed to something that ships in three weeks.',
+          'And compare quotes on the same basis. A special-order quote and an in-stock quote for the same room are not the same product on the same timeline, so the per-square-foot numbers are not directly comparable. Our guide to <a href="/blog/flooring-installation-cost-okc/">what affects installation cost in OKC</a> covers what else should be itemized in a real bid.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Is in-stock flooring lower quality than special order?',
+        a: 'No. In-stock simply means the product is bought in volume and warehoused locally. The in-stock range is narrower on color and style than a full catalog, but the products themselves are standard-quality flooring from the same manufacturers.',
+      },
+      {
+        q: 'How long does special-order flooring take in Oklahoma City?',
+        a: 'Typically one to three weeks from order to delivery, depending on the manufacturer and the product. Specialty items, unusual widths, and imported products can take longer. We will give you the real lead time before you order rather than after.',
+      },
+      {
+        q: 'Why does buying flooring in phases cause color problems?',
+        a: 'Flooring is produced in batches, and batches vary slightly in color, this is called a dye lot. Material bought months apart may come from different lots and not match at the transition. Buying all the material at once avoids it, even if you install in stages.',
+      },
+      {
+        q: 'Can I mix in-stock and special-order material in one house?',
+        a: 'Yes, and it is often the smartest way to spend a budget. Put special-order material in the one or two rooms where the specific look matters, and use in-stock material everywhere else.',
+      },
+    ],
+    related: [
+      { label: 'Browse all flooring types', href: '/services/' },
+      { label: 'Next-day carpet installation', href: '/blog/next-day-carpet-installation-okc/' },
+      { label: 'Affordable flooring in OKC', href: '/blog/affordable-flooring-okc/' },
+      { label: 'Financing options', href: '/financing/' },
+    ],
+    metaTitle: 'In-Stock vs. Special-Order Flooring in OKC | Floors To You',
+    metaDescription:
+      'In-stock or special order? How the choice changes your flooring timeline, your price, and your risk of a dye-lot mismatch. A planning guide for OKC homeowners.',
+  },
+  {
+    slug: 'carpet-installation-cost-okc',
+    title: "What Carpet Installation Actually Costs in OKC (and What's Included)",
+    category: 'Cost & Planning',
+    excerpt:
+      'Carpet quotes are hard to compare because installers include different things. Here is every line that belongs in a real carpet estimate, and the one nobody itemizes.',
+    hero: '/images/photos/carpet/carpetselection.webp',
+    heroAlt: 'Carpet samples being compared in an Oklahoma City home',
+    datePublished: '2026-08-25',
+    dateModified: '2026-08-25',
+    readMinutes: 7,
+    intro:
+      'Two carpet quotes for the same house can differ by thousands of dollars, and the cheaper one is not always the better deal. The reason is that carpet pricing bundles at least six separate things, and different companies bundle them differently. Once you know what the six are, comparing bids gets easy.',
+    sections: [
+      {
+        heading: 'What should be on the quote',
+        paragraphs: [
+          'A complete carpet estimate covers all of the following. If a line is missing, it is not free, it is either buried in another line or it will appear later as a change order.',
+        ],
+        bullets: [
+          'The carpet itself, priced per square foot or square yard',
+          'The pad, specified by type and thickness, not just listed as pad',
+          'Removal and disposal of the existing carpet and pad',
+          'Tack strip, including replacement where the old strip is corroded',
+          'Labor, including furniture moving and power-stretching',
+          'Transitions at every doorway where carpet meets another floor',
+          'Stairs, always priced separately, per tread',
+        ],
+      },
+      {
+        heading: 'The pad is where cheap quotes hide',
+        paragraphs: [
+          'The pad is the line homeowners skim and installers know it. It is invisible once the carpet is down, which makes it the easiest place to shave a bid without the customer noticing until year three.',
+          'What the pad actually does is absorb compression. Every footstep either crushes the pad or crushes the carpet fiber, and fiber does not recover. A good carpet on a cheap pad develops a visible traffic lane years earlier than the same carpet on a proper pad, and many carpet warranties are explicitly void if the pad does not meet a minimum spec.',
+          'When you compare two quotes, find the pad on both. If one specifies density and thickness and the other just says pad included, you are not comparing the same job.',
+        ],
+      },
+      {
+        heading: 'Why stairs cost what they cost',
+        paragraphs: [
+          'Every homeowner is surprised by stair pricing, and it is worth explaining rather than defending. A staircase is not measured in meaningful square feet. It is a series of individually cut and wrapped pieces, each of which has to be tight, aligned, and consistent with the one above it. A fourteen-step staircase is a genuine half day of skilled labor.',
+          'There is also a style choice that changes the price. Waterfall, where the carpet flows over the nose of each tread, is faster and cheaper. Cap-and-band, where the carpet wraps under the nose and follows the stair profile, looks noticeably better and costs more.',
+        ],
+      },
+      {
+        heading: 'Fiber is the biggest lever on material cost',
+        paragraphs: [
+          'Nylon costs more than polyester and holds up longer, particularly in high-traffic areas and homes with pets. Polyester is softer and takes color beautifully, and in a low-traffic bedroom it is often the smarter spend. Our guide to <a href="/blog/choosing-carpet-oklahoma-city/">choosing carpet in Oklahoma City</a> walks through fiber, pile, and twist in detail.',
+          'The practical version: spend on nylon where the traffic is, save on polyester where it is not. Putting the same premium carpet in a guest bedroom that goes in the family room is money that does nothing for you.',
+        ],
+      },
+      {
+        heading: 'What can move the number after the quote',
+        paragraphs: [
+          'Two things legitimately change a price mid-job, and both should be shown to you before anything gets covered up.',
+          'The first is subfloor damage that was invisible under the old carpet, usually a soft spot near a bathroom, a water heater, or an exterior wall. The second is old tack strip that has corroded and cannot hold tension. Neither is optional, and neither is something an honest installer discovers and quietly ignores.',
+        ],
+      },
+      {
+        heading: 'How to compare two bids fairly',
+        paragraphs: [
+          'Get both to the same scope. Same fiber, same pad spec, same square footage, same stair treatment, both including removal and disposal. Then compare the installed total, not the price per square foot and not the monthly payment.',
+          'And ask one question that separates crews quickly: do you power-stretch? Carpet that is only knee-kicked into place ripples within a year or two, and re-stretching a room later costs real money. Ready for a real number? <a href="/book/">Book a free in-home estimate</a> and we will measure, plan the seams, and itemize all of it.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is included in a carpet installation quote?',
+        a: 'A complete quote covers the carpet, the pad specified by type and thickness, removal and disposal of the old carpet and pad, tack strip, transitions at doorways, and labor including furniture moving and power-stretching. Stairs are priced separately per tread.',
+      },
+      {
+        q: 'Why are stairs quoted separately from the rest of the house?',
+        a: 'Because a staircase is individually cut and wrapped piece by piece rather than rolled out. Each tread and riser is its own small job, so a fourteen-step staircase is roughly a half day of skilled labor regardless of the square footage involved.',
+      },
+      {
+        q: 'Does the carpet pad really change the price much?',
+        a: 'It is a modest share of the total and a large share of how long the carpet lasts. A cheap pad lets foot traffic crush the carpet fiber, which produces a visible traffic lane years early, and it can void the carpet manufacturer warranty.',
+      },
+      {
+        q: 'What is power-stretching and why does it matter?',
+        a: 'Power-stretching uses a tool that pulls carpet tight across the room and hooks it onto the tack strip under real tension. Carpet installed with only a knee kicker looks fine at first and develops ripples and buckles within a year or two, which requires coming back to re-stretch the entire room.',
+      },
+    ],
+    related: [
+      { label: 'Carpet installation', href: '/services/carpet/' },
+      { label: 'Choosing carpet in Oklahoma City', href: '/blog/choosing-carpet-oklahoma-city/' },
+      { label: 'Next-day carpet installation', href: '/blog/next-day-carpet-installation-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Carpet Installation Cost in OKC: What Is Included | Floors To You',
+    metaDescription:
+      'What carpet installation costs in Oklahoma City and every line that belongs in a real quote: pad, tack strip, disposal, stairs, and power-stretching.',
+  },
+  {
+    slug: 'mobile-flooring-showroom-okc',
+    title: 'Why Picking Floors at Home Beats the Showroom',
+    category: 'How It Works',
+    excerpt:
+      'Showroom lighting is designed to sell flooring. Your living room is where you have to live with it. Here is what changes when the samples come to you instead.',
+    hero: '/images/photos/whychoose/design-consultation.webp',
+    heroAlt: 'Flooring consultant showing samples in an Oklahoma City living room',
+    datePublished: '2026-08-25',
+    dateModified: '2026-08-25',
+    readMinutes: 5,
+    intro:
+      'Almost every flooring regret we hear starts the same way: it looked completely different in the store. That is not bad luck and it is not your eye failing you. Showrooms are lit, staged, and scaled to make flooring look its best, and none of those conditions exist in your house. Bringing the showroom to you removes the guesswork, and it collapses three appointments into one.',
+    sections: [
+      {
+        heading: 'Showroom light is not your light',
+        paragraphs: [
+          'Flooring showrooms use bright, even, color-corrected overhead lighting. Your house has a west window that blasts one wall all afternoon, a north-facing room that stays gray all day, and warm lamps at night. The same plank reads meaningfully different under each of those.',
+          'The effect is strongest with grays and greiges, the most-requested color family in the metro. A plank that looks like a clean neutral under showroom light can pull distinctly blue or distinctly brown in a real room, and you will not know which until the floor is installed and it is too late to change.',
+        ],
+      },
+      {
+        heading: 'Your fixed elements are at your house',
+        paragraphs: [
+          'You are not choosing a floor in isolation. You are choosing something that has to live with cabinets you are not replacing, a countertop, a fireplace surround, trim, and furniture you already own.',
+          'Holding a sample against your actual cabinets settles undertone questions in about ten seconds that would otherwise take three showroom visits and a lot of squinting at phone photos. Phone cameras auto-correct color, which makes them actively misleading for this.',
+        ],
+      },
+      {
+        heading: 'A four-inch sample lies about scale',
+        paragraphs: [
+          'Small samples hide two things. Pattern repeat, how often the same grain print recurs across a floor, is invisible on a four-inch chip and obvious across twenty feet of a great room. And texture reads differently at scale, a wire-brushed plank that looks subtle in the hand can look busy across a whole open-plan main floor.',
+          'Larger samples laid out on your own floor, in the room they are going into, solve both. It is the difference between imagining a floor and previewing one.',
+        ],
+      },
+      {
+        heading: 'The measure happens in the same visit',
+        paragraphs: [
+          'This is the practical payoff. In a traditional process you visit a showroom, pick something, then schedule a separate measure, then wait for a quote. That is three touchpoints across a week or more.',
+          'When the samples arrive at your house, the person showing them measures the rooms while they are there. You leave that appointment with the material chosen, the square footage known, and a real installed price, not a per-square-foot estimate that changes once someone actually measures. On in-stock material, that is also what makes a <a href="/blog/next-day-carpet-installation-okc/">next-day install</a> possible.',
+        ],
+      },
+      {
+        heading: 'What we find that you would not mention',
+        paragraphs: [
+          'Being in the house surfaces things that never come up over the phone. Whether the slab is flat, or needs leveling before a floating floor goes over it. Whether there is a soft spot near a bathroom. How the transitions to existing floors need to be handled. Whether a doorway will clear once the new floor adds height.',
+          'Every one of those is a line item that would otherwise appear as a surprise on install day. Finding them during the estimate is the difference between a quote and a guess. See <a href="/how-it-works/">how our process works</a>, or <a href="/book/">book a free in-home estimate</a> and we will bring the showroom to you.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Is there a charge for the in-home consultation?',
+        a: 'No. The in-home visit, the samples, and the measure are free, and there is no obligation to buy. You get an itemized installed price at the end of it.',
+      },
+      {
+        q: 'How long does an in-home flooring appointment take?',
+        a: 'Usually about an hour for a typical home. That covers walking the rooms, comparing samples in your own light, measuring, discussing subfloor and transitions, and producing a real quote.',
+      },
+      {
+        q: 'Can I still see a wider selection than what fits in a van?',
+        a: 'Yes. We bring a curated range based on what you tell us about the rooms and budget, and the full catalog is available to order from. If you want a specific look that is not in stock, we can order it, see our guide to in-stock versus special-order flooring for the timeline that involves.',
+      },
+      {
+        q: 'Which areas do you bring the mobile showroom to?',
+        a: 'The Oklahoma City metro, including Edmond, Norman, Moore, Yukon, Mustang, Midwest City, and Guthrie.',
+      },
+    ],
+    related: [
+      { label: 'How our process works', href: '/how-it-works/' },
+      { label: 'In-stock vs. special-order flooring', href: '/blog/in-stock-vs-special-order-flooring-okc/' },
+      { label: 'Flooring across Oklahoma City', href: '/areas/oklahoma-city/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Mobile Flooring Showroom in OKC | Floors To You OKC',
+    metaDescription:
+      'Why choosing flooring at home beats the showroom: real light, your cabinets, true scale, and a measure and quote in the same visit. Serving the OKC metro.',
+  },
+  {
+    slug: 'flooring-financing-okc',
+    title: '0% Flooring Financing in OKC: How 24 Months Interest-Free Actually Works',
+    category: 'Cost & Planning',
+    excerpt:
+      'Interest-free financing is real, and there is one detail that decides whether you actually pay zero. A plain-English guide for Oklahoma City homeowners.',
+    hero: '/images/photos/hardwood/hardwoodmodernliving.webp',
+    heroAlt: 'Newly installed wood-look flooring in an Oklahoma City living room',
+    datePublished: '2026-08-25',
+    dateModified: '2026-08-25',
+    readMinutes: 6,
+    intro:
+      'For most homeowners the flooring question is not whether they want new floors, it is whether this is the year. Financing exists to move that timeline, and 0% APR for 24 months is a genuinely good deal, provided you understand one specific mechanic about how promotional financing works. Get that one thing right and you pay exactly zero interest. Get it wrong and it becomes an expensive loan retroactively.',
+    sections: [
+      {
+        heading: 'What is on offer',
+        paragraphs: [
+          'Qualified buyers can finance a flooring project at 0% APR for 24 months through Synchrony, with no interest owed when the balance is paid in full inside the promotional window.',
+          'You can apply during the in-home estimate, which is the sensible time to do it, because by then you know the actual project total rather than guessing at a number. Approvals typically come back in minutes. The application is on our <a href="/financing/">financing page</a>.',
+        ],
+      },
+      {
+        heading: 'The detail that decides whether you pay zero',
+        paragraphs: [
+          'Promotional financing of this kind is deferred interest, not waived interest. That distinction is the whole ballgame.',
+          'Interest accrues quietly in the background during the 24 months. Pay the balance off before the promotion ends and all of it is forgiven, you genuinely paid nothing. Leave any balance when the promotion expires and the accrued interest can be charged retroactively, calculated on the original purchase amount rather than on what is left.',
+          'That is how a well-intentioned 0% plan turns expensive, and the cause is almost always the same: paying the minimum payment printed on the statement. The minimum is not sized to clear the balance in 24 months. It is not designed to.',
+        ],
+      },
+      {
+        heading: 'The one-minute fix',
+        paragraphs: [
+          'Take the project total, divide by 24, and set up an automatic payment for that amount. Ignore the minimum payment figure entirely.',
+          'A $6,000 project is $250 a month. Pay $250 every month, finish on schedule, pay zero interest. There is no trick beyond that, and it takes one minute to set up on the day you are approved. Do it then, not later.',
+        ],
+        bullets: [
+          '$3,600 project → $150/month for 24 months',
+          '$6,000 project → $250/month for 24 months',
+          '$9,600 project → $400/month for 24 months',
+        ],
+      },
+      {
+        heading: 'When financing is genuinely the better financial choice',
+        paragraphs: [
+          'Financing is not only for people who cannot pay cash. There are situations where it produces a lower total cost.',
+        ],
+        bullets: [
+          'Doing the whole house in one pass instead of phasing it over years, one crew mobilization, one furniture move, and one dye lot instead of three',
+          'Avoiding a material downgrade, the gap between the floor you want and the one you would settle for is often a couple of dollars a square foot, which is small spread over 24 months and permanent once installed',
+          'An unplanned failure, a slab leak or a burst line does not wait for a convenient quarter',
+          'Selling soon, new floors are among the more reliable pre-sale improvements, and financing moves the cost to after the sale',
+        ],
+      },
+      {
+        heading: 'When it is the wrong tool',
+        paragraphs: [
+          'If dividing the total by 24 produces a number that would be uncomfortable in a slow month, that is useful information rather than a problem to solve with a longer term. Scale the project or change the material instead. Our guide to <a href="/blog/affordable-flooring-okc/">affordable flooring in OKC</a> covers where to save without regretting it.',
+          'Financing should change when you do a project. It should not change whether you can afford one.',
+        ],
+      },
+      {
+        heading: 'Comparing quotes: use the installed total',
+        paragraphs: [
+          'If you are weighing two bids, compare the itemized installed total, never the monthly payment. A longer term always produces a smaller monthly number and tells you nothing about whether the price is fair. Get both quotes to the same scope and the same term first.',
+          'Our guide to <a href="/blog/flooring-installation-cost-okc/">what affects flooring installation cost in OKC</a> covers what should be itemized in a legitimate bid. <a href="/book/">Book a free in-home estimate</a> and we will give you the real number, then you can decide how to pay for it.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Do you offer 0% financing on flooring in Oklahoma City?',
+        a: 'Yes. Qualified buyers can finance at 0% APR for 24 months through Synchrony, with no interest owed when the balance is paid in full within the promotional period. You can apply during your free in-home estimate.',
+      },
+      {
+        q: 'What happens if I do not pay off the balance in 24 months?',
+        a: 'With deferred-interest promotions, interest can be charged retroactively from the original purchase date on the full original amount, not just the remaining balance. Dividing the total by 24 and paying that every month avoids it completely.',
+      },
+      {
+        q: 'What credit score do I need to qualify?',
+        a: 'Approval is based on the lender criteria rather than a single published cutoff, and the approved amount varies by credit profile. Because decisions come back in minutes, the practical answer is to apply and find out. Applying does not commit you to the project.',
+      },
+      {
+        q: 'Can I finance and still get next-day installation?',
+        a: 'Yes. Approval usually comes back during the estimate, so on in-stock material the financing does not slow the schedule down.',
+      },
+    ],
+    related: [
+      { label: 'Financing options', href: '/financing/' },
+      { label: 'What affects flooring installation cost in OKC', href: '/blog/flooring-installation-cost-okc/' },
+      { label: 'Affordable flooring in OKC', href: '/blog/affordable-flooring-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: '0% Flooring Financing in OKC, 24 Months | Floors To You',
+    metaDescription:
+      'How 0% APR flooring financing for 24 months works in Oklahoma City, what deferred interest means, and the one-minute setup that guarantees you pay zero.',
+  },
+  {
+    slug: 'flooring-installation-okc-guide',
+    title: 'Flooring Installation in Oklahoma City: The Complete Guide',
+    category: 'How It Works',
+    excerpt:
+      'Every stage of a flooring installation in the OKC metro: measure, subfloor, material, install day, and what happens after. The hub for everything else we have written.',
+    hero: '/images/photos/install/flooringinstallation.webp',
+    heroAlt: 'Flooring installation crew working in an Oklahoma City home',
+    datePublished: '2026-08-25',
+    dateModified: '2026-08-25',
+    readMinutes: 8,
+    intro:
+      'Most people replace their floors two or three times in their life, so nobody expects you to know how it works. This guide walks the whole process from first phone call to the last piece of trim, points you at the deeper guide for each stage, and flags the places where jobs actually go wrong. If you read one thing before getting quotes, read this.',
+    sections: [
+      {
+        heading: 'Stage 1: The measure and the quote',
+        paragraphs: [
+          'Everything starts with someone in your house with a tape measure. A quote produced without a measure is a guess, and guesses get revised upward once reality arrives.',
+          'A proper visit covers the room dimensions, the condition of the existing floor and what is under it, how the new floor will transition to floors you are keeping, whether doors will still clear once the new floor adds height, and whether the slab is flat enough for what you have chosen. We do this as one appointment with the samples in hand, which is <a href="/blog/mobile-flooring-showroom-okc/">why picking floors at home beats the showroom</a>.',
+          'What you should leave with is an itemized installed total, not a per-square-foot number.',
+        ],
+      },
+      {
+        heading: 'Stage 2: Choosing material, and choosing availability',
+        paragraphs: [
+          'Two decisions, not one. The first is the material category, and that comes down to the room and the household. Our guide to <a href="/blog/best-flooring-oklahoma-climate/">the best flooring for Oklahoma’s climate</a> covers how humidity swings, slab construction, and storm season should shape it, and <a href="/blog/lvp-vs-laminate-oklahoma/">LVP vs. laminate</a> settles the most common cross-shop.',
+          'The second decision is whether the product is in stock or special order, which controls both your timeline and your price more than most people expect. Our guide to <a href="/blog/in-stock-vs-special-order-flooring-okc/">in-stock vs. special-order flooring</a> explains the tradeoff, including the dye-lot trap that catches phased projects.',
+        ],
+      },
+      {
+        heading: 'Stage 3: The subfloor, where jobs actually go wrong',
+        paragraphs: [
+          'The floor you can see is only as good as the surface under it, and that surface is invisible until demolition day. This is the single most common source of change orders in our trade.',
+          'Most metro homes sit on a concrete slab, and slabs are rarely perfectly flat. A floating floor over an uneven slab flexes, and flexing floors click, gap at the seams, and eventually fail at the locking edges. High spots get ground down and low spots get filled with self-leveler before anything goes over them. Our guide to <a href="/blog/subfloor-prep-okc/">subfloor prep in OKC</a> goes deeper.',
+          'On wood subfloors the issues are different: soft spots from old leaks near bathrooms and exterior walls, squeaks that should be screwed down while the floor is open, and moisture that has to be measured rather than assumed.',
+        ],
+        bullets: [
+          'Slab flatness, checked and corrected before install, not during',
+          'Moisture testing on slabs and below-grade spaces',
+          'Soft or water-damaged subfloor cut out and replaced',
+          'Squeaks fixed while the subfloor is exposed, it is free now and expensive later',
+        ],
+      },
+      {
+        heading: 'Stage 4: Install day',
+        paragraphs: [
+          'How long it takes depends on the material and the square footage. Carpet is usually a single day. LVP, laminate, and engineered wood run one to three days for a typical home. Tile takes longer because mortar and grout have to cure. Our guide to <a href="/blog/how-long-does-flooring-installation-take-okc/">how long flooring installation takes</a> has the specifics by material.',
+          'What happens in order: furniture out, old floor and any old pad removed and hauled away, subfloor assessed and prepped, new floor installed, transitions and trim, cleanup, furniture back.',
+          'What we need from you: closets and dressers emptied, electronics disconnected, and anything fragile or irreplaceable moved personally. Normal furniture is ours to handle.',
+        ],
+      },
+      {
+        heading: 'Stage 5: After the install',
+        paragraphs: [
+          'Different materials need different things in the first week. Tile grout needs cure time before heavy traffic and before rugs go down. Floating floors need their expansion gap left alone at the perimeter, that gap is what stops the floor from buckling in August, and covering it with the wrong trim defeats it.',
+          'Longer term, felt pads under furniture legs and a real entry mat at every exterior door do more for a floor’s lifespan than any product you can buy for it.',
+        ],
+      },
+      {
+        heading: 'The questions worth asking any installer',
+        paragraphs: [
+          'Four questions separate crews quickly, whoever you hire.',
+        ],
+        bullets: [
+          'Do you carry your own insurance, and are the installers employees or subcontractors?',
+          'For carpet: do you power-stretch, or knee-kick?',
+          'What happens if you find subfloor damage, do I see it before it gets covered?',
+          'Is removal and disposal of the old floor in this price?',
+        ],
+      },
+      {
+        heading: 'Where to go next',
+        paragraphs: [
+          'If you are still choosing material, start with the climate guide. If you have a deadline, start with in-stock versus special order. If you are comparing bids, start with what affects installation cost. And if you want a real number for your house, <a href="/book/">book a free in-home estimate</a>, we will bring samples, measure, look at the subfloor, and itemize the whole thing.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'How long does flooring installation take in Oklahoma City?',
+        a: 'Carpet is typically one day. LVP, laminate, and engineered wood run one to three days for a typical home. Tile takes longer because mortar and grout need cure time. Subfloor repair adds a day when it is needed.',
+      },
+      {
+        q: 'Do I need to move out during flooring installation?',
+        a: 'Almost never. Most jobs are done room by room or zone by zone so the house stays livable. Whole-house tile is the main exception, because of cure times and the number of rooms out of service at once.',
+      },
+      {
+        q: 'What is the most common surprise cost in a flooring job?',
+        a: 'Subfloor work. Slab flatness on concrete, and soft or water-damaged sections on wood subfloors, are invisible until the old floor comes up. A good estimator flags the risk during the measure rather than discovering it on install day.',
+      },
+      {
+        q: 'Should I replace baseboards when I replace flooring?',
+        a: 'Not necessarily. Many installs use quarter round or shoe molding to cover the expansion gap without removing baseboards. If your baseboards are already damaged or you want a taller profile, doing it while the floor is out is the cheapest time.',
+      },
+    ],
+    related: [
+      { label: 'Browse all flooring types', href: '/services/' },
+      { label: 'Subfloor prep in OKC', href: '/blog/subfloor-prep-okc/' },
+      { label: 'How long flooring installation takes', href: '/blog/how-long-does-flooring-installation-take-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Flooring Installation in Oklahoma City: Complete Guide',
+    metaDescription:
+      'Every stage of flooring installation in the OKC metro: the measure, choosing material, subfloor prep, install day, and aftercare, plus the questions to ask any installer.',
   },
 ];
 
