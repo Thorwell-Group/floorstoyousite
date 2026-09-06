@@ -97,6 +97,8 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'LVP installation: click-lock vs glue-down', href: '/blog/lvp-installation-okc-click-vs-glue-down/' },
+      { label: 'Laminate installation in OKC', href: '/blog/laminate-flooring-installation-okc/' },
       { label: 'Click-Lock Vinyl (LVP) installation', href: '/services/vinyl-click/' },
       { label: 'Laminate flooring installation', href: '/services/laminate/' },
       { label: 'Flooring across Oklahoma City', href: '/areas/oklahoma-city/' },
@@ -175,6 +177,7 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'Cleaning and caring for hardwood floors', href: '/blog/hardwood-floor-cleaning-care-oklahoma/' },
       { label: 'Engineered wood installation', href: '/services/engineered-wood/' },
       { label: 'Tile flooring installation', href: '/services/tile/' },
       { label: 'Waterproof LVP installation', href: '/services/vinyl-click/' },
@@ -249,6 +252,8 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'Hardwood floor installation in OKC', href: '/blog/hardwood-floor-installation-okc/' },
+      { label: 'Tile floor installation in OKC', href: '/blog/tile-floor-installation-okc/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
       { label: 'Financing options', href: '/financing/' },
       { label: 'Browse all flooring types', href: '/services/' },
@@ -401,6 +406,7 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'When to replace carpet', href: '/blog/when-to-replace-carpet-okc/' },
       { label: 'Carpet flooring & installation', href: '/services/carpet/' },
       { label: 'Flooring across Oklahoma City', href: '/areas/oklahoma-city/' },
       { label: 'How our in-home process works', href: '/how-it-works/' },
@@ -563,6 +569,7 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'Laminate installation in OKC', href: '/blog/laminate-flooring-installation-okc/' },
       { label: 'Laminate flooring installation', href: '/services/laminate/' },
       { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
       { label: 'What affects flooring installation cost', href: '/blog/flooring-installation-cost-okc/' },
@@ -642,6 +649,8 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'Hardwood floor installation in OKC', href: '/blog/hardwood-floor-installation-okc/' },
+      { label: 'LVP installation: click-lock vs glue-down', href: '/blog/lvp-installation-okc-click-vs-glue-down/' },
       { label: 'Hardwood flooring', href: '/services/hardwood/' },
       { label: 'Engineered wood installation', href: '/services/engineered-wood/' },
       { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
@@ -722,6 +731,7 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'Tile floor installation in OKC', href: '/blog/tile-floor-installation-okc/' },
       { label: 'Tile flooring installation', href: '/services/tile/' },
       { label: 'Flooring across Oklahoma City', href: '/areas/oklahoma-city/' },
       { label: 'Best flooring for Oklahoma’s climate', href: '/blog/best-flooring-oklahoma-climate/' },
@@ -801,6 +811,8 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'When to replace carpet', href: '/blog/when-to-replace-carpet-okc/' },
+      { label: 'Cleaning and caring for hardwood floors', href: '/blog/hardwood-floor-cleaning-care-oklahoma/' },
       { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
       { label: 'Tile flooring installation', href: '/services/tile/' },
       { label: 'Carpet flooring & installation', href: '/services/carpet/' },
@@ -899,6 +911,7 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'LVP installation: click-lock vs glue-down', href: '/blog/lvp-installation-okc-click-vs-glue-down/' },
       { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
       { label: 'Glue-down vinyl flooring', href: '/services/vinyl-glue/' },
       { label: 'Tile flooring installation', href: '/services/tile/' },
@@ -999,6 +1012,7 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'LVP installation: click-lock vs glue-down', href: '/blog/lvp-installation-okc-click-vs-glue-down/' },
       { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
       { label: 'Glue-down vinyl flooring', href: '/services/vinyl-glue/' },
       { label: 'Hardwood vs. luxury vinyl in OKC', href: '/blog/hardwood-vs-luxury-vinyl-okc/' },
@@ -1097,6 +1111,8 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'Hardwood floor installation in OKC', href: '/blog/hardwood-floor-installation-okc/' },
+      { label: 'Cleaning and caring for hardwood floors', href: '/blog/hardwood-floor-cleaning-care-oklahoma/' },
       { label: 'Engineered wood flooring', href: '/services/engineered-wood/' },
       { label: 'Hardwood vs. luxury vinyl in OKC', href: '/blog/hardwood-vs-luxury-vinyl-okc/' },
       { label: 'Best flooring for the Oklahoma climate', href: '/blog/best-flooring-oklahoma-climate/' },
@@ -1195,6 +1211,8 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'Tile floor installation in OKC', href: '/blog/tile-floor-installation-okc/' },
+      { label: 'Cleaning and caring for hardwood floors', href: '/blog/hardwood-floor-cleaning-care-oklahoma/' },
       { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
       { label: 'Tile flooring installation', href: '/services/tile/' },
       { label: 'Engineered wood flooring', href: '/services/engineered-wood/' },
@@ -1365,6 +1383,7 @@ export const posts: Post[] = [
       { q: 'Which is best for a bathroom that gets a lot of use?', a: 'Through-body porcelain in a textured finish, in most cases. It handles the water, resists chipping, and the texture gives you grip when the floor is wet. Bring the room dimensions and a photo to the showroom and we will show you the ranges that fit.' },
     ],
     related: [
+      { label: 'Tile floor installation in OKC', href: '/blog/tile-floor-installation-okc/' },
       { label: 'Tile Flooring', href: '/services/tile/' },
       { label: 'Bathroom Flooring in OKC', href: '/blog/bathroom-flooring-okc/' },
       { label: 'Oklahoma City', href: '/areas/oklahoma-city/' },
@@ -1429,6 +1448,8 @@ export const posts: Post[] = [
       { q: 'How do I know if my slab needs levelling?', a: 'We check it as part of the in-home estimate rather than guessing from the surface. A floor can feel fine underfoot and still be out of tolerance for a rigid material, and it is far cheaper to find that out before the new floor goes down than after.' },
     ],
     related: [
+      { label: 'Tile floor installation in OKC', href: '/blog/tile-floor-installation-okc/' },
+      { label: 'Hardwood floor installation in OKC', href: '/blog/hardwood-floor-installation-okc/' },
       { label: 'Luxury Vinyl (Click)', href: '/services/vinyl-click/' },
       { label: 'Engineered Wood', href: '/services/engineered-wood/' },
       { label: 'Best Flooring for Oklahoma Climate', href: '/blog/best-flooring-oklahoma-climate/' },
@@ -1571,6 +1592,8 @@ export const posts: Post[] = [
       { q: 'What causes most delays?', a: 'Unexpected subfloor condition, and multiple old layers of flooring that were not accounted for. Both are largely avoidable by having someone assess the job properly before quoting rather than pricing from square footage over the phone.' },
     ],
     related: [
+      { label: 'Hardwood floor installation in OKC', href: '/blog/hardwood-floor-installation-okc/' },
+      { label: 'Tile floor installation in OKC', href: '/blog/tile-floor-installation-okc/' },
       { label: 'How It Works', href: '/how-it-works/' },
       { label: 'Flooring Installation Cost in OKC', href: '/blog/flooring-installation-cost-okc/' },
       { label: 'Free In-Home Estimate', href: '/free-in-home-estimate/' },
@@ -1637,6 +1660,9 @@ export const posts: Post[] = [
       { q: 'Will levelling fix my sloping floor?', a: 'Levelling compound corrects local dips and unevenness, which is what actually matters for a successful installation. A whole-house slope is a structural question rather than a flooring one, and we will tell you plainly if that is what we are looking at.' },
     ],
     related: [
+      { label: 'Hardwood floor installation in OKC', href: '/blog/hardwood-floor-installation-okc/' },
+      { label: 'LVP installation: click-lock vs glue-down', href: '/blog/lvp-installation-okc-click-vs-glue-down/' },
+      { label: 'Tile floor installation in OKC', href: '/blog/tile-floor-installation-okc/' },
       { label: 'How It Works', href: '/how-it-works/' },
       { label: 'Oklahoma Clay Soil and Your Floors', href: '/blog/oklahoma-clay-soil-and-your-floors/' },
       { label: 'Free In-Home Estimate', href: '/free-in-home-estimate/' },
@@ -1796,6 +1822,7 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'When to replace carpet', href: '/blog/when-to-replace-carpet-okc/' },
       { label: 'Carpet installation', href: '/services/carpet/' },
       { label: 'What carpet installation costs in OKC', href: '/blog/carpet-installation-cost-okc/' },
       { label: 'In-stock vs. special-order flooring', href: '/blog/in-stock-vs-special-order-flooring-okc/' },
@@ -1979,6 +2006,7 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'When to replace carpet', href: '/blog/when-to-replace-carpet-okc/' },
       { label: 'Carpet installation', href: '/services/carpet/' },
       { label: 'Choosing carpet in Oklahoma City', href: '/blog/choosing-carpet-oklahoma-city/' },
       { label: 'Next-day carpet installation', href: '/blog/next-day-carpet-installation-okc/' },
@@ -2235,6 +2263,7 @@ export const posts: Post[] = [
       {
         heading: 'Where to go next',
         paragraphs: [
+          'Each material has its own installation guide with the details that matter for it: <a href="/blog/hardwood-floor-installation-okc/">hardwood on an Oklahoma slab</a>, <a href="/blog/lvp-installation-okc-click-vs-glue-down/">click-lock vs glue-down LVP</a>, <a href="/blog/tile-floor-installation-okc/">tile over moving clay</a>, and <a href="/blog/laminate-flooring-installation-okc/">laminate done right</a>. If your project starts with tired carpet, read <a href="/blog/when-to-replace-carpet-okc/">when to replace carpet</a> first.',
           'If you are still choosing material, start with the climate guide. If you have a deadline, start with in-stock versus special order. If you are comparing bids, start with what affects installation cost. And if you want a real number for your house, <a href="/book/">book a free in-home estimate</a>, we will bring samples, measure, look at the subfloor, and itemize the whole thing.',
         ],
       },
@@ -2258,6 +2287,10 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'Hardwood floor installation in OKC', href: '/blog/hardwood-floor-installation-okc/' },
+      { label: 'LVP installation: click-lock vs glue-down', href: '/blog/lvp-installation-okc-click-vs-glue-down/' },
+      { label: 'Tile floor installation in OKC', href: '/blog/tile-floor-installation-okc/' },
+      { label: 'Laminate installation in OKC', href: '/blog/laminate-flooring-installation-okc/' },
       { label: 'Browse all flooring types', href: '/services/' },
       { label: 'Subfloor prep in OKC', href: '/blog/subfloor-prep-okc/' },
       { label: 'How long flooring installation takes', href: '/blog/how-long-does-flooring-installation-take-okc/' },
@@ -2266,6 +2299,656 @@ export const posts: Post[] = [
     metaTitle: 'Flooring Installation in Oklahoma City: Complete Guide',
     metaDescription:
       'Every stage of flooring installation in the OKC metro: the measure, choosing material, subfloor prep, install day, and aftercare, plus the questions to ask any installer.',
+  },
+  {
+    slug: 'hardwood-floor-installation-okc',
+    title: 'Hardwood Floor Installation in Oklahoma City: Slabs, Engineered Wood and What Drives the Cost',
+    category: 'How It Works',
+    excerpt:
+      'Most OKC homes sit on a concrete slab, and that one fact decides how hardwood gets installed. Nail, glue or float, moisture readings, acclimation, timelines, and what actually moves the price.',
+    hero: '/images/photos/hardwood/hardwoodinstall.webp',
+    heroAlt: 'Installer fitting engineered hardwood planks in an Oklahoma City home',
+    datePublished: '2026-09-06',
+    dateModified: '2026-09-06',
+    readMinutes: 8,
+    intro:
+      'Hardwood is the floor Oklahoma City buyers ask about first, and it is also the floor where installation matters most. Wood moves with moisture, Oklahoma swings from humid summers to dry winters, and a large share of metro homes are built on a concrete slab. Get the install right and a hardwood floor outlives the house. Get it wrong and it cups by the second August. Here is how a proper hardwood installation works in OKC, and what it means for your quote.',
+    sections: [
+      {
+        heading: 'Start with what is under your house',
+        paragraphs: [
+          `Everything about a hardwood install follows from the subfloor. In Oklahoma City there are two kinds: a plywood or OSB subfloor over a crawlspace or basement, and a concrete slab poured directly on the ground. Newer subdivisions in Edmond, Yukon, Mustang and south OKC are overwhelmingly slab. Older neighborhoods closer to the core are more often wood-framed.`,
+          `On a wood subfloor, solid hardwood is nailed down the traditional way. On a slab, solid hardwood cannot be nailed at all. That leaves two honest options: build a plywood subfloor on top of the slab first, which adds height and cost, or use engineered hardwood, which floats or glues directly to the concrete. For most slab-built homes we recommend the second. Our guide to <a href="/blog/engineered-wood-flooring-okc/">engineered wood flooring in OKC</a> explains why it is real wood with a more stable core, and <a href="/blog/oklahoma-clay-soil-and-your-floors/">Oklahoma clay soil and your floors</a> covers what the ground itself does to a slab over time.`,
+        ],
+        bullets: [
+          'Wood subfloor: solid or engineered, nailed or stapled down',
+          'Concrete slab: engineered hardwood, glued or floated',
+          'Solid hardwood on slab: only over a built-up plywood subfloor, with added height and cost',
+        ],
+      },
+      {
+        heading: 'Moisture readings come before anything else',
+        paragraphs: [
+          `Every hardwood job we do starts with a moisture meter on the subfloor. A slab can look bone dry and still be releasing water vapor that will cup a hardwood floor from underneath. Wood subfloors near bathrooms, exterior doors and old leaks read high more often than people expect.`,
+          `If the reading is out of range for the product, the fix depends on the cause: a vapor retarder under a floating floor, a moisture-mitigating adhesive under a glue-down, or in some cases waiting for a slab to dry after a plumbing repair. What we will not do is install over a wet subfloor and hope. That is how a floor fails inside its first year, and the warranty will not cover it.`,
+        ],
+      },
+      {
+        heading: 'Acclimation: the step people try to skip',
+        paragraphs: [
+          `Wood takes on and releases moisture until it matches the air around it. If planks go down straight off a delivery truck in July, they shrink over the winter and gap. If they go down straight from a cold warehouse in January, they swell in summer and crown.`,
+          `So the material sits in your home for several days before installation, in the rooms it is going into, with the HVAC running at normal living temperature. We schedule the delivery and the install around that window so it costs you no extra time in the calendar, just a few days between the two dates. Keeping indoor humidity between roughly 35 and 55 percent year-round afterward is what keeps the floor stable, and it is the single best piece of maintenance advice for hardwood in Oklahoma.`,
+        ],
+      },
+      {
+        heading: 'Nail, glue or float: what each method is for',
+        paragraphs: [
+          `<strong>Nail-down</strong> is the classic method for solid hardwood over a plywood subfloor. Each plank is blind-nailed or stapled through the tongue. It is fast on a good subfloor and produces the solid, quiet feel people associate with traditional wood floors.`,
+          `<strong>Glue-down</strong> is the standard for engineered hardwood over a slab. A full spread of urethane adhesive bonds the plank to the concrete. It feels solid underfoot with no hollow sound, and the right adhesive doubles as a moisture barrier. It takes longer and the slab has to be flat and clean.`,
+          `<strong>Floating</strong> engineered planks click or glue to each other and rest on an underlayment without attaching to the subfloor. It is the fastest method and the most forgiving of minor slab variation, and it is how a lot of OKC engineered installs are done. It needs an expansion gap at every wall and can sound slightly hollower than glue-down.`,
+          `We choose the method for your subfloor and your product, and we tell you which one you are getting and why. Our <a href="/services/hardwood/">hardwood flooring</a> and <a href="/services/engineered-wood/">engineered wood</a> pages cover the products we stock for each approach.`,
+        ],
+      },
+      {
+        heading: 'Subfloor prep on a slab',
+        paragraphs: [
+          `Slabs are never perfectly flat, and hardwood has a tighter flatness tolerance than vinyl. High spots get ground down and low spots get filled with a cement-based patch or self-leveling compound before any wood goes down. Cracks are addressed. Old adhesive from a previous floor is removed. This is the least glamorous part of the job and the one that most decides how the floor feels in five years. Our <a href="/blog/subfloor-prep-okc/">subfloor prep guide</a> goes deeper on what we look for.`,
+        ],
+      },
+      {
+        heading: 'How long it takes',
+        paragraphs: [
+          `Most single-room hardwood installs finish in a day. A whole main floor typically runs two to three days. Add the acclimation window before that, and a day if the subfloor needs significant leveling. Glue-down takes longer than floating for the same square footage because of adhesive open time and the care the spread requires.`,
+          `Because hardwood is often a special-order product, plan for five to ten business days between accepting the quote and the material arriving, on top of acclimation. In-stock engineered lines shorten that considerably. Our <a href="/blog/how-long-does-flooring-installation-take-okc/">installation timeline guide</a> compares this against other materials.`,
+        ],
+      },
+      {
+        heading: 'What actually moves the price',
+        paragraphs: [
+          `We do not publish per-square-foot prices because two houses with the same square footage can be very different jobs. What we can tell you is what changes the number, so you can read any hardwood quote you get.`,
+        ],
+        bullets: [
+          'Solid vs engineered, and the species and plank width you choose',
+          'Whether the slab needs leveling or moisture mitigation, and how much',
+          'Removing and hauling the existing floor, especially glued-down material',
+          'Glue-down vs floating labor',
+          'Stairs, which are always priced separately and take longer per step than any floor area',
+          'Transitions to other flooring, and whether door bottoms need trimming for the new height',
+          'Waste factor, typically 7 to 10 percent for straight-lay, more for herringbone or diagonal layouts',
+        ],
+      },
+      {
+        heading: 'Finish and species choices that affect living with it',
+        paragraphs: [
+          `Species and finish matter more than most people expect for durability. Hickory is harder than oak and takes more abuse; walnut is softer and shows dents. A matte or wire-brushed finish hides paw scratches and dust far better than a high-gloss one. If your household is hard on floors, we will show you these side by side at the estimate, along with waterproof wood-look options so you can compare honestly. Our <a href="/blog/hardwood-vs-luxury-vinyl-okc/">hardwood vs luxury vinyl</a> guide covers that decision.`,
+          `Engineered wood with a 3 to 6 mm wear layer can be light-sanded and refinished two or three times over its life, which is what lets a floor installed today still look new in thirty years.`,
+        ],
+      },
+      {
+        heading: 'What we include',
+        paragraphs: [
+          `Moisture readings, acclimation scheduling, expansion gaps and subfloor assessment are part of every Floors To You OKC hardwood install, not upcharges. Our lead installers are W-2 employees, and we back every install with a 100 percent labor guarantee for as long as you own the floor. Engineered lines we stock carry a lifetime structural warranty from the manufacturer.`,
+          `To get a real number for your house, <a href="/book/">book a free in-home estimate</a>. We bring the samples, read the slab, and itemize the whole job so you can see exactly where the money goes. If you want to spread the cost, <a href="/financing/">0% financing for 24 months</a> is available on approved credit.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Can you install hardwood over a concrete slab in Oklahoma City?',
+        a: 'Engineered hardwood, yes. It glues or floats directly over concrete once we confirm the moisture reading is in range. Solid hardwood cannot be nailed to a slab and requires building up a plywood subfloor first, which adds height and cost. We measure and walk you through both options before you commit.',
+      },
+      {
+        q: 'How long does hardwood floor installation take in OKC?',
+        a: 'Most single rooms finish in a day and a whole main floor runs two to three days. Wood also needs several days to acclimate in your home before it goes down, and special-order material takes five to ten business days to arrive, so plan the calendar around those two windows.',
+      },
+      {
+        q: 'Is glue-down or floating better for engineered hardwood?',
+        a: 'Glue-down feels more solid, eliminates hollow sound and the right adhesive adds a moisture barrier, but it needs a flatter slab and takes longer. Floating is faster, more forgiving of minor slab variation and easier to repair. We recommend based on your slab, your product and how the room is used.',
+      },
+      {
+        q: 'Why does hardwood cup or gap in Oklahoma?',
+        a: 'Moisture. Humid summers swell the boards and dry winters shrink them. Skipping acclimation, installing over a wet slab, or letting indoor humidity swing outside roughly 35 to 55 percent are the usual causes. Proper acclimation, moisture testing and a stable indoor climate prevent nearly all of it.',
+      },
+    ],
+    related: [
+      { label: 'Hardwood flooring & installation', href: '/services/hardwood/' },
+      { label: 'Engineered wood flooring', href: '/services/engineered-wood/' },
+      { label: 'Subfloor prep in OKC', href: '/blog/subfloor-prep-okc/' },
+      { label: 'Flooring installation in OKC: the complete guide', href: '/blog/flooring-installation-okc-guide/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Hardwood Floor Installation in Oklahoma City | Slab & Cost Guide',
+    metaDescription:
+      'How hardwood floors are installed in OKC: slab vs wood subfloor, nail, glue or float, moisture readings, acclimation, timelines and what drives the cost. Free in-home estimate.',
+  },
+  {
+    slug: 'lvp-installation-okc-click-vs-glue-down',
+    title: 'LVP Installation in OKC: Click-Lock vs. Glue-Down, Slab Prep and Timeline',
+    category: 'How It Works',
+    excerpt:
+      'Two ways to install luxury vinyl in an Oklahoma City home, and they are not interchangeable. When to float, when to glue, what the slab has to look like first, and how long each takes.',
+    hero: '/images/photos/lvp/flooringpasteinstall.webp',
+    heroAlt: 'Glue-down luxury vinyl plank being installed over a concrete slab in Oklahoma City',
+    datePublished: '2026-09-06',
+    dateModified: '2026-09-06',
+    readMinutes: 7,
+    intro:
+      'Luxury vinyl is the most installed floor in the OKC metro, and most of the questions we get are not about which plank looks best. They are about how it goes in. There are two methods, click-lock floating and glue-down, and the right one depends on the room, the slab and how you live. This guide explains both, what has to be true about your subfloor before either one goes down, and what the install actually looks like.',
+    sections: [
+      {
+        heading: 'Click-lock floating: the whole-home default',
+        paragraphs: [
+          `Click-lock LVP has a rigid SPC or WPC core with a milled locking edge. Planks snap to each other and rest on the subfloor without adhesive. The finished floor floats as a single sheet, held in place by its own weight and the trim at the edges.`,
+          `It is the fastest install we do. Most whole-home click-lock jobs in Oklahoma City finish in one to two days, and you can walk on it and move furniture back the moment the last plank locks in. It floats over existing tile, sheet vinyl or plywood as long as the surface is flat, which often saves a full day of demolition and a dumpster. Our <a href="/services/vinyl-click/">luxury vinyl plank</a> page covers the product lines.`,
+        ],
+        bullets: [
+          'Best for: whole-home installs, bedrooms and living areas, going over existing floors, tight timelines',
+          'Walkable immediately, no cure time',
+          'Needs an expansion gap at every wall and transitions on long runs',
+        ],
+      },
+      {
+        heading: 'Glue-down: when the floor must not move',
+        paragraphs: [
+          `Glue-down luxury vinyl, which we call LVT on our site, is thinner, around 2 mm, and bonds directly to the subfloor with a pressure-sensitive adhesive. Nothing floats and nothing shifts. There is no hollow sound underfoot, and because the planks are so thin, it is the answer for doorways where a thicker floor would trap a door or a dishwasher.`,
+          `Glue-down is also the most watertight vinyl install we offer, because the adhesive seals the seams as well as the surface. That makes it the pick for laundry rooms, bathrooms with a lot of standing water, and light commercial spaces with rolling loads. Commercial-grade wear layers up to 28 mil are available. See the <a href="/services/vinyl-glue/">luxury vinyl tile</a> page for what we stock.`,
+          `The tradeoff is time and prep. The slab has to be clean, flat and dry with no old adhesive, and the new adhesive needs about 24 hours to reach full cure. You can walk on it the same evening and roll furniture back the next day.`,
+        ],
+        bullets: [
+          'Best for: wet rooms, height-restricted doorways, light commercial, sunrooms with big temperature swings, very large open plans',
+          'Zero movement, no hollow sound, thinnest profile',
+          'Needs a cleaner and flatter slab, and 24 hours before furniture',
+        ],
+      },
+      {
+        heading: 'SPC, WPC and flexible vinyl: which core for which room',
+        paragraphs: [
+          `Inside the click-lock category, the core changes how the floor behaves. SPC (stone-plastic composite) is the densest and most dent-resistant, and it hides minor slab imperfections best. WPC (wood-plastic composite) is warmer and softer underfoot with more cushion. Flexible, thinner LVP needs the flattest subfloor of the three. All three are 100 percent waterproof. Our guide to <a href="/blog/vinyl-plank-flooring-okc/">comparing LVP products properly</a> walks through wear layers and core types in detail.`,
+        ],
+      },
+      {
+        heading: 'The slab decides how much prep you are paying for',
+        paragraphs: [
+          `Most Oklahoma City homes sit on concrete, and concrete is rarely flat. A floating floor over a low spot flexes every time you walk on it, and flexing fatigues the locking joint until a seam opens. A glue-down floor over a high spot telegraphs every bump through the thin plank.`,
+          `So the first real step of any LVP install is assessing and correcting the slab. High spots are ground down. Low spots are filled with a cement-based patch or self-leveling compound. Cracks are filled. Old adhesive is scraped or ground off. On a wood subfloor the concerns are different: soft spots, squeaks and moisture near bathrooms. Our <a href="/blog/subfloor-prep-okc/">subfloor prep guide</a> covers what we look for and how it gets quoted, and <a href="/blog/oklahoma-clay-soil-and-your-floors/">Oklahoma clay soil</a> explains why slabs here move in the first place.`,
+        ],
+      },
+      {
+        heading: 'Moisture, acclimation and expansion',
+        paragraphs: [
+          `Vinyl itself is waterproof, but the slab under it is not, and moisture vapor coming up through concrete can break down adhesive or grow mold under a floating floor. We check slab moisture before install and use a vapor barrier or a moisture-tolerant adhesive when readings call for it.`,
+          `LVP also needs to sit in the house at normal temperature for a day or two before install. It does not move as much as wood, but a floor installed cold in January and warmed by summer will expand, and a floor installed tight will peak at the seams. That is also why a floating floor gets a perimeter gap at every wall, covered by baseboard or quarter round, and a T-molding at long runs where the manufacturer requires one. Glue-down needs less of this because it cannot move as a unit.`,
+        ],
+      },
+      {
+        heading: 'What install day looks like',
+        paragraphs: [
+          `Furniture out, old floor removed if it is coming out, subfloor prepped and moisture-checked, underlayment or vapor barrier laid if the product needs it, layout planned so cuts and transitions land where they should, planks installed with staggered end joints and undercut door jambs, then trim, transitions and cleanup. Our <a href="/blog/flooring-installation-okc-guide/">complete installation guide</a> walks the whole sequence stage by stage.`,
+          `A single room is a few hours. A whole home in click-lock is one to two days. Glue-down adds time for adhesive open time and the extra care the spread requires.`,
+        ],
+      },
+      {
+        heading: 'Choosing between them for your house',
+        paragraphs: [
+          `If you are doing most of the house, want it done fast, and are going over an existing floor, click-lock is almost always right. If you are doing a laundry room or a bathroom that sees standing water, have a door or an appliance that will not clear a thicker floor, or want a floor that never makes a sound, glue-down earns its extra day.`,
+          `Many OKC homes end up with both: click-lock through the living areas and bedrooms, glue-down in the laundry and baths, with a matching transition between. We bring both samples to the <a href="/book/">free in-home estimate</a>, check your slab, and price each room the right way. If you are weighing vinyl against laminate first, our <a href="/blog/lvp-vs-laminate-oklahoma/">LVP vs laminate</a> guide settles that decision.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Should I choose click-lock or glue-down vinyl?',
+        a: 'Click-lock for whole-home installs, going over existing floors and fast timelines. Glue-down for wet rooms, doorways with tight clearance, light commercial, and anywhere plank movement or hollow sound is unacceptable. Many homes use click-lock in living areas and glue-down in laundry and bathrooms.',
+      },
+      {
+        q: 'How long does LVP installation take in Oklahoma City?',
+        a: 'Most whole-home click-lock installs finish in one to two days and are walkable immediately. Glue-down takes longer for the same area and needs about 24 hours for the adhesive to cure before furniture goes back, though you can walk on it that evening.',
+      },
+      {
+        q: 'Can LVP go over my existing tile?',
+        a: 'Yes, if the tile is well bonded, flat and dry. Rigid-core click vinyl floats over it without demolition, saving a day of labor and disposal. Wide grout lines may need filling first so they do not telegraph through. Glue-down over tile is possible but usually requires a skim coat.',
+      },
+      {
+        q: 'Does LVP need underlayment on a concrete slab?',
+        a: 'Many click-lock products have an attached pad and need only a vapor barrier if the slab moisture reading calls for one. Products without an attached pad get a thin underlayment. Glue-down vinyl goes directly on the prepared slab with no underlayment.',
+      },
+    ],
+    related: [
+      { label: 'Luxury vinyl plank (click-lock)', href: '/services/vinyl-click/' },
+      { label: 'Luxury vinyl tile (glue-down)', href: '/services/vinyl-glue/' },
+      { label: 'How to compare LVP products properly', href: '/blog/vinyl-plank-flooring-okc/' },
+      { label: 'Subfloor prep in OKC', href: '/blog/subfloor-prep-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'LVP Installation in OKC: Click-Lock vs Glue-Down Vinyl',
+    metaDescription:
+      'How luxury vinyl plank is installed in Oklahoma City: click-lock floating vs glue-down, slab prep, moisture, expansion gaps and timelines. Which method fits which room.',
+  },
+  {
+    slug: 'tile-floor-installation-okc',
+    title: 'Tile Floor Installation in Oklahoma City: Process, Timeline and What Drives the Cost',
+    category: 'How It Works',
+    excerpt:
+      'Tile is the one floor where the installation outlasts everything else in the house, or fails in a year. What a proper tile install involves on an Oklahoma slab, from crack isolation to grout cure.',
+    hero: '/images/photos/tile/tileinstaller.webp',
+    heroAlt: 'Tile installer setting large-format porcelain floor tile in an Oklahoma City home',
+    datePublished: '2026-09-06',
+    dateModified: '2026-09-06',
+    readMinutes: 7,
+    intro:
+      'A tile floor done right is permanent. It is also the most installation-dependent floor we sell: the same porcelain that lasts fifty years on a properly prepared slab cracks in eighteen months on a bad one. Oklahoma City adds its own wrinkle, because our expansive clay soil keeps slabs moving long after the house is built. Here is what a professional tile installation involves here, how long it takes, and what changes the price.',
+    sections: [
+      {
+        heading: 'Why tile is different from every other floor',
+        paragraphs: [
+          `Every other floor we install has some give. Carpet, vinyl and even wood flex a little when the slab under them moves. Tile does not. It is rigid, bonded to the substrate, and any movement below it shows up as a cracked tile or a cracked grout line above it. That makes the substrate and the setting method the whole job. The tile itself is the easy part.`,
+          `If you are still choosing between porcelain, ceramic and natural stone, our guide to <a href="/blog/ceramic-vs-porcelain-vs-natural-stone-okc/">ceramic vs porcelain vs natural stone</a> covers the material decision, and <a href="/blog/tile-flooring-ideas-okc/">tile flooring ideas for OKC homes</a> covers looks and layouts. This post is about what happens after you have chosen.`,
+        ],
+      },
+      {
+        heading: 'The slab, and the clay under it',
+        paragraphs: [
+          `Central Oklahoma sits on expansive clay that swells when wet and shrinks when dry. A slab on that soil moves seasonally, and a slab that moves will crack a rigid tile floor bonded directly to it. This is the single biggest reason tile fails in OKC, and it is preventable.`,
+          `The fix is a crack isolation or uncoupling membrane between the slab and the tile. An uncoupling membrane such as Schluter DITRA lets the slab move slightly without transferring that movement to the tile above. We already install Schluter systems for heated floors, and on a slab with visible cracking or a history of movement, the membrane is not optional. Our post on <a href="/blog/oklahoma-clay-soil-and-your-floors/">Oklahoma clay soil and your floors</a> explains the mechanics.`,
+        ],
+        bullets: [
+          'Existing cracks are filled and, where active, bridged with a crack isolation membrane',
+          'Uncoupling membrane over slabs with movement history or under large-format tile',
+          'Flatness corrected before anything is set, because tile cannot bridge a low spot',
+        ],
+      },
+      {
+        heading: 'Flatness matters more as tiles get bigger',
+        paragraphs: [
+          `The 12 by 24 and 24 by 48 formats we stock look clean and modern, and they are far less forgiving of an uneven slab than the 12 by 12 tiles of twenty years ago. A large tile spanning a low spot rocks and cracks; a large tile spanning a high spot creates lippage, the raised edge you catch with a toe. Industry standard for large-format tile is a substrate flat to within an eighth of an inch over ten feet, which is tighter than any other flooring we install.`,
+          `So large-format tile means more slab prep: grinding high spots, filling low spots with a self-leveler, and using a medium-bed mortar rated for the tile size. That prep is real labor and it is in the quote. Our <a href="/blog/subfloor-prep-okc/">subfloor prep guide</a> covers how we assess and price it.`,
+        ],
+      },
+      {
+        heading: 'Setting, spacing and grout',
+        paragraphs: [
+          `Tile is set in thinset mortar, or a medium-bed mortar for large formats, with full coverage under each tile so there are no hollow spots to crack later. Spacing is set with spacers or a leveling system, and a straight layout is planned so cuts land at the walls, not down the middle of the room. A single course out of square on day one is visible across the entire floor forever.`,
+          `Grout goes in after the mortar has set, typically the next day. Cement grout is then sealed once it has cured; high-performance grouts resist stains without sealing. Wide grout lines and dark grout hide more; narrow, light grout lines show every bit of dirt. We will talk you through the tradeoff, because it affects how the floor lives more than the tile color does.`,
+        ],
+      },
+      {
+        heading: 'Heated floors',
+        paragraphs: [
+          `Tile is cold in an Oklahoma January, and it is also the best floor for radiant heat because it conducts and holds warmth. We install Schluter DITRA-HEAT and WarmlyYours under-tile heating in bathrooms, mudrooms and kitchens. The heat mat goes in with the uncoupling membrane, so it adds little to the install timeline and pays back every winter morning. Ask at the estimate if you want it priced as an option.`,
+        ],
+      },
+      {
+        heading: 'How long a tile install takes',
+        paragraphs: [
+          `Tile takes longer than any other floor because mortar and grout have to cure between steps. A typical OKC bathroom floor is two to three days including prep, setting, grout and sealer. Larger kitchens, open living areas and showers run four to six days. Add time for crack isolation on a slab that needs it and for large-format leveling.`,
+          `The floor should not see heavy traffic until the grout has cured, and rugs should stay off for the first couple of weeks so the mortar and grout dry evenly. Because tile is usually a special-order or scheduled material, plan for five to ten business days from accepted quote to material on site. Our <a href="/blog/how-long-does-flooring-installation-take-okc/">timeline guide</a> compares this against other floors.`,
+        ],
+      },
+      {
+        heading: 'What drives the price of a tile floor',
+        paragraphs: [
+          `Tile has the widest cost range of any floor we install, and most of that range is labor and prep, not the tile.`,
+        ],
+        bullets: [
+          'Tile format: large-format needs more prep and a leveling system',
+          'Layout: straight lay is cheapest, diagonal and herringbone add cuts and waste',
+          'Slab condition: crack isolation, uncoupling membrane and leveling are real line items',
+          'Removing existing tile, which is slow, loud and generates a lot of debris',
+          'Grout type and sealing',
+          'Radiant heat as an option',
+          'Thresholds and transitions to adjacent floors, since tile is usually the tallest floor in the house',
+        ],
+      },
+      {
+        heading: 'Where tile earns its keep in an OKC home',
+        paragraphs: [
+          `Bathrooms, mudrooms, laundry rooms and entries are where tile is worth the extra install time: it is 100 percent waterproof, stain-resistant and will outlast the house. In kitchens it competes with waterproof vinyl, and the honest comparison depends on how much you value permanence over comfort underfoot. Our guides to <a href="/blog/bathroom-flooring-okc/">bathroom flooring</a> and <a href="/blog/kitchen-flooring-okc/">kitchen flooring in OKC</a> weigh it room by room.`,
+          `Every tile install we do carries a lifetime tile warranty and our 100 percent labor guarantee. To get a real number, <a href="/book/">book a free in-home estimate</a>. We bring the tile samples, check the slab for cracks and flatness, and itemize the prep so nothing is a surprise on install day.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'How long does a tile floor installation take in Oklahoma City?',
+        a: 'A typical bathroom is two to three days including subfloor prep, setting, grout cure and sealer. Larger kitchens and showers run four to six days. Slabs that need crack isolation or leveling for large-format tile add time.',
+      },
+      {
+        q: 'Why do tile floors crack in Oklahoma?',
+        a: 'Expansive clay soil moves the slab seasonally, and rigid tile bonded directly to a moving slab cracks. A crack isolation or uncoupling membrane between the slab and the tile lets the slab move without breaking the floor above it. We recommend it on any OKC slab with movement history and under all large-format tile.',
+      },
+      {
+        q: 'Can you install tile over existing tile?',
+        a: 'Sometimes, if the existing tile is sound, well bonded and flat, and the added height works at doors and transitions. In most cases removing the old tile produces a better, longer-lasting result, and we will tell you which applies after seeing the floor.',
+      },
+      {
+        q: 'Is porcelain or ceramic better for floors?',
+        a: 'Porcelain. It is fired denser, absorbs less than half a percent of its weight in water, and handles high traffic and wet rooms better. Ceramic is lighter on the budget and fine for walls and low-traffic bathrooms.',
+      },
+    ],
+    related: [
+      { label: 'Tile flooring & installation', href: '/services/tile/' },
+      { label: 'Ceramic vs porcelain vs natural stone', href: '/blog/ceramic-vs-porcelain-vs-natural-stone-okc/' },
+      { label: 'Oklahoma clay soil and your floors', href: '/blog/oklahoma-clay-soil-and-your-floors/' },
+      { label: 'Bathroom flooring in OKC', href: '/blog/bathroom-flooring-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Tile Floor Installation in Oklahoma City | Process & Cost',
+    metaDescription:
+      'What a proper tile floor installation involves on an Oklahoma City slab: crack isolation, flatness for large-format tile, setting, grout cure, heated floors, timelines and what drives the cost.',
+  },
+  {
+    slug: 'when-to-replace-carpet-okc',
+    title: 'When to Replace Carpet: 7 Signs, and What Replacement Involves in OKC',
+    category: 'Buying Guide',
+    excerpt:
+      'Matting, ripples, smells that come back after cleaning, and the pad you cannot see. How to tell whether your carpet needs replacing or restretching, and what a replacement day looks like in an Oklahoma City home.',
+    hero: '/images/photos/carpet/carpet-bedroom-plush-okc.webp',
+    heroAlt: 'Freshly installed plush carpet in an Oklahoma City bedroom',
+    datePublished: '2026-09-06',
+    dateModified: '2026-09-06',
+    readMinutes: 7,
+    intro:
+      'Carpet does not fail all at once. It gets a little flatter in the hallway, a little darker at the doorway, and one day you notice you have been stepping around a spot for a year. Some of what looks like worn-out carpet is a fixable pad or stretch problem. Some of it is genuinely done. Here is how to tell the difference, and what replacing carpet actually involves in an Oklahoma City home.',
+    sections: [
+      {
+        heading: 'The seven signs it is time',
+        paragraphs: [
+          `Most carpet in a busy household lasts eight to fifteen years, with the range decided by fiber quality, the pad underneath, pets, and how much sun and traffic it sees. Age alone is not the signal. These are.`,
+        ],
+        bullets: [
+          'Matting and crushing in traffic lanes that vacuuming no longer lifts, so the hallway looks like a different carpet from the bedroom it leads to',
+          'Stains that have come back after professional cleaning, which means they are in the pad, not the carpet',
+          'Odors that return within days of cleaning, almost always pet urine that has reached the pad and subfloor',
+          'Fiber that feels thin or crunchy underfoot, or bald spots where the backing shows through',
+          'Allergy symptoms that improve when you leave the house, from years of accumulated dust and dander a vacuum cannot reach',
+          'Fading or color change in sunny rooms that is now visible where furniture used to sit',
+          'A pad that has broken down, which you feel as unevenness or hear as a crunch when you walk',
+        ],
+      },
+      {
+        heading: 'Ripples and wrinkles are usually a stretch problem, not a carpet problem',
+        paragraphs: [
+          `If your carpet has waves or ripples but the fiber itself still looks fine, it has probably loosened from the tack strip. That happens when carpet was knee-kicked instead of power-stretched at install, or after heavy furniture has been dragged across it for years. Restretching is a real service and it is far cheaper than replacement.`,
+          `The honest test: if the carpet is under about eight years old, the pile looks even and the problem is only the ripples, ask about restretching first. If the ripples come with matting, stains and odor, the stretch is the least of it.`,
+        ],
+      },
+      {
+        heading: 'The pad is often what actually failed',
+        paragraphs: [
+          `Builder-grade carpet in a newer Oklahoma City home is frequently installed over a thin, low-density pad that breaks down in five to seven years. When it does, the carpet above it starts to look worn even though the fiber has life left. You feel it as flat spots and hear it as a crunch.`,
+          `If the carpet is otherwise sound, replacing only the pad and restretching the existing carpet is sometimes an option, and it is worth asking about. More often, once the pad has failed the carpet has also matted and the two go together. Either way, the lesson for the new floor is the same: the pad is not the place to save money. Our <a href="/blog/choosing-carpet-oklahoma-city/">carpet buying guide</a> explains what to look for in fiber and pad, and <a href="/blog/carpet-installation-cost-okc/">what carpet installation costs</a> shows where the pad sits in the quote.`,
+        ],
+      },
+      {
+        heading: 'Pet damage: when cleaning is not enough',
+        paragraphs: [
+          `Pet urine is the most common reason carpet gets replaced before its time. Once it reaches the pad and the subfloor, no surface cleaning reaches it, and the odor returns every humid Oklahoma summer. Replacement in that case means more than new carpet: the old pad comes out, the subfloor is cleaned and sealed where needed, and a new moisture-barrier pad goes down so the next accident stays on top.`,
+          `If you have pets and are replacing carpet, this is the moment to choose a fiber built for it. Every SmartStrand, PetProof and LifeProof line we stock carries lifetime pet stain and odor warranties. Our guide to <a href="/blog/best-flooring-pets-kids-high-traffic-okc/">flooring for pets, kids and high-traffic homes</a> compares carpet against hard-surface options for pet households honestly.`,
+        ],
+      },
+      {
+        heading: 'Replace, or switch to something else?',
+        paragraphs: [
+          `Replacing carpet is also the natural moment to ask whether the room should have carpet at all. Bedrooms, stairs and bonus rooms are where carpet still wins on warmth, quiet and cost per room. Living areas, hallways and anywhere near a kitchen or an exterior door are where many OKC homeowners now switch to waterproof luxury vinyl and keep carpet upstairs. Our <a href="/blog/best-flooring-oklahoma-climate/">best flooring for Oklahoma's climate</a> guide lays out the room-by-room case.`,
+        ],
+      },
+      {
+        heading: 'What replacement day looks like',
+        paragraphs: [
+          `Most whole-home carpet replacements finish in a single day. Here is the sequence our crews follow.`,
+        ],
+        bullets: [
+          'Furniture moved out of the rooms being done, or shifted within the room on larger jobs',
+          'Old carpet cut into strips, rolled and hauled away, along with the old pad',
+          'Tack strip inspected and replaced where it has rusted or pulled loose; on concrete slabs, strip rated for concrete',
+          'Subfloor checked for squeaks, soft spots and staining, and cleaned or sealed where pet damage reached it',
+          'New pad laid, taped at the seams; a moisture-blocking pad on slabs and in pet households',
+          'Carpet rolled out, seamed where a room is wider than the roll, and power-stretched onto the tack strip so it stays tight for years',
+          'Stairs wrapped, edges trimmed and tucked, and the house vacuumed before we leave',
+        ],
+      },
+      {
+        heading: 'How fast it can happen',
+        paragraphs: [
+          `Because we keep hundreds of styles in stock at our West Reno showroom, most in-stock carpet can be installed the day after your quote is accepted. That matters when the reason you are replacing carpet is a tenant turnover, a house going on the market, or a smell you cannot live with for another month. Our post on <a href="/blog/next-day-carpet-installation-okc/">next-day carpet installation</a> explains how the in-stock model makes that possible, and where special orders differ.`,
+          `Our lead installers are W-2 employees, not day-labor subcontractors, and every install carries a 100 percent labor guarantee for as long as you own the floor. To find out whether your carpet needs replacing, restretching, or just a new pad, <a href="/book/">book a free in-home estimate</a>. We will look at the carpet and the pad and give you a straight answer, with samples in hand if replacement is the call.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'How often should carpet be replaced?',
+        a: 'Most carpet in an active household lasts eight to fifteen years. Quality fiber over a good pad reaches the top of that range; builder-grade carpet over a thin pad reaches the bottom. Replace when matting, stains in the pad, returning odors or a broken-down pad appear, not on a calendar.',
+      },
+      {
+        q: 'Can wrinkled carpet be fixed without replacing it?',
+        a: 'Usually, yes. Ripples and waves mean the carpet has loosened from the tack strip, and a power restretch pulls it tight again. If the wrinkles come with heavy matting, stains or odor, replacement is the better spend.',
+      },
+      {
+        q: 'Does replacing carpet get rid of pet smell?',
+        a: 'Only if the pad comes out too and the subfloor is cleaned and sealed where urine reached it. New carpet over an old contaminated pad smells again within weeks. We remove the pad, treat the subfloor, and install a moisture-barrier pad so future accidents stay on the surface.',
+      },
+      {
+        q: 'How long does carpet replacement take?',
+        a: 'Most whole-home carpet replacements are done in one day, including removing and hauling away the old carpet and pad. In-stock styles can usually be installed the day after your quote is accepted.',
+      },
+    ],
+    related: [
+      { label: 'Carpet flooring & installation', href: '/services/carpet/' },
+      { label: 'Carpet installation in Oklahoma City', href: '/oklahoma-city/carpet/' },
+      { label: 'What carpet installation costs in OKC', href: '/blog/carpet-installation-cost-okc/' },
+      { label: 'Next-day carpet installation', href: '/blog/next-day-carpet-installation-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'When to Replace Carpet: Signs & What It Involves in OKC',
+    metaDescription:
+      'Seven signs your carpet needs replacing, when restretching or a new pad is enough, how pet damage changes the job, and what carpet replacement day looks like in an Oklahoma City home.',
+  },
+  {
+    slug: 'laminate-flooring-installation-okc',
+    title: 'Laminate Flooring Installation in OKC: What Happens on Install Day',
+    category: 'How It Works',
+    excerpt:
+      'Laminate is the fastest hard floor to install and one of the easiest to install badly. Underlayment, the 3/8-inch gap, undercut jambs, going over tile, and what separates a one-day install that lasts from one that gaps by spring.',
+    hero: '/images/photos/laminate/laminateinstall.webp',
+    heroAlt: 'Laminate flooring planks being installed in an Oklahoma City living room',
+    datePublished: '2026-09-06',
+    dateModified: '2026-09-06',
+    readMinutes: 6,
+    intro:
+      'Laminate is the floor people are most tempted to install themselves, which tells you how straightforward the basic idea is: planks click together and float on an underlayment. The details are where it goes wrong. The gap at the wall, the undercut at the door, the flatness of the slab and the moisture reading nobody took are what decide whether a laminate floor is still tight in ten years. Here is what a professional laminate installation looks like in an Oklahoma City home.',
+    sections: [
+      {
+        heading: 'What laminate is, in one paragraph',
+        paragraphs: [
+          `Laminate is a high-density fiberboard core with a printed wood or stone image on top, sealed under a clear wear layer. That wear layer is the hardest surface of any floor we sell, which is why laminate resists scratches so well, and the fiberboard core is the reason standing water is its one weakness. Modern laminate is water-resistant for 24 to 72 hours, which handles spills that get wiped up but not a leak that runs overnight. If you are still deciding between laminate and vinyl, our <a href="/blog/lvp-vs-laminate-oklahoma/">LVP vs laminate</a> guide is the place to start; our <a href="/blog/laminate-flooring-okc/">laminate pros, cons and cost</a> post covers the buying decision.`,
+        ],
+      },
+      {
+        heading: 'The subfloor check',
+        paragraphs: [
+          `A floating floor bridges nothing. Every dip in the slab under a laminate plank becomes a spot that flexes, and a flexing plank eventually breaks the locking edge and opens a seam. So the first step, before any plank comes out of the box, is a flatness check. High spots are ground down and low spots are filled with a floor patch or self-leveler.`,
+          `On concrete we also take a moisture reading, because laminate's fiberboard core swells from below just as readily as from above. A vapor barrier goes under the underlayment when the slab calls for it. On wood subfloors we fix squeaks and soft spots while they are exposed. Our <a href="/blog/subfloor-prep-okc/">subfloor prep guide</a> explains how this is assessed and priced.`,
+        ],
+      },
+      {
+        heading: 'Going over an existing floor',
+        paragraphs: [
+          `Laminate can float over existing tile, sheet vinyl or plywood as long as the surface is flat, intact and dry, and that saves the cost and mess of demolition. Wide grout lines in old tile are filled so they do not telegraph through. Laminate should not go over carpet, cushioned vinyl or another floating floor.`,
+          `Adding a floor on top of a floor raises the height, so we check door clearance, the gap under kitchen appliances, and the transition to adjacent rooms before recommending it. A dishwasher that fits today can be trapped under a countertop by a new floor installed in front of it.`,
+        ],
+      },
+      {
+        heading: 'Acclimation',
+        paragraphs: [
+          `Laminate's core is wood fiber, and wood fiber moves with humidity. The cartons sit in the room they are going into for about 48 hours at normal living temperature before installation. Oklahoma's swing from humid summer to dry winter makes this matter: planks installed straight from a hot truck in August shrink and gap in January, and planks installed cold in winter swell and peak in summer.`,
+        ],
+      },
+      {
+        heading: 'Underlayment, the gap and the jambs',
+        paragraphs: [
+          `Three details separate a professional laminate install from a rushed one.`,
+        ],
+        bullets: [
+          'Underlayment: laminate floats on an attached pad or a rolled underlayment that cushions the floor, quiets footsteps and, with a vapor barrier, protects the core from slab moisture',
+          'The expansion gap: a 3/8-inch gap at every wall and fixed object, covered by baseboard or quarter round that is fastened to the wall, never through the floor. Without it, summer expansion has nowhere to go and the floor peaks at the seams',
+          'Undercut door jambs: the casing is cut so the plank slides beneath it rather than being cut around it. Our crews also transition cleanly to existing flooring and protect baseboards, so shoe-mold is not needed to hide gaps',
+        ],
+      },
+      {
+        heading: 'Laying the floor',
+        paragraphs: [
+          `Layout comes first: which wall to start on, which direction the planks run, and where the cuts will land so a sliver of plank does not end up along a visible wall. End joints are staggered so seams do not line up row to row. Planks click together and are tapped home with a tapping block, never a bare hammer. Long runs get a T-molding at the interval the manufacturer requires, and every doorway gets a transition strip that lets each room move on its own.`,
+          `Most single-room laminate installs finish in a day, and a whole main floor is usually one to two days. The floor is walkable immediately. Our <a href="/blog/flooring-installation-okc-guide/">complete installation guide</a> walks the whole sequence and the questions to ask any installer.`,
+        ],
+      },
+      {
+        heading: 'Living with it afterward',
+        paragraphs: [
+          `Sweep or vacuum on a hard-floor setting, damp-mop with a laminate-safe cleaner, and never use a steam mop; forcing hot vapor into the seams is the one thing that damages modern laminate. Wipe up standing water within a few hours. Put felt pads under furniture and a mat at every exterior door. A properly installed AC4 laminate floor should last 20 to 30 years in a typical Oklahoma City home.`,
+        ],
+      },
+      {
+        heading: 'Getting it priced',
+        paragraphs: [
+          `Because we stock hundreds of laminate SKUs at our West Reno showroom, most laminate installs can be scheduled within 24 to 72 hours of an accepted quote. To get a real number, <a href="/book/">book a free in-home estimate</a>. We bring the samples, check the slab, measure the door clearances, and itemize the whole job. Our <a href="/services/laminate/">laminate flooring</a> page covers the lines we carry and the warranties behind them. If you are in Edmond, our <a href="/edmond/laminate/">laminate flooring in Edmond</a> page covers the local details.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'How long does laminate flooring installation take?',
+        a: 'A single room is usually done in a day and a whole main floor in one to two days, after about 48 hours of acclimation in the home. The floor can be walked on immediately. In-stock laminate can typically be scheduled within 24 to 72 hours of an accepted quote.',
+      },
+      {
+        q: 'Can laminate be installed over tile in Oklahoma City?',
+        a: 'Yes, as long as the tile is flat, intact and dry. Laminate floats over it with an underlayment, saving the cost of demolition. Wide grout lines are filled first, and we check that the added height still clears doors and appliances.',
+      },
+      {
+        q: 'Why does laminate flooring gap or peak after installation?',
+        a: 'Almost always a missing or undersized expansion gap, skipped acclimation, or an uneven subfloor. Laminate needs a 3/8-inch gap at every wall, 48 hours in the room before install, and a flat slab. Get those three right and the floor stays tight through Oklahoma\'s seasons.',
+      },
+      {
+        q: 'Do I need underlayment under laminate?',
+        a: 'Yes. Either an attached pad on the plank or a rolled underlayment. It cushions the floor, reduces noise, and on a concrete slab it is paired with a vapor barrier to keep moisture away from the fiberboard core.',
+      },
+    ],
+    related: [
+      { label: 'Laminate flooring & installation', href: '/services/laminate/' },
+      { label: 'Laminate flooring in Edmond', href: '/edmond/laminate/' },
+      { label: 'LVP vs laminate in Oklahoma', href: '/blog/lvp-vs-laminate-oklahoma/' },
+      { label: 'Subfloor prep in OKC', href: '/blog/subfloor-prep-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Laminate Flooring Installation in OKC | What to Expect',
+    metaDescription:
+      'How laminate flooring is professionally installed in Oklahoma City: subfloor flatness, moisture, acclimation, underlayment, the 3/8-inch expansion gap, undercut jambs and going over existing tile.',
+  },
+  {
+    slug: 'hardwood-floor-cleaning-care-oklahoma',
+    title: 'How to Clean and Care for Hardwood and Engineered Wood Floors in Oklahoma',
+    category: 'Buying Guide',
+    excerpt:
+      'What to use, what to never use, and the one number that protects a wood floor through an Oklahoma year. A care routine for solid and engineered hardwood in OKC, Edmond, Yukon, Midwest City and beyond.',
+    hero: '/images/photos/cleaning/hardsyurfacefloorcleaning.webp',
+    heroAlt: 'Cleaning a hardwood floor with a microfiber mop in an Oklahoma home',
+    datePublished: '2026-09-06',
+    dateModified: '2026-09-06',
+    readMinutes: 6,
+    intro:
+      'Most damage to a hardwood floor does not come from wear. It comes from cleaning it wrong, and from letting the air in the house swing between swamp and desert, which in Oklahoma it will do every year unless you stop it. This is the care routine we give every customer who buys a wood floor from us, whether it is solid hardwood over a crawlspace or engineered wood glued to a slab in Edmond.',
+    sections: [
+      {
+        heading: 'The weekly routine',
+        paragraphs: [
+          `Grit is what scratches a wood floor, so removing it is most of the job. Sweep or vacuum on a hard-floor setting, with the beater bar off, a couple of times a week in traffic areas. A microfiber dust mop does the same thing quietly.`,
+          `When the floor needs more than dust removal, damp-mop it with a cleaner made for polyurethane-finished wood. Damp means wrung out until it is barely wet. Water is the enemy of the wood underneath the finish, and the finish is thin. Never let water sit, never flood the floor, and dry any spill as soon as you see it.`,
+        ],
+      },
+      {
+        heading: 'What never to use',
+        paragraphs: [
+          `Most of the floors we see with a dull, hazy or peeling finish got that way from a product, not from traffic.`,
+        ],
+        bullets: [
+          'Steam mops. Forcing hot vapor into the seams swells the wood and clouds the finish. This is the single most common way a new hardwood floor gets ruined',
+          'Vinegar and water. It is acidic and slowly dulls polyurethane. The internet loves it; your finish does not',
+          'Oil soaps and wax-based polishes. They leave a film that attracts dirt and, worse, prevents a future recoat from bonding. A floor that has been waxed cannot simply be refreshed later',
+          'All-purpose or ammonia cleaners, which strip the finish over time',
+          'Wet mops, string mops and anything that leaves standing water',
+        ],
+      },
+      {
+        heading: 'The number that protects your floor: 35 to 55 percent',
+        paragraphs: [
+          `Wood moves with moisture in the air. Oklahoma summers push indoor humidity high and the boards swell; winter heating drops it low and the boards shrink. Small seasonal gaps in winter are normal. Large gaps, cupping in summer or squeaks that appear and disappear with the seasons mean the swing is too big.`,
+          `Keep indoor relative humidity between roughly 35 and 55 percent year-round. In practice that means running the air conditioning in summer, which dehumidifies, and adding a humidifier to the furnace or a room unit in the dry months from December through February. A ten-dollar hygrometer tells you where you stand. This one habit does more for a wood floor's lifespan than any cleaning product. Our guide to <a href="/blog/best-flooring-oklahoma-climate/">the best flooring for Oklahoma's climate</a> explains why the humidity swing matters more here than in most of the country.`,
+        ],
+      },
+      {
+        heading: 'Protecting the finish from furniture and sun',
+        paragraphs: [
+          `Felt pads under every piece of furniture that moves, checked and replaced when they wear through. A real entry mat at every exterior door to catch grit before it reaches the floor. Rugs at the kitchen sink and in front of the refrigerator, where water lands most. Trim pet nails, because a dog running to the door is a sanding operation.`,
+          `Oklahoma sun is strong, and it will lighten or darken wood over time depending on the species and finish. Rooms with big south or west windows will show a color difference where a rug sat if the rug never moves. Rotate rugs and furniture occasionally, and consider UV-blocking window film in rooms that get direct afternoon sun.`,
+        ],
+      },
+      {
+        heading: 'Engineered wood: the same rules, one extra',
+        paragraphs: [
+          `Engineered wood has a real hardwood top layer over a plywood core, so its care is identical to solid hardwood: dry clean, damp mop with a wood-safe product, no steam, no wax, stable humidity. The extra consideration is the wear layer. Most quality engineered floors have a 3 to 6 mm top layer that can be light-sanded and refinished two or three times over the floor's life. That is enough to reset a tired floor twice, but it is not unlimited, so protecting the finish matters even more than on solid wood. Our <a href="/blog/engineered-wood-flooring-okc/">engineered wood guide</a> covers how to read wear-layer specs.`,
+        ],
+      },
+      {
+        heading: 'When cleaning is not enough',
+        paragraphs: [
+          `A floor that looks dull even after proper cleaning has a worn finish, not a dirty one. Fine scratches across the whole surface and a matte, tired look in the traffic lanes are the signs. That floor does not need replacing. It needs the finish refreshed, and the earlier you catch it the less work it is. Bring us photos at your <a href="/book/">free in-home estimate</a> and we will tell you honestly whether your existing floor is a candidate for a refinish or whether replacing it is the better spend.`,
+          `If the floor is beyond saving, or you are adding wood to a room that never had it, our <a href="/blog/hardwood-floor-installation-okc/">hardwood installation guide</a> explains how the job works on an Oklahoma slab, and our <a href="/services/hardwood/">hardwood</a> and <a href="/services/engineered-wood/">engineered wood</a> pages show what we keep in stock.`,
+        ],
+      },
+      {
+        heading: 'A one-page routine',
+        paragraphs: [
+          `Print this and stick it inside a cabinet door.`,
+        ],
+        bullets: [
+          'Twice a week: sweep, dust-mop or vacuum with the beater bar off',
+          'As needed: damp-mop with a polyurethane-safe wood cleaner, wrung nearly dry',
+          'Immediately: wipe up any standing water',
+          'Always: felt pads, entry mats, sink and fridge rugs, trimmed pet nails',
+          'Year-round: indoor humidity between 35 and 55 percent',
+          'Never: steam mops, vinegar, oil soap, wax or ammonia',
+          'Every few years: have the finish assessed before it wears through to bare wood',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best way to clean hardwood floors?',
+        a: 'Sweep or vacuum with the beater bar off a couple of times a week, then damp-mop with a cleaner made for polyurethane-finished wood, wrung nearly dry. Never use a steam mop, vinegar, oil soap, wax or ammonia-based cleaners, and never leave standing water on the floor.',
+      },
+      {
+        q: 'Can I use a steam mop on hardwood or engineered wood?',
+        a: 'No. Steam forces hot moisture into the seams, swells the wood and clouds or lifts the finish. It is the most common cause of premature damage to wood floors we see in Oklahoma City homes.',
+      },
+      {
+        q: 'Why are gaps appearing in my hardwood floor in winter?',
+        a: 'Winter heating dries the indoor air and the boards shrink. Small seasonal gaps are normal and close in summer. Large gaps, or cupping in summer, mean indoor humidity is swinging too far. Keep it between 35 and 55 percent with air conditioning in summer and a humidifier in the dry months.',
+      },
+      {
+        q: 'How do I care for engineered wood floors differently from solid hardwood?',
+        a: 'The daily care is the same. The difference is that engineered wood has a limited wear layer, usually 3 to 6 mm, that can be refinished two or three times rather than indefinitely, so protecting the finish with pads, mats and proper cleaning matters even more.',
+      },
+    ],
+    related: [
+      { label: 'Hardwood flooring & installation', href: '/services/hardwood/' },
+      { label: 'Engineered wood flooring', href: '/services/engineered-wood/' },
+      { label: 'Hardwood flooring in Midwest City', href: '/midwest-city/hardwood/' },
+      { label: 'Hardwood flooring in Yukon', href: '/yukon/hardwood/' },
+      { label: 'Hardwood floor installation in OKC', href: '/blog/hardwood-floor-installation-okc/' },
+    ],
+    metaTitle: 'How to Clean & Care for Hardwood Floors in Oklahoma',
+    metaDescription:
+      'The right way to clean solid and engineered hardwood floors in Oklahoma: what to use, what never to use, the 35 to 55 percent humidity rule, sun and furniture protection, and when a finish needs help.',
   },
 ];
 

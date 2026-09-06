@@ -31,9 +31,25 @@ const normalize = (u: string) => {
 
 const here = normalize(path);
 
-const matches = posts
-  .filter((p) => p.related?.some((r) => normalize(r.href) === here))
-  .slice(0, max);
+const seedOf = (str: string) => {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+  return h;
+};
+
+const allMatches = posts.filter((p) => p.related?.some((r) => normalize(r.href) === here));
+/**
+ * When more guides point at this page than we can show, rotate through them
+ * seeded on the page path, so every matching guide (including the newest) gets
+ * surfaced from some page instead of the first three in array order winning
+ * everywhere.
+ */
+const matches = allMatches.length <= max
+  ? allMatches
+  : (() => {
+      const start = seedOf(here) % allMatches.length;
+      return Array.from({ length: max }, (_, i) => allMatches[(start + i) % allMatches.length]);
+    })();
 /**
  * Pages with no topical match — city pages mostly, since no guide is *about*
  * a particular town — were showing nothing and passing no authority into the
@@ -41,11 +57,6 @@ const matches = posts
  * surface different guides, spreading links across the whole blog rather than
  * piling them all onto the same three posts.
  */
-const seedOf = (str: string) => {
-  let h = 0;
-  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
-  return h;
-};
 const rotated = (() => {
   const pool = posts as any[];
   if (!pool.length) return [];
