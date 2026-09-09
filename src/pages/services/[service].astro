@@ -7,10 +7,8 @@ import Testimonials from '../../components/Testimonials.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import FAQ from '../../components/FAQ.astro';
 import Gallery from '../../components/Gallery.astro';
-import ProductGrid from '../../components/ProductGrid.astro';
 import VisualizerBand from '../../components/VisualizerBand.astro';
 import EasyBand from '../../components/EasyBand.astro';
-import { productsByService } from '../../data/products';
 import ServiceSchema from '../../components/schema/ServiceSchema.astro';
 import BreadcrumbSchema from '../../components/schema/BreadcrumbSchema.astro';
 import FAQSchema from '../../components/schema/FAQSchema.astro';
@@ -21,7 +19,6 @@ export function getStaticPaths() {
  return services.map((s) => ({ params: { service: s.slug }, props: { service: s } }));
 }
 const { service: s } = Astro.props;
-const serviceProducts = productsByService(s.slug);
 
 const breadcrumbs = [
  { name: 'Home', url: '/' },
@@ -97,13 +94,6 @@ const breadcrumbs = [
  <Gallery items={s.gallery} eyebrow={`${s.shortName} Gallery`} heading={`Recent ${s.shortName} Installs Across OKC`} subhead={`Snapshots from ${s.shortName.toLowerCase()} projects we've completed across Oklahoma City and the metro.`} />
 
  <VisualizerBand />
-
- <ProductGrid
- products={serviceProducts}
- eyebrow={`Shop ${s.shortName}`}
- heading={`${serviceProducts.length} In-Stock ${s.shortName} Products`}
- subhead={`Every ${s.shortName.toLowerCase()} SKU below is in stock at our West Reno Avenue showroom - most install within 24–72 hours.`}
- />
 
  <EasyBand />
 

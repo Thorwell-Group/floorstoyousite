@@ -40,9 +40,9 @@ Floors To You OKC is a locally owned flooring store at 4020 West Reno Avenue in 
 - [Norman](https://floorstoyouokc.com/areas/norman)
 - [Guthrie](https://floorstoyouokc.com/areas/guthrie)
 
-## Shop in-stock products
+## Product catalog
 
-- [Shop all in-stock SKUs](https://floorstoyouokc.com/products): Full catalog with category jump nav (carpet, engineered wood, laminate, tile, vinyl glue, vinyl click).
+- [Browse the catalog](https://floorstoyouokc.com/catalog): The only product listing on the site — Roomvo-powered catalog of the hardwood, tile, luxury vinyl and carpet lines Floors To You stocks, with a room visualizer.
 
 ## Optional
 

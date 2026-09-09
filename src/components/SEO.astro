@@ -11,9 +11,8 @@ export interface Props {
   /**
    * Keep the page out of the index but KEEP crawling its outbound links, so the
    * internal links on it still pass signal to the pages we do want ranking.
-   * Used by the 200+ showroom product detail pages: they are near-duplicate,
-   * zero-search-demand SKU stubs that drag site-wide quality, but they link up
-   * into /services/{product}/ which we very much want crawled.
+   * (Previously used by the /products/ SKU pages, retired 2026-09-09 in favour
+   * of the Roomvo catalog. Kept for any future thin page that needs it.)
    */
   noindexFollow?: boolean;
 }

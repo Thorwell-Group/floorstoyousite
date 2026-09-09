@@ -20,7 +20,6 @@ export default defineConfig({
       // whose canonical points elsewhere in the sitemap.
       // Pattern-matched, not a hardcoded list: the previous explicit array silently
       // missed /oklahoma-city/hardwood/ the moment a new service was added.
-      // NOTE: /products/{slug}/ pages are NOT filtered — all 190 stay in the sitemap.
       filter: (page) =>
         !/^https:\/\/floorstoyouokc\.com\/oklahoma-city\/.+/.test(page),
     }),
