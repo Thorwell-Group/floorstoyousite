@@ -1962,7 +1962,7 @@ export const posts: Post[] = [
         heading: 'Why stairs cost what they cost',
         paragraphs: [
           'Every homeowner is surprised by stair pricing, and it is worth explaining rather than defending. A staircase is not measured in meaningful square feet. It is a series of individually cut and wrapped pieces, each of which has to be tight, aligned, and consistent with the one above it. A fourteen-step staircase is a genuine half day of skilled labor.',
-          'There is also a style choice that changes the price. Waterfall, where the carpet flows over the nose of each tread, is faster and cheaper. Cap-and-band, where the carpet wraps under the nose and follows the stair profile, looks noticeably better and costs more.',
+          'There is also a style choice that changes the price. Waterfall, where the carpet flows over the nose of each tread, is faster and cheaper. Cap-and-band, where the carpet wraps under the nose and follows the stair profile, looks noticeably better and costs more. If you are still deciding whether the stairs should be carpet at all, our guide to <a href="/blog/stair-flooring-okc/">stair flooring options</a> compares carpet, LVP, and wood on a staircase.',
         ],
       },
       {
@@ -2238,7 +2238,7 @@ export const posts: Post[] = [
         paragraphs: [
           'How long it takes depends on the material and the square footage. Carpet is usually a single day. LVP, laminate, and engineered wood run one to three days for a typical home. Tile takes longer because mortar and grout have to cure. Our guide to <a href="/blog/how-long-does-flooring-installation-take-okc/">how long flooring installation takes</a> has the specifics by material.',
           'What happens in order: furniture out, old floor and any old pad removed and hauled away, subfloor assessed and prepped, new floor installed, transitions and trim, cleanup, furniture back.',
-          'What we need from you: closets and dressers emptied, electronics disconnected, and anything fragile or irreplaceable moved personally. Normal furniture is ours to handle.',
+          'What we need from you: closets and dressers emptied, electronics disconnected, and anything fragile or irreplaceable moved personally. Normal furniture is ours to handle. Our <a href="/blog/prepare-home-for-flooring-installation-okc/">checklist for getting your home ready</a> covers the week before, the night before, and install day.',
         ],
       },
       {
@@ -2710,7 +2710,7 @@ export const posts: Post[] = [
       {
         heading: 'How fast it can happen',
         paragraphs: [
-          `Because we keep hundreds of styles in stock at our West Reno showroom, most in-stock carpet can be installed the day after your quote is accepted. That matters when the reason you are replacing carpet is a tenant turnover, a house going on the market, or a smell you cannot live with for another month. Our post on <a href="/blog/next-day-carpet-installation-okc/">next-day carpet installation</a> explains how the in-stock model makes that possible, and where special orders differ.`,
+          `Because we keep hundreds of styles in stock at our West Reno showroom, most in-stock carpet can be installed the day after your quote is accepted. That matters when the reason you are replacing carpet is a tenant turnover (see our guide to <a href="/blog/rental-property-flooring-okc/">flooring for rental properties</a>), a house going on the market, or a smell you cannot live with for another month. Our post on <a href="/blog/next-day-carpet-installation-okc/">next-day carpet installation</a> explains how the in-stock model makes that possible, and where special orders differ.`,
           `Our lead installers are W-2 employees, not day-labor subcontractors, and every install carries a 100 percent labor guarantee for as long as you own the floor. To find out whether your carpet needs replacing, restretching, or just a new pad, <a href="/book/">book a free in-home estimate</a>. We will look at the carpet and the pad and give you a straight answer, with samples in hand if replacement is the call.`,
         ],
       },
@@ -2949,6 +2949,308 @@ export const posts: Post[] = [
     metaTitle: 'How to Clean & Care for Hardwood Floors in Oklahoma',
     metaDescription:
       'The right way to clean solid and engineered hardwood floors in Oklahoma: what to use, what never to use, the 35 to 55 percent humidity rule, sun and furniture protection, and when a finish needs help.',
+  },
+  {
+    slug: 'stair-flooring-okc',
+    title: 'Stair Flooring in OKC: Carpet, Luxury Vinyl or Wood on Your Staircase?',
+    category: 'Comparison',
+    excerpt:
+      'Stairs take more wear per square foot than any other floor in the house, and they are built one step at a time. How carpet, LVP and wood compare on a staircase, and how to match the floors at the top and bottom.',
+    hero: '/images/photos/carpet/carpet-staircase-okc.webp',
+    heroAlt: 'Staircase wrapped in neutral carpet in an Oklahoma City home',
+    datePublished: '2026-09-14',
+    dateModified: '2026-09-14',
+    readMinutes: 7,
+    intro:
+      `Most flooring decisions are made room by room, and the staircase gets decided last, almost as an afterthought: whatever goes on the floor above or below. That is how a lot of stairs end up slippery, loud, or worn through at the nose within a few years. A staircase is its own job with its own rules, and it is worth choosing on purpose. Here is how the three common options actually behave on stairs in an Oklahoma City home.`,
+    sections: [
+      {
+        heading: 'Why stairs are a different decision',
+        paragraphs: [
+          `Three things make a staircase unlike any other floor. All the wear lands on a few inches of each step, the front edge or nose, where every foot pivots on the way down. Safety matters more here than anywhere else in the house, because a slip on a stair is a fall, not a stumble. And the installation is not rolled out or clicked across a room. Every tread and every riser is cut, fitted and fastened individually.`,
+          `That last point is why stairs are always priced per step rather than per square foot, whichever material you choose. Our guide to <a href="/blog/carpet-installation-cost-okc/">what carpet installation costs in OKC</a> explains why a fourteen-step staircase is a genuine half day of skilled work.`,
+        ],
+      },
+      {
+        heading: 'Carpet on stairs: still the most forgiving choice',
+        paragraphs: [
+          `Carpet remains the most common stair surface in the metro for good reasons. It is the most slip-resistant option, especially for kids, older family members and dogs. It is the quietest, which matters when the stairs sit next to a bedroom or open onto the living room. And it is usually the least expensive per step.`,
+          `The fiber matters more on stairs than in any bedroom. Nylon springs back from the constant pivot at the nose better than polyester, so it holds its look longer on a busy staircase. Be careful with loose loop Berber if you have pets, because a claw can catch a loop and pull a run. Pad matters too: a dense pad wrapped over the nose protects the carpet at exactly the point it wears first.`,
+          `Then there is the wrap style. Waterfall, where the carpet drops straight from the nose to the tread below, is faster and costs less. Cap-and-band, where the carpet is tucked under the nose and follows the shape of the step, looks tailored and costs more. Our <a href="/blog/choosing-carpet-oklahoma-city/">carpet buying guide</a> covers fiber and style in more depth.`,
+        ],
+      },
+      {
+        heading: 'Luxury vinyl on stairs: waterproof and matching, with more labor',
+        paragraphs: [
+          `When the main floor is going to waterproof luxury vinyl plank, many homeowners want the stairs to match so the flooring flows from one level to the next. It can be done, and done well, but it is a different installation from the floor itself.`,
+          `A click-lock plank cannot float on a staircase the way it floats across a room. Each tread and riser is cut from plank, glued down, and finished with a stair nose piece made to match the product, which is fastened so it cannot shift under a heel. That is more labor per step than carpet, and it is worth confirming that a matching stair nose exists for the plank you like before you commit to it for the whole house.`,
+          `On traction, look for a plank with a textured or embossed surface rather than a smooth, glossy one, and think honestly about who uses the stairs in socks. Our guide to <a href="/blog/lvp-installation-okc-click-vs-glue-down/">click-lock versus glue-down LVP</a> explains the two installation methods on the flat floor.`,
+        ],
+        bullets: [
+          'Treads and risers glued, not floated',
+          'A matching stair nose, fastened, on every step',
+          'A textured surface for grip',
+        ],
+      },
+      {
+        heading: 'Wood stairs: the classic look, and the most finish work',
+        paragraphs: [
+          `Hardwood and engineered wood treads give a staircase the most architectural look, and they suit homes where the main floor is wood. They are also the hardest-wearing surface at the nose when the finish is looked after, and the finish can be renewed rather than the stairs replaced.`,
+          `The tradeoffs are sound and slip. Wood stairs are louder, and a finished wood tread in socks is the least forgiving surface of the three. Many families solve both with a carpet runner down the center, which keeps the look of the wood at the edges and puts grip and quiet where people actually walk. Our <a href="/blog/hardwood-floor-cleaning-care-oklahoma/">hardwood care guide</a> covers how to keep the finish healthy through Oklahoma's humidity swings.`,
+        ],
+      },
+      {
+        heading: 'Getting the top and bottom of the stairs right',
+        paragraphs: [
+          `The places people notice are where the staircase meets the floors around it. The top step should finish in a nose that matches the landing, not an awkward reducer. The bottom step should meet the lower floor cleanly, with no lip to catch a toe. And the height of the new flooring has to be accounted for, because adding thickness to the landing and the lower floor changes the height of the first and last step compared with the rest.`,
+          `If the stairs will match a hard floor elsewhere in the house, buy the material for both at the same time. Flooring is made in batches that vary slightly in color, and a staircase done a year after the main floor can visibly miss. Our guide to <a href="/blog/in-stock-vs-special-order-flooring-okc/">in-stock versus special-order flooring</a> explains dye lots and how to avoid a mismatch.`,
+        ],
+      },
+      {
+        heading: 'Which one fits your household',
+        paragraphs: [
+          `There is no universally right answer, but the household usually makes the decision obvious.`,
+        ],
+        bullets: [
+          'Young kids, older family members or dogs on the stairs → carpet, or wood with a runner',
+          'Stairs beside a bedroom or open to the living room → carpet for quiet',
+          'Waterproof LVP on the main floor and you want one continuous look → LVP with matching stair nose',
+          'Wood main floor and a statement staircase → hardwood or engineered wood treads',
+          'Tightest budget → carpet, and put the savings into a good nylon and a dense pad',
+        ],
+      },
+      {
+        heading: 'Seeing it on your own stairs',
+        paragraphs: [
+          `Stairs are hard to picture from a sample board, because the light on a staircase is usually nothing like the light in a showroom. We bring samples to your home, hold them against your actual treads and railings, count and measure the steps, and look at how the stairs meet the floors at the top and bottom. You get a per-step price in the same visit. <a href="/book/">Book a free in-home estimate</a> and we will walk the staircase with you.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Can you put luxury vinyl plank on stairs?',
+        a: 'Yes. Each tread and riser is cut from plank and glued down, and a stair nose made to match the product is fastened on every step. Click-lock LVP is not floated on stairs the way it is across a room, so it takes more labor per step than carpet.',
+      },
+      {
+        q: 'Is carpet or hard flooring safer on stairs?',
+        a: 'Carpet is the most slip-resistant stair surface, which is why it is the common choice in homes with young children, older family members, or dogs. If you want wood or LVP, choose a textured surface, and consider a carpet runner down the center for grip.',
+      },
+      {
+        q: 'Why are stairs priced per step instead of per square foot?',
+        a: 'Because each step is cut, fitted, and fastened as its own small piece of work. The square footage of a staircase is small, but the labor is not, so pricing per step reflects what the job actually involves.',
+      },
+      {
+        q: 'Should my stairs match the flooring on the main floor?',
+        a: 'It is a style choice rather than a rule. Matching gives a continuous look; carpet on the stairs with hard flooring elsewhere is quieter and grippier. If you do match, buy the stair and floor material together so it comes from the same dye lot.',
+      },
+    ],
+    related: [
+      { label: 'Carpet flooring & installation', href: '/services/carpet/' },
+      { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
+      { label: 'Engineered wood flooring', href: '/services/engineered-wood/' },
+      { label: 'What carpet installation costs in OKC', href: '/blog/carpet-installation-cost-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Stair Flooring in OKC: Carpet vs. LVP vs. Wood | Floors To You',
+    metaDescription:
+      'Carpet, luxury vinyl or wood on your staircase? How each handles wear, safety, noise and cost per step, and how to match stairs to the floors around them in an Oklahoma City home.',
+  },
+  {
+    slug: 'prepare-home-for-flooring-installation-okc',
+    title: 'How to Get Your Home Ready for Flooring Installation: A Practical Checklist',
+    category: 'How It Works',
+    excerpt:
+      'What the crew handles, what is on you, and what to do a week out, the night before, on install day and after. A straightforward checklist for Oklahoma City homeowners.',
+    hero: '/images/photos/whychoose/furniture-moving.webp',
+    heroAlt: 'Installers moving furniture out of a room before new flooring goes in',
+    datePublished: '2026-09-14',
+    dateModified: '2026-09-14',
+    readMinutes: 6,
+    intro:
+      `Install day goes fastest in houses where a few simple things were done the evening before. None of it is complicated, and most of the heavy lifting is the crew's job, not yours. But a closet full of shoes or a gaming console still plugged in can cost an hour, and an hour can be the difference between finishing today and coming back tomorrow. Here is exactly what to do, and when.`,
+    sections: [
+      {
+        heading: 'What the crew handles, and what is on you',
+        paragraphs: [
+          `Start with the split, because most people assume they have to do more than they do. Our W-2 installers handle moving normal household furniture, removing and hauling away the old floor, subfloor prep, the install itself, baseboard and trim, and cleanup at the end.`,
+          `What we ask of you is the small, personal stuff that nobody else should be handling.`,
+        ],
+        bullets: [
+          'Empty closets that are getting new flooring, floor to ceiling if things are stored on the floor',
+          'Empty dressers, bookcases and cabinets that are heavy when full',
+          'Disconnect TVs, computers, game consoles and their cables',
+          'Personally move anything fragile, valuable or irreplaceable, such as aquariums, curios, heirlooms and artwork leaning on the floor',
+        ],
+      },
+      {
+        heading: 'A week or so before',
+        paragraphs: [
+          `If your floor is laminate, engineered wood or hardwood, the material may be delivered ahead of time so it can sit in the rooms it is going into and adjust to your home. Wood-based floors expand and contract with humidity, and Oklahoma swings hard between humid summers and dry winters. Leave the boxes where they are placed and keep the heating or air conditioning running at normal living temperature. Our guide to <a href="/blog/best-flooring-oklahoma-climate/">flooring for Oklahoma's climate</a> explains why this step matters.`,
+          `This is also the time to finish anything messy. Painting walls and ceilings, drywall repair and plumbing work should happen before the new floor goes in, not after. Paint touch-ups on baseboards can come later.`,
+          `And tell us about anything unusual before install day: a refrigerator with a water line, a washer and dryer, a piano, a gun safe, or a room you need to keep usable. Those are all plannable when we know in advance, and slow when we find out on the morning.`,
+        ],
+      },
+      {
+        heading: 'The evening before',
+        paragraphs: [
+          `This is the short list that makes the biggest difference to how fast the crew can start.`,
+        ],
+        bullets: [
+          'Clear small items off the floor and off furniture: lamps, plants, rugs, laundry baskets, under-bed storage',
+          'Take breakables off shelves and furniture that will be moved',
+          'Unplug and disconnect electronics, and coil the cables',
+          'Empty closets in rooms being done',
+          'Take down anything delicate hanging on a wall right beside the work, since removing old flooring can shake a wall',
+          'Make sure there is parking close to the door for the crew and their truck',
+        ],
+      },
+      {
+        heading: 'On install day',
+        paragraphs: [
+          `Have an adult at the house when the crew arrives, even if you cannot stay all day. The first few minutes are when the crew lead confirms which rooms are being done, where the floor changes direction or material, and how transitions will be handled at doorways. It is also who we need to reach if the old floor comes up and there is something underneath worth talking about, like a soft spot near a bathroom. We will show you before anything gets covered.`,
+          `Keep pets and small children away from the work area. Doors will be open, tools and cut offcuts will be on the floor, and removing old flooring, especially tile, is noisy and can be dusty. A closed room, a crate, or a day at a friend's house makes everyone's life easier.`,
+          `Expect noise, and expect some interior doors to come off their hinges for the day. New flooring is often a different height from the old, and a door that scraped the old carpet may need trimming to clear the new floor. We flag that at the estimate so it is not a surprise.`,
+        ],
+      },
+      {
+        heading: 'After the crew leaves',
+        paragraphs: [
+          `When you can use the floor depends on what went down. Click-lock LVP and laminate are walkable as soon as the last plank locks in. Glue-down vinyl is usually walkable that evening, with furniture rolling back the next day once the adhesive has cured. Tile needs its mortar and grout to cure before heavy traffic and before rugs go down. Carpet can be walked on immediately, and opening a few windows for the first day helps any new-carpet smell clear. Our guide to <a href="/blog/how-long-does-flooring-installation-take-okc/">how long flooring installation takes</a> has the detail by material.`,
+          `Before furniture goes back on a hard floor, put felt pads under every leg that moves. And put a real mat at each exterior door. Those two habits protect a new floor more than any cleaner you can buy.`,
+        ],
+      },
+      {
+        heading: 'The short version',
+        paragraphs: [
+          `Empty closets and dressers, disconnect electronics, move your own valuables, finish painting first, tell us about appliances and anything unusual, and be there when the crew arrives. We handle the rest. For the full picture of the job from first visit to final trim, read our <a href="/blog/flooring-installation-okc-guide/">complete guide to flooring installation in Oklahoma City</a>, or <a href="/book/">book a free in-home estimate</a> and we will walk you through what your particular job needs.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Do I have to move my own furniture before flooring installation?',
+        a: 'No. Our crew moves normal household furniture as part of the job. We ask you to empty closets and heavy dressers, disconnect electronics, and personally move anything fragile, valuable, or irreplaceable.',
+      },
+      {
+        q: 'Do I need to be home during flooring installation?',
+        a: 'Have an adult there when the crew arrives to confirm the rooms, layout, and transitions, and be reachable during the day in case the old floor reveals subfloor damage that needs a decision. You do not need to stay the whole day.',
+      },
+      {
+        q: 'Should I paint before or after new floors go in?',
+        a: 'Before. Painting walls and ceilings and finishing drywall or plumbing work first keeps drips and debris off the new floor. Small touch-ups to baseboards can be done afterward.',
+      },
+      {
+        q: 'When can I put furniture back on new floors?',
+        a: 'Click-lock LVP, laminate, and carpet can take furniture right away. Glue-down vinyl is usually ready for furniture the next day, and tile needs its grout to cure first. Put felt pads under furniture legs before anything goes back on a hard floor.',
+      },
+    ],
+    related: [
+      { label: 'How our process works', href: '/how-it-works/' },
+      { label: 'Flooring installation in OKC: the complete guide', href: '/blog/flooring-installation-okc-guide/' },
+      { label: 'How long flooring installation takes', href: '/blog/how-long-does-flooring-installation-take-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'How to Prepare for Flooring Installation: Checklist | Floors To You',
+    metaDescription:
+      'A practical checklist for getting your home ready for new flooring: what the crew handles, what to do a week out and the night before, install day, and when furniture can go back.',
+  },
+  {
+    slug: 'rental-property-flooring-okc',
+    title: 'Flooring for Rental Properties in OKC: What Landlords Should Install Between Tenants',
+    category: 'Buying Guide',
+    excerpt:
+      'In a rental, the right floor is the one that survives the most tenants and costs the fewest vacant days. How LVP, laminate and carpet actually compare for Oklahoma City landlords.',
+    hero: '/images/photos/lvp/vinyllivingroom.webp',
+    heroAlt: 'Luxury vinyl plank flooring in an empty living room ready for a new tenant',
+    datePublished: '2026-09-14',
+    dateModified: '2026-09-14',
+    readMinutes: 7,
+    intro:
+      `Choosing flooring for a house you live in is about how it looks and feels. Choosing flooring for a rental is about arithmetic: how many tenants it survives, how easily it is repaired, and how many days the unit sits empty while it is replaced. Those numbers point to different answers than a homeowner would pick, and they are worth working through before the next turnover rather than during it.`,
+    sections: [
+      {
+        heading: 'The rental math: cost per tenancy, not cost per square foot',
+        paragraphs: [
+          `The cheapest floor per square foot is rarely the cheapest floor for a rental. What actually costs a landlord money is replacing a floor that did not last, and every day a unit sits vacant while it happens.`,
+          `So the useful questions are different. How many tenancies will this floor survive? What happens when one area gets damaged, can it be fixed, or does the whole room have to go? How fast can it be installed between a move-out and a move-in? And will it still look acceptable in a listing photo after a few years of wear?`,
+        ],
+      },
+      {
+        heading: 'Waterproof luxury vinyl plank: the default for most rentals',
+        paragraphs: [
+          `For main living areas, kitchens, bathrooms and laundry rooms, waterproof click-lock LVP is where most rental owners land, and the reasons line up with the math. The rigid core does not absorb water, so a leaking dishwasher, an overflowing tub or a pet accident stays on the surface. A thick wear layer resists scratches from furniture being dragged in and out every move. And it looks like wood in a listing photo.`,
+          `It is also repairable. A damaged area of a floating click-lock floor can often be fixed by replacing the affected planks rather than the whole room, provided you have matching material. That is why we suggest every rental owner keeps a spare box of the exact product, from the same lot, in storage. Our guide to <a href="/blog/vinyl-plank-flooring-okc/">comparing luxury vinyl plank products</a> explains what to look for in core and wear layer.`,
+        ],
+      },
+      {
+        heading: 'Laminate: good value in the dry rooms',
+        paragraphs: [
+          `Laminate is a strong value choice for bedrooms, hallways and living rooms in a rental. Its top layer is very scratch resistant, and the commercial-grade AC4+ lines we stock are made for heavy use.`,
+          `The limit is water. Laminate has a wood-fiber core, so it is not the floor for kitchens, bathrooms or laundry rooms in a property where you cannot control how quickly a spill gets wiped up. If you want one floor throughout the whole unit, LVP is the safer pick. Our <a href="/blog/lvp-vs-laminate-oklahoma/">LVP vs. laminate comparison</a> goes through the tradeoff room by room.`,
+        ],
+      },
+      {
+        heading: 'Carpet: cheapest up front, shortest life in a rental',
+        paragraphs: [
+          `Carpet still has a place in rentals. It is usually the lowest cost to install, it is warm and quiet in bedrooms, and in multi-level units it softens noise between floors.`,
+          `The catch is that carpet absorbs every tenancy. Pet urine that reaches the pad cannot be cleaned out, and the odor returns each humid summer. Many landlords end up replacing bedroom carpet at more turnovers than they planned. If you choose carpet, choose it for durability: a pet-rated line such as the SmartStrand, PetProof and LifeProof carpets we stock, which carry lifetime stain and odor warranties, over a moisture-blocking pad so accidents stay above the subfloor. Our guide to <a href="/blog/when-to-replace-carpet-okc/">when to replace carpet</a> covers what can be restretched and what cannot.`,
+        ],
+      },
+      {
+        heading: 'Standardize on one floor across your properties',
+        paragraphs: [
+          `If you own more than one unit, pick one floor and one color and use it everywhere it makes sense. It simplifies everything: you know what to order, spare boxes fit every property, repairs match, and listing photos look consistent.`,
+          `A mid-tone, lightly textured wood look is the most forgiving choice for rentals. Very dark floors show dust and scratches, very light ones show dirt, and a strong gray or trendy color dates faster than a neutral. Stay within the in-stock range where you can, because in-stock material can be installed quickly and is priced on volume. Our guide to <a href="/blog/in-stock-vs-special-order-flooring-okc/">in-stock versus special-order flooring</a> explains why, including the dye-lot issue that makes a spare box from the original purchase so valuable.`,
+        ],
+      },
+      {
+        heading: 'Keeping the vacancy short',
+        paragraphs: [
+          `On a turnover, flooring is usually the last big job before cleaning and the new lease. The order that works: repairs and paint first, flooring next, cleaners last. Book the flooring estimate the day the unit is empty, not after the painters leave, so the material is chosen and scheduled while the other work is happening.`,
+          `On in-stock carpet and many in-stock hard floors, installation can happen as soon as the next day once the unit has been measured. Our post on <a href="/blog/next-day-carpet-installation-okc/">next-day carpet installation</a> explains what has to line up. Because we bring samples to the property and measure in the same visit, a vacant unit does not need anyone to drive to a showroom.`,
+        ],
+        bullets: [
+          'Kitchens, baths, laundry and entries → waterproof LVP',
+          'Living areas and hallways → LVP, or laminate if the unit has no wet-area risk',
+          'Bedrooms → LVP for longevity, or pet-rated carpet over a moisture-blocking pad for cost',
+          'Every property → one spare box of the exact product in storage',
+        ],
+      },
+      {
+        heading: 'Getting a real number for a unit',
+        paragraphs: [
+          `Rental budgets are tight, and a quote that grows on install day wrecks them. We measure the unit, check the subfloor for soft spots and slab problems while we are there, and give you an itemized installed total. We also price-match the same or similar material. <a href="/book/">Book a free in-home estimate</a> for your rental, and tell us your move-in date on the first call so we can plan around it.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best flooring for a rental property?',
+        a: 'For most rentals, waterproof click-lock luxury vinyl plank in the kitchen, bathrooms, and main living areas. It resists water, scratches, and pet accidents, and damaged planks can often be replaced individually. Laminate works well in dry rooms, and pet-rated carpet is the budget choice for bedrooms.',
+      },
+      {
+        q: 'Is LVP worth the extra cost over carpet in a rental?',
+        a: 'Often, yes. Carpet usually costs less to install, but it absorbs pet accidents and wear and tends to be replaced at more turnovers. LVP typically survives more tenancies and can be spot-repaired, which lowers the cost per tenancy even when the upfront price is higher.',
+      },
+      {
+        q: 'How quickly can flooring be installed between tenants?',
+        a: 'On in-stock material, installation can often happen the day after the unit is measured, as long as the subfloor is sound. Carpet is usually a one-day job, and LVP or laminate typically takes one to two days for a unit.',
+      },
+      {
+        q: 'Should landlords keep spare flooring?',
+        a: 'Yes. Keep at least one box of the exact product from the same purchase. Flooring is made in batches that vary slightly in color, so a spare box from the original lot is the easiest way to make a repair that matches.',
+      },
+    ],
+    related: [
+      { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
+      { label: 'Laminate flooring & installation', href: '/services/laminate/' },
+      { label: 'Carpet flooring & installation', href: '/services/carpet/' },
+      { label: 'Flooring for pets, kids & high-traffic homes', href: '/blog/best-flooring-pets-kids-high-traffic-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Best Flooring for Rental Properties in OKC | Floors To You',
+    metaDescription:
+      'Rental property flooring for Oklahoma City landlords: LVP vs. laminate vs. carpet by cost per tenancy, repairability, and vacancy days, plus how to keep turnovers fast.',
   },
 ];
 
