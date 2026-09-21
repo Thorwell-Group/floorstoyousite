@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import sitemapNoindexFilter from './src/integrations/sitemap-noindex-filter.mjs';
 import partytown from '@astrojs/partytown';
 import robotsTxt from 'astro-robots-txt';
 import compress from 'astro-compress';
@@ -68,6 +69,8 @@ export default defineConfig({
       JavaScript: true,
       SVG: true,
     }),
+    // Runs after sitemap() and drops any URL whose built page is noindex.
+    sitemapNoindexFilter(),
   ],
   build: { inlineStylesheets: 'auto' },
   vite: { build: { cssMinify: 'esbuild' } },
