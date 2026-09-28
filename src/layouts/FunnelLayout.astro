@@ -6,9 +6,11 @@ interface Props {
   title: string;
   description: string;
   canonical?: string;
+  /** Optional scrolling promo strip (true site facts only). Replaces the static top banner. */
+  strip?: string[];
 }
 
-const { title, description, canonical } = Astro.props;
+const { title, description, canonical, strip } = Astro.props;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, site.domain).toString();
 const year = new Date().getFullYear();
 ---
@@ -126,9 +128,26 @@ fbq('track', 'PageView');`} />
       sentence wrapped to two lines on a phone and cost ~20px of the space the
       funnel form needs above the fold.
     */}
-    <div class="bg-brand-500 text-white text-center px-3 py-1.5 sm:py-2 text-[10px] sm:text-xs font-bold uppercase leading-[1.4] tracking-[0.12em] sm:tracking-[0.18em]">
-      <span aria-hidden="true">🔒</span> Lowest Price Guaranteed<span class="hidden sm:inline"> · We Beat Any Written Quote</span>
-    </div>
+    {strip ? (
+      <div class="bg-brand-500 text-white overflow-hidden" aria-label="Why Floors To You">
+        <div class="fty-strip-track flex whitespace-nowrap py-1.5 sm:py-2 text-[10px] sm:text-xs font-bold uppercase leading-[1.4] tracking-[0.12em]">
+          {Array.from({ length: 2 }).map(() => (
+            <div class="flex shrink-0 items-center">
+              {strip.map((msg) => (
+                <span class="flex items-center px-4">
+                  <span>{msg}</span>
+                  <span class="ml-8 text-white/50" aria-hidden="true">·</span>
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+    ) : (
+      <div class="bg-brand-500 text-white text-center px-3 py-1.5 sm:py-2 text-[10px] sm:text-xs font-bold uppercase leading-[1.4] tracking-[0.12em] sm:tracking-[0.18em]">
+        <span aria-hidden="true">🔒</span> Lowest Price Guaranteed<span class="hidden sm:inline"> · We Beat Any Written Quote</span>
+      </div>
+    )}
 
     {/* Stripped header - centered logo, no link back, no CTA. Keeps visitors on the funnel. */}
     <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-brand-100 shadow-sm">
@@ -232,6 +251,8 @@ fbq('track', 'PageView');`} />
       .reveal-d3 { transition-delay: .24s; }
       .marquee-track { animation: marquee 28s linear infinite; }
       @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+      .fty-strip-track { animation: marquee 40s linear infinite; width: max-content; }
+      @media (prefers-reduced-motion: reduce) { .fty-strip-track { animation: none; } }
     </style>
   </body>
 </html>
