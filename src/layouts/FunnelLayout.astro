@@ -17,13 +17,29 @@ const year = new Date().getFullYear();
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async is:inline src="https://www.googletagmanager.com/gtag/js?id=G-MCTBQF4ZLL"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google tag (gtag.js). The stub + config run immediately (calls queue in
+         dataLayer); the library itself loads after window load / first interaction so
+         it doesn't compete with the form for bandwidth on mobile. Same as BaseLayout. -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-MCTBQF4ZLL');
+      (function () {
+        var done = false;
+        function loadGA() {
+          if (done) return; done = true;
+          var s = document.createElement('script'); s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MCTBQF4ZLL';
+          document.head.appendChild(s);
+        }
+        ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (ev) {
+          window.addEventListener(ev, loadGA, { once: true, passive: true });
+        });
+        window.addEventListener('load', function () { setTimeout(loadGA, 1500); });
+      })();
     </script>
     <script is:inline>
       // First-touch traffic source for the session. Keeps GA4 leads ORGANIC-only:
@@ -44,8 +60,6 @@ const year = new Date().getFullYear();
         } catch (e) {}
       })();
     </script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#bd9454" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="canonical" href={canonicalUrl} />
@@ -61,9 +75,14 @@ fbq('track', 'PageView');`} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" />
+    {/* Self-hosted web fonts (same files Google Fonts serves; latin + latin-ext). Removes
+        two third-party connections from the critical path. The latin files are preloaded. */}
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin />
+    <style is:inline>@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600 700;font-display:swap;src:url(/fonts/playfair-display-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600 700;font-display:swap;src:url(/fonts/playfair-display-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
 
     {/* Warm the GHL connections so the iframe paints fast */}
     <link rel="preconnect" href="https://api.leadconnectorhq.com" crossorigin />
@@ -177,7 +196,7 @@ fbq('track', 'PageView');`} />
         <div class="text-center sm:text-left leading-relaxed">
           © {year} {site.legalName} · All rights reserved
           <span class="mx-2 opacity-40">·</span>
-          <a href="/privacy" class="text-white/80 hover:text-white">Privacy</a>
+          <a href="/privacy" class="text-white/80 hover:text-white underline underline-offset-2">Privacy</a>
         </div>
 
         {/* Thorwell stamp — house standard, identical on every client site. Do not restyle. */}
@@ -240,6 +259,11 @@ fbq('track', 'PageView');`} />
     </script>
 
     <style is:global>
+      /* GHL form_embed.js keeps the survey iframe parked off-canvas (position:absolute;
+         left:-9999px) until the form reports ready, then moves it into place. While it is
+         parked, hold its space open on the parent so the card never collapses and nothing
+         below it jumps (was CLS ~0.5). 469px = the survey's settled height. */
+      main :has(> iframe[src*="/widget/"][style*="-9999px"]) { padding-bottom: 469px; }
       .reveal, .reveal-left, .reveal-right, .reveal-zoom { opacity: 0; transition: opacity .7s ease, transform .7s ease; }
       .reveal { transform: translateY(16px); }
       .reveal-left { transform: translateX(-24px); }

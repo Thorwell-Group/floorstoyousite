@@ -49,7 +49,7 @@ const cards = [
             <h3 class="text-xl md:text-2xl mb-3">{c.title}</h3>
             <p class="text-ink/70 leading-relaxed">{c.body}</p>
             <a href={c.href} class="mt-5 inline-flex items-center gap-1.5 font-semibold text-brand-700 hover:text-brand-500 no-underline">
-              Learn More
+              Learn More<span class="sr-only"> about {c.title}</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
           </div>

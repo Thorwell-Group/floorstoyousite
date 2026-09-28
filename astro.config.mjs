@@ -72,6 +72,6 @@ export default defineConfig({
     // Runs after sitemap() and drops any URL whose built page is noindex.
     sitemapNoindexFilter(),
   ],
-  build: { inlineStylesheets: 'auto' },
+  build: { inlineStylesheets: 'always' },
   vite: { build: { cssMinify: 'esbuild' } },
 });

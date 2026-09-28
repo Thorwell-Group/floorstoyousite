@@ -29,7 +29,7 @@ const year = new Date().getFullYear();
  </div>
 
  <div>
- <h4 class="text-white font-display text-lg mb-4">Flooring</h4>
+ <h2 class="text-white font-display text-lg font-normal mb-4">Flooring</h2>
  <ul class="space-y-2 text-sm">
  {services.map((s) => (
  <li><a href={`/services/${s.slug}/`} class="text-white/80 hover:text-brand-300 no-underline">{s.shortName}</a></li>
@@ -38,7 +38,7 @@ const year = new Date().getFullYear();
  </div>
 
  <div>
- <h4 class="text-white font-display text-lg mb-4">Service Areas</h4>
+ <h2 class="text-white font-display text-lg font-normal mb-4">Service Areas</h2>
  <ul class="space-y-2 text-sm">
  {areas.map((a) => (
  <li><a href={`/areas/${a.slug}/`} class="text-white/80 hover:text-brand-300 no-underline">{a.city}, OK</a></li>
@@ -47,7 +47,7 @@ const year = new Date().getFullYear();
  </div>
 
  <div>
- <h4 class="text-white font-display text-lg mb-4">Company</h4>
+ <h2 class="text-white font-display text-lg font-normal mb-4">Company</h2>
  <ul class="space-y-2 text-sm">
  <li><a href="/catalog/" class="text-white/80 hover:text-brand-300 no-underline">Shop All Flooring</a></li>
  <li><a href="/about/" class="text-white/80 hover:text-brand-300 no-underline">About</a></li>
