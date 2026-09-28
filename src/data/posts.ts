@@ -380,7 +380,7 @@ export const posts: Post[] = [
         heading: 'Do not skip the pad',
         paragraphs: [
           'The pad under the carpet does more work than people expect. It cushions every step, absorbs sound, and protects the carpet backing from wear, so a good pad is what keeps a mid-priced carpet feeling and looking new for years. An undersized pad is one of the quiet reasons a carpet flattens early.',
-          'Pad selection is included with every one of our quotes, and we match the pad to the room — firmer and denser on stairs and traffic lanes, plusher in bedrooms.',
+          'Pad selection is included with every one of our quotes, and we match the pad to the room — firmer and denser on stairs and traffic lanes, plusher in bedrooms. Our <a href="/blog/carpet-pad-guide-okc/">carpet pad guide</a> explains pad types, thickness, and density in detail.',
         ],
       },
       {
@@ -1016,6 +1016,7 @@ export const posts: Post[] = [
       { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
       { label: 'Glue-down vinyl flooring', href: '/services/vinyl-glue/' },
       { label: 'Hardwood vs. luxury vinyl in OKC', href: '/blog/hardwood-vs-luxury-vinyl-okc/' },
+      { label: 'How to clean and care for LVP', href: '/blog/how-to-clean-luxury-vinyl-plank-okc/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
     metaTitle: 'Luxury Vinyl Plank Flooring in OKC: Buyer’s Guide',
@@ -3246,11 +3247,321 @@ export const posts: Post[] = [
       { label: 'Laminate flooring & installation', href: '/services/laminate/' },
       { label: 'Carpet flooring & installation', href: '/services/carpet/' },
       { label: 'Flooring for pets, kids & high-traffic homes', href: '/blog/best-flooring-pets-kids-high-traffic-okc/' },
+      { label: 'Replacing flooring before selling a home', href: '/blog/new-flooring-before-selling-home-okc/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
     metaTitle: 'Best Flooring for Rental Properties in OKC | Floors To You',
     metaDescription:
       'Rental property flooring for Oklahoma City landlords: LVP vs. laminate vs. carpet by cost per tenancy, repairability, and vacancy days, plus how to keep turnovers fast.',
+  },
+  {
+    slug: 'how-to-clean-luxury-vinyl-plank-okc',
+    title: 'How to Clean and Care for Luxury Vinyl Plank Floors',
+    category: 'How It Works',
+    excerpt:
+      'LVP is about the easiest floor there is to live with, but the wrong mop, cleaner or rug pad can still dull it or void the warranty. A simple routine for Oklahoma City homes, and the handful of things to avoid.',
+    hero: '/images/photos/lvp/vinylchairincorner.webp',
+    heroAlt: 'Clean luxury vinyl plank flooring in a sunlit Oklahoma City room',
+    datePublished: '2026-09-28',
+    dateModified: '2026-09-28',
+    readMinutes: 6,
+    intro:
+      `One of the reasons luxury vinyl plank has taken over so many Oklahoma City homes is that it asks very little of you. There is no sealing, no waxing and no refinishing, ever. But "low maintenance" is not the same as "no rules". Most of the worn, dull or scratched LVP we get called out to look at was not worn out by traffic. It was worn out by grit, the wrong cleaner, or a steam mop. Here is the routine that keeps a vinyl floor looking the way it did on install day.`,
+    sections: [
+      {
+        heading: 'What you are actually protecting',
+        paragraphs: [
+          `Every luxury vinyl plank has the same basic build: a core underneath, a printed layer that gives it the wood or stone look, and a clear wear layer on top. The wear layer is the only part that ever touches your feet, your dog's claws or your furniture, and it is what the warranty is really about.`,
+          `The core is waterproof, so ordinary cleaning cannot hurt it. Everything in this guide is about keeping the wear layer clear, smooth and free of film. Our guide to <a href="/blog/vinyl-plank-flooring-okc/">comparing luxury vinyl plank products</a> explains how wear layers are rated if you are still choosing a floor.`,
+        ],
+      },
+      {
+        heading: 'Grit is the real enemy, especially in Oklahoma',
+        paragraphs: [
+          `Fine sand and dirt tracked in on shoes act like sandpaper under every step, and red Oklahoma dirt, dried and blown in on a windy day, is exactly that kind of fine abrasive. It does more to dull and scratch a vinyl floor than pets or kids ever will.`,
+          `So the most effective care habit is not cleaning, it is keeping grit out in the first place. Put a proper mat outside and inside every exterior door, especially the one from the garage and the one the dog uses to come in from the yard. Then dry sweep, dust mop or vacuum a few times a week in the busy areas.`,
+        ],
+        bullets: [
+          'Vacuum on the hard-floor setting, or with the beater bar switched off',
+          'A microfiber dust mop picks up fine dust better than a broom',
+          'Shake out or vacuum door mats often, because a full mat stops working',
+        ],
+      },
+      {
+        heading: 'Damp mopping: the right way',
+        paragraphs: [
+          `When the floor needs more than a sweep, damp mop it. Damp, not wet. A well wrung microfiber mop and warm water handle most weekly cleaning on their own. For anything stickier, use a pH-neutral cleaner made for vinyl or luxury vinyl floors, mixed as directed on the label.`,
+          `Although the planks are waterproof, there is no reason to flood the floor. Puddled water sitting in a doorway or along a wall can find its way under the edges, and a damp mop cleans just as well and dries in minutes.`,
+        ],
+      },
+      {
+        heading: 'What not to use on LVP',
+        paragraphs: [
+          `Most of the damage we see on vinyl floors comes from products that seemed like a good idea. These are the ones to keep off it.`,
+        ],
+        bullets: [
+          'Wax, polish or "shine restorer" products, which build up a cloudy film that holds dirt',
+          'Oil soaps and oil-based wood cleaners, which leave a slippery residue',
+          'Bleach, ammonia and harsh solvents, which can dull or discolor the wear layer',
+          'Abrasive powders, scouring pads and steel wool',
+          'Steam mops, which many flooring manufacturers specifically warn against because heat and steam can work into the seams',
+          'Rubber or latex-backed rugs and mats, which can permanently stain vinyl; choose rug pads labeled safe for vinyl floors',
+        ],
+      },
+      {
+        heading: 'Spills, pets and the occasional mess',
+        paragraphs: [
+          `Wipe spills when you see them. The core will not swell the way laminate or wood can, but sugary drinks and grease get tracked around if they are left. For a pet accident, wipe it up, clean the spot with your vinyl cleaner, and dry it. Because the surface and seams are waterproof, the accident stays on top of the floor instead of soaking into a pad the way it would with carpet. Our guide to <a href="/blog/best-flooring-pets-kids-high-traffic-okc/">flooring for pets, kids and high-traffic homes</a> explains why that matters so much in a house with animals.`,
+          `For scuff marks from shoes, a soft cloth with a little of your vinyl cleaner usually lifts them. Avoid the magic-eraser type sponges on a large area, because they are a mild abrasive and can leave a dull patch on a low-sheen floor.`,
+        ],
+      },
+      {
+        heading: 'Furniture, appliances and sunlight',
+        paragraphs: [
+          `Put felt pads under every chair, table and sofa leg that moves, and check them a couple of times a year, because a pad that has picked up grit becomes a scraper. Rolling office chairs need a chair mat or soft wheels made for hard floors.`,
+          `When a refrigerator, washer or piano has to move, never drag it across the planks. Lay down plywood or hardboard and walk it across, or use appliance sliders. And in rooms with strong afternoon sun, close blinds or curtains during the brightest hours. Long, direct Oklahoma sunlight can fade most flooring over time, and it can make a rug-shaped outline appear when you finally move the rug.`,
+        ],
+      },
+      {
+        heading: 'When a plank does get damaged',
+        paragraphs: [
+          `A deep gouge or a plank that was hit with something heavy does not mean a new floor. On a floating click-lock installation, the damaged plank can usually be replaced on its own, provided you have matching material. That is why we suggest every homeowner keeps a spare box from the original purchase in the garage or a closet. Flooring is made in batches that vary slightly in color, and a box from the same lot is what makes a repair invisible.`,
+          `If you are not sure whether a mark is a scratch in the wear layer or just residue sitting on top of it, clean the spot first with your vinyl cleaner and a soft cloth. A surprising number of "scratches" are just film. And if you are still weighing floors, our <a href="/blog/waterproof-flooring-okc/">waterproof flooring guide</a> compares LVP with the other water-resistant options, or you can <a href="/book/">book a free in-home estimate</a> and see samples on your own floors.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best way to clean luxury vinyl plank floors?',
+        a: 'Sweep, dust mop, or vacuum with the beater bar off a few times a week to remove grit, then damp mop with warm water or a pH-neutral cleaner made for vinyl floors. Use a well wrung microfiber mop rather than flooding the floor.',
+      },
+      {
+        q: 'Can you use a steam mop on LVP?',
+        a: 'It is best not to. Many flooring manufacturers warn against steam mops because heat and steam can work into the seams and affect the planks. A damp microfiber mop and a vinyl-safe cleaner clean just as well.',
+      },
+      {
+        q: 'Do luxury vinyl plank floors need to be waxed or polished?',
+        a: 'No. LVP has a factory-finished wear layer and never needs wax, polish, or refinishing. Those products build up a cloudy film that holds dirt and can make the floor look duller over time.',
+      },
+      {
+        q: 'Can a damaged vinyl plank be replaced?',
+        a: 'Usually, yes. On a floating click-lock floor, a damaged plank can often be replaced individually if you have matching material. Keep a spare box from the original purchase so the replacement comes from the same dye lot.',
+      },
+    ],
+    related: [
+      { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
+      { label: 'Luxury vinyl plank: the OKC buyer’s guide', href: '/blog/vinyl-plank-flooring-okc/' },
+      { label: 'Hardwood floor cleaning & care in Oklahoma', href: '/blog/hardwood-floor-cleaning-care-oklahoma/' },
+      { label: 'Waterproof flooring options in OKC', href: '/blog/waterproof-flooring-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'How to Clean Luxury Vinyl Plank (LVP) Floors | Floors To You',
+    metaDescription:
+      'How to clean and care for luxury vinyl plank floors: a simple routine, the cleaners and mops to avoid, furniture and rug tips, and how to fix a damaged plank. From our OKC install team.',
+  },
+  {
+    slug: 'carpet-pad-guide-okc',
+    title: 'Carpet Pad Explained: How to Choose the Right Padding for Your OKC Home',
+    category: 'Buying Guide',
+    excerpt:
+      'The pad is the part of a carpet job nobody sees and everybody feels. Types, thickness versus density, moisture barriers for slab homes and pets, and why thicker is not always better.',
+    hero: '/images/photos/carpet/carpet-bedroom-blue-okc.webp',
+    heroAlt: 'New textured carpet installed over quality padding in an Oklahoma City bedroom',
+    datePublished: '2026-09-28',
+    dateModified: '2026-09-28',
+    readMinutes: 7,
+    intro:
+      `When people shop for carpet they compare color, texture and fiber, and the pad gets decided in about ten seconds at the end. That is backwards. The pad is what the carpet sits on for its entire life. It decides how the floor feels underfoot, how quiet it is, how long the carpet keeps its look, and, in a house with pets, whether an accident stays a surface problem or becomes a smell. Here is how to choose it properly.`,
+    sections: [
+      {
+        heading: 'What the pad actually does',
+        paragraphs: [
+          `A carpet pad is not just there to make the floor softer. Every step flexes the carpet backing, and the pad absorbs that force so the backing and the fibers do not take it all. A good pad is why a mid-range carpet can still look and feel good years later, and an undersized or worn-out pad is one of the quiet reasons a carpet flattens, ripples or wears through in the traffic lanes early.`,
+          `The pad also insulates, which you notice on a concrete slab in January, and absorbs sound, which you notice upstairs. Our <a href="/blog/choosing-carpet-oklahoma-city/">carpet buying guide</a> covers fiber and style; this guide is about what goes underneath.`,
+        ],
+      },
+      {
+        heading: 'The main types of carpet pad',
+        paragraphs: [
+          `Most residential carpet in the metro goes over one of a few pad types. Each has a place.`,
+        ],
+        bullets: [
+          'Bonded urethane (rebond): foam pieces bonded together, the multicolored pad most people picture. Supportive, widely used, good value',
+          'Prime urethane foam: a single uniform foam. Consistent feel, but quality varies a lot with density',
+          'Memory foam: urethane with a slower, softer feel. Luxurious in bedrooms, less suited to stairs and heavy traffic',
+          'Rubber: dense, durable and supportive, usually at a higher cost',
+          'Fiber or felt: thin and very firm, often used under Berber and other loop carpets that need a firm base',
+        ],
+      },
+      {
+        heading: 'Thickness versus density: the part most people get wrong',
+        paragraphs: [
+          `The instinct is to buy the thickest pad available, because thick feels plush in the showroom. But density, how much material is packed into the pad, does more for how long a carpet lasts than thickness does. A dense pad supports the backing and springs back. A thick, light pad feels soft for a while, then lets the carpet flex too much, and that flexing is what causes wrinkles, loose seams and early wear.`,
+          `Many carpet manufacturers set maximum thickness and minimum density requirements for the pad under their carpet, and using a pad outside those requirements can affect the warranty. Industry guidance from the Carpet and Rug Institute is a useful rule of thumb: for most residential cut pile carpet, a pad no thicker than 7/16 inch, and for Berber and thin loop carpets, a thinner, firmer pad no thicker than 3/8 inch. The specific carpet's requirements always win, which is why we match the pad to the carpet rather than the other way round.`,
+        ],
+      },
+      {
+        heading: 'Moisture barrier pads: slab homes and pets',
+        paragraphs: [
+          `A standard pad is open foam. If a pet accident or a spilled drink soaks through the carpet, it keeps going into the pad and, from there, to the subfloor. Once urine reaches the pad it cannot be cleaned out from above, and in an Oklahoma summer the odor comes back every time the humidity rises.`,
+          `A moisture barrier pad has a film on top that keeps spills in the carpet, where they can be cleaned. It is the pad we recommend in any home with pets, young children, or carpet on a concrete slab, which covers a large share of the houses in the metro. It pairs naturally with the pet-rated SmartStrand, PetProof and LifeProof carpet lines we stock, which carry lifetime stain and odor warranties. Our guide to <a href="/blog/oklahoma-clay-soil-and-your-floors/">Oklahoma clay soil and your floors</a> explains why the slab under an OKC home deserves some thought.`,
+        ],
+      },
+      {
+        heading: 'Matching the pad to the room',
+        paragraphs: [
+          `One pad does not have to go everywhere. We choose it room by room, based on how the space is used.`,
+        ],
+        bullets: [
+          'Stairs → firm and dense, so the nose of each step holds its shape',
+          'Hallways and family rooms → dense and supportive for heavy traffic',
+          'Bedrooms → you can go softer here, within the carpet’s requirements',
+          'Pets, kids or concrete slab → moisture barrier pad',
+          'Berber and loop carpets → thin and firm, never thick and soft',
+        ],
+      },
+      {
+        heading: 'Never reuse the old pad',
+        paragraphs: [
+          `Reusing the existing pad looks like an easy saving, and it is almost always a mistake. An old pad has already been compressed in the traffic lanes, so the new carpet sits on the dips and wears in the same pattern. It may also hold dust, allergens and whatever pets have left over the years, which comes straight back into the new carpet. Most carpet warranties also expect new pad installed with new carpet.`,
+          `Our <a href="/blog/when-to-replace-carpet-okc/">guide to when to replace carpet</a> covers the signs that a carpet, and the pad under it, are finished.`,
+        ],
+      },
+      {
+        heading: 'How pad shows up in your quote',
+        paragraphs: [
+          `A good carpet quote lists the pad by type and thickness, not just "pad included". That is the only way to compare two bids fairly, because the easiest place to shave cost off a carpet job is a thinner, lighter pad that nobody will see until the carpet starts to wear. Our guide to <a href="/blog/carpet-installation-cost-okc/">what carpet installation costs in OKC</a> explains what else a complete quote should include.`,
+          `Pad selection is included with every carpet quote we write. We bring carpet and pad samples to your home, look at the subfloor, ask about pets and how each room is used, and put the pad in writing. <a href="/book/">Book a free in-home estimate</a> and you can feel the difference between pads on your own floor.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best carpet pad thickness?',
+        a: 'For most residential cut pile carpet, a pad around 7/16 inch or thinner is the common guideline, and Berber or loop carpet needs a thinner, firmer pad of about 3/8 inch or less. Density matters more than thickness, and the specific carpet manufacturer’s requirements always take priority.',
+      },
+      {
+        q: 'Is a thicker carpet pad better?',
+        a: 'Not necessarily. A very thick, light pad feels soft at first but lets the carpet flex too much, which leads to wrinkles, seam problems, and early wear. A dense pad within the carpet’s recommended thickness usually makes the carpet last longer.',
+      },
+      {
+        q: 'Do I need a moisture barrier carpet pad?',
+        a: 'It is recommended in homes with pets or young children, and for carpet over a concrete slab. The barrier keeps spills and accidents in the carpet, where they can be cleaned, instead of letting them soak into the pad and subfloor.',
+      },
+      {
+        q: 'Can I reuse my old carpet pad with new carpet?',
+        a: 'We do not recommend it. An old pad is compressed in the traffic lanes, can hold dust, allergens, and pet odor, and may not meet the new carpet’s warranty requirements. New carpet should go over new pad.',
+      },
+    ],
+    related: [
+      { label: 'Carpet flooring & installation', href: '/services/carpet/' },
+      { label: 'How to choose carpet in Oklahoma City', href: '/blog/choosing-carpet-oklahoma-city/' },
+      { label: 'What carpet installation costs in OKC', href: '/blog/carpet-installation-cost-okc/' },
+      { label: 'Stair flooring: carpet vs. LVP vs. wood', href: '/blog/stair-flooring-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Carpet Pad Guide: Types, Thickness & Density | Floors To You OKC',
+    metaDescription:
+      'How to choose carpet padding: rebond vs. foam vs. rubber, why density matters more than thickness, moisture barrier pads for pets and slab homes, and what to look for in a quote.',
+  },
+  {
+    slug: 'new-flooring-before-selling-home-okc',
+    title: 'Should You Replace Flooring Before Selling Your Home in OKC?',
+    category: 'Cost & Planning',
+    excerpt:
+      'New floors can make a listing, or be money you never see again. When replacing flooring before a sale makes sense, when a deep clean is enough, and what to install if you do.',
+    hero: '/images/photos/laminate/laminateluxuryhome.webp',
+    heroAlt: 'Neutral wood-look flooring in a bright, staged Oklahoma City home ready to list',
+    datePublished: '2026-09-28',
+    dateModified: '2026-09-28',
+    readMinutes: 7,
+    intro:
+      `When you are getting a house ready to sell, flooring is one of the biggest decisions on the list and one of the hardest to call. Buyers notice floors immediately, in the listing photos and in the first ten seconds of a showing. But you are also spending money on a house you are about to leave. The honest answer is that sometimes new floors are the best money you will spend before listing, and sometimes they are not worth it. Here is how to tell the difference.`,
+    sections: [
+      {
+        heading: 'Why floors matter so much to buyers',
+        paragraphs: [
+          `Floors take up a large share of every listing photo, so a stained carpet or a patchwork of three different hard floors is on show in almost every picture. In person, buyers walk on them the whole time they are in the house, and a floor that looks tired tells them the rest of the home might be too.`,
+          `There is also the way buyers do the math. Most people who see worn floors do not think "that is a flooring job". They think "we would have to redo all of this", and mentally knock off a number that is often bigger than the real cost. That is the gap new floors can close.`,
+        ],
+      },
+      {
+        heading: 'When replacing makes sense',
+        paragraphs: [
+          `Replacement is usually worth considering when the flooring is something a buyer would have to deal with right away.`,
+        ],
+        bullets: [
+          'Carpet with stains, worn traffic lanes, or pet odor that cleaning has not fixed',
+          'Damaged hard floors: cracked tile, swollen laminate, peeling or lifting vinyl',
+          'Several mismatched floors across the main living area',
+          'Floors that are clearly dated and prominent in the listing photos',
+          'Water damage, or a soft spot near a bathroom or kitchen that a buyer’s inspection will find',
+        ],
+      },
+      {
+        heading: 'When a deep clean or repair is enough',
+        paragraphs: [
+          `If the floors are in reasonable shape, do not replace them just because they are not your taste, or not the latest look. A professional carpet cleaning, a thorough clean of hard floors and grout, and replacing a few damaged planks or tiles will often do the job for much less.`,
+          `Before you decide anything about old carpet, look at what is under it. Pull back a corner in a closet. If there is hardwood underneath in good condition, exposing it may be a better story for the listing than new carpet, and it is worth having someone look at it before you spend money on top of it. Our <a href="/blog/when-to-replace-carpet-okc/">guide to when to replace carpet</a> covers what can be cleaned or restretched and what cannot.`,
+        ],
+      },
+      {
+        heading: 'What to install if you are selling',
+        paragraphs: [
+          `Flooring for a sale is not flooring for yourself. The goal is the widest possible appeal at a sensible cost, not your favorite floor.`,
+          `For main living areas, kitchens, bathrooms and laundry, waterproof luxury vinyl plank in a neutral, mid-tone wood look is the safest choice. It photographs as wood, it reads as an upgrade to most buyers, and it can run continuously through the main floor, which makes rooms look larger in photos. For bedrooms, a new neutral carpet over a good pad still makes sense, and many buyers expect it. Our <a href="/blog/lvp-vs-laminate-oklahoma/">LVP vs. laminate comparison</a> covers where laminate is a good value alternative in the dry rooms.`,
+          `Avoid anything too personal or on-trend. Strong grays, very dark floors and bold patterns narrow your audience. Mid-tone, lightly textured and neutral is what photographs well and offends nobody.`,
+        ],
+      },
+      {
+        heading: 'Keep the budget in proportion',
+        paragraphs: [
+          `The point is to remove a problem, not to install the most expensive floor in the neighborhood. Premium material in a house you are selling rarely comes back to you in full. Spend on the rooms buyers see first and most, the living areas, kitchen and primary bedroom, and choose a solid mid-range product over a luxury one.`,
+          `Staying in the in-stock range helps on both cost and time. In-stock material is priced on volume and can be installed quickly, and our guide to <a href="/blog/in-stock-vs-special-order-flooring-okc/">in-stock versus special-order flooring</a> explains the difference. We also price-match the same or similar material, and if you would rather not pay for the floors before the house closes, <a href="/blog/flooring-financing-okc/">flooring financing</a> with 0% APR for 24 months is available to qualified buyers.`,
+        ],
+      },
+      {
+        heading: 'Timing it with your listing',
+        paragraphs: [
+          `Floors should be finished before the listing photos, never after, because the photos are what most buyers see first. The order that works is repairs and paint first, flooring next, then deep cleaning, staging and photography.`,
+          `On in-stock carpet and many in-stock hard floors, installation can happen as soon as the next day once the house has been measured, so flooring rarely has to hold up a listing date. If you are still living in the house, our <a href="/blog/prepare-home-for-flooring-installation-okc/">install-day checklist</a> covers what to do beforehand, and our crew moves the furniture. Owners of rental properties getting ready to sell will find the same logic in our guide to <a href="/blog/rental-property-flooring-okc/">rental property flooring</a>.`,
+        ],
+      },
+      {
+        heading: 'Getting a straight answer for your house',
+        paragraphs: [
+          `The right call depends on the condition of your floors, the rooms buyers will see first, and the price range your home is listing in. We will walk the house with you, tell you honestly where replacement is worth it and where it is not, and give you an itemized installed price for just the rooms that need it. <a href="/book/">Book a free in-home estimate</a> and tell us your listing date on the first call so we can plan around it.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Is it worth replacing flooring before selling a house?',
+        a: 'It often is when the floors are stained, damaged, mismatched, or obviously dated in the listing photos, because buyers tend to overestimate what it would cost them to fix. If the floors are in reasonable shape, a deep clean and small repairs are usually enough.',
+      },
+      {
+        q: 'What flooring is best for selling a house?',
+        a: 'Waterproof luxury vinyl plank in a neutral, mid-tone wood look is the safest choice for main living areas, kitchens, and bathrooms because it has wide appeal and photographs well. New neutral carpet over a good pad still works well in bedrooms.',
+      },
+      {
+        q: 'Should I replace carpet or just clean it before listing?',
+        a: 'Try a professional cleaning first if the carpet is in decent shape. Replace it if stains, worn traffic lanes, or pet odor remain after cleaning, since those show up in photos and showings. Check what is underneath first, in case there is hardwood worth exposing.',
+      },
+      {
+        q: 'How quickly can new floors be installed before listing?',
+        a: 'On in-stock material, installation can often happen the day after the house is measured. Carpet is usually a one-day job, and LVP or laminate for a typical main floor takes about one to two days, so flooring rarely needs to delay a listing.',
+      },
+    ],
+    related: [
+      { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
+      { label: 'Carpet flooring & installation', href: '/services/carpet/' },
+      { label: 'Flooring financing in OKC', href: '/blog/flooring-financing-okc/' },
+      { label: 'Rental property flooring in OKC', href: '/blog/rental-property-flooring-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Replace Flooring Before Selling Your House? OKC Guide | Floors To You',
+    metaDescription:
+      'Should you put in new floors before selling your Oklahoma City home? When replacement pays, when cleaning is enough, what flooring buyers like, and how to time it with your listing.',
   },
 ];
 
