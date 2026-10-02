@@ -12,7 +12,23 @@ export function getStaticPaths() {
   return posts.map((p) => ({ params: { slug: p.slug }, props: { post: p } }));
 }
 const { post: p } = Astro.props;
-const others = posts.filter((o) => o.slug !== p.slug).slice(0, 2);
+// "More Flooring Guides" used to be the first two posts in the array on every
+// article, so two guides collected a link from all the others and most collected
+// none. Prefer guides that point at the same service/area pages as this one, then
+// fill from a rotation seeded on the slug so every guide gets linked from somewhere.
+const norm = (u: string) => (u || '').split('#')[0].split('?')[0].replace(/\/?$/, '/');
+const seedOf = (str: string) => {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+  return h;
+};
+const rotate = <T,>(arr: T[], by: number) => (arr.length ? [...arr.slice(by % arr.length), ...arr.slice(0, by % arr.length)] : arr);
+const myTargets = new Set(p.related.map((r) => norm(r.href)));
+const pool = posts.filter((o) => o.slug !== p.slug);
+const seed = seedOf(p.slug);
+const sameTopic = rotate(pool.filter((o) => o.related.some((r) => myTargets.has(norm(r.href)))), seed);
+const rest = rotate(pool.filter((o) => !sameTopic.includes(o)), seed);
+const others = [...sameTopic.slice(0, 2), ...rest, ...sameTopic.slice(2)].slice(0, 4);
 
 const breadcrumbs = [
   { name: 'Home', url: '/' },
@@ -32,8 +48,8 @@ const blogPostingSchema = {
   image: `${site.domain}${p.hero}`,
   datePublished: p.datePublished,
   dateModified: p.dateModified,
-  url: `${site.domain}/blog/${p.slug}`,
-  mainEntityOfPage: { '@type': 'WebPage', '@id': `${site.domain}/blog/${p.slug}` },
+  url: `${site.domain}/blog/${p.slug}/`,
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `${site.domain}/blog/${p.slug}/` },
   author: { '@type': 'Organization', name: site.name, url: site.domain },
   publisher: { '@id': `${site.domain}/#business` },
 };
