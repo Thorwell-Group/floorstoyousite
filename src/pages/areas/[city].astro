@@ -33,7 +33,7 @@ const localBusinessAreaSchema = {
  '@id': `${site.domain}/areas/${a.slug}#business`,
  name: `${site.name} – Serving ${a.city}, ${a.state}`,
  parentOrganization: { '@id': `${site.domain}/#business` },
- url: `${site.domain}/areas/${a.slug}`,
+ url: `${site.domain}/areas/${a.slug}/`,
  image: `${site.domain}${site.logo}`,
  priceRange: site.priceRange,
  sameAs: Object.values(site.social),
@@ -49,14 +49,18 @@ const localBusinessAreaSchema = {
  '@type': 'City',
  name: `${a.city}, ${a.state}`,
  containedInPlace: { '@type': 'AdministrativeArea', name: `${a.county}, Oklahoma` },
- },
+ // The city's own coordinates belong to the area served. This node carries the
+ // showroom's street address, so a top-level geo here would pin the business in the suburb.
  geo: { '@type': 'GeoCoordinates', latitude: a.geo.lat, longitude: a.geo.lng },
+ },
+ geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
+ telephone: site.phoneE164,
  hasOfferCatalog: {
  '@type': 'OfferCatalog',
  name: `Flooring services in ${a.city}`,
  itemListElement: services.map((s) => ({
  '@type': 'Offer',
- itemOffered: { '@type': 'Service', name: `${s.shortName} in ${a.city}, ${a.state}`, url: `${site.domain}/${a.slug}/${s.slug}` },
+ itemOffered: { '@type': 'Service', name: `${s.shortName} in ${a.city}, ${a.state}`, url: `${site.domain}/${a.slug}/${s.slug}/` },
  })),
  },
 };

@@ -1,5 +1,6 @@
 ---
 import { site } from '../../data/site';
+import { services } from '../../data/services';
 
 const dayMap: Record<string, string> = {
   Monday: 'Mo', Tuesday: 'Tu', Wednesday: 'We', Thursday: 'Th',
@@ -51,14 +52,11 @@ const schema = {
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Flooring Services',
-    itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Carpet Installation' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Engineered Wood Installation' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Laminate Flooring Installation' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tile Flooring Installation' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Glue-Down Vinyl (LVT) Installation' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Click-Lock Vinyl (LVP) Installation' } },
-    ],
+    // Built from services.ts so a new service (hardwood was missing) can't be left out.
+    itemListElement: services.map((s) => ({
+      '@type': 'Offer',
+      itemOffered: { '@type': 'Service', name: s.name, url: `${site.domain}/services/${s.slug}/` },
+    })),
   },
 };
 ---

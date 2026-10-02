@@ -21,7 +21,7 @@ const schema = {
   provider: { '@id': `${site.domain}/#business` },
   areaServed: areaServed.map((c) => ({ '@type': 'City', name: `${c}, OK` })),
   ...(image && { image: `${site.domain}${image}` }),
-  url: `${site.domain}/services/${slug}`,
+  url: `${site.domain}/services/${slug}/`,
 };
 ---
 <script type="application/ld+json" set:html={JSON.stringify(schema)} />
