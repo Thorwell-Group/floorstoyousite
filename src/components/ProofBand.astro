@@ -1,27 +1,34 @@
 ---
+// Each card links to its /proof/{topic}/ page. Those five pages were in the sitemap
+// but linked only from one another, so nothing on the site led to them.
 const proofs = [
   {
     label: 'Life Proof',
+    href: '/proof/life/',
     line: 'Furniture, high heels, moving day and everyday wear - tough wear layers keep floors looking new for years.',
     icon: 'shield',
   },
   {
     label: 'Water Proof',
+    href: '/proof/everything/',
     line: 'Spills, mopping, pet bowls and bath splashes - 100% waterproof luxury vinyl that never warps.',
     icon: 'water',
   },
   {
     label: 'Family Proof',
+    href: '/proof/family/',
     line: 'Dropped toys, juice boxes and heavy daily traffic - flooring that shrugs off real family life.',
     icon: 'family',
   },
   {
     label: 'Pet Proof',
+    href: '/proof/pet/',
     line: 'Claws, zoomies and the occasional accident - scratch- and stain-resistant floors built for paws.',
     icon: 'paw',
   },
   {
     label: 'Mess Proof',
+    href: '/proof/mess/',
     line: "Wine, markers and muddy shoes - wipe-clean surfaces that don't stain, so messes never leave a mark.",
     icon: 'sparkle',
   },
@@ -39,7 +46,7 @@ const proofs = [
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
       {proofs.map((p) => (
-        <div class="rounded-xl2 bg-white/[0.06] ring-1 ring-white/10 p-6 hover:bg-white/[0.1] transition-colors">
+        <a href={p.href} class="block no-underline rounded-xl2 bg-white/[0.06] ring-1 ring-white/10 p-6 hover:bg-white/[0.1] transition-colors">
           <span class="grid place-items-center w-14 h-14 rounded-full bg-brand-500 text-white mb-5" aria-hidden="true">
             {p.icon === 'water' && (
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5S5.5 9.5 5.5 14a6.5 6.5 0 0 0 13 0c0-4.5-6.5-11.5-6.5-11.5z"/></svg>
@@ -59,7 +66,7 @@ const proofs = [
           </span>
           <h3 class="text-white text-xl font-display mb-2">{p.label}</h3>
           <p class="text-sm text-white/75 leading-relaxed">{p.line}</p>
-        </div>
+        </a>
       ))}
     </div>
 

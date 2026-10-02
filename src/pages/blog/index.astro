@@ -20,19 +20,19 @@ const fmtDate = (iso: string) =>
 
 const title = 'OKC Flooring Guides & Advice | Floors To You OKC';
 const description =
-  'Flooring buying guides, comparisons, and cost planning for Oklahoma City homeowners — from the team at Floors To You OKC. LVP vs. laminate, climate tips, and more.';
+  'Flooring buying guides, comparisons, installation walkthroughs and cost planning for Oklahoma City homeowners, from the team at Floors To You OKC.';
 
 const blogSchema = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
   '@id': `${site.domain}/blog#blog`,
   name: 'Floors To You OKC Flooring Blog',
-  url: `${site.domain}/blog`,
+  url: `${site.domain}/blog/`,
   publisher: { '@id': `${site.domain}/#business` },
   blogPost: sorted.map((p) => ({
     '@type': 'BlogPosting',
     headline: p.title,
-    url: `${site.domain}/blog/${p.slug}`,
+    url: `${site.domain}/blog/${p.slug}/`,
     datePublished: p.datePublished,
     dateModified: p.dateModified,
     image: `${site.domain}${p.hero}`,

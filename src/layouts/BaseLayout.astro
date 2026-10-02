@@ -22,19 +22,26 @@ const { title, description, canonical, image, noindex, noindexFollow, includeLoc
 function fitDescription(d: string, max = 160): string {
   const text = d.trim().replace(/\s+/g, ' ');
   if (text.length <= max) return text;
-  const sentences = text.match(/[^.!?]+[.!?]+(\s|$)/g);
-  if (sentences) {
+  // Split on sentence ends only: a full stop followed by a capital. The old
+  // pattern also broke on abbreviations, so "LVP vs. laminate" ended a snippet at "LVP vs."
+  const sentences = text.split(/(?<!\bvs)(?<=[.!?])\s+(?=[A-Z0-9"“'‘])/);
+  if (sentences.length > 1) {
     let out = '';
     for (const s of sentences) {
-      if ((out + s).trim().length > max) break;
-      out += s;
+      if ((out + ' ' + s).trim().length > max) break;
+      out = (out + ' ' + s).trim();
     }
     // Only accept the sentence-trimmed version when it keeps most of the
     // snippet. A description a few characters over the limit used to collapse
     // to its first sentence, which threw away more than the cut would have.
     if (out.trim().length >= 120) return out.trim();
   }
-  return text.slice(0, max).replace(/\s+\S*$/, '');
+  // Last resort: one long sentence. Cut at the last clause boundary rather than
+  // mid-phrase, so the snippet never ends on "and what to" or "in an".
+  const cut = text.slice(0, max - 1).replace(/\s+\S*$/, '');
+  const clause = cut.replace(/[,;:]?\s+[^,;:]*$/, '');
+  const body = clause.length >= 110 ? clause : cut.replace(/\s+(and|or|plus|the|a|an|to|of|in|on|for|from|with|any|our|your)$/i, '');
+  return body.replace(/[,;:\s–—-]+$/, '') + '.';
 }
 ---
 <!doctype html>

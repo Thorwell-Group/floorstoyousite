@@ -919,7 +919,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'Waterproof Flooring in OKC: What the Label Means',
     metaDescription:
-      'Waterproof, water-resistant, and waterproof core mean different things. What each protects against in an Oklahoma City home, room by room, from our install team.',
+      'Waterproof, water-resistant, and waterproof core mean different things. What each one protects against in an Oklahoma City home, room by room.',
   },
 
   {
@@ -1121,7 +1121,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'Engineered Wood Flooring in OKC: Buyer’s Guide',
     metaDescription:
-      'Engineered wood gives you real hardwood with the stability Oklahoma’s climate demands. Wear layers, slab installs, and species — from the Floors To You OKC team.',
+      'Engineered wood gives you real hardwood with the stability Oklahoma’s climate demands. Wear layers, slab installs, and species explained.',
   },
 
   {
@@ -2299,7 +2299,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'Flooring Installation in Oklahoma City: Complete Guide',
     metaDescription:
-      'Every stage of flooring installation in the OKC metro: the measure, choosing material, subfloor prep, install day, and aftercare, plus the questions to ask any installer.',
+      'Every stage of flooring installation in the OKC metro: the measure, choosing material, subfloor prep, install day, aftercare, and what to ask an installer.',
   },
   {
     slug: 'hardwood-floor-installation-okc',
@@ -2635,7 +2635,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'Tile Floor Installation in Oklahoma City | Process & Cost',
     metaDescription:
-      'What a proper tile floor installation involves on an Oklahoma City slab: crack isolation, flatness for large-format tile, setting, grout cure, heated floors, timelines and what drives the cost.',
+      'What a proper tile floor installation involves on an Oklahoma City slab: crack isolation, flatness, setting, grout cure, timelines and cost drivers.',
   },
   {
     slug: 'when-to-replace-carpet-okc',
@@ -2743,7 +2743,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'When to Replace Carpet: Signs & What It Involves in OKC',
     metaDescription:
-      'Seven signs your carpet needs replacing, when restretching or a new pad is enough, how pet damage changes the job, and what carpet replacement day looks like in an Oklahoma City home.',
+      'Seven signs your carpet needs replacing, when restretching or a new pad is enough, how pet damage changes the job, and what replacement day looks like.',
   },
   {
     slug: 'laminate-flooring-installation-okc',
@@ -2843,7 +2843,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'Laminate Flooring Installation in OKC | What to Expect',
     metaDescription:
-      'How laminate flooring is professionally installed in Oklahoma City: subfloor flatness, moisture, acclimation, underlayment, the 3/8-inch expansion gap, undercut jambs and going over existing tile.',
+      'How laminate flooring is professionally installed in Oklahoma City: subfloor flatness, moisture, underlayment, expansion gaps, and going over tile.',
   },
   {
     slug: 'hardwood-floor-cleaning-care-oklahoma',
@@ -2949,7 +2949,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'How to Clean & Care for Hardwood Floors in Oklahoma',
     metaDescription:
-      'The right way to clean solid and engineered hardwood floors in Oklahoma: what to use, what never to use, the 35 to 55 percent humidity rule, sun and furniture protection, and when a finish needs help.',
+      'How to clean solid and engineered hardwood floors in Oklahoma: what to use, what never to use, the 35 to 55 percent humidity rule, and sun protection.',
   },
   {
     slug: 'stair-flooring-okc',
@@ -3054,7 +3054,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'Stair Flooring in OKC: Carpet vs. LVP vs. Wood | Floors To You',
     metaDescription:
-      'Carpet, luxury vinyl or wood on your staircase? How each handles wear, safety, noise and cost per step, and how to match stairs to the floors around them in an Oklahoma City home.',
+      'Carpet, luxury vinyl or wood on your staircase? How each handles wear, safety, noise and cost per step, and how to match stairs to the floors around them.',
   },
   {
     slug: 'prepare-home-for-flooring-installation-okc',
@@ -3153,7 +3153,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'How to Prepare for Flooring Installation: Checklist | Floors To You',
     metaDescription:
-      'A practical checklist for getting your home ready for new flooring: what the crew handles, what to do a week out and the night before, install day, and when furniture can go back.',
+      'A practical checklist for getting your home ready for new flooring: what the crew handles, what to do a week out, the night before, and on install day.',
   },
   {
     slug: 'rental-property-flooring-okc',
@@ -3252,7 +3252,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'Best Flooring for Rental Properties in OKC | Floors To You',
     metaDescription:
-      'Rental property flooring for Oklahoma City landlords: LVP vs. laminate vs. carpet by cost per tenancy, repairability, and vacancy days, plus how to keep turnovers fast.',
+      'Rental property flooring for Oklahoma City landlords: LVP vs. laminate vs. carpet by cost per tenancy, repairability, and days of vacancy.',
   },
   {
     slug: 'how-to-clean-luxury-vinyl-plank-okc',
@@ -3462,7 +3462,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'Carpet Pad Guide: Types, Thickness & Density | Floors To You OKC',
     metaDescription:
-      'How to choose carpet padding: rebond vs. foam vs. rubber, why density matters more than thickness, moisture barrier pads for pets and slab homes, and what to look for in a quote.',
+      'How to choose carpet padding: rebond vs. foam vs. rubber, why density beats thickness, moisture-barrier pads for pets and slabs, and what a quote should list.',
   },
   {
     slug: 'new-flooring-before-selling-home-okc',
@@ -3561,7 +3561,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'Replace Flooring Before Selling Your House? OKC Guide | Floors To You',
     metaDescription:
-      'Should you put in new floors before selling your Oklahoma City home? When replacement pays, when cleaning is enough, what flooring buyers like, and how to time it with your listing.',
+      'Should you replace flooring before selling your Oklahoma City home? When replacement pays, when cleaning is enough, and how to time it with your listing.',
   },
 ];
 
