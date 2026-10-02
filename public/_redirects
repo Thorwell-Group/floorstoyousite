@@ -41,8 +41,6 @@ https://www.floorstoyouokc.com/* https://floorstoyouokc.com/:splat 301
 /estimate/ /free-in-home-estimate/ 301
 /shop /catalog/ 301
 /shop/ /catalog/ 301
-# Old WordPress single-product URLs (seen in Search Console) -> the catalog.
-/product/* /catalog/ 301
 
 # /products/ was retired 2026-09-09: the Roomvo catalog at /catalog/ is the only product listing.
 # Old SKU URLs 301 to the catalog pre-filtered to the matching flooring type (laminate is not in Roomvo -> plain catalog).
@@ -407,3 +405,7 @@ https://www.floorstoyouokc.com/* https://floorstoyouokc.com/:splat 301
 /products/treasure-oak /catalog/?product_type=1&prefilter=%7B%22productSubtypes%22%3A%5B4%5D%7D 301
 /products/treasure-oak/ /catalog/?product_type=1&prefilter=%7B%22productSubtypes%22%3A%5B4%5D%7D 301
 /products/* /catalog/ 301
+# Old WordPress single-product URLs (seen in Search Console) -> the catalog.
+# Keep every splat rule at the END of this file: Cloudflare treats any static rule
+# listed after a splat as dynamic, and only 100 dynamic rules are honoured.
+/product/* /catalog/ 301
