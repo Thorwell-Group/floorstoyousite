@@ -6,6 +6,44 @@
 #   -> 301 to concat("https://floorstoyouokc.com", http.request.uri.path)
 https://www.floorstoyouokc.com/* https://floorstoyouokc.com/:splat 301
 
+# Old WordPress site URLs (the map from DELIVERABLES.md). These rules lived only in
+# vercel.json, which Cloudflare Pages ignores, so every one of them was a 404.
+# Both slash forms are listed: _redirects matches the path exactly.
+/hardwood /services/hardwood/ 301
+/hardwood/ /services/hardwood/ 301
+/laminate /services/laminate/ 301
+/laminate/ /services/laminate/ 301
+/luxury-vinyl /services/vinyl-click/ 301
+/luxury-vinyl/ /services/vinyl-click/ 301
+/tile /services/tile/ 301
+/tile/ /services/tile/ 301
+/flooring-store-edmond /areas/edmond/ 301
+/flooring-store-edmond/ /areas/edmond/ 301
+/flooring-store-yukon-oklahoma /areas/yukon/ 301
+/flooring-store-yukon-oklahoma/ /areas/yukon/ 301
+/flooring-store-mustang-oklahoma /areas/mustang/ 301
+/flooring-store-mustang-oklahoma/ /areas/mustang/ 301
+/flooring-store-midwest-city-oklahoma /areas/midwest-city/ 301
+/flooring-store-midwest-city-oklahoma/ /areas/midwest-city/ 301
+/flooring-store-guthrie-oklahoma /areas/guthrie/ 301
+/flooring-store-guthrie-oklahoma/ /areas/guthrie/ 301
+/about-us /about/ 301
+/about-us/ /about/ 301
+/contact-us /contact/ 301
+/contact-us/ /contact/ 301
+/see-our-reviews /reviews/ 301
+/see-our-reviews/ /reviews/ 301
+/see-offers /financing/ 301
+/see-offers/ /financing/ 301
+/how-floor-to-you-works /how-it-works/ 301
+/how-floor-to-you-works/ /how-it-works/ 301
+/estimate /free-in-home-estimate/ 301
+/estimate/ /free-in-home-estimate/ 301
+/shop /catalog/ 301
+/shop/ /catalog/ 301
+# Old WordPress single-product URLs (seen in Search Console) -> the catalog.
+/product/* /catalog/ 301
+
 # /products/ was retired 2026-09-09: the Roomvo catalog at /catalog/ is the only product listing.
 # Old SKU URLs 301 to the catalog pre-filtered to the matching flooring type (laminate is not in Roomvo -> plain catalog).
 /products /catalog/ 301
