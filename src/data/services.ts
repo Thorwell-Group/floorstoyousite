@@ -49,9 +49,9 @@ export const services: Service[] = [
  'Vacuum twice a week in traffic lanes, blot spills with cool water, and schedule a deep clean every 12–18 months to protect your warranty.',
  priceFrom: '',
  warranty: 'Lifetime stain + 100% labor guarantee',
- metaTitle: 'Carpet Flooring Oklahoma City | Floors To You OKC',
+ metaTitle: 'Carpet Installation in Oklahoma City | Floors To You OKC',
  metaDescription:
- 'Shop in-stock carpet in Oklahoma City with next-day installation, lifetime stain warranty, and 0% financing. Free in-home estimate.',
+ 'Carpet installation in Oklahoma City: in-stock carpet, next-day install, lifetime stain warranty and 0% financing. Free in-home estimate.',
  faqs: [
  {
  q: 'How much does carpet installation cost in Oklahoma City?',
@@ -229,9 +229,9 @@ export const services: Service[] = [
  'Sweep often, damp-mop with a laminate-safe cleaner, and avoid steam mops - water sitting at plank seams is the only thing that can damage modern laminate.',
  priceFrom: '',
  warranty: 'Up to 30-year residential wear',
- metaTitle: 'Laminate Flooring Oklahoma City | Floors To You OKC',
+ metaTitle: 'Laminate Flooring Installation in OKC | Floors To You OKC',
  metaDescription:
- 'Durable wood-look laminate flooring installed across Oklahoma City. AC4-rated, pet-friendly, in-stock with next-day install. 0% financing. Free in-home estimate.',
+ 'Laminate flooring installation in Oklahoma City: AC4-rated, pet-friendly wood-look laminate, in stock for next-day install. 0% financing.',
  faqs: [
  {
  q: 'Is laminate flooring waterproof?',
@@ -276,9 +276,9 @@ export const services: Service[] = [
  'Sweep, mop with pH-neutral cleaner, and re-seal grout lines every 2–3 years for an as-new look. Avoid bleach and ammonia on natural stone.',
  priceFrom: '',
  warranty: 'Lifetime tile + 5-year installation',
- metaTitle: 'Tile Flooring Oklahoma City | Floors To You OKC',
+ metaTitle: 'Tile Installation in Oklahoma City | Floors To You OKC',
  metaDescription:
- 'Porcelain, ceramic & stone tile flooring installed across Oklahoma City. Showers, kitchens & baths. Lifetime tile warranty. 0% financing. Free in-home estimate.',
+ 'Tile installation in Oklahoma City: porcelain, ceramic & stone for kitchens, baths & showers. Lifetime tile warranty, 0% financing. Free in-home estimate.',
  faqs: [
  {
  q: 'How long does a tile install take?',

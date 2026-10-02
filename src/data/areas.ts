@@ -45,9 +45,9 @@ export const areas: Area[] = [
  ],
  mapEmbed:
  'https://www.google.com/maps?q=4020+West+Reno+Avenue,+Oklahoma+City,+OK+73107&output=embed',
- metaTitle: 'Oklahoma City Flooring Store | Floors To You OKC',
+ metaTitle: 'Flooring Installation in Oklahoma City | Floors To You OKC',
  metaDescription:
- 'Local flooring for every Oklahoma City neighborhood — from Downtown and the Plaza District to Mesta Park, Nichols Hills & Deer Creek. Visit our West Reno Avenue showroom. Next-day install + 0% financing. Free in-home estimate.',
+ 'Flooring installation across Oklahoma City, from Downtown and the Plaza District to Mesta Park and Deer Creek. Next-day install on in-stock floors, 0% financing.',
  hero: '/images/photos/hero/hero.webp',
  heroAlt: 'Open-concept Oklahoma City home with new wide-plank flooring installed by Floors To You OKC',
  },
