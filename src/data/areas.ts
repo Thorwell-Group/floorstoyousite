@@ -152,7 +152,7 @@ export const areas: Area[] = [
  mapEmbed: 'https://www.google.com/maps?q=Guthrie,+OK&output=embed',
  metaTitle: 'Guthrie Flooring: Hardwood, LVP & Tile | Floors To You OKC',
  metaDescription:
- 'Guthrie, OK flooring installer specializing in engineered hardwood, LVP & tile for historic and new builds. Free estimate + 0% financing. Free in-home estimate.',
+ 'Guthrie, OK flooring installer specializing in engineered hardwood, LVP & tile for historic and new builds. 0% financing. Free in-home estimate.',
  hero: '/images/photos/hardwood/herringbonefloors.webp',
  heroAlt: 'Herringbone hardwood flooring in a historic Guthrie, OK home installed by Floors To You OKC',
  },
