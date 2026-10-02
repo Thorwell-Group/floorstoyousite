@@ -79,7 +79,7 @@ const serviceSchema = {
  description,
  provider: { '@id': `${site.domain}/#business` },
  areaServed: { '@type': 'City', name: `${a.city}, ${a.state}` },
- url: `${site.domain}/${a.slug}/${s.slug}`,
+ url: `${site.domain}/${a.slug}/${s.slug}/`,
  image: `${site.domain}${s.hero}`,
 };
 ---
@@ -89,7 +89,7 @@ const serviceSchema = {
  <Hero
  eyebrow={`${a.city}, OK · In-Stock Now`}
  title={`${s.shortName} ${a.city === 'Oklahoma City' ? 'In OKC' : `In ${a.city}, OK`}`}
- subtitle={`${s.intro.split('.')[0]}. We've installed ${s.shortName.toLowerCase()} in hundreds of ${a.city} homes - yours is next.`}
+ subtitle={`${s.intro.split('.')[0]}. We bring ${s.shortName.toLowerCase()} samples to your ${a.city} home, measure, and handle the whole install.`}
  image={s.hero}
  imageAlt={`${s.shortName} installed by Floors To You OKC in a ${a.city}, Oklahoma home`}
  ctaPrimary={{ label: `Free ${a.city} Quote`, href: '/book/' }}
@@ -112,6 +112,8 @@ const serviceSchema = {
  <h3 class="text-xl mb-3">Our {a.city} Install Process</h3>
  <p class="text-ink/80 leading-relaxed mb-8">{s.installation}</p>
  <h3 class="text-xl mb-3">{s.shortName} Installers Serving {a.city}, {a.county}</h3>
+ {/* a.intro is the researched per-city copy from areas.ts; it used to render only on /areas/{city}/ */}
+ <p class="text-ink/80 leading-relaxed mb-4">{a.intro}</p>
  <p class="text-ink/80 leading-relaxed mb-4">{cityContext}</p>
  <p class="text-ink/80 leading-relaxed">{a.localProof}</p>
  </div>
