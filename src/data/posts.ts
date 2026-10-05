@@ -225,7 +225,7 @@ export const posts: Post[] = [
       {
         heading: '4. Square footage and layout',
         paragraphs: [
-          'Larger areas cost more in total but often less per square foot, since crews work more efficiently in open runs. Complex layouts — lots of closets, stairs, diagonal or herringbone patterns, and transitions between rooms — add labor.',
+          'Larger areas cost more in total but often less per square foot, since crews work more efficiently in open runs. Complex layouts — lots of closets, stairs, diagonal or herringbone patterns, and transitions between rooms — add labor. Our guide to <a href="/blog/how-much-flooring-do-i-need-okc/">measuring rooms and planning for waste</a> shows how the square footage on a quote is worked out.',
           'Stairs in particular are priced separately from flat floor because each tread and riser is wrapped by hand.',
         ],
       },
@@ -2042,7 +2042,7 @@ export const posts: Post[] = [
         heading: 'Your fixed elements are at your house',
         paragraphs: [
           'You are not choosing a floor in isolation. You are choosing something that has to live with cabinets you are not replacing, a countertop, a fireplace surround, trim, and furniture you already own.',
-          'Holding a sample against your actual cabinets settles undertone questions in about ten seconds that would otherwise take three showroom visits and a lot of squinting at phone photos. Phone cameras auto-correct color, which makes them actively misleading for this.',
+          'Holding a sample against your actual cabinets settles undertone questions in about ten seconds that would otherwise take three showroom visits and a lot of squinting at phone photos. Phone cameras auto-correct color, which makes them actively misleading for this. Our guide to <a href="/blog/choosing-floor-color-okc/">choosing a floor color</a> covers undertones, light and what hides dirt.',
         ],
       },
       {
@@ -2669,7 +2669,7 @@ export const posts: Post[] = [
       {
         heading: 'Ripples and wrinkles are usually a stretch problem, not a carpet problem',
         paragraphs: [
-          `If your carpet has waves or ripples but the fiber itself still looks fine, it has probably loosened from the tack strip. That happens when carpet was knee-kicked instead of power-stretched at install, or after heavy furniture has been dragged across it for years. Restretching is a real service and it is far cheaper than replacement.`,
+          `If your carpet has waves or ripples but the fiber itself still looks fine, it has probably loosened from the tack strip. That happens when carpet was knee-kicked instead of power-stretched at install, or after heavy furniture has been dragged across it for years. Restretching is a real service and it is far cheaper than replacement. And if the carpet is still in good shape, our <a href="/blog/carpet-cleaning-care-okc/">carpet cleaning and care guide</a> covers the habits that keep it that way.`,
           `The honest test: if the carpet is under about eight years old, the pile looks even and the problem is only the ripples, ask about restretching first. If the ripples come with matting, stains and odor, the stretch is the least of it.`,
         ],
       },
@@ -3562,6 +3562,318 @@ export const posts: Post[] = [
     metaTitle: 'Replace Flooring Before Selling Your House? OKC Guide | Floors To You',
     metaDescription:
       'Should you replace flooring before selling your Oklahoma City home? When replacement pays, when cleaning is enough, and how to time it with your listing.',
+  },
+  {
+    slug: 'carpet-cleaning-care-okc',
+    title: 'How to Clean and Care for Carpet So It Lasts',
+    category: 'How It Works',
+    excerpt:
+      'Most carpet is not worn out when it gets replaced, it is soiled out. A practical routine for vacuuming, spills, pet accidents and professional cleaning that keeps carpet looking new and keeps the warranty intact.',
+    hero: '/images/photos/carpet/babysfeetoncarpet.webp',
+    heroAlt: 'Child standing barefoot on clean, textured loop carpet in an Oklahoma City home',
+    datePublished: '2026-10-05',
+    dateModified: '2026-10-05',
+    readMinutes: 7,
+    intro:
+      `Carpet rarely fails because the fibers wear through. It gets replaced because the traffic lanes have gone gray and flat, a stain keeps coming back, or the room smells like the dog. Nearly all of that is preventable. Carpet that is vacuumed properly, cleaned up after the right way and professionally cleaned on schedule can look close to new for many years longer than carpet that is not. Here is the routine we give homeowners after every carpet install.`,
+    sections: [
+      {
+        heading: 'Why carpet "uglies out" before it wears out',
+        paragraphs: [
+          `Dirt that works down into carpet is not just a looks problem. Fine grit sits at the base of the fibers, and every footstep grinds it against them. Over time that scratches the fibers so they reflect light differently, which is why a traffic lane looks dull and gray even after it has been cleaned. The pile also gets crushed in the same paths, day after day, and stops springing back.`,
+          `So the goal of carpet care is simple: get the grit out before it does that damage, and deal with spills before they set. In Oklahoma City, where fine red dirt blows in on every windy day and rides in on shoes and paws, that matters more than it does in most places.`,
+        ],
+      },
+      {
+        heading: 'Vacuuming: how often and how',
+        paragraphs: [
+          `Vacuuming is the single most important thing you do for a carpet. Traffic lanes, entries and the rooms the family actually lives in should be vacuumed at least twice a week, and more often with pets. Bedrooms and lightly used rooms can get by with once a week.`,
+          `How you vacuum matters as much as how often. Slow, overlapping passes pull out far more soil than a quick run across the room, and going over the busiest areas in two directions lifts the pile as well as cleaning it.`,
+        ],
+        bullets: [
+          'Set the vacuum height to the carpet, so the brush touches the pile without digging in',
+          'On Berber and other loop carpets, use a vacuum or setting your carpet maker approves, since an aggressive brush roll can fuzz or snag the loops',
+          'Empty the bin or change the bag before it is full, because suction drops off sharply as it fills',
+          'Clean or replace the filter on schedule, especially in a house with pets',
+          'Put a good mat inside and outside every exterior door; dirt stopped at the door never reaches the carpet',
+        ],
+      },
+      {
+        heading: 'Spills and stains: blot, do not scrub',
+        paragraphs: [
+          `Treat a spill as fast as you can. The longer it sits, the more likely it is to become a permanent stain. Blot up as much as possible with a clean white cloth or paper towels, working from the outside of the spot toward the center so it does not spread. Never rub or scrub, which untwists the fibers and leaves a fuzzy, permanent patch even if the stain comes out.`,
+          `For most spills, cool water blotted in and blotted out is enough. If you need a cleaner, use one your carpet manufacturer approves, or one carrying the Carpet and Rug Institute's Seal of Approval, and test it first in a closet. Then rinse with a little plain water and blot until the spot is nearly dry.`,
+        ],
+        bullets: [
+          'Do not use bleach, which removes the dye along with the stain',
+          'Go easy on soap: leftover detergent is sticky and makes the spot attract dirt and turn gray again',
+          'Do not soak the spot; over-wetting drives the spill into the backing and pad',
+          'Lay a stack of paper towels on the damp spot under something heavy to pull the last moisture out',
+        ],
+      },
+      {
+        heading: 'Pet accidents are a different job',
+        paragraphs: [
+          `With pet urine, what you see is only part of the problem. Blot up everything you can, then use an enzyme cleaner made for pet urine, following the label. Enzyme cleaners break down the compounds that cause the odor, and they are what keeps a pet coming back to the same spot.`,
+          `If urine has soaked through to the pad, surface cleaning will not reach it, and the smell will return every time an Oklahoma summer brings the humidity up. That is why we recommend a moisture barrier pad in pet households: it keeps accidents in the carpet, where they can be cleaned. Our <a href="/blog/carpet-pad-guide-okc/">carpet pad guide</a> explains how it works, and the pet-rated SmartStrand, PetProof and LifeProof lines we stock carry lifetime pet stain and odor warranties.`,
+        ],
+      },
+      {
+        heading: 'Professional cleaning, and why it protects your warranty',
+        paragraphs: [
+          `Even with good vacuuming, oily soil builds up in carpet over time. A professional hot water extraction cleaning every 12 to 18 months removes what a vacuum cannot, and many carpet warranties actually require regular professional cleaning to stay valid. Read your warranty, follow its schedule, and keep the receipts in the same folder as your flooring paperwork.`,
+          `Hire a cleaner who extracts the water properly, not one who leaves the carpet soaking. Over-wet carpet can shrink, separate at the seams, or leave a musty smell. Ask how long drying takes, and help it along with the air conditioning or fans, which matters most during humid Oklahoma summers.`,
+        ],
+      },
+      {
+        heading: 'Furniture, sunlight and snags',
+        paragraphs: [
+          `Move furniture a few inches now and then so the same spots are not crushed for years, and put furniture cups under heavy pieces to spread the load. Lift furniture when you move it rather than dragging it, which can pull the carpet loose from the tack strip.`,
+          `Strong afternoon sun can fade carpet over time, so close blinds or curtains in the brightest hours in south and west facing rooms. And if a loop snags, especially on Berber, trim it level with sharp scissors. Never pull it, because a pulled loop can run down the row like a thread in a sweater.`,
+        ],
+      },
+      {
+        heading: 'When care is no longer enough',
+        paragraphs: [
+          `Good care buys years, not forever. Ripples usually mean the carpet needs restretching, not replacing. Matted traffic lanes that no longer lift, stains that come back after professional cleaning, and odor that returns within days usually mean the carpet, or the pad under it, is finished. Our guide to <a href="/blog/when-to-replace-carpet-okc/">when to replace carpet</a> walks through how to tell the difference.`,
+          `If it is time, we bring carpet and pad samples to your home, measure, and give you an itemized installed price, with next-day installation on in-stock carpet. <a href="/book/">Book a free in-home estimate</a> or see our <a href="/services/carpet/">carpet options</a>.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'How often should carpet be vacuumed?',
+        a: 'Traffic lanes, entries, and family rooms should be vacuumed at least twice a week, more often with pets. Bedrooms and lightly used rooms can usually be vacuumed once a week. Slow, overlapping passes remove much more soil than a quick pass.',
+      },
+      {
+        q: 'How often should carpet be professionally cleaned?',
+        a: 'Every 12 to 18 months is a good schedule for most homes, using hot water extraction. Many carpet warranties require regular professional cleaning, so check yours and keep the receipts.',
+      },
+      {
+        q: 'What is the best way to remove a stain from carpet?',
+        a: 'Blot up as much as you can with a clean white cloth, working from the outside in, then blot with cool water or a manufacturer-approved carpet cleaner tested in a hidden spot first. Never scrub, avoid bleach, and rinse out any cleaner so it does not attract dirt.',
+      },
+      {
+        q: 'How do you get pet urine smell out of carpet?',
+        a: 'Blot up the urine, then use an enzyme cleaner made for pet urine, following the label. If the urine has soaked into the pad, surface cleaning will not remove the odor, and the pad may need to be replaced. A moisture barrier pad prevents that in pet households.',
+      },
+    ],
+    related: [
+      { label: 'Carpet flooring & installation', href: '/services/carpet/' },
+      { label: 'Carpet pad explained', href: '/blog/carpet-pad-guide-okc/' },
+      { label: 'When to replace carpet in OKC', href: '/blog/when-to-replace-carpet-okc/' },
+      { label: 'Flooring for pets, kids & high traffic', href: '/blog/best-flooring-pets-kids-high-traffic-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'How to Clean & Care for Carpet So It Lasts | Floors To You OKC',
+    metaDescription:
+      'How to clean and care for carpet: how often to vacuum, how to treat stains and pet accidents, when to book professional cleaning, and the habits that protect your carpet warranty.',
+  },
+  {
+    slug: 'how-much-flooring-do-i-need-okc',
+    title: 'How Much Flooring Do I Need? Measuring Rooms and Planning for Waste',
+    category: 'Cost & Planning',
+    excerpt:
+      'How to measure a room for new flooring, how much extra to order for cuts and waste, why carpet is figured differently from planks and tile, and the things a tape measure alone will miss.',
+    hero: '/images/photos/laminate/laminateorvinyl.webp',
+    heroAlt: 'Wood-look plank flooring installed wall to wall in an Oklahoma City bedroom, seen from the doorway',
+    datePublished: '2026-10-05',
+    dateModified: '2026-10-05',
+    readMinutes: 7,
+    intro:
+      `Before you can compare flooring prices, you need to know how much flooring you are actually buying. Order too little and the job stops halfway while you wait for more, which may not match what is already down. Order too much and you have paid for boxes that sit in the garage. Here is how square footage really gets worked out, how much extra to plan for, and why the number on a professional quote is usually a little higher than the number from your tape measure.`,
+    sections: [
+      {
+        heading: 'Step 1: measure each room',
+        paragraphs: [
+          `For a rectangular room, measure the length and the width at the widest points, wall to wall, and multiply them. A room 12 feet by 14 feet is 168 square feet. Round each measurement up to the next half foot rather than down, because walls are rarely perfectly straight.`,
+          `Most rooms are not perfect rectangles. Break an L-shaped room or an open plan into rectangles, measure each one, and add them together. Measure closets, pantries and alcoves separately and include them, because the floor almost always runs into them.`,
+        ],
+        bullets: [
+          'Measure to the wall, not to the baseboard',
+          'Include closets and the floor under doors and openings',
+          'Leave out areas under permanently fixed cabinets and islands',
+          'Sketch the rooms on paper with the measurements, so nothing gets counted twice',
+        ],
+      },
+      {
+        heading: 'Step 2: add extra for cuts and waste',
+        paragraphs: [
+          `No floor goes down with zero waste. Planks have to be cut at every wall and around every doorway, some pieces are too short to use, and a few may have flaws. So you always order more than the bare square footage. How much more depends on the material and the layout.`,
+        ],
+        bullets: [
+          'Straight-lay luxury vinyl plank, laminate or wood in simple rooms: about 5 to 10 percent extra',
+          'Diagonal layouts, herringbone, and rooms with lots of angles or closets: about 10 to 15 percent, sometimes more',
+          'Tile: usually at the higher end, since tiles break and large formats leave bigger offcuts',
+        ],
+      },
+      {
+        heading: 'Step 3: round up to whole boxes',
+        paragraphs: [
+          `Hard flooring is sold by the carton, and each carton covers a set number of square feet printed on the box. Divide your total, including waste, by the coverage per box and round up. Using the 168 square foot room from above with 10 percent extra, you need about 185 square feet. If the plank you picked comes in cartons of 20 square feet, that is 9.25 boxes, so you order 10.`,
+          `It is worth keeping one of those spare boxes. Flooring is made in batches that vary slightly in color, and a box from your original lot is what makes a future repair blend in. Our guide to <a href="/blog/how-to-clean-luxury-vinyl-plank-okc/">caring for luxury vinyl plank</a> explains how a single damaged plank can be replaced.`,
+        ],
+      },
+      {
+        heading: 'Why carpet is figured differently',
+        paragraphs: [
+          `Carpet does not come in boxes. It comes off a roll, most often 12 feet wide, and it is usually priced by the square yard, which is 9 square feet. That means the amount of carpet a room needs depends on how the roll fits the room, not just the room's area.`,
+          `A room that is 12 feet wide fits a 12-foot roll perfectly. A room that is 13 feet wide needs the full roll width plus a strip seamed onto the side, and that strip has to be cut from more carpet. The installer also has to plan where seams fall, keep them out of doorways and traffic paths where possible, and keep the pile running the same direction in every piece, or the seams show. That is why carpet is laid out room by room on a diagram, and why two rooms with the same square footage can need different amounts of carpet. Our guide to <a href="/blog/carpet-installation-cost-okc/">what carpet installation costs in OKC</a> covers how that turns into a price.`,
+        ],
+      },
+      {
+        heading: 'Stairs are counted by the step',
+        paragraphs: [
+          `Stairs are not measured like a floor. Each tread and riser is its own piece, wrapped or cut to fit, and the labor is far more than the square footage suggests. Stairs are usually measured and quoted by the step, with landings measured separately. Our guide to <a href="/blog/stair-flooring-okc/">stair flooring</a> compares carpet, LVP and wood on stairs.`,
+        ],
+      },
+      {
+        heading: 'What a tape measure will not tell you',
+        paragraphs: [
+          `Square footage gets you the material. It does not tell you everything the job needs, and these are the things that change a quote.`,
+        ],
+        bullets: [
+          'Transitions where the new floor meets tile, carpet or a different height of floor',
+          'Linear feet of baseboard or quarter round that has to be removed and replaced',
+          'Whether the old floor has to come out, and what is under it',
+          'Whether the subfloor or slab is flat enough, or needs leveling first',
+          'Doors that may need trimming if the new floor sits higher than the old one',
+        ],
+      },
+      {
+        heading: 'Let us do the measuring',
+        paragraphs: [
+          `Measuring your own rooms is a great way to get a ballpark and set a budget. For the order itself, it is better done by the people who will install the floor, because they measure for the layout they will actually use, check the subfloor, and count the trim and transitions at the same time. Our guide to <a href="/blog/subfloor-prep-okc/">subfloor prep</a> explains why that last part matters.`,
+          `Every in-home estimate we do includes a full measurement, and the quote you get is itemized, so you can see the material quantity with waste, the prep, the installation and the trim as separate lines. On in-stock material, installation can often happen the next day. <a href="/book/">Book a free in-home estimate</a> and we will bring samples and the tape measure.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'How do I calculate how much flooring I need?',
+        a: 'Measure the length and width of each room, multiply them to get square feet, and add the rooms together, including closets. Add 5 to 10 percent for straight-lay planks, or 10 to 15 percent for diagonal patterns, tile, or rooms with many angles, then round up to whole boxes.',
+      },
+      {
+        q: 'How much extra flooring should I order for waste?',
+        a: 'About 5 to 10 percent for straight-lay LVP, laminate, or wood in simple rooms, and about 10 to 15 percent for diagonal or herringbone layouts, tile, and rooms with many corners or closets. Keeping a spare box for future repairs is also a good idea.',
+      },
+      {
+        q: 'How is carpet measured?',
+        a: 'Carpet comes on rolls, usually 12 feet wide, and is typically priced by the square yard. The amount needed depends on how the roll fits each room, where the seams go, and keeping the pile running the same direction, so carpet is laid out on a room diagram rather than calculated from square footage alone.',
+      },
+      {
+        q: 'Do flooring stores measure for free?',
+        a: 'Many do as part of an estimate. Floors To You measures every room during a free in-home estimate and provides an itemized quote that shows the material quantity, prep, installation, and trim separately.',
+      },
+    ],
+    related: [
+      { label: 'All the flooring we install', href: '/services/' },
+      { label: 'What flooring installation costs in OKC', href: '/blog/flooring-installation-cost-okc/' },
+      { label: 'What carpet installation costs in OKC', href: '/blog/carpet-installation-cost-okc/' },
+      { label: 'Subfloor prep: what it is and why it matters', href: '/blog/subfloor-prep-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'How Much Flooring Do I Need? Measuring & Waste | Floors To You',
+    metaDescription:
+      'How to measure rooms for new flooring, how much extra to order for cuts and waste, why carpet and stairs are measured differently, and what a tape measure will miss.',
+  },
+  {
+    slug: 'choosing-floor-color-okc',
+    title: 'How to Choose a Floor Color That Works With Your Home',
+    category: 'Buying Guide',
+    excerpt:
+      'Light, mid-tone or dark, warm or cool: how to pick a floor color that suits your cabinets and light, hides everyday dirt, and still looks right in ten years.',
+    hero: '/images/photos/lvp/lvp1.webp',
+    heroAlt: 'Warm mid-tone wood-look flooring in a bright entry with white wainscoting and dark painted walls',
+    datePublished: '2026-10-05',
+    dateModified: '2026-10-05',
+    readMinutes: 7,
+    intro:
+      `Picking the type of floor is usually the easy part. Picking the color is where people get stuck, holding a small sample against the wall and trying to imagine it across the whole house. It is also the decision you will live with longest. Paint can change in a weekend; a floor stays put for fifteen years or more. Here is how we help Oklahoma City homeowners choose a color they will still like long after install day.`,
+    sections: [
+      {
+        heading: 'Start with what is not changing',
+        paragraphs: [
+          `A floor color is never chosen in isolation. It has to work with everything in the room that is staying: cabinets, countertops, the fireplace, stair rails, interior doors, trim and the furniture you already own. Make a quick list of those before you look at a single sample, because they narrow the field faster than anything else.`,
+          `Walls come last, not first. Paint is the cheapest and easiest thing in the room to change, so it should adapt to the floor, not the other way around.`,
+        ],
+      },
+      {
+        heading: 'Undertone matters more than shade',
+        paragraphs: [
+          `Every wood or wood-look floor has an undertone. Warm floors lean red, orange or golden. Cool floors lean gray or ashy. Neutral floors sit in between. Two floors that look the same "medium brown" in a showroom can look completely different next to your cabinets because their undertones clash.`,
+          `As a rule, pick a floor whose undertone works with your cabinets and trim, but not one that matches the cabinet color exactly. A floor that is almost but not quite the same as the cabinets looks like a mistake. Clear contrast, a lighter floor with darker cabinets or the other way round, almost always looks intentional.`,
+        ],
+      },
+      {
+        heading: 'Light, mid-tone or dark: what each one shows',
+        paragraphs: [
+          `The shade you choose decides what you will see on the floor every day. This is the part people most often wish they had thought about.`,
+        ],
+        bullets: [
+          'Dark floors look rich but show dust, pet hair, footprints and light-colored scratches quickly',
+          'Very light floors make rooms feel bigger and hide dust well, but show dark dirt, spills and red Oklahoma clay tracked in from outside',
+          'Mid-tone floors with some grain and color variation are the most forgiving, hiding both dust and dirt between cleanings',
+          'In a house with pets, a floor close to the color of your pet’s coat hides hair best',
+        ],
+      },
+      {
+        heading: 'Your light changes the color',
+        paragraphs: [
+          `The same plank looks different in a north-facing room with soft, cool light than in a west-facing room with strong Oklahoma afternoon sun. Light bulbs change it too: warm white bulbs push a floor toward yellow and orange, and cool white bulbs make it look grayer.`,
+          `That is why a floor should be chosen in the room where it is going, not under showroom lights. Look at samples in the morning, in the afternoon and at night with the lights on. If a color still looks right at all three, it is a good sign.`,
+        ],
+      },
+      {
+        heading: 'Size, flow and finish',
+        paragraphs: [
+          `In smaller rooms and homes, lighter and mid-tone floors help the space feel more open, and running one floor continuously through the main living areas makes the whole floor plan feel larger than a different floor in every room. If you are using two floor types, say LVP in the living areas and carpet in the bedrooms, choose colors from the same family so they work together where they meet.`,
+          `Look at the finish as well as the color. A matte or low-sheen surface hides scratches, scuffs and footprints far better than a glossy one. A visible grain and some plank-to-plank variation look more natural and disguise everyday wear, though a very busy pattern can overwhelm a small room. Our <a href="/blog/vinyl-plank-flooring-okc/">luxury vinyl plank buyer’s guide</a> covers the texture and finish options.`,
+        ],
+      },
+      {
+        heading: 'Trendy versus lasting',
+        paragraphs: [
+          `Floor colors do follow trends. The cool grays that went into a lot of homes a few years ago are a good example: in many of the newer installs we see, homeowners are moving back toward warmer, natural wood tones. The safest choice for longevity is usually a natural-looking mid-tone with a little warmth, which fits a wide range of styles and furniture.`,
+          `If you might sell in the next few years, lean even further toward neutral. Our guide to <a href="/blog/new-flooring-before-selling-home-okc/">flooring before selling your home</a> explains why. If you are staying for the long haul, choose what you love, as long as it also passes the dirt, light and cabinet tests above.`,
+        ],
+      },
+      {
+        heading: 'See it in your own home before you decide',
+        paragraphs: [
+          `A small chip in a showroom is a poor way to choose a floor. Lay several full-size planks side by side on your floor, next to your cabinets, so you see the color variation across planks and not just one piece. That is exactly why we bring the showroom to you: samples go down in your rooms, in your light, against your cabinets and furniture. Our post on <a href="/blog/mobile-flooring-showroom-okc/">how our mobile showroom works</a> explains the visit.`,
+          `<a href="/book/">Book a free in-home estimate</a> and we will bring a selection of colors in the floor types that suit each room, help you narrow it down, and measure while we are there.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What floor color hides dirt the best?',
+        a: 'Mid-tone floors with some grain and color variation hide the most. Dark floors show dust, pet hair, and scratches, while very light floors show dark dirt and spills. In a home with pets, a floor close to your pet’s coat color hides hair best.',
+      },
+      {
+        q: 'Should floors be lighter or darker than cabinets?',
+        a: 'Either can work, but there should be clear contrast. A floor that almost matches the cabinet color tends to look like a mismatch. Choose a floor whose undertone works with the cabinets and is noticeably lighter or darker.',
+      },
+      {
+        q: 'Should the flooring color be the same throughout the house?',
+        a: 'Running one floor through the main living areas usually makes a home feel larger and more connected. Where you use different floor types, such as carpet in bedrooms, choose colors from the same family so the transitions look planned.',
+      },
+      {
+        q: 'Are gray floors out of style?',
+        a: 'Cool gray floors were very popular for several years, and many homeowners are now choosing warmer, natural wood tones. A natural-looking mid-tone with a little warmth is usually the safest long-term choice.',
+      },
+    ],
+    related: [
+      { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
+      { label: 'Hardwood flooring', href: '/services/hardwood/' },
+      { label: 'How our mobile flooring showroom works', href: '/blog/mobile-flooring-showroom-okc/' },
+      { label: 'Luxury vinyl plank: the OKC buyer’s guide', href: '/blog/vinyl-plank-flooring-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'How to Choose a Floor Color for Your Home | Floors To You OKC',
+    metaDescription:
+      'How to choose a floor color: matching undertones to cabinets, light vs. dark vs. mid-tone, what hides dirt and pet hair, how lighting changes color, and picks that will not date.',
   },
 ];
 
