@@ -3667,7 +3667,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'How to Clean & Care for Carpet So It Lasts | Floors To You OKC',
     metaDescription:
-      'How to clean and care for carpet: how often to vacuum, how to treat stains and pet accidents, when to book professional cleaning, and the habits that protect your carpet warranty.',
+      'How to clean and care for carpet: how often to vacuum, treating stains and pet accidents, when to book a pro clean, and habits that protect the warranty.',
   },
   {
     slug: 'how-much-flooring-do-i-need-okc',
@@ -3775,7 +3775,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'How Much Flooring Do I Need? Measuring & Waste | Floors To You',
     metaDescription:
-      'How to measure rooms for new flooring, how much extra to order for cuts and waste, why carpet and stairs are measured differently, and what a tape measure will miss.',
+      'How to measure rooms for new flooring, how much extra to order for waste, why carpet and stairs are measured differently, and what a tape measure misses.',
   },
   {
     slug: 'choosing-floor-color-okc',
@@ -3873,7 +3873,7 @@ export const posts: Post[] = [
     ],
     metaTitle: 'How to Choose a Floor Color for Your Home | Floors To You OKC',
     metaDescription:
-      'How to choose a floor color: matching undertones to cabinets, light vs. dark vs. mid-tone, what hides dirt and pet hair, how lighting changes color, and picks that will not date.',
+      'How to choose a floor color: undertones and cabinets, light vs. dark vs. mid-tone, what hides dirt and pet hair, how light changes color, and shades that last.',
   },
 ];
 
