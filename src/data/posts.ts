@@ -324,7 +324,7 @@ export const posts: Post[] = [
       },
       {
         q: 'Do you offer discounts or price matching in OKC?',
-        a: 'We hold a lowest-price guarantee: bring a written quote on the same or comparable material and we will beat it. Because we shop at your home instead of running a large showroom, we start from a lower cost base.',
+        a: 'We hold a lowest-price guarantee: bring a written quote on the same or comparable material from a flooring retailer with a physical storefront and we will beat it (see our price guarantee terms page for details). Because we shop at your home instead of running a large showroom, we start from a lower cost base.',
       },
       {
         q: 'Can I finance an affordable flooring project?',

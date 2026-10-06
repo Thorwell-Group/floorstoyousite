@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+---
+<BaseLayout title="Lowest Price Guarantee Terms | Floors To You OKC" description="How the Floors To You OKC lowest price guarantee works: bring a written quote from a flooring retailer with a physical storefront and we'll beat it.">
+  <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Price Guarantee', url: '/price-guarantee/' }]} />
+  <section class="container-x py-12 max-w-3xl prose-brand">
+    <h1>Lowest Price Guarantee</h1>
+    <p>Find the same or comparable flooring quoted for less, and we'll beat that price. Here's what qualifies.</p>
+    <h2>What Qualifies</h2>
+    <ul>
+      <li>The quote must be in writing, dated, and list the material, square footage, and total price.</li>
+      <li>The quote must be for the same or comparable material and scope of work as your Floors To You quote.</li>
+      <li>The quote must come from an established flooring retailer that operates a physical storefront or showroom open to the public.</li>
+    </ul>
+    <h2>What Doesn't Qualify</h2>
+    <ul>
+      <li>Quotes from independent installers, contractors, or businesses with no physical storefront, including those registered as an LLC.</li>
+      <li>Verbal quotes or online-only pricing.</li>
+      <li>Quotes for different products, lower grades, or a different scope of work.</li>
+    </ul>
+    <h2>How It Works</h2>
+    <p>Share the written quote with your Floors To You estimator. We may verify the quote and the business that issued it.</p>
+    <h2>Questions</h2>
+    <p>Ask your estimator, or visit our showroom at 4020 W Reno Ave, Oklahoma City, OK 73107.</p>
+  </section>
+</BaseLayout>
