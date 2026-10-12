@@ -785,7 +785,7 @@ export const posts: Post[] = [
         heading: 'For bedrooms and stairs: the right carpet',
         paragraphs: [
           'Kids play on the floor and stairs need grip, so soft surfaces still have a place. The key with <a href="/services/carpet/">carpet</a> in a busy home is fiber choice: triexta and quality nylon resist crushing and staining and bounce back in traffic lanes, and many lines carry lifetime pet stain and soil warranties. Pair that with a dense pad and carpet holds up far better than people expect.',
-          'We usually steer families toward stain-resistant fiber in bedrooms and on stairs, where warmth, softness, and safety matter more than waterproofing, and durable hard surface everywhere else. For a deeper look at fibers and styles, see our guide to <a href="/blog/choosing-carpet-oklahoma-city/">choosing carpet in Oklahoma City</a>.',
+          'We usually steer families toward stain-resistant fiber in bedrooms and on stairs, where warmth, softness, and safety matter more than waterproofing, and durable hard surface everywhere else. For a deeper look at fibers and styles, see our guide to <a href="/blog/choosing-carpet-oklahoma-city/">choosing carpet in Oklahoma City</a>, and our guide to <a href="/blog/best-flooring-for-bedrooms-okc/">the best flooring for bedrooms</a> compares carpet with hard floors room by room.',
         ],
       },
       {
@@ -2245,7 +2245,7 @@ export const posts: Post[] = [
       {
         heading: 'Stage 5: After the install',
         paragraphs: [
-          'Different materials need different things in the first week. Tile grout needs cure time before heavy traffic and before rugs go down. Floating floors need their expansion gap left alone at the perimeter, that gap is what stops the floor from buckling in August, and covering it with the wrong trim defeats it.',
+          'Different materials need different things in the first week. Tile grout needs cure time before heavy traffic and before rugs go down. Floating floors need their expansion gap left alone at the perimeter, that gap is what stops the floor from buckling in August, and covering it with the wrong trim defeats it. Our guide to <a href="/blog/flooring-transitions-baseboards-okc/">transitions, baseboards and quarter round</a> explains the trim choices.',
           'Longer term, felt pads under furniture legs and a real entry mat at every exterior door do more for a floor’s lifespan than any product you can buy for it.',
         ],
       },
@@ -2569,7 +2569,7 @@ export const posts: Post[] = [
         heading: 'Setting, spacing and grout',
         paragraphs: [
           `Tile is set in thinset mortar, or a medium-bed mortar for large formats, with full coverage under each tile so there are no hollow spots to crack later. Spacing is set with spacers or a leveling system, and a straight layout is planned so cuts land at the walls, not down the middle of the room. A single course out of square on day one is visible across the entire floor forever.`,
-          `Grout goes in after the mortar has set, typically the next day. Cement grout is then sealed once it has cured; high-performance grouts resist stains without sealing. Wide grout lines and dark grout hide more; narrow, light grout lines show every bit of dirt. We will talk you through the tradeoff, because it affects how the floor lives more than the tile color does.`,
+          `Grout goes in after the mortar has set, typically the next day. Cement grout is then sealed once it has cured; high-performance grouts resist stains without sealing. Wide grout lines and dark grout hide more; narrow, light grout lines show every bit of dirt. We will talk you through the tradeoff, because it affects how the floor lives more than the tile color does. Our guide to <a href="/blog/tile-grout-cleaning-care-okc/">cleaning and caring for tile and grout</a> covers how to keep it looking new.`,
         ],
       },
       {
@@ -3874,6 +3874,316 @@ export const posts: Post[] = [
     metaTitle: 'How to Choose a Floor Color for Your Home | Floors To You OKC',
     metaDescription:
       'How to choose a floor color: undertones and cabinets, light vs. dark vs. mid-tone, what hides dirt and pet hair, how light changes color, and shades that last.',
+  },
+  {
+    slug: 'tile-grout-cleaning-care-okc',
+    title: 'How to Clean and Care for Tile and Grout',
+    category: 'How It Works',
+    excerpt:
+      'Tile itself is close to indestructible. Grout is where a tile floor shows its age. A practical routine for daily cleaning, deep cleaning grout, sealing, and the cleaners that do more harm than good.',
+    hero: '/images/photos/tile/tile.webp',
+    heroAlt: 'Dark herringbone tile floor with crisp light grout lines in a bright white bathroom',
+    datePublished: '2026-10-12',
+    dateModified: '2026-10-12',
+    readMinutes: 7,
+    intro:
+      `Porcelain and ceramic tile are about as tough as flooring gets. Water does not hurt them, scratches are rare, and a well-installed tile floor can outlast the house around it. When a tile floor starts to look tired, it is almost never the tile. It is the grout: lines that have gone from light gray to dark brown in the traffic paths, a stain by the stove that will not lift, a crack along the same line every summer. Here is the routine we give homeowners after every tile install, and how to bring grout back when it has already gone dark.`,
+    sections: [
+      {
+        heading: 'Why grout gets dirty when tile does not',
+        paragraphs: [
+          `The face of a porcelain or glazed ceramic tile is hard and nonporous. Dirt sits on top of it and wipes off. Standard cement grout is different: it is porous, a little like concrete, and it sits slightly below the tile surface. Dirty mop water runs into those low lines, and the grout soaks up whatever is in it. Do that a few hundred times and the grout is a shade or two darker than the day it went in.`,
+          `So the goal of tile care is mostly grout care. Keep grit off the floor, keep dirty water out of the grout lines, and keep cement grout sealed so stains stay on the surface where you can clean them.`,
+        ],
+      },
+      {
+        heading: 'The everyday routine',
+        paragraphs: [
+          `Sweep, dust mop or vacuum a tile floor a few times a week, and more often at entries and in the kitchen. Fine grit is the main thing that dulls a tile finish and wears grout, and in Oklahoma City that grit is often the red dirt that blows in on windy days and rides in on shoes and paws. If you vacuum, use the hard floor setting or turn the beater bar off so it does not scatter debris.`,
+          `Then damp mop about once a week with warm water and a pH-neutral cleaner made for tile. A neutral cleaner removes everyday soil without eating at the grout or leaving a film. Change the water as soon as it looks cloudy, because mopping with dirty water is exactly how grout gets darker, and wring the mop well so you are cleaning with a damp mop, not flooding the grout lines.`,
+        ],
+        bullets: [
+          'A microfiber mop or flat mop lifts soil instead of pushing it into the grout lines',
+          'Go over the floor afterward with a clean, dry towel or let a fan dry it to avoid water spots on glossy tile',
+          'Put a good mat inside and outside every exterior door; grit stopped at the door never reaches the grout',
+          'Wipe kitchen spills promptly, especially oil, wine, coffee and tomato, which stain unsealed grout',
+        ],
+      },
+      {
+        heading: 'Cleaners to avoid',
+        paragraphs: [
+          `The wrong cleaner can do more damage to a tile floor than years of foot traffic. Read the label on anything you use, and check the cleaning instructions from your tile and grout makers first.`,
+        ],
+        bullets: [
+          'Vinegar, lemon and other acidic cleaners: they slowly etch cement grout and will damage natural stone like marble and travertine',
+          'Bleach as a routine cleaner: it can discolor colored grout and is not needed for normal cleaning',
+          'Oil soaps and wax-based products: they leave a slippery film that attracts dirt and dulls the tile',
+          'Steel wool and wire brushes: they scratch glazed tile and can leave metal particles that rust in the grout',
+          'Mixing cleaners: never mix bleach with ammonia or acidic products, which can release dangerous fumes',
+        ],
+      },
+      {
+        heading: 'Deep cleaning grout that has gone dark',
+        paragraphs: [
+          `If the grout lines are already darker than they should be, they can usually be brought back. Start with the gentlest method and work up only if you need to. A grout cleaner labeled safe for your tile, or a paste of baking soda and water, worked into the lines with a stiff nylon grout brush, will lift most everyday soil. Let it sit for a few minutes, scrub along the line, then rinse with clean water and pick up the dirty water with a wet vacuum or towels so it does not settle back into the grout.`,
+          `For heavier staining, an oxygen bleach cleaner mixed according to the label is generally safer for grout and colored tile than chlorine bleach. Test anything new in a closet or behind a door first. A steam cleaner can also work well on ceramic and porcelain, though check with the tile and grout makers before using one, and do not use steam on grout that is cracked or crumbling.`,
+          `Grout that is stained deep in its pores, cracked, or missing in places is beyond cleaning. It can be ground out and replaced, or in some cases recolored with a grout colorant, without replacing the tile.`,
+        ],
+      },
+      {
+        heading: 'Sealing: what it does and how often',
+        paragraphs: [
+          `Standard cement grout should be sealed once it has fully cured after installation, and resealed periodically after that. Sealer does not make grout stain-proof. It slows down how quickly spills soak in, which buys you time to wipe them up. How often to reseal depends on the sealer and how hard the floor works. A kitchen or entry may need it every year or two, a guest bath far less often. Follow the sealer maker's directions.`,
+          `A simple test tells you when it is time: put a few drops of water on the grout. If they bead up, the sealer is still working. If the grout darkens and soaks the water in within a few minutes, it is time to clean the grout thoroughly, let it dry, and reseal.`,
+          `Some grouts do not need sealing at all. Epoxy grout and many high-performance grouts resist stains on their own, which is why we often suggest them for kitchens, entries and other hard-working floors. Our guide to <a href="/blog/tile-floor-installation-okc/">tile floor installation</a> covers how grout is chosen and set.`,
+        ],
+      },
+      {
+        heading: 'Cracked grout and loose tiles',
+        paragraphs: [
+          `A single hairline crack in grout is usually cosmetic. Grout that cracks along the same line every season, a tile that sounds hollow when you tap it, or a tile that has cracked straight across are different. Those usually point to movement underneath, which is common in central Oklahoma, where expansive clay soil makes slabs shift with the seasons. Our post on <a href="/blog/oklahoma-clay-soil-and-your-floors/">Oklahoma clay soil and your floors</a> explains what is happening.`,
+          `Do not just regrout over a crack that keeps coming back. It will crack again. Find out why it is moving first, so the fix addresses the cause and not just the symptom.`,
+        ],
+      },
+      {
+        heading: 'When it is time for new tile',
+        paragraphs: [
+          `Good care keeps tile looking right for decades. If your floor has widespread cracked tiles, a pattern or color that dates the whole room, or grout problems that keep returning because of what is under the tile, it may be time for a new floor rather than another repair. When that happens, the subfloor and slab preparation matters more than the tile you pick.`,
+          `We bring tile samples to your home, check the slab while we are there, and give you an itemized installed price. <a href="/book/">Book a free in-home estimate</a> or see our <a href="/services/tile/">tile flooring options</a>.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best way to clean tile floors?',
+        a: 'Sweep or vacuum a few times a week to remove grit, then damp mop about once a week with warm water and a pH-neutral cleaner made for tile. Change the mop water when it gets cloudy and wring the mop well so dirty water does not soak into the grout.',
+      },
+      {
+        q: 'How do you get dirty grout white again?',
+        a: 'Start with a grout cleaner safe for your tile, or a baking soda paste, scrubbed along the lines with a stiff nylon brush, then rinse and pick up the dirty water. For heavier stains, try an oxygen bleach cleaner mixed to the label. Test first in a hidden spot, and avoid acidic cleaners and steel wool.',
+      },
+      {
+        q: 'How often should grout be sealed?',
+        a: 'Standard cement grout should be sealed after it cures and resealed periodically, often every year or two in kitchens and entries and less often in lightly used rooms. If water drops soak into the grout instead of beading up, it is time to clean and reseal. Epoxy and many high-performance grouts do not need sealing.',
+      },
+      {
+        q: 'Is vinegar safe to clean tile and grout?',
+        a: 'It is best avoided. Vinegar is acidic and can slowly etch cement grout, and it will damage natural stone such as marble and travertine. A pH-neutral tile cleaner is the safer choice for routine cleaning.',
+      },
+    ],
+    related: [
+      { label: 'Tile flooring & installation', href: '/services/tile/' },
+      { label: 'Tile floor installation in OKC', href: '/blog/tile-floor-installation-okc/' },
+      { label: 'Ceramic vs. porcelain vs. natural stone', href: '/blog/ceramic-vs-porcelain-vs-natural-stone-okc/' },
+      { label: 'Tile flooring ideas for OKC homes', href: '/blog/tile-flooring-ideas-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'How to Clean & Care for Tile and Grout | Floors To You OKC',
+    metaDescription:
+      'How to clean tile floors and grout: the weekly routine, cleaners to avoid, deep cleaning dark grout, when to seal, and what cracked grout is telling you.',
+  },
+  {
+    slug: 'best-flooring-for-bedrooms-okc',
+    title: 'The Best Flooring for Bedrooms: Carpet, LVP, Laminate or Wood?',
+    category: 'Buying Guide',
+    excerpt:
+      'Bedrooms are the one room where comfort usually beats toughness. How carpet, luxury vinyl, laminate and wood compare for warmth, quiet, allergies and kids, and how to choose for each bedroom in the house.',
+    hero: '/images/photos/laminate/laminatebedroom.webp',
+    heroAlt: 'Wood-look bedroom floor with a large area rug under the foot of the bed',
+    datePublished: '2026-10-12',
+    dateModified: '2026-10-12',
+    readMinutes: 7,
+    intro:
+      `Most rooms in a house are chosen for toughness: the kitchen has to handle water, the entry has to handle mud, the living room has to handle everyone. Bedrooms are different. They get light, barefoot traffic, almost no spills, and the first thing your feet touch every morning is the floor. That changes the priorities. Here is how the main options compare in a bedroom, and how we help Oklahoma City homeowners choose for the primary bedroom, the kids' rooms and the guest room.`,
+    sections: [
+      {
+        heading: 'What a bedroom floor actually has to do',
+        paragraphs: [
+          `Start with how the room is used, not with what is popular. A bedroom floor is walked on barefoot, so warmth and softness matter more than in any other room. It needs to be quiet, especially in a two-story house or when someone is asleep while another person is up. And it should not be hard to keep clean, because dust collects under beds and dressers.`,
+          `What a bedroom usually does not need is waterproofing. Unless the room has an attached bath with no door, a pet that has accidents, or a child young enough to spill in it, water resistance is less important here than almost anywhere else in the house.`,
+        ],
+      },
+      {
+        heading: 'Carpet: still the comfort choice',
+        paragraphs: [
+          `Carpet remains the most popular bedroom floor for good reasons. It is warm underfoot on a January morning, it is soft for kids playing on the floor, it absorbs sound instead of bouncing it around the room, and it is usually the most affordable way to floor a bedroom. Plush and textured styles feel the softest; a good pad under them matters as much as the carpet itself, and our <a href="/blog/carpet-pad-guide-okc/">carpet pad guide</a> explains how to choose one.`,
+          `The tradeoffs are cleaning and allergies. Carpet holds dust and pet hair until it is vacuumed out, and it needs vacuuming and professional cleaning on a schedule. In pet households, the pet-rated SmartStrand, PetProof and LifeProof carpet lines we stock carry lifetime pet stain and odor warranties, and a moisture barrier pad keeps accidents from soaking through. Our guide to <a href="/blog/choosing-carpet-oklahoma-city/">choosing carpet in Oklahoma City</a> covers fibers and styles.`,
+        ],
+      },
+      {
+        heading: 'Luxury vinyl plank: easy care, with a rug',
+        paragraphs: [
+          `<a href="/services/vinyl-click/">Luxury vinyl plank</a> has become a common bedroom choice, especially where the same floor runs from the living areas down the hall into the bedrooms. It is waterproof, resists scratches from furniture and pets, and is very easy to keep clean, since dust and hair sweep or vacuum right off. For people with dust or pet allergies, that easy cleaning is a real advantage.`,
+          `It is cooler and firmer underfoot than carpet, and a hard floor makes a room sound livelier. An attached underlayment helps with both, and a large area rug under the bed gives you a soft landing for your feet while keeping the rest of the floor easy to clean.`,
+        ],
+      },
+      {
+        heading: 'Laminate and wood: the warm look of real wood',
+        paragraphs: [
+          `<a href="/services/laminate/">Laminate</a> gives a realistic wood look at a lower price than real wood, and it handles the light traffic of a bedroom easily. Its main drawback in wet rooms, sensitivity to standing water, rarely matters in a bedroom. A quality underlayment keeps it from sounding hollow when you walk across it.`,
+          `Hardwood and <a href="/services/engineered-wood/">engineered wood</a> are the classic choice for a primary bedroom when you want real wood throughout the house. Bedrooms are an easy place for wood: little grit, few spills, and mostly bare or socked feet. Most Oklahoma City homes are built on a slab, where engineered wood is usually the right way to get real wood. Our guide to <a href="/blog/hardwood-vs-luxury-vinyl-okc/">hardwood vs. luxury vinyl</a> compares the two head to head.`,
+        ],
+      },
+      {
+        heading: 'Upstairs bedrooms and noise',
+        paragraphs: [
+          `In a two-story house, footsteps on a bedroom floor are heard in the room below. Carpet with a good pad is the quietest option by a wide margin. If you want a hard floor upstairs, choose a product with an attached acoustic underlayment or add one rated for sound, and plan on rugs in the main walking areas. It is worth asking about at the estimate, because the underlayment has to be chosen before the floor goes down.`,
+        ],
+      },
+      {
+        heading: 'Choosing by bedroom',
+        paragraphs: [
+          `Not every bedroom in the house has to get the same floor. Here is how we usually see it play out in Oklahoma City homes.`,
+        ],
+        bullets: [
+          'Primary bedroom: plush carpet for comfort, or the same LVP or wood as the main living areas for a continuous look, with a large rug under the bed',
+          'Kids’ bedrooms: stain-resistant carpet for floor play and naps, or LVP where spills, crafts and pets are part of daily life',
+          'Nursery: soft carpet or LVP with a large rug, chosen with easy cleaning in mind',
+          'Guest room: the most budget-friendly floor that matches the rest of the house, since it sees the least traffic',
+          'Bedroom that doubles as an office: a hard floor, or a chair mat over carpet, so a rolling chair does not wear a path',
+        ],
+      },
+      {
+        heading: 'See it in your bedroom before you decide',
+        paragraphs: [
+          `Comfort is hard to judge from a showroom display. Stand on carpet samples in your socks, put plank samples down next to your bed and dresser, and look at them in the morning light and with the lamps on at night. That is why we bring the showroom to you. Our post on <a href="/blog/mobile-flooring-showroom-okc/">how our mobile showroom works</a> explains the visit.`,
+          `<a href="/book/">Book a free in-home estimate</a> and we will bring carpet, LVP, laminate and wood samples, measure every bedroom, and give you an itemized quote, with next-day installation on in-stock carpet.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best flooring for a bedroom?',
+        a: 'Carpet is the most popular choice because it is warm, soft, quiet, and usually the most affordable. Luxury vinyl plank is a good choice for easy cleaning and allergy concerns, and laminate or wood work well for a continuous wood look. Many homeowners use a hard floor with a large rug under the bed.',
+      },
+      {
+        q: 'Is carpet or LVP better for a bedroom?',
+        a: 'Carpet is better for warmth, softness, and quiet, especially upstairs. LVP is easier to clean, better for allergies, and waterproof if pets or kids spill. If you choose LVP, an attached underlayment and a large area rug make it warmer and quieter.',
+      },
+      {
+        q: 'What bedroom flooring is best for allergies?',
+        a: 'Hard floors such as luxury vinyl plank, laminate, or wood are generally easier for allergy sufferers because dust and pet hair sit on the surface and are removed with regular vacuuming or dust mopping. Carpet can still work with frequent vacuuming using a good filter and regular professional cleaning.',
+      },
+      {
+        q: 'Should bedrooms have the same flooring as the rest of the house?',
+        a: 'They do not have to. Many homes use a hard floor in the living areas and carpet in the bedrooms. If you use different floors, choose colors from the same family so the transitions at the bedroom doors look planned.',
+      },
+    ],
+    related: [
+      { label: 'Carpet flooring & installation', href: '/services/carpet/' },
+      { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
+      { label: 'Choosing carpet in Oklahoma City', href: '/blog/choosing-carpet-oklahoma-city/' },
+      { label: 'Carpet pad explained', href: '/blog/carpet-pad-guide-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Best Flooring for Bedrooms: Carpet vs. LVP vs. Wood | Floors To You',
+    metaDescription:
+      'The best flooring for bedrooms: how carpet, LVP, laminate and wood compare for warmth, noise, allergies and kids, and what to choose for each bedroom.',
+  },
+  {
+    slug: 'flooring-transitions-baseboards-okc',
+    title: 'Transitions, Baseboards and Quarter Round: The Finishing Details of a New Floor',
+    category: 'How It Works',
+    excerpt:
+      'Where two floors meet, where the floor meets the wall, and where it meets a door: the trim details that decide whether a new floor looks finished, and what to ask about before install day.',
+    hero: '/images/photos/install/floorinstalling.webp',
+    heroAlt: 'Installer spreading adhesive on a concrete slab beside new wood planks laid in a herringbone pattern',
+    datePublished: '2026-10-12',
+    dateModified: '2026-10-12',
+    readMinutes: 7,
+    intro:
+      `Most people pick a new floor by looking at the middle of the room. Most people judge a finished floor by looking at the edges. A beautiful plank floor still looks unfinished if there is a bulky strip in the doorway, a gap along the baseboard, or a door that scrapes every time it opens. These details are small, but they are the part of the job you notice every day. Here is what they are, the choices you have, and what to settle before installation starts.`,
+    sections: [
+      {
+        heading: 'Why the edges matter',
+        paragraphs: [
+          `Every floor has to stop somewhere. It meets walls, cabinets, other floors, stairs, sliding doors and fireplace hearths. At each of those places, the installer has to hide the cut edge, allow for any movement, and deal with any change in height. How that is done is decided by trim pieces and transitions, and those choices are a big part of what separates a clean, finished install from one that looks like an afterthought.`,
+          `They are also a part of the quote people often overlook. A complete, itemized quote lists transitions and trim as their own lines, so you can see what is included. Our guide to <a href="/blog/flooring-installation-cost-okc/">what flooring installation costs in OKC</a> explains how to read one.`,
+        ],
+      },
+      {
+        heading: 'The expansion gap: the reason trim exists',
+        paragraphs: [
+          `Floating floors, including click-lock luxury vinyl plank, laminate and many engineered wood floors, are not fastened down. They need a small gap around the edges of the room so the floor can expand and contract with temperature and humidity. In an Oklahoma summer, a floating floor installed tight to the walls has nowhere to go and can buckle or peak at the seams.`,
+          `That gap has to be covered, and it has to stay open underneath whatever covers it. Baseboard or quarter round covers it from above without pinning the floor down. Nailing trim through the floor, caulking the floor to the trim, or running heavy cabinets on top of a floating floor all defeat the gap.`,
+        ],
+      },
+      {
+        heading: 'Baseboards and quarter round',
+        paragraphs: [
+          `There are two ways to finish where the floor meets the wall. The first is to remove the existing baseboards, install the floor, and put the baseboards back, or put new ones on. This is the cleanest look, because the baseboard sits directly over the expansion gap and nothing extra shows. Old baseboards sometimes crack or split when they come off, and if they are painted, the top edge usually needs a touch of caulk and paint once they are back on.`,
+          `The second is to leave the baseboards in place and cover the gap with quarter round or shoe molding, a small strip of trim nailed to the baseboard, not the floor. It is faster and less expensive, and it is often the right call when baseboards are in good shape or would be damaged coming off. Some people dislike the look, so decide which you want before install day. Either way, tell us at the estimate. Prep, install, baseboard and cleanup are all part of how we quote a job.`,
+        ],
+      },
+      {
+        heading: 'Transitions between two floors',
+        paragraphs: [
+          `Wherever your new floor meets a different floor, a transition piece joins them. Which piece is used depends on the two floors and their heights.`,
+        ],
+        bullets: [
+          'T-molding: joins two hard floors of about the same height, such as LVP to tile, and leaves room for both to move',
+          'Reducer: steps down from a higher hard floor to a lower one, such as engineered wood down to sheet vinyl',
+          'Carpet transition: joins carpet to a hard floor, often with a metal or wood strip at a bedroom doorway',
+          'End cap or threshold: finishes a floor against a sliding door, fireplace hearth or other fixed edge',
+          'Stair nose: finishes the edge of a step or a landing where the floor turns down a stair',
+        ],
+      },
+      {
+        heading: 'Fewer transitions usually looks better',
+        paragraphs: [
+          `Transitions are necessary, but too many make a house look chopped up. Running one floor continuously through the main living areas, kitchen and halls removes most of them and makes the home feel larger. Our guide to <a href="/blog/kitchen-flooring-okc/">kitchen flooring</a> explains why that is especially true in an open floor plan.`,
+          `There are limits. Floating floors have maximum run lengths set by the manufacturer, and very large or long open areas sometimes need a transition at a doorway to give the floor room to move. Glue-down floors handle larger open areas without one. Our guide to <a href="/blog/lvp-installation-okc-click-vs-glue-down/">click-lock vs. glue-down LVP</a> covers the difference. Where a transition is needed, putting it under a door rather than in the middle of a room keeps it nearly invisible.`,
+        ],
+      },
+      {
+        heading: 'Heights, doors and appliances',
+        paragraphs: [
+          `A new floor rarely sits at exactly the same height as the old one. That matters in a few places, and each one is easier to plan for than to fix afterward.`,
+        ],
+        bullets: [
+          'Interior doors may need the bottoms trimmed so they clear the new floor and any rug',
+          'Exterior doors and sliders need the new floor finished cleanly against the threshold',
+          'Dishwashers and other under-counter appliances need enough height to come back out for service',
+          'Floor vents may need new registers sized for the new floor height',
+          'Where the new floor meets a floor you are keeping, a big height difference needs a reducer, or leveling, rather than a trip edge',
+        ],
+      },
+      {
+        heading: 'Settle the details at the estimate',
+        paragraphs: [
+          `The time to decide these details is before the floor arrives, not on install day. A good estimate walks every doorway and every edge: where each transition goes and what kind, whether baseboards come off or quarter round goes on, which doors may need trimming, and how the floor meets stairs and fixed thresholds. Our <a href="/blog/flooring-installation-okc-guide/">flooring installation guide</a> walks through the whole process in order.`,
+          `<a href="/book/">Book a free in-home estimate</a> and we will bring samples, measure, check every transition, and give you an itemized quote that lists the trim and transitions so there are no surprises.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Do baseboards need to be removed to install new flooring?',
+        a: 'Not always. Removing baseboards and reinstalling them over the new floor gives the cleanest look. Leaving them in place and adding quarter round or shoe molding to cover the expansion gap is faster and less expensive. Both are common; decide which you want before install day.',
+      },
+      {
+        q: 'What is quarter round used for?',
+        a: 'Quarter round is a small trim piece nailed to the baseboard, not the floor, that covers the expansion gap at the edge of a floating floor. It lets the floor move with temperature and humidity while hiding the cut edge.',
+      },
+      {
+        q: 'Do I need transition strips between rooms?',
+        a: 'You need a transition wherever two different floors meet, and sometimes in large open areas where a floating floor needs room to expand. Running one floor continuously through connected rooms removes most transitions and usually looks better.',
+      },
+      {
+        q: 'Will my doors need to be cut for new flooring?',
+        a: 'Sometimes. If the new floor sits higher than the old one, interior doors may need the bottoms trimmed to clear it. This is checked during the estimate so it can be planned for in the quote.',
+      },
+    ],
+    related: [
+      { label: 'All the flooring we install', href: '/services/' },
+      { label: 'Flooring installation in OKC: the complete guide', href: '/blog/flooring-installation-okc-guide/' },
+      { label: 'Click-lock vs. glue-down LVP', href: '/blog/lvp-installation-okc-click-vs-glue-down/' },
+      { label: 'How much flooring do I need?', href: '/blog/how-much-flooring-do-i-need-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Flooring Transitions, Baseboards & Quarter Round | Floors To You',
+    metaDescription:
+      'Flooring transitions, baseboards and quarter round explained: expansion gaps, T-molding vs. reducers, door heights, and what to settle before install day.',
   },
 ];
 
