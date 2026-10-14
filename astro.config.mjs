@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import sitemapNoindexFilter from './src/integrations/sitemap-noindex-filter.mjs';
+import { serializeWithLastmod } from './src/integrations/sitemap-lastmod.mjs';
 import partytown from '@astrojs/partytown';
 import robotsTxt from 'astro-robots-txt';
 import compress from 'astro-compress';
@@ -15,7 +16,8 @@ export default defineConfig({
     sitemap({
       changefreq: 'weekly',
       priority: 0.7,
-      lastmod: new Date(),
+      // Real per-page dates (post dateModified / last git change), not build time.
+      serialize: serializeWithLastmod,
       // The 6 /oklahoma-city/{service}/ pages canonical to their /services/{service}/
       // twins (cannibalization fix) — keep the pages live, but don't advertise URLs
       // whose canonical points elsewhere in the sitemap.
