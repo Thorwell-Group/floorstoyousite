@@ -70,6 +70,19 @@ const localFaqs = [
  },
 ];
 
+// Same floor in the nearest other service areas, closest first (straight-line
+// distance from the real city coordinates in areas.ts). Gives each city×service
+// page links from its siblings, not only from its own city and the service hub,
+// so Google reaches every page in the set by more than one path.
+const toRad = (d: number) => (d * Math.PI) / 180;
+const miles = (p: { lat: number; lng: number }, q: { lat: number; lng: number }) => {
+ const h = Math.sin(toRad(q.lat - p.lat) / 2) ** 2 + Math.cos(toRad(p.lat)) * Math.cos(toRad(q.lat)) * Math.sin(toRad(q.lng - p.lng) / 2) ** 2;
+ return 3959 * 2 * Math.asin(Math.sqrt(h));
+};
+const nearby = areas
+ .filter((x) => x.slug !== a.slug && x.slug !== 'oklahoma-city')
+ .sort((x, y) => miles(a.geo, x.geo) - miles(a.geo, y.geo));
+
 const serviceSchema = {
  '@context': 'https://schema.org',
  '@type': 'Service',
@@ -133,6 +146,14 @@ const serviceSchema = {
  <ul class="text-sm space-y-1">
  {services.filter((x) => x.slug !== s.slug).map((x) => (
  <li><a href={`/${a.slug}/${x.slug}/`} class="text-brand-700 hover:text-brand-500 no-underline">{x.shortName} in {a.city}</a></li>
+ ))}
+ </ul>
+ </div>
+ <div class="card p-6">
+ <h4 class="text-lg mb-2">{s.shortName} In Nearby Cities</h4>
+ <ul class="text-sm space-y-1">
+ {nearby.map((x) => (
+ <li><a href={`/${x.slug}/${s.slug}/`} class="text-brand-700 hover:text-brand-500 no-underline">{s.shortName} in {x.city}</a></li>
  ))}
  </ul>
  </div>
