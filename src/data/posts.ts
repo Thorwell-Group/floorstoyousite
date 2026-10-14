@@ -1601,9 +1601,9 @@ export const posts: Post[] = [
       { label: 'Flooring installation in OKC: complete guide', href: '/blog/flooring-installation-okc-guide/' },
       { label: 'In-stock vs. special-order flooring', href: '/blog/in-stock-vs-special-order-flooring-okc/' },
     ],
-    metaTitle: 'How Long Does Flooring Installation Actually Take?',
+    metaTitle: 'How Long Does Flooring Installation Take? LVP, Carpet, Tile',
     metaDescription:
-      'Laying the floor is rarely the long part. What really sets a flooring project schedule in Oklahoma City, and where the delays actually come from.',
+      'How long carpet, click LVP, tile and hardwood take to install, and why tear-out, subfloor prep and acclimation set the schedule more than room size.',
   },
   {
     slug: 'subfloor-prep-okc',
