@@ -1,10 +1,7 @@
-# NOTE: Cloudflare Pages _redirects does NOT support domain-level (absolute-URL
-# source) rules, so the line below is documentation of intent only — it will not
-# fire. The www -> apex 301 must be configured as a Redirect Rule (or Bulk
-# Redirect) in the Cloudflare dashboard for the floorstoyouokc.com zone:
-#   when http.host eq "www.floorstoyouokc.com"
-#   -> 301 to concat("https://floorstoyouokc.com", http.request.uri.path)
-https://www.floorstoyouokc.com/* https://floorstoyouokc.com/:splat 301
+# www -> apex 301 lives in functions/_middleware.js. Cloudflare Pages _redirects
+# cannot match on hostname, so do NOT add a "https://www.floorstoyouokc.com/*" rule
+# here: it never fires, and a splat this high in the file risks turning every
+# static rule below it into a capped dynamic rule.
 
 # Old WordPress site URLs (the map from DELIVERABLES.md). These rules lived only in
 # vercel.json, which Cloudflare Pages ignores, so every one of them was a 404.
