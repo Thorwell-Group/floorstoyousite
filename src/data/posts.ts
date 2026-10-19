@@ -2806,7 +2806,7 @@ export const posts: Post[] = [
       {
         heading: 'Living with it afterward',
         paragraphs: [
-          `Sweep or vacuum on a hard-floor setting, damp-mop with a laminate-safe cleaner, and never use a steam mop; forcing hot vapor into the seams is the one thing that damages modern laminate. Wipe up standing water within a few hours. Put felt pads under furniture and a mat at every exterior door. A properly installed AC4 laminate floor should last 20 to 30 years in a typical Oklahoma City home.`,
+          `Sweep or vacuum on a hard-floor setting, damp-mop with a laminate-safe cleaner, and never use a steam mop; forcing hot vapor into the seams is the one thing that damages modern laminate. Wipe up standing water within a few hours. Put felt pads under furniture and a mat at every exterior door. Our guide to <a href="/blog/how-to-clean-laminate-floors-okc/">cleaning and caring for laminate</a> covers the full routine. A properly installed AC4 laminate floor should last 20 to 30 years in a typical Oklahoma City home.`,
         ],
       },
       {
@@ -2975,7 +2975,7 @@ export const posts: Post[] = [
       {
         heading: 'Carpet on stairs: still the most forgiving choice',
         paragraphs: [
-          `Carpet remains the most common stair surface in the metro for good reasons. It is the most slip-resistant option, especially for kids, older family members and dogs. It is the quietest, which matters when the stairs sit next to a bedroom or open onto the living room. And it is usually the least expensive per step.`,
+          `Carpet remains the most common stair surface in the metro for good reasons. It is the most slip-resistant option, especially for kids, older family members and dogs; our guide to <a href="/blog/flooring-for-aging-in-place-okc/">flooring for aging in place</a> covers the rest of the house for older homeowners. It is the quietest, which matters when the stairs sit next to a bedroom or open onto the living room. And it is usually the least expensive per step.`,
           `The fiber matters more on stairs than in any bedroom. Nylon springs back from the constant pivot at the nose better than polyester, so it holds its look longer on a busy staircase. Be careful with loose loop Berber if you have pets, because a claw can catch a loop and pull a run. Pad matters too: a dense pad wrapped over the nose protects the carpet at exactly the point it wears first.`,
           `Then there is the wrap style. Waterfall, where the carpet drops straight from the nose to the tread below, is faster and costs less. Cap-and-band, where the carpet is tucked under the nose and follows the shape of the step, looks tailored and costs more. Our <a href="/blog/choosing-carpet-oklahoma-city/">carpet buying guide</a> covers fiber and style in more depth.`,
         ],
@@ -4131,7 +4131,7 @@ export const posts: Post[] = [
       {
         heading: 'Fewer transitions usually looks better',
         paragraphs: [
-          `Transitions are necessary, but too many make a house look chopped up. Running one floor continuously through the main living areas, kitchen and halls removes most of them and makes the home feel larger. Our guide to <a href="/blog/kitchen-flooring-okc/">kitchen flooring</a> explains why that is especially true in an open floor plan.`,
+          `Transitions are necessary, but too many make a house look chopped up. Running one floor continuously through the main living areas, kitchen and halls removes most of them and makes the home feel larger; our guide to <a href="/blog/same-flooring-throughout-house-okc/">using the same flooring throughout the house</a> covers when that works. Our guide to <a href="/blog/kitchen-flooring-okc/">kitchen flooring</a> explains why that is especially true in an open floor plan.`,
           `There are limits. Floating floors have maximum run lengths set by the manufacturer, and very large or long open areas sometimes need a transition at a doorway to give the floor room to move. Glue-down floors handle larger open areas without one. Our guide to <a href="/blog/lvp-installation-okc-click-vs-glue-down/">click-lock vs. glue-down LVP</a> covers the difference. Where a transition is needed, putting it under a door rather than in the middle of a room keeps it nearly invisible.`,
         ],
       },
@@ -4184,6 +4184,314 @@ export const posts: Post[] = [
     metaTitle: 'Flooring Transitions, Baseboards & Quarter Round | Floors To You',
     metaDescription:
       'Flooring transitions, baseboards and quarter round explained: expansion gaps, T-molding vs. reducers, door heights, and what to settle before install day.',
+  },
+  {
+    slug: 'how-to-clean-laminate-floors-okc',
+    title: 'How to Clean and Care for Laminate Floors',
+    category: 'How It Works',
+    excerpt:
+      'Laminate is easy to keep clean as long as you respect its one weakness: water in the seams. The daily routine, the right way to mop, the cleaners and tools to avoid, and how to handle scratches and chips.',
+    hero: '/images/photos/laminate/laminate-2.webp',
+    heroAlt: 'Light wood-look laminate floor in a sunlit room beside a large window',
+    datePublished: '2026-10-19',
+    dateModified: '2026-10-19',
+    readMinutes: 6,
+    intro:
+      `Laminate is one of the easiest floors in the house to live with. The top layer is a hard, clear wear layer over a printed wood or stone image, and dirt does not soak into it. What makes laminate different from luxury vinyl or tile is the core underneath: it is made from wood fiber, and wood fiber swells if water gets into it. Almost every rule for caring for laminate comes back to that. Here is the routine that keeps a laminate floor looking right for years, and the handful of habits that shorten its life.`,
+    sections: [
+      {
+        heading: 'Why laminate needs its own routine',
+        paragraphs: [
+          `The surface of a laminate plank is tough. It resists scratches and stains better than many people expect, and it holds up to normal foot traffic for many years. The weak point is the edges. Where two planks click together, there is a seam, and if water sits on that seam long enough to work its way in, the fiberboard core can swell. A swollen edge does not go back down.`,
+          `Modern laminate is far more water-resistant than it used to be, and many lines are rated to handle a spill for a number of hours. But a water-resistant floor is not a waterproof one. Treat laminate as a floor that likes to stay dry, and it will look good for a long time. Our guide to <a href="/blog/waterproof-flooring-okc/">waterproof flooring</a> explains what those ratings actually promise.`,
+        ],
+      },
+      {
+        heading: 'The everyday routine',
+        paragraphs: [
+          `Grit is the main thing that dulls a laminate floor. Sand and small stones tracked in from outside act like sandpaper under shoes and chair legs. Get them off the floor and most of the work is done.`,
+        ],
+        bullets: [
+          'Sweep, dust mop or vacuum a few times a week, more in entries and the kitchen',
+          'Use a vacuum on its hard-floor setting, with the beater bar off, so the brush does not scuff the surface',
+          'Use a microfiber dust mop for quick daily passes; it picks up dust and pet hair without scratching',
+          'Wipe up spills as soon as you see them with a dry or barely damp cloth',
+          'Put a mat inside and outside every exterior door to catch grit before it reaches the floor',
+        ],
+      },
+      {
+        heading: 'How to mop laminate the right way',
+        paragraphs: [
+          `Laminate can be mopped, but it should be damp-mopped, never wet-mopped. The mop should be wrung out until it is barely damp to the touch, so the floor dries within a minute or two. If you can see water standing on the floor or beading along the seams, there is too much.`,
+          `Use a cleaner made for laminate, or the one the floor's manufacturer recommends, and use it at the strength on the label. More cleaner does not make the floor cleaner; it leaves a film that looks streaky and collects dirt. A spray-and-mop system with a microfiber pad works well because it puts a light mist on the floor instead of a bucket of water. Work in sections and change or rinse the pad when it gets dirty, so you are not spreading dirt around.`,
+        ],
+      },
+      {
+        heading: 'What to keep off a laminate floor',
+        paragraphs: [
+          `A few common cleaning products and tools do more harm on laminate than on other floors. Check your floor's care instructions first, because they are what the warranty is written around, but these are the usual ones to avoid.`,
+        ],
+        bullets: [
+          'Steam mops: they push hot moisture into the seams, which is the one thing laminate cannot handle',
+          'Soaking wet mops and buckets of water left to sit on the floor',
+          'Wax, polish and "restore" products: laminate does not need them, and they leave a film that is hard to remove',
+          'Oil soaps and oil-based cleaners, which leave a slippery, dull residue',
+          'Abrasive powders, scouring pads and steel wool, which scratch the wear layer',
+          'Vinegar or ammonia mixed at home, unless the manufacturer says they are safe for your floor',
+        ],
+      },
+      {
+        heading: 'Preventing scratches and dents',
+        paragraphs: [
+          `Most damage to laminate comes from things that move across it. Put felt pads under the legs of chairs, tables and anything else that slides, and replace them when they wear thin or pick up grit. Use a chair mat under a rolling desk chair. When you move heavy furniture, lift it or slide it on a piece of carpet or a furniture slider rather than dragging it.`,
+          `Keep pets' nails trimmed. Laminate holds up well to dogs, but long nails on a running dog will leave marks over time. Our guide to <a href="/blog/best-flooring-pets-kids-high-traffic-okc/">flooring for pets, kids and high-traffic homes</a> compares how laminate handles animals against the other options.`,
+        ],
+      },
+      {
+        heading: 'Spills, pet accidents and leaks',
+        paragraphs: [
+          `For a spill or a pet accident, the goal is to get the liquid off the floor quickly. Blot it up, clean the spot with your laminate cleaner, and dry it completely, paying attention to the seams. Do not leave a wet towel sitting on it.`,
+          `A slow leak is a different problem. A dishwasher, refrigerator ice maker or water heater that leaks under a laminate floor can soak the core before anyone notices. If you see edges starting to lift or a seam that looks raised, find the source of the water first. Swollen planks usually need to be replaced, and a click-lock floor can often be repaired by replacing just the damaged boards. Our guide to <a href="/blog/replacing-floors-after-water-damage-okc/">replacing floors after water damage</a> covers what to do after a bigger leak.`,
+        ],
+      },
+      {
+        heading: 'Fixing small scratches and chips',
+        paragraphs: [
+          `Before treating a mark as a scratch, clean it. A lot of what looks like scratches is residue or a scuff sitting on top of the wear layer, and it comes off with a cloth and your laminate cleaner. For a real scratch or a small chip, laminate repair kits with color-matched wax sticks or putty can hide minor damage. Test the color in a closet or under furniture first.`,
+          `Deeper damage, or a plank that has swollen, usually means replacing the board. Keep a few spare planks from your installation in a closet so a future repair matches exactly. If you are still deciding whether laminate is right for your home, our <a href="/blog/laminate-flooring-okc/">laminate flooring guide</a> covers the pros and cons, or you can <a href="/book/">book a free in-home estimate</a> and we will bring laminate and luxury vinyl samples so you can compare them in your own rooms.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best way to clean laminate floors?',
+        a: 'Sweep, dust mop or vacuum on a hard-floor setting to remove grit, then damp-mop with a cleaner made for laminate, using a mop wrung out until it is barely damp. The floor should dry within a minute or two. Wipe spills up right away.',
+      },
+      {
+        q: 'Can you use a steam mop on laminate?',
+        a: 'No. A steam mop pushes hot moisture into the seams between planks, where it can swell the fiberboard core. Most laminate manufacturers specifically say not to steam clean their floors.',
+      },
+      {
+        q: 'Can I use vinegar on laminate floors?',
+        a: 'Check your floor manufacturer’s care instructions first. Some allow a heavily diluted vinegar solution and some do not. A cleaner made for laminate floors is the safest choice, used at the strength on the label.',
+      },
+      {
+        q: 'How do you fix a scratch in laminate flooring?',
+        a: 'Clean the area first, since many marks are just residue. Minor scratches and small chips can be filled with a color-matched laminate repair kit. Deep damage or swollen planks usually need the board replaced, which is easier if you kept spare planks from the installation.',
+      },
+    ],
+    related: [
+      { label: 'Laminate flooring & installation', href: '/services/laminate/' },
+      { label: 'Laminate flooring in OKC: pros and cons', href: '/blog/laminate-flooring-okc/' },
+      { label: 'LVP vs. laminate in Oklahoma homes', href: '/blog/lvp-vs-laminate-oklahoma/' },
+      { label: 'How to clean luxury vinyl plank', href: '/blog/how-to-clean-luxury-vinyl-plank-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'How to Clean & Care for Laminate Floors | Floors To You OKC',
+    metaDescription:
+      'How to clean laminate floors: the daily routine, how to damp-mop, why to skip steam mops and wax, and how to handle spills, scratches and chips.',
+  },
+  {
+    slug: 'same-flooring-throughout-house-okc',
+    title: 'Should You Use the Same Flooring Throughout the House?',
+    category: 'Buying Guide',
+    excerpt:
+      'One floor running through the whole house looks larger and cleaner, but not every room wants the same floor. When a single floor makes sense, where to change it, and how to make different floors look planned.',
+    hero: '/images/photos/laminate/laminate2.webp',
+    heroAlt: 'Dark wood-look floor running continuously through a dining area, kitchen and front hall',
+    datePublished: '2026-10-19',
+    dateModified: '2026-10-19',
+    readMinutes: 7,
+    intro:
+      `One of the first questions at almost every estimate is whether to put the same floor in every room. It is a good question, because the answer shapes everything else: which material you choose, how many transitions the house ends up with, and what the job costs. There is no single right answer, but there is a sensible way to decide. Here is how we help Oklahoma City homeowners think it through.`,
+    sections: [
+      {
+        heading: 'Why one continuous floor is popular',
+        paragraphs: [
+          `A single floor running through the living room, dining area, kitchen and halls makes a house look bigger. With no lines at doorways, the eye travels across the whole space, and rooms feel connected rather than chopped into pieces. That matters most in the open floor plans common in newer Oklahoma City homes, where the kitchen, dining and living areas are really one room.`,
+          `It is also practical. Fewer transitions mean fewer strips to trip on, fewer edges to collect dirt, and a smoother path for vacuums, strollers and anyone with a walker or wheelchair. And buying one material for a large area keeps the order simple. Our guide to <a href="/blog/flooring-transitions-baseboards-okc/">transitions and baseboards</a> explains why fewer transitions usually looks better.`,
+        ],
+      },
+      {
+        heading: 'The catch: one floor has to work everywhere',
+        paragraphs: [
+          `If one floor runs through the kitchen, entry and living room, it has to handle the toughest of those rooms. A floor that is perfect in a living room may be the wrong choice in front of a kitchen sink or at the back door where wet dogs come in. That is why a continuous floor usually points toward a material that can handle water and heavy traffic and still looks good in the living areas.`,
+          `In practice, that is why <a href="/services/vinyl-click/">luxury vinyl plank</a> is such a common whole-home choice. It is waterproof, it stands up to pets and kids, and it comes in wood looks that suit a living room. Wood-look porcelain tile does the same job with a harder, cooler surface. Laminate and engineered wood can run through the main living areas too, with some care in the wettest spots. Our comparison of <a href="/blog/lvp-vs-laminate-oklahoma/">LVP vs. laminate</a> covers that choice in detail.`,
+        ],
+      },
+      {
+        heading: 'Where it makes sense to change floors',
+        paragraphs: [
+          `Using the same floor in the connected spaces does not mean using it in every room. Some rooms have different jobs, and a different floor serves them better. These are the most common places homeowners choose to switch.`,
+        ],
+        bullets: [
+          'Bedrooms: many people want carpet for warmth and quiet, even when the rest of the house is hard flooring',
+          'Full bathrooms: tile or glue-down vinyl is often the better choice where water hits the floor every day',
+          'Stairs: carpet is the most slip-resistant and quietest option, while the floors above and below are hard',
+          'Laundry and mudroom: a fully waterproof floor that can handle a washer leak or wet boots',
+          'A formal room or study: sometimes a place for real wood or a different look that sets it apart',
+        ],
+      },
+      {
+        heading: 'How to make different floors look planned',
+        paragraphs: [
+          `If you use more than one floor, the goal is for the changes to look intentional. A few rules help.`,
+        ],
+        bullets: [
+          'Change floors at doorways, not in the middle of an open space, so the transition hides under the door',
+          'Keep colors in the same family: a carpet that picks up the undertone of the wood-look floor beside it',
+          'Limit the number of different floors; two or three across a house usually looks better than five',
+          'Run planks the same direction in rooms that are visible from each other',
+          'Match transition pieces to the floors so the strip blends instead of standing out',
+        ],
+      },
+      {
+        heading: 'Practical limits on long runs',
+        paragraphs: [
+          `Floating floors such as click-lock luxury vinyl and laminate move slightly with temperature and humidity, and manufacturers set a maximum distance a floating floor can run before it needs a break. In a large open house, that can mean a transition at a doorway or hall even when the same floor continues on the other side. Glue-down floors do not have the same limit, which is one reason they suit very large open areas. Our guide to <a href="/blog/lvp-installation-okc-click-vs-glue-down/">click-lock vs. glue-down LVP</a> explains the difference.`,
+          `Height matters too. If the new floor runs from a room where old flooring is removed into a room where it goes over an existing surface, the heights may not match. That is something we check at the estimate, so the plan accounts for it instead of discovering it on install day.`,
+        ],
+      },
+      {
+        heading: 'Budget and phasing',
+        paragraphs: [
+          `Doing the whole house at once gives the most consistent result, because every room comes from the same product line and, ideally, the same production lot. If the budget does not stretch to every room this year, plan the whole house now and install in phases, starting with the connected living areas. Choose a product that is likely to stay available, and buy a little extra so a later phase or a future repair matches. Our guide to <a href="/blog/how-much-flooring-do-i-need-okc/">how much flooring to order</a> explains how to plan for that, and <a href="/financing/">0% financing</a> can help when doing it all at once makes more sense.`,
+        ],
+      },
+      {
+        heading: 'Decide with samples in your rooms',
+        paragraphs: [
+          `The best way to decide is to see the options where they will actually go. Lay a plank sample in the kitchen, carry it to the living room and down the hall, and hold carpet samples at the bedroom doors next to it. That is why our showroom comes to your house. Our post on <a href="/blog/choosing-floor-color-okc/">choosing a floor color</a> helps with the color side of the decision.`,
+          `<a href="/book/">Book a free in-home estimate</a> and we will walk every room with you, show you where a single floor works and where a change makes sense, and give you an itemized quote room by room.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Should all the floors in my house be the same?',
+        a: 'They do not have to be. Using one floor through the connected living areas, kitchen and halls makes a home look larger and removes most transitions. Many homeowners still choose carpet for bedrooms and tile or waterproof vinyl for full bathrooms.',
+      },
+      {
+        q: 'What is the best flooring to use throughout a whole house?',
+        a: 'Luxury vinyl plank is the most common whole-home choice because it is waterproof, handles pets and heavy traffic, and comes in wood looks that suit living areas. Wood-look porcelain tile, laminate and engineered wood can also work, depending on the rooms involved.',
+      },
+      {
+        q: 'Is it okay to have different flooring in different rooms?',
+        a: 'Yes. The key is to change floors at doorways, keep the colors in the same family, and limit the number of different floors so the changes look planned rather than random.',
+      },
+      {
+        q: 'Can one floor run through a large open floor plan without breaks?',
+        a: 'Often, but floating floors have maximum run lengths set by the manufacturer, and very large open areas may need a transition at a doorway. Glue-down floors can usually cover larger areas without a break.',
+      },
+    ],
+    related: [
+      { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
+      { label: 'Kitchen flooring in OKC', href: '/blog/kitchen-flooring-okc/' },
+      { label: 'Transitions, baseboards and quarter round', href: '/blog/flooring-transitions-baseboards-okc/' },
+      { label: 'Choosing a floor color', href: '/blog/choosing-floor-color-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Same Flooring Throughout the House? How to Decide | Floors To You',
+    metaDescription:
+      'Should you use the same flooring throughout your house? When one floor works, which rooms to change, and how to make different floors look planned.',
+  },
+  {
+    slug: 'flooring-for-aging-in-place-okc',
+    title: 'Flooring for Aging in Place: Safer Floors for Older Homeowners',
+    category: 'Buying Guide',
+    excerpt:
+      'The right floor makes a home easier and safer to live in for years longer. What matters when you are planning for older adults, walkers or wheelchairs: slip resistance, firm footing, fewer transitions and less glare.',
+    hero: '/images/photos/lvp/vinyl.webp',
+    heroAlt: 'Open living area and kitchen with one continuous wood-look floor and no thresholds between the rooms',
+    datePublished: '2026-10-19',
+    dateModified: '2026-10-19',
+    readMinutes: 7,
+    intro:
+      `Many Oklahoma City homeowners replace their floors with a long future in mind: staying in the house they love as they get older, or getting a home ready for a parent who is moving in. The floor plays a bigger part in that than most people expect. It is what every step, every walker and every wheelchair rolls across, and a poor choice can make a house harder to live in. Here is what to look for, room by room, and what to talk through before you choose.`,
+    sections: [
+      {
+        heading: 'What makes a floor easier to live on',
+        paragraphs: [
+          `Planning a floor for aging in place comes down to a few practical goals. The floor should give good grip, wet or dry. It should be firm and smooth enough that a walker, cane or wheelchair moves easily. It should have as few edges and height changes as possible. And it should be easy to keep clean without getting down on hands and knees or using a heavy machine.`,
+          `No single floor is perfect at all of these. Softer floors cushion better but are harder to roll across; very hard floors roll easily but are less forgiving. The right answer depends on the person and the room, which is why it is worth talking through how the home is actually used before choosing.`,
+        ],
+      },
+      {
+        heading: 'Fewer transitions and level thresholds',
+        paragraphs: [
+          `Every place where one floor meets another is a small change in height, and small changes in height are what catch a toe or the front wheel of a walker. The single most useful thing you can do is reduce them. Running one floor through the main living areas, kitchen and halls removes most of the strips in the house. Our guide to <a href="/blog/same-flooring-throughout-house-okc/">using the same flooring throughout the house</a> covers how to plan that.`,
+          `Where a transition is still needed, it should be as low and gradual as possible, and fastened securely so it cannot lift. Choosing floors with similar thicknesses in adjoining rooms helps. Our guide to <a href="/blog/flooring-transitions-baseboards-okc/">transitions and baseboards</a> explains the pieces and where they go.`,
+        ],
+      },
+      {
+        heading: 'Hard floors: grip and glare',
+        paragraphs: [
+          `<a href="/services/vinyl-click/">Luxury vinyl plank</a> is one of the most common choices for aging in place. It is smooth for rolling, waterproof, easy to clean with a dust mop, and slightly softer and warmer underfoot than tile. Look for a textured or embossed surface and a low-sheen finish rather than a glossy one, and ask about the product's slip resistance at the estimate.`,
+          `Shine is worth thinking about too. High-gloss floors reflect light from windows and lamps, and that glare can make it harder to judge the floor surface, especially for older eyes. A matte or satin finish is easier to see clearly. In bathrooms, choose tile or vinyl with a textured surface, and smaller tiles with more grout lines grip better than large polished ones. Our <a href="/blog/bathroom-flooring-okc/">bathroom flooring guide</a> covers wet-room choices in more detail.`,
+        ],
+      },
+      {
+        heading: 'Carpet: comfort, with the right construction',
+        paragraphs: [
+          `Carpet gives good grip and a softer landing, and many people want it in the bedroom. The construction matters, though. Thick, plush carpet over a soft, deep pad feels wonderful but is hard to push a walker or wheelchair across, and the soft surface can feel unsteady. A lower, denser carpet over a firmer, thinner pad is easier to move on and still comfortable.`,
+          `Our <a href="/blog/carpet-pad-guide-okc/">carpet pad guide</a> explains how pad thickness and density change how a carpet feels. Throw rugs are a different matter: loose rugs and curled edges are a common tripping hazard, so if you want rugs, use ones with a non-slip backing or rug pad, and keep their edges flat.`,
+        ],
+      },
+      {
+        heading: 'Room by room',
+        paragraphs: [
+          `Here is how the choices usually work out in a home being set up for the long term.`,
+        ],
+        bullets: [
+          'Living areas, kitchen and halls: one continuous hard floor, such as textured, low-sheen LVP, with no transitions between rooms',
+          'Bedroom: low, dense carpet on a firm pad for comfort, or the same hard floor as the rest of the house if a wheelchair or walker is in daily use',
+          'Bathroom: textured tile or waterproof vinyl with good grip when wet, and a level entry from the hall',
+          'Entry: a hard floor with a heavy, flat, non-slip mat to catch water and grit at the door',
+          'Stairs: carpet or a securely fastened runner for grip, with a clearly visible edge on each step',
+        ],
+      },
+      {
+        heading: 'Stairs and visibility',
+        paragraphs: [
+          `Stairs deserve special attention. Carpet is the most slip-resistant stair surface, and on hard stairs a fastened carpet runner adds grip where people actually walk. It also helps when the edge of each step is easy to see. A stair nose that contrasts with the tread, or a runner that stops short of a visible edge, makes each step easier to judge. Our guide to <a href="/blog/stair-flooring-okc/">stair flooring</a> compares carpet, LVP and wood on stairs.`,
+        ],
+      },
+      {
+        heading: 'Plan the installation around the household',
+        paragraphs: [
+          `Installing floors in a home where someone has limited mobility takes a little more planning. Faster installs mean fewer days with rooms out of use, and our crew moves the furniture and puts it back, so nobody in the house has to lift anything. If someone needs a bedroom or bathroom kept usable during the job, tell us at the estimate and we will plan the order of the rooms around it. Our <a href="/blog/prepare-home-for-flooring-installation-okc/">installation prep checklist</a> covers the rest.`,
+          `<a href="/book/">Book a free in-home estimate</a> and we will bring samples, walk the house with you and whoever will be living on these floors, check every doorway and threshold, and give you an itemized quote.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the safest flooring for older adults?',
+        a: 'There is no single safest floor for every home. Textured, low-sheen luxury vinyl plank is a common choice because it gives good grip, rolls easily for walkers and wheelchairs, and is easy to clean. Low, dense carpet on a firm pad works well in bedrooms. Fewer transitions between rooms matters as much as the material.',
+      },
+      {
+        q: 'Is carpet or LVP better for someone using a walker?',
+        a: 'A smooth hard floor such as LVP is usually easier to push a walker or wheelchair across. If you want carpet, choose a low, dense carpet over a firm, thin pad rather than a plush carpet over a soft pad.',
+      },
+      {
+        q: 'What flooring is best for a wheelchair?',
+        a: 'A firm, smooth hard floor with no thresholds between rooms is easiest for a wheelchair. Luxury vinyl plank, laminate, tile and engineered wood all roll well. Avoid thick, plush carpet and soft pads in rooms where a wheelchair is used every day.',
+      },
+      {
+        q: 'Are glossy floors more slippery?',
+        a: 'Not always, but high-gloss finishes reflect light and create glare, which can make the floor harder to see clearly. A matte or satin finish with a textured surface is generally the better choice for aging in place.',
+      },
+    ],
+    related: [
+      { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
+      { label: 'Carpet flooring & installation', href: '/services/carpet/' },
+      { label: 'Stair flooring in OKC', href: '/blog/stair-flooring-okc/' },
+      { label: 'Same flooring throughout the house?', href: '/blog/same-flooring-throughout-house-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Flooring for Aging in Place: Safer Floors | Floors To You OKC',
+    metaDescription:
+      'Flooring for aging in place: what to choose for grip, walkers and wheelchairs, fewer transitions and less glare, room by room, in an OKC home.',
   },
 ];
 
