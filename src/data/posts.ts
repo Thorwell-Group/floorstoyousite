@@ -1189,7 +1189,7 @@ export const posts: Post[] = [
         paragraphs: [
           'A lot of newer Oklahoma City homes run kitchen, dining, and living space together with no wall between them. When that is the case, the kitchen floor is also the living room floor, and picking a material purely on kitchen criteria can leave you with something you do not love in the space you spend the most time.',
           'The usual resolution is a waterproof-core product that looks good enough for the living area and performs well enough for the kitchen — which is a large part of why LVP dominates in these layouts. Running one material throughout also avoids transition strips in the middle of an open room, which always look like an afterthought.',
-          'We map this out during the in-home estimate, since the right answer depends on your actual layout rather than a general rule.',
+          'We map this out during the in-home estimate, since the right answer depends on your actual layout rather than a general rule. Our guide to <a href="/blog/dining-room-flooring-okc/">dining room flooring</a> covers the table-and-chairs side of an open plan.',
         ],
       },
     ],
@@ -2492,7 +2492,7 @@ export const posts: Post[] = [
         heading: 'Choosing between them for your house',
         paragraphs: [
           `If you are doing most of the house, want it done fast, and are going over an existing floor, click-lock is almost always right. If you are doing a laundry room or a bathroom that sees standing water, have a door or an appliance that will not clear a thicker floor, or want a floor that never makes a sound, glue-down earns its extra day.`,
-          `Many OKC homes end up with both: click-lock through the living areas and bedrooms, glue-down in the laundry and baths, with a matching transition between. We bring both samples to the <a href="/book/">free in-home estimate</a>, check your slab, and price each room the right way. If you are weighing vinyl against laminate first, our <a href="/blog/lvp-vs-laminate-oklahoma/">LVP vs laminate</a> guide settles that decision.`,
+          `Many OKC homes end up with both: click-lock through the living areas and bedrooms, glue-down in the laundry and baths, with a matching transition between. Our guide to <a href="/blog/laundry-room-flooring-okc/">laundry room flooring</a> covers that room in detail. We bring both samples to the <a href="/book/">free in-home estimate</a>, check your slab, and price each room the right way. If you are weighing vinyl against laminate first, our <a href="/blog/lvp-vs-laminate-oklahoma/">LVP vs laminate</a> guide settles that decision.`,
         ],
       },
     ],
@@ -4033,7 +4033,7 @@ export const posts: Post[] = [
       {
         heading: 'Choosing by bedroom',
         paragraphs: [
-          `Not every bedroom in the house has to get the same floor. Here is how we usually see it play out in Oklahoma City homes.`,
+          `Not every bedroom in the house has to get the same floor. Here is how we usually see it play out in Oklahoma City homes. If a spare bedroom is becoming a playroom, our guide to <a href="/blog/playroom-bonus-room-flooring-okc/">playroom and bonus room flooring</a> covers that use.`,
         ],
         bullets: [
           'Primary bedroom: plush carpet for comfort, or the same LVP or wood as the main living areas for a continuous look, with a large rug under the bed',
@@ -4790,6 +4790,322 @@ export const posts: Post[] = [
     metaTitle: 'Home Office Flooring: Floors for Rolling Chairs | Floors To You',
     metaDescription:
       'The best home office flooring for a rolling desk chair: LVP, laminate, wood and carpet compared, plus chair mats, casters and keeping the room quiet.',
+  },
+  {
+    slug: 'laundry-room-flooring-okc',
+    title: 'Laundry Room Flooring: What Holds Up When the Washer Leaks',
+    category: 'Buying Guide',
+    excerpt:
+      'A laundry room floor has to survive the day a supply hose lets go, not just a few drips. The best floors for an OKC laundry room, how glue-down and click vinyl compare there, and the install details that keep water out of the slab.',
+    hero: '/images/photos/lvp/vinyl1.webp',
+    heroAlt: 'Installer trimming a wood-look vinyl plank on a bare concrete slab during a flooring install',
+    datePublished: '2026-11-02',
+    dateModified: '2026-11-02',
+    readMinutes: 6,
+    intro:
+      `The laundry room is small, so it is easy to treat its floor as an afterthought. But it is the one room in the house where a lot of water can arrive at once, usually when nobody is home. A failed washer hose or an overflowing drain can put gallons on the floor in minutes. The right floor, put down the right way, turns that into a cleanup instead of a repair. Here is what we recommend for Oklahoma City laundry rooms and why.`,
+    sections: [
+      {
+        heading: 'Plan for the leak, not the spill',
+        paragraphs: [
+          `Most rooms are chosen around everyday spills. A laundry room should be chosen around its worst day. Drips from a wet load, detergent spills and a damp basket are easy for almost any hard floor. A burst supply hose, a clogged drain line or an overflowing utility sink is different: water spreads to every wall, sits for hours, and finds every seam.`,
+          `That is why we steer homeowners toward floors that do not care about standing water, and why the install matters as much as the product. Our guide to <a href="/blog/waterproof-flooring-okc/">waterproof flooring</a> explains the difference between a floor that is waterproof and one that is only water-resistant.`,
+        ],
+      },
+      {
+        heading: 'Glue-down luxury vinyl: our usual pick',
+        paragraphs: [
+          `<a href="/services/vinyl-glue/">Glue-down luxury vinyl</a> is the floor we recommend most often for a laundry room. The planks are 100 percent waterproof, and because they are bonded to the slab, the adhesive also seals the seams. Nothing floats, so there is no open space underneath for water to travel through. It is also thin, which helps when a door has very little clearance.`,
+          `The trade-off is prep. The slab has to be clean, flat and dry, and the adhesive needs about a day to cure before the washer and dryer go back in. In a room this small, that is rarely a problem.`,
+        ],
+      },
+      {
+        heading: 'Click-lock luxury vinyl plank',
+        paragraphs: [
+          `<a href="/services/vinyl-click/">Click-lock luxury vinyl plank</a> is also waterproof, and it is the easy choice when the laundry room opens straight into a kitchen, hall or mudroom that is getting the same floor. You avoid a transition strip at the laundry door and get one continuous look.`,
+          `Because click vinyl floats, water that reaches the edges can get under it. Sealing the expansion gap around the walls and at the door helps, and so does setting the room up for leaks, which we cover below. Our guide to <a href="/blog/lvp-installation-okc-click-vs-glue-down/">click-lock vs. glue-down LVP</a> compares the two side by side.`,
+        ],
+      },
+      {
+        heading: 'Porcelain tile',
+        paragraphs: [
+          `<a href="/services/tile/">Porcelain tile</a> is the most durable laundry floor you can put down. It is waterproof, it shrugs off scratches when a machine is pulled out for service, and it lasts for decades. Choose a textured or matte finish so it is not slippery when wet, and a grout color that will not show lint and detergent.`,
+          `Tile takes longer to install than vinyl and is harder and cooler underfoot, which matters less in a room you pass through than in a room you live in.`,
+        ],
+      },
+      {
+        heading: 'Floors we would not put in a laundry room',
+        paragraphs: [
+          `Some floors that work well elsewhere in the house are a poor match here.`,
+        ],
+        bullets: [
+          'Laminate: a wood-based core can swell if water sits on it, and a laundry leak is exactly that',
+          'Solid hardwood and engineered wood: real wood does not tolerate standing water',
+          'Carpet: holds water and odor, and is hard to dry out after a leak',
+        ],
+      },
+      {
+        heading: 'The details that protect the floor',
+        paragraphs: [
+          `A good laundry floor is a combination of the right product and a few simple details.`,
+        ],
+        bullets: [
+          'A moisture reading on the slab before anything goes down, with a vapor barrier or moisture-tolerant adhesive when the reading calls for it',
+          'A flat subfloor, so seams stay tight',
+          'A sealed perimeter at the walls and the door',
+          'Washer hoses in good condition, replaced when they show wear',
+          'An inexpensive water-leak sensor on the floor behind the machines',
+        ],
+      },
+      {
+        heading: 'Moving the machines',
+        paragraphs: [
+          `The washer and dryer have to come out for the floor to go in, and how they go back matters. Never drag a washer or dryer across a new floor. Walk it on plywood or appliance sliders, and check that the washer is level before you run the first load, because a washer that rocks also walks. Our guide to <a href="/blog/prepare-home-for-flooring-installation-okc/">preparing your home for installation</a> covers what to clear out before install day.`,
+        ],
+      },
+      {
+        heading: 'Get it quoted with the rooms around it',
+        paragraphs: [
+          `A laundry room is often the last room on the list, but it is simpler to plan it together with the kitchen, mudroom or hall it opens into. That way the floors match or meet with a clean transition, and the whole job is done in one visit.`,
+          `<a href="/book/">Book a free in-home estimate</a> and we will bring samples, check the slab and the door clearances, and give you an itemized quote for the laundry room and the rooms it connects to.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best flooring for a laundry room?',
+        a: 'Glue-down luxury vinyl is our usual recommendation because it is waterproof and the adhesive seals the seams. Porcelain tile is the most durable option, and click-lock LVP works well when the laundry room shares a floor with the rooms around it.',
+      },
+      {
+        q: 'Can I put laminate in a laundry room?',
+        a: 'We do not recommend it. Laminate has a wood-based core that can swell when water sits on it, and a washer leak puts standing water on the floor. A waterproof floor such as luxury vinyl or porcelain tile is the safer choice.',
+      },
+      {
+        q: 'Is click-lock vinyl plank OK in a laundry room?',
+        a: 'Yes. The planks are waterproof. Because click vinyl floats, sealing the perimeter matters, and glue-down vinyl is the more watertight install if the room has a history of leaks.',
+      },
+      {
+        q: 'Do the washer and dryer have to come out?',
+        a: 'Yes. The floor has to go under the machines, not around them. They should be moved on plywood or appliance sliders rather than dragged, and the washer leveled before the first load.',
+      },
+    ],
+    related: [
+      { label: 'Luxury vinyl tile (LVT) flooring', href: '/services/vinyl-glue/' },
+      { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
+      { label: 'Click-lock vs. glue-down LVP', href: '/blog/lvp-installation-okc-click-vs-glue-down/' },
+      { label: 'Waterproof flooring in OKC', href: '/blog/waterproof-flooring-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Laundry Room Flooring in OKC | Floors To You',
+    metaDescription:
+      'The best laundry room flooring for an OKC home: glue-down vinyl, LVP and porcelain tile compared for leaks, plus the install details that protect the slab.',
+  },
+  {
+    slug: 'dining-room-flooring-okc',
+    title: 'Dining Room Flooring: Chairs, Spills and an Open Floor Plan',
+    category: 'Buying Guide',
+    excerpt:
+      'Dining chairs slide out and back at every meal, and food and drinks end up on the floor. The best dining room floors for OKC homes, how to protect them from chairs, and how to handle a dining area that opens into the kitchen.',
+    hero: '/images/photos/hardwood/hardwood-kitchen.webp',
+    heroAlt: 'Open kitchen with a light oak wood floor, a large island and an empty dining area under a pendant light',
+    datePublished: '2026-11-02',
+    dateModified: '2026-11-02',
+    readMinutes: 6,
+    intro:
+      `The dining room floor has a simple but unusual job. Chairs scrape across it at every meal, food and drinks land on it, and in many newer Oklahoma City homes it is not a separate room at all but the space between the kitchen and the living room. A formal dining room can be the place for your most beautiful floor, and an everyday dining area needs to be the most forgiving. Here is how the options compare.`,
+    sections: [
+      {
+        heading: 'What a dining floor has to handle',
+        paragraphs: [
+          `Two things wear a dining room floor: chairs and spills. Every time someone sits down or gets up, a chair slides a few inches, usually in the same spots around the table. Without protection, that leaves scratches and dull patches in a ring around the table. Then there are the spills, from a knocked-over glass to a toddler's whole plate.`,
+          `How you use the room changes the answer. A formal dining room used for holidays can lean toward looks. A dining nook used three times a day by a family with kids and a dog needs to lean toward durability and easy cleaning.`,
+        ],
+      },
+      {
+        heading: 'Luxury vinyl plank for everyday dining',
+        paragraphs: [
+          `<a href="/services/vinyl-click/">Luxury vinyl plank</a> is the most practical floor for a dining area that gets used every day. It is waterproof, so spills are a wipe-up, a good wear layer resists chair scuffs, and it comes in wood looks that sit comfortably next to a nice table. Because it also handles the kitchen, it is the easiest floor to run through an open kitchen and dining space with no transition.`,
+        ],
+      },
+      {
+        heading: 'Hardwood and engineered wood',
+        paragraphs: [
+          `Real wood is the classic dining room floor, and in a formal dining room it is hard to beat. <a href="/services/hardwood/">Solid hardwood</a> can be sanded and refinished, so chair wear is not permanent. <a href="/services/engineered-wood/">Engineered wood</a> gives a real wood surface over a stable layered core, and it is made to go over the concrete slabs most metro homes sit on.`,
+          `The trade-off is that wood is softer than most people expect and does not like water. A spill wiped up quickly is fine; a puddle under the table overnight is not. Our comparison of <a href="/blog/hardwood-vs-luxury-vinyl-okc/">hardwood and luxury vinyl</a> walks through the choice.`,
+        ],
+      },
+      {
+        heading: 'Laminate and tile',
+        paragraphs: [
+          `<a href="/services/laminate/">Laminate</a> has a hard, scratch-resistant surface that handles chair legs well, and we stock AC4 and higher commercial-grade lines. It handles everyday spills wiped up promptly, but its wood-based core does not like water left sitting, so it suits a separate dining room better than one that shares a floor with the kitchen sink.`,
+          `<a href="/services/tile/">Porcelain tile</a> is the toughest option and ignores both chairs and spills. It is harder and cooler underfoot, and anything dropped on it is more likely to break, so it is most common where the dining area is part of a tiled kitchen.`,
+        ],
+      },
+      {
+        heading: 'Carpet and area rugs',
+        paragraphs: [
+          `Wall-to-wall carpet is rare in dining rooms now, because food stains and sliding chairs are hard on it. An area rug under the table is still popular for warmth and sound. If you use one, make it large enough that the chairs stay on the rug when they are pulled out, so the back legs do not catch on the edge. Use a rug pad the floor maker says is safe for their product.`,
+        ],
+      },
+      {
+        heading: 'Protecting the floor from chairs',
+        paragraphs: [
+          `Chair legs do most of the damage in a dining room, and most of it is preventable.`,
+        ],
+        bullets: [
+          'Put felt pads on every chair leg and replace them when they wear thin',
+          'Check pads a couple of times a year, since a pad with grit in it scratches like sandpaper',
+          'Sweep under the table after meals, because crumbs and grit under chair legs cause most scratches',
+          'Lift the table to move it rather than sliding it',
+          'Wipe up spills right away, especially on wood and laminate',
+        ],
+      },
+      {
+        heading: 'Open kitchen and dining areas',
+        paragraphs: [
+          `In many OKC homes the dining area shares an open space with the kitchen and living room, so the dining floor is really the kitchen floor. That usually points to a waterproof floor that looks good enough for the whole space. Our guides to <a href="/blog/kitchen-flooring-okc/">kitchen flooring</a> and <a href="/blog/same-flooring-throughout-house-okc/">using the same flooring throughout the house</a> explain how to plan one floor across connected rooms.`,
+          `If the dining room is a separate room, you have more freedom. It can match the hall, or it can be the one room with real wood. Our guide to <a href="/blog/flooring-transitions-baseboards-okc/">transitions and baseboards</a> covers how to make two floors meet cleanly at a doorway.`,
+        ],
+      },
+      {
+        heading: 'See samples under your own table',
+        paragraphs: [
+          `A floor sample looks different under a dining table and a chandelier than it does in a store. Look at samples next to your table and chairs, in daylight and in the evening light you actually eat by. Our post on <a href="/blog/choosing-floor-color-okc/">choosing a floor color</a> helps with the color side.`,
+          `<a href="/book/">Book a free in-home estimate</a> and we will bring samples to your dining room, measure it with the rooms it opens into, and give you an itemized quote. Our crew moves the table, chairs and furniture and puts them back.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best flooring for a dining room?',
+        a: 'For an everyday dining area, luxury vinyl plank is the most practical choice because it is waterproof and resists chair scuffs. For a formal dining room, hardwood or engineered wood gives the classic look, and laminate is a durable, value-friendly option in a separate room.',
+      },
+      {
+        q: 'Will dining chairs scratch my floor?',
+        a: 'They can, mostly when grit gets under bare or worn chair legs. Felt pads on every leg, replaced when they wear, and sweeping under the table after meals prevent most scratches.',
+      },
+      {
+        q: 'Should the dining room floor match the kitchen?',
+        a: 'In an open kitchen and dining space, one continuous floor usually looks best and avoids a transition in the middle of the room. A separate dining room can have its own floor with a clean transition at the doorway.',
+      },
+      {
+        q: 'Is hardwood a good choice for a dining room?',
+        a: 'Yes, especially in a formal dining room. It looks classic and can be refinished when it wears. It is softer than vinyl or tile and does not like standing water, so felt pads and quick cleanup matter.',
+      },
+    ],
+    related: [
+      { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
+      { label: 'Hardwood flooring & installation', href: '/services/hardwood/' },
+      { label: 'Kitchen flooring in OKC', href: '/blog/kitchen-flooring-okc/' },
+      { label: 'Same flooring throughout the house?', href: '/blog/same-flooring-throughout-house-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Dining Room Flooring in OKC | Floors To You',
+    metaDescription:
+      'The best dining room flooring for OKC homes: LVP, hardwood, laminate, tile and rugs compared for chairs and spills, plus open kitchen and dining areas.',
+  },
+  {
+    slug: 'playroom-bonus-room-flooring-okc',
+    title: 'Playroom and Bonus Room Flooring for Oklahoma City Families',
+    category: 'Buying Guide',
+    excerpt:
+      'A bonus room is a playroom one year, a game room the next and a guest room after that. The best floors for kids, crafts, pets and noise in an OKC playroom or upstairs bonus room, and how to keep the choice flexible.',
+    hero: '/images/photos/carpet/carpet-bonus-room-okc.webp',
+    heroAlt: 'Freshly carpeted upstairs bonus room with a sofa, desk and exercise bench, and a dog at the top of the carpeted stairs',
+    datePublished: '2026-11-02',
+    dateModified: '2026-11-02',
+    readMinutes: 6,
+    intro:
+      `Many Oklahoma City homes have a room that does a bit of everything: a bonus room over the garage, a converted spare bedroom or a family room at the back of the house. Right now it may be the playroom, full of toys, crafts and kids on the floor. In a few years it may be a game room, a home gym or a guest room. The floor has to handle all of that. Here is how the options compare.`,
+    sections: [
+      {
+        heading: 'What a playroom asks of a floor',
+        paragraphs: [
+          `Kids use a playroom floor differently than adults use any other room. They sit on it, lie on it, build on it and fall on it. They spill juice, drop paint and glue, and drag toy bins across it. Add a dog that follows them everywhere, and the floor needs to be soft enough to play on, tough enough to take the abuse, and easy to clean.`,
+          `Those goals pull in different directions, which is why there is no single right answer. The best choice depends on the ages of your kids, how messy the room gets, and whether the room is upstairs.`,
+        ],
+      },
+      {
+        heading: 'Carpet: soft, warm and quiet',
+        paragraphs: [
+          `<a href="/services/carpet/">Carpet</a> is still the most popular floor for upstairs bonus rooms, and for younger kids who spend their time on the floor it is hard to beat. It is soft to sit and fall on, warm in winter, and the quietest choice for a room over a living area. Our in-stock lines include stain-resistant and pet-focused carpets, and lifetime stain warranties are available on many of them.`,
+          `The trade-offs are crafts and spills. Paint, slime and glue are much harder to get out of carpet than off a hard floor. A denser carpet over a quality pad also tends to hold up better under toy bins and play traffic than a very loose, plush one. Our <a href="/blog/carpet-pad-guide-okc/">carpet pad guide</a> explains why the pad matters.`,
+        ],
+      },
+      {
+        heading: 'Luxury vinyl plank: easy to clean',
+        paragraphs: [
+          `<a href="/services/vinyl-click/">Luxury vinyl plank</a> is the easiest playroom floor to keep clean. It is waterproof, so spills and pet accidents wipe up, most craft messes come off with a damp cloth, and a good wear layer stands up to toy cars and dragged bins. Most families pair it with a large area rug or play mats in the play area, so kids still have a soft spot on the floor.`,
+          `It is also the most flexible choice for a room that will change. When the playroom becomes an office or a guest room, a hard floor with a rug works for any of them. Our guide to <a href="/blog/best-flooring-pets-kids-high-traffic-okc/">flooring for pets, kids and high traffic</a> covers durability in more detail.`,
+        ],
+      },
+      {
+        heading: 'Laminate',
+        paragraphs: [
+          `<a href="/services/laminate/">Laminate</a> has a hard, scratch-resistant surface, and we stock AC4 and higher commercial-grade lines that handle toys and furniture well. It is a good choice for a dry bonus room or game room. It handles everyday spills wiped up promptly, but its wood-based core does not like water left sitting, so for a room with a lot of juice cups or a child who is potty training, waterproof vinyl is the safer pick.`,
+        ],
+      },
+      {
+        heading: 'Noise in an upstairs bonus room',
+        paragraphs: [
+          `A bonus room over the living room will be heard below. Running, jumping and dropped toys carry through a hard floor more than through carpet. If you want a hard floor upstairs, choose a product with an attached acoustic underlayment or add one rated for sound, and use large rugs in the play area. The underlayment has to be chosen before the floor goes down, so it is worth raising at the estimate. Our guide to <a href="/blog/best-flooring-for-bedrooms-okc/">bedroom flooring</a> covers upstairs noise in more detail.`,
+        ],
+      },
+      {
+        heading: 'Stairs up to the bonus room',
+        paragraphs: [
+          `Most upstairs bonus rooms come with a staircase, and the stairs get the same kids and the same dog. Carpet on stairs is softer and gives better grip, which matters with small children. Hard-floor stair treads look clean and match a hard floor upstairs, but they need a slip-resistant surface and proper stair nosing. Our guide to <a href="/blog/stair-flooring-okc/">stair flooring</a> compares the options.`,
+        ],
+      },
+      {
+        heading: 'Keeping it clean',
+        paragraphs: [
+          `A few habits keep a playroom floor looking good whichever floor you choose.`,
+        ],
+        bullets: [
+          'Put a washable mat or a drop cloth under the craft table',
+          'Lift toy bins rather than dragging them, and use bins with smooth bottoms',
+          'Put felt pads under furniture and toy shelves',
+          'Blot carpet spills right away rather than scrubbing them in',
+          'Follow the floor maker\'s care guidance for which cleaners, mats and rug pads are safe for the product',
+        ],
+      },
+      {
+        heading: 'Plan for the room it will become',
+        paragraphs: [
+          `The playroom stage does not last forever, so it is worth choosing a floor that will still suit the room when the toys move out. A neutral carpet or a wood-look floor that matches the rest of the house will work for a teen hangout, an office or a guest room. Our post on <a href="/blog/choosing-floor-color-okc/">choosing a floor color</a> helps with picking something that will last.`,
+          `<a href="/book/">Book a free in-home estimate</a> and we will bring carpet and hard-floor samples to the room, measure the room and the stairs, and give you an itemized quote, with next-day installation on in-stock carpet. Our crew moves the furniture out and back.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best flooring for a playroom?',
+        a: 'Carpet is the softest and quietest choice for young kids who play on the floor. Luxury vinyl plank with a large rug or play mats is the easiest to clean and handles spills, crafts and pets best.',
+      },
+      {
+        q: 'Is carpet or vinyl better for a bonus room?',
+        a: 'Carpet is warmer and quieter, which matters in an upstairs bonus room over a living area. Vinyl plank is easier to clean and more flexible if the room will become an office or guest room later. Many families choose vinyl with large rugs.',
+      },
+      {
+        q: 'How do I keep an upstairs playroom quiet?',
+        a: 'Carpet over a good pad is the quietest option. For a hard floor, choose a product with an attached acoustic underlayment or add one rated for sound, and use large rugs in the play area.',
+      },
+      {
+        q: 'Is laminate good for a kids\' playroom?',
+        a: 'It works well in a dry playroom or game room, because its surface resists scratches. For a room with a lot of spills or a child who is potty training, waterproof vinyl plank is the safer choice.',
+      },
+    ],
+    related: [
+      { label: 'Carpet flooring & installation', href: '/services/carpet/' },
+      { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
+      { label: 'Flooring for pets, kids and high traffic', href: '/blog/best-flooring-pets-kids-high-traffic-okc/' },
+      { label: 'The best flooring for bedrooms', href: '/blog/best-flooring-for-bedrooms-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Playroom & Bonus Room Flooring in OKC | Floors To You',
+    metaDescription:
+      'The best playroom and bonus room flooring for OKC families: carpet, LVP and laminate compared for kids, crafts, pets, upstairs noise and stairs.',
   },
 ];
 
