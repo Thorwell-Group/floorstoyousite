@@ -673,7 +673,7 @@ export const posts: Post[] = [
     dateModified: '2026-07-17',
     readMinutes: 7,
     intro:
-      'Tile is the most durable, most waterproof floor you can put in a home — it routinely outlasts everything else in the house. That makes it the natural pick for OKC bathrooms, kitchens, mudrooms, entryways, and sunrooms. But "tile" covers an enormous range of looks, and the right choice depends as much on the room as on your taste. Here are the tile flooring ideas we install most often across Oklahoma City, and where each one shines.',
+      'Tile is the most durable, most waterproof floor you can put in a home — it routinely outlasts everything else in the house. That makes it the natural pick for OKC bathrooms, kitchens, mudrooms, entryways, and <a href="/blog/sunroom-flooring-okc/">sunrooms</a>. But "tile" covers an enormous range of looks, and the right choice depends as much on the room as on your taste. Here are the tile flooring ideas we install most often across Oklahoma City, and where each one shines.',
     sections: [
       {
         heading: 'Wood-look plank tile: the best of both worlds',
@@ -1315,6 +1315,7 @@ export const posts: Post[] = [
       { label: 'Tile flooring installation', href: '/services/tile/' },
       { label: 'Waterproof click-lock LVP', href: '/services/vinyl-click/' },
       { label: 'Waterproof flooring in OKC', href: '/blog/waterproof-flooring-okc/' },
+      { label: 'Tile vs. luxury vinyl', href: '/blog/tile-vs-luxury-vinyl-okc/' },
       { label: 'Book a free in-home estimate', href: '/book/' },
     ],
     metaTitle: 'Best Bathroom Flooring in OKC: What Works in Wet Rooms',
@@ -1600,6 +1601,7 @@ export const posts: Post[] = [
       { label: 'Free In-Home Estimate', href: '/free-in-home-estimate/' },
       { label: 'Flooring installation in OKC: complete guide', href: '/blog/flooring-installation-okc-guide/' },
       { label: 'In-stock vs. special-order flooring', href: '/blog/in-stock-vs-special-order-flooring-okc/' },
+      { label: 'The best time of year to replace flooring', href: '/blog/best-time-to-replace-flooring-okc/' },
     ],
     metaTitle: 'How Long Does Flooring Installation Take? LVP, Carpet, Tile',
     metaDescription:
@@ -5106,6 +5108,328 @@ export const posts: Post[] = [
     metaTitle: 'Playroom & Bonus Room Flooring in OKC | Floors To You',
     metaDescription:
       'The best playroom and bonus room flooring for OKC families: carpet, LVP and laminate compared for kids, crafts, pets, upstairs noise and stairs.',
+  },
+  {
+    slug: 'sunroom-flooring-okc',
+    title: 'Sunroom Flooring in Oklahoma City: Sun, Heat and Temperature Swings',
+    category: 'Buying Guide',
+    excerpt:
+      'A sunroom gets more sun, more heat and bigger temperature swings than any other room in the house. Which floors handle that in an OKC sunroom or enclosed patio, and what to check before you choose.',
+    hero: '/images/photos/hardwood/hardwoodinsun1.webp',
+    heroAlt: 'Strong afternoon sun across a dark wood floor beside a dining table and wood-framed chairs',
+    datePublished: '2026-11-09',
+    dateModified: '2026-11-09',
+    readMinutes: 6,
+    intro:
+      `A sunroom is the brightest room in the house, and the reason you built it or bought the house for it is the same thing that makes it hard on a floor. Oklahoma summers put hours of direct sun through the glass, and many sunrooms and enclosed patios are not heated and cooled like the rest of the house. Here is what that means for each type of floor and how to choose one that will last.`,
+    sections: [
+      {
+        heading: 'What makes a sunroom different',
+        paragraphs: [
+          `Three things set a sunroom apart from the rest of the house. The first is <strong>sunlight</strong>. Ultraviolet light fades most finishes, fibers and printed designs over time, and a sunroom gets far more of it than a living room with a couple of windows. The second is <strong>heat</strong>. Sun on a floor through glass can make the surface much hotter than the air in the room. The third is <strong>temperature and humidity swings</strong>. A sunroom that is closed off in winter and baking in July puts a floor through a much wider range than the rest of the house.`,
+          `The most important question at the estimate is whether the room is heated and cooled with the rest of the house. A fully conditioned sunroom can take most floors. A three-season room or enclosed patio that is not conditioned narrows the list.`,
+        ],
+      },
+      {
+        heading: 'Tile: the classic sunroom floor',
+        paragraphs: [
+          `<a href="/services/tile/">Porcelain tile</a> is the safest floor for a sunroom. It does not fade in sunlight, it does not mind heat, it is waterproof, and it is not bothered by temperature swings the way wood and some vinyl can be. It also stays cool underfoot in summer, which many people like in a sunny room. Wood-look porcelain planks give you the look of wood without the worries.`,
+          `The trade-offs are that tile is hard and cold in winter, and it takes longer to install than a floating floor because the subfloor has to be flat and the grout has to cure. Our <a href="/blog/tile-floor-installation-okc/">tile installation guide</a> walks through the process.`,
+        ],
+      },
+      {
+        heading: 'Luxury vinyl: read the maker\'s heat and sun guidance',
+        paragraphs: [
+          `<a href="/services/vinyl-click/">Luxury vinyl plank</a> is waterproof, warmer and softer than tile, and quick to install, which makes it popular for sunrooms. But vinyl expands with heat, and a floor in direct sun can get much hotter than the room. Floating floors need room to move, and a long run of planks in strong sun can push against walls or trim if that movement is not planned for.`,
+          `Before choosing vinyl for a sunroom, check the maker's guidance on direct sunlight and on whether the room has to be climate-controlled. Some products are rated for sunrooms and some are not. <a href="/services/vinyl-glue/">Glue-down luxury vinyl</a> is held to the subfloor and does not float, which is why it is often the vinyl choice for rooms with a lot of sun. We will tell you which products in our lines are suited to your room.`,
+        ],
+      },
+      {
+        heading: 'Engineered wood and laminate',
+        paragraphs: [
+          `<a href="/services/engineered-wood/">Engineered wood</a> handles Oklahoma's humidity changes better than solid hardwood, and it can work in a sunroom that is heated and cooled with the house. It will change color in strong sun over time, as all real wood does, so expect the exposed areas to look different from the areas under rugs and furniture. Our guide to <a href="/blog/engineered-wood-flooring-okc/">engineered wood flooring</a> covers how it is built.`,
+          `<a href="/services/laminate/">Laminate</a> resists fading well and is fine in a conditioned sunroom. Its wood-based core does not like moisture, so it is not a good choice for an unconditioned room where condensation can form on cold mornings, or for a room with plants that get watered on the floor.`,
+        ],
+      },
+      {
+        heading: 'Carpet',
+        paragraphs: [
+          `Carpet is soft and warm, but in a sunroom it fades unevenly, and any spill from plants or a door left open to the rain stays in the fibers. If you want something soft underfoot, a hard floor with an area rug you can move or replace is usually the better plan in a sunny room.`,
+        ],
+      },
+      {
+        heading: 'Converted patios and slab sunrooms',
+        paragraphs: [
+          `Many OKC sunrooms are built on a slab, and enclosed patios are often an old outdoor slab with walls and windows added. An outdoor patio is usually poured with a slope so rain runs off, and that slope does not go away when the room is enclosed. Most floors need a flat subfloor, so a converted patio may need leveling before anything goes down.`,
+          `A slab that was outdoors can also carry more moisture than an indoor one. We take a moisture reading on the slab before we recommend a floor, and use a vapor barrier where the reading calls for it. Our post on <a href="/blog/subfloor-prep-okc/">subfloor prep</a> explains why this step matters so much.`,
+        ],
+      },
+      {
+        heading: 'Helping any floor last in a sunroom',
+        paragraphs: [
+          `A few habits help whichever floor you choose.`,
+        ],
+        bullets: [
+          'Use blinds, shades or UV-filtering window film to cut down on direct sun during the hottest part of the day',
+          'Move rugs and furniture now and then so the floor fades evenly',
+          'Keep the room heated and cooled if the floor maker requires it',
+          'Put trays under plant pots and wipe up water right away',
+          'Follow the floor maker\'s care guidance for which cleaners, mats and rug pads are safe for the product',
+        ],
+      },
+      {
+        heading: 'Choosing with the room in front of you',
+        paragraphs: [
+          `Sunroom samples are worth seeing in the room itself, because the light in a sunroom makes colors look very different from how they look in a store. <a href="/book/">Book a free in-home estimate</a> and we will bring tile, vinyl and wood-look samples to your sunroom, check the slab for level and moisture, and give you an itemized quote. Our crew moves the furniture out and back.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the best flooring for a sunroom?',
+        a: 'Porcelain tile is the safest choice. It does not fade, it is not affected by heat or temperature swings, and it is waterproof. Luxury vinyl and engineered wood can also work, especially in a sunroom that is heated and cooled with the rest of the house.',
+      },
+      {
+        q: 'Can you put luxury vinyl plank in a sunroom?',
+        a: 'Often, yes, but check the maker\'s guidance first. Vinyl expands with heat and a floor in direct sun can get much hotter than the room. Some products are rated for sunrooms and some require the room to be climate-controlled. Glue-down vinyl is often the better vinyl choice for a very sunny room.',
+      },
+      {
+        q: 'Will the sun fade my new floor?',
+        a: 'Most floors change color in strong sun over time. Tile does not fade, and laminate resists fading well. Real wood and carpet change the most. Shades, UV-filtering window film and moving rugs now and then help the floor fade evenly.',
+      },
+      {
+        q: 'Does a converted patio need leveling before new flooring?',
+        a: 'Often. Outdoor patios are poured with a slope so water drains away, and that slope stays when the patio is enclosed. Most floors need a flat subfloor, and a former outdoor slab should also be checked for moisture before anything goes down.',
+      },
+    ],
+    related: [
+      { label: 'Tile flooring & installation', href: '/services/tile/' },
+      { label: 'Luxury vinyl tile (LVT) flooring', href: '/services/vinyl-glue/' },
+      { label: 'The best flooring for Oklahoma\'s climate', href: '/blog/best-flooring-oklahoma-climate/' },
+      { label: 'Subfloor prep: the step that decides whether your floor lasts', href: '/blog/subfloor-prep-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Sunroom Flooring in OKC: What Handles Sun & Heat | Floors To You',
+    metaDescription:
+      'The best sunroom flooring for Oklahoma City homes: tile, luxury vinyl, engineered wood and laminate compared for sun, heat, fading and converted patio slabs.',
+  },
+  {
+    slug: 'best-time-to-replace-flooring-okc',
+    title: 'When Is the Best Time of Year to Replace Flooring in Oklahoma City?',
+    category: 'Cost & Planning',
+    excerpt:
+      'Floors can go in any month in Oklahoma, but humidity, the holidays and how long material takes to arrive all affect when you should start. How to plan a flooring project around the OKC calendar.',
+    hero: '/images/photos/team/teamworking.webp',
+    heroAlt: 'Four installers nailing down new solid oak flooring across a living room with a brick fireplace',
+    datePublished: '2026-11-09',
+    dateModified: '2026-11-09',
+    readMinutes: 6,
+    intro:
+      `People often ask whether there is a best season to replace their floors. The short answer is that new floors can go in any time of year in Oklahoma City, because the work happens inside a heated and cooled house. The longer answer is that the season does affect a few things: how wood behaves, how long you need to plan ahead for a deadline, and what is going on in your house at the time. Here is how to think about timing.`,
+    sections: [
+      {
+        heading: 'Floors are installed indoors, so the house matters more than the weather',
+        paragraphs: [
+          `What a new floor cares about is the air in your home, not the weather outside. As long as the heat or air conditioning is running and the house is kept at normal living conditions, carpet, luxury vinyl, laminate and tile can all be installed in January or July.`,
+          `The one thing to avoid is installing in a house where the heating and cooling is off, such as a vacant house in the middle of summer or a renovation where the system is not running yet. Floors should go down in the conditions they will live in. If you are buying a house or finishing a remodel, plan for the system to be on before the floor goes in.`,
+        ],
+      },
+      {
+        heading: 'Wood floors and Oklahoma humidity',
+        paragraphs: [
+          `Wood is the floor most affected by the season. Oklahoma's air is humid in spring and summer and dry in winter when the heat is running, and wood takes on and gives off moisture with it. That is why wood has to sit in your home for several days before it goes down, so it can adjust to your house first. Skipping that step is how a floor ends up with gaps in winter or cupping in summer.`,
+          `None of this makes one season wrong for wood. It means acclimation has to happen in every season, and the indoor climate should stay steady after the install. Keeping indoor humidity in roughly the 35 to 55 percent range year-round is what keeps a wood floor stable. Our guide to <a href="/blog/hardwood-floor-installation-okc/">hardwood installation</a> covers this in detail, and <a href="/services/engineered-wood/">engineered wood</a> handles these swings better than solid hardwood.`,
+        ],
+      },
+      {
+        heading: 'Spring: storm season and outdoor projects',
+        paragraphs: [
+          `Spring brings storms to central Oklahoma, and some homeowners end up replacing floors after water damage. If that is you, the first job is drying out the subfloor completely. A new floor over a wet slab or wet plywood will fail. Our guide to <a href="/blog/replacing-floors-after-water-damage-okc/">replacing floors after water damage</a> covers what has to happen first.`,
+          `Spring is also when many people want to open the windows. If wood or laminate is being installed or acclimating, keep the house closed and the air conditioning on so the humidity inside stays steady.`,
+        ],
+      },
+      {
+        heading: 'Summer: kids home and houses on the market',
+        paragraphs: [
+          `Summer is when a lot of homes go on the market, and new floors before a sale need to be finished before the listing photos. Our post on <a href="/blog/new-flooring-before-selling-home-okc/">new flooring before selling</a> covers which rooms are worth doing.`,
+          `With kids out of school, planning around the family matters too. A one-day carpet or vinyl job in a few bedrooms is easy to work around. A whole main floor of hardwood or tile is easier to plan for a week when the family can be away or has somewhere else to spend the day.`,
+        ],
+      },
+      {
+        heading: 'Fall and winter: planning around the holidays',
+        paragraphs: [
+          `Many people want new floors before family arrives for Thanksgiving or Christmas. That is a good reason to do the project, but it needs a plan that starts early enough. Work back from the date you want it done:`,
+        ],
+        bullets: [
+          'In-stock carpet can often go in the next day after you approve the quote',
+          'In-stock luxury vinyl and laminate are usually one to two days of install for a typical home',
+          'Special-order material takes about five to ten business days to arrive',
+          'Wood needs several days of acclimation in your home after it arrives',
+          'Tile needs time for the subfloor prep and for the grout to cure, so a bathroom usually takes two to three days',
+          'Leave a few days of cushion for furniture moving, a subfloor that needs extra leveling or a material delay',
+        ],
+      },
+      {
+        heading: 'In-stock material gives you the most flexibility',
+        paragraphs: [
+          `If you have a fixed deadline, choosing from in-stock lines removes the biggest wait from the schedule. We keep a range of carpet, luxury vinyl and laminate in stock, which is why we can offer next-day installation on many of them. Special-order products widen your choices, but they add the shipping time. Our post on <a href="/blog/in-stock-vs-special-order-flooring-okc/">in-stock vs. special-order flooring</a> compares the two.`,
+        ],
+      },
+      {
+        heading: 'Budget timing',
+        paragraphs: [
+          `If the question is really about when you can afford new floors, 0% financing for 24 months on approved credit lets you do the project when the house needs it and spread the cost. Our guide to <a href="/blog/flooring-financing-okc/">flooring financing</a> explains how it works. Whatever the season, an itemized quote shows you what each part of the job costs, so you can decide whether to do the whole house now or a few rooms at a time.`,
+        ],
+      },
+      {
+        heading: 'The best time is when you have a plan',
+        paragraphs: [
+          `The season matters less than knowing your deadline, your material and your timeline. <a href="/book/">Book a free in-home estimate</a> and we will measure, bring samples to your home, and give you an itemized quote with a realistic install date. If you are working toward a holiday or a listing date, tell us at the estimate and we will plan around it. Our crew moves the furniture and cleans up afterward.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Can you install flooring in winter in Oklahoma?',
+        a: 'Yes. Floors are installed inside a heated home, so winter is fine for carpet, vinyl, laminate, tile and wood. Wood still needs several days of acclimation, and indoor humidity should be kept steady after the install.',
+      },
+      {
+        q: 'What is the best season to install hardwood in OKC?',
+        a: 'There is no wrong season as long as the house is heated or cooled and the wood acclimates first. Keeping indoor humidity in roughly the 35 to 55 percent range all year matters more than the month you install.',
+      },
+      {
+        q: 'How far ahead should I plan to have floors done before the holidays?',
+        a: 'In-stock carpet can often go in the next day, and in-stock vinyl or laminate takes one to two days. Special-order material takes about five to ten business days to arrive, and wood needs several days to acclimate after that. Add a few days of cushion and book the estimate early.',
+      },
+      {
+        q: 'Should I wait to replace flooring until after summer?',
+        a: 'Not because of the weather. Floors can go in during summer as long as the air conditioning is on. Plan around your family\'s schedule and any deadline, such as listing the house, rather than the season.',
+      },
+    ],
+    related: [
+      { label: 'How long flooring installation takes', href: '/blog/how-long-does-flooring-installation-take-okc/' },
+      { label: 'In-stock vs. special-order flooring', href: '/blog/in-stock-vs-special-order-flooring-okc/' },
+      { label: 'How to get your home ready for installation', href: '/blog/prepare-home-for-flooring-installation-okc/' },
+      { label: '0% flooring financing for 24 months', href: '/financing/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Best Time of Year to Replace Flooring in OKC | Floors To You',
+    metaDescription:
+      'When to replace flooring in Oklahoma City: how humidity affects wood, planning around storms, summer sales and the holidays, and how long each floor takes.',
+  },
+  {
+    slug: 'tile-vs-luxury-vinyl-okc',
+    title: 'Tile vs. Luxury Vinyl: Which Is Better for Your OKC Home?',
+    category: 'Comparison',
+    excerpt:
+      'Tile and luxury vinyl both handle water, and both come in wood and stone looks. How they compare on feel, durability, install time, repairs and Oklahoma slab movement, and which rooms suit each one.',
+    hero: '/images/photos/tile/tile1.webp',
+    heroAlt: 'Green and white marble tile laid in a diagonal checkerboard pattern along a hallway',
+    datePublished: '2026-11-09',
+    dateModified: '2026-11-09',
+    readMinutes: 7,
+    intro:
+      `For kitchens, bathrooms, laundry rooms and entryways, most Oklahoma City homeowners end up choosing between tile and luxury vinyl. Both handle water, both come in convincing wood and stone looks, and both are tough. They are very different floors to live on, though, and to install. Here is how they compare.`,
+    sections: [
+      {
+        heading: 'Water',
+        paragraphs: [
+          `Both are good in wet rooms. <a href="/services/tile/">Porcelain tile</a> itself does not absorb water, and the grout between tiles is sealed to resist stains and moisture. Grout does need to be resealed every few years to keep it that way. Our guide to <a href="/blog/tile-grout-cleaning-care-okc/">tile and grout care</a> covers how.`,
+          `Luxury vinyl planks are waterproof, but the seams between planks are where water can get through to the subfloor. <a href="/services/vinyl-glue/">Glue-down luxury vinyl</a> is bonded to the subfloor, which is why we often recommend it for bathrooms and laundry rooms. <a href="/services/vinyl-click/">Click-lock vinyl plank</a> handles everyday spills well when they are wiped up. Our post on <a href="/blog/waterproof-flooring-okc/">what "waterproof" really means</a> explains the difference.`,
+          `For a shower floor or a shower wall, tile is the only option of the two.`,
+        ],
+      },
+      {
+        heading: 'How they feel underfoot',
+        paragraphs: [
+          `This is the biggest everyday difference. Tile is hard and cold. It feels good in a hot Oklahoma summer and chilly on a January morning, and anything dropped on it, from a glass to a phone, is more likely to break. Standing on tile for a long time, such as at a kitchen counter, is harder on the feet.`,
+          `Luxury vinyl is softer and warmer underfoot, and quieter to walk on. That is a big part of why it has become so popular for kitchens and whole main floors. Both can be installed over radiant floor heating if you want a warm floor.`,
+        ],
+      },
+      {
+        heading: 'Durability',
+        paragraphs: [
+          `Porcelain tile is one of the hardest-wearing floors there is. It does not scratch from pet claws or furniture and it does not fade. Its weak points are the grout lines, which can stain if they are not sealed, and cracking, which can happen if something heavy is dropped on it or if the slab underneath moves.`,
+          `Luxury vinyl does not crack, and it is forgiving of dropped items. Its surface is protected by a wear layer, and a thicker wear layer stands up better to pets, kids and furniture. It can be scratched or dented by heavy furniture without pads or by something sharp being dragged across it. Our guide to <a href="/blog/vinyl-plank-flooring-okc/">comparing luxury vinyl products</a> explains what to look for.`,
+        ],
+      },
+      {
+        heading: 'Oklahoma slabs and clay soil',
+        paragraphs: [
+          `Many OKC homes sit on a slab over clay soil that swells when wet and shrinks when dry. A small amount of slab movement is normal. Tile is rigid and bonded to the slab, so if the slab cracks, the tile above it can crack too. Proper prep and the right setting materials reduce that risk, but they cannot rule it out.`,
+          `Floating vinyl is not bonded to the slab, so it handles small movements better. If your home has a history of slab cracks, it is worth raising at the estimate. Our post on <a href="/blog/oklahoma-clay-soil-and-your-floors/">Oklahoma clay soil and your floors</a> covers this in more detail.`,
+        ],
+      },
+      {
+        heading: 'Installation time and mess',
+        paragraphs: [
+          `Tile takes longer. The subfloor has to be flat, often with a self-leveling underlayment, each tile is set in thinset, and the grout needs time to cure. A typical bathroom takes two to three days, and a large kitchen takes longer. Removing old tile is also loud and dusty.`,
+          `Click-lock vinyl is much quicker. A typical home is one to two days, and it can often float right over existing tile that is flat and sound, which saves the tear-out. You can walk on it as soon as it is down. Glue-down vinyl needs a flat, prepared subfloor, but it still goes in faster than tile.`,
+        ],
+      },
+      {
+        heading: 'Repairs',
+        paragraphs: [
+          `A cracked tile can be cut out and replaced, as long as you have a matching tile. Keep a few spare tiles from the job in the garage, because the same tile can be hard to find years later.`,
+          `Damaged vinyl planks can also be replaced. Glue-down planks can be replaced one at a time. With click-lock planks, a plank in the middle of the room may mean taking up the planks between it and the nearest wall. Keeping a box of spare planks is just as useful.`,
+        ],
+      },
+      {
+        heading: 'Cost',
+        paragraphs: [
+          `The two can overlap on material price, since both come at a wide range of prices. Tile usually costs more to install, because the prep, setting and grouting take more labor and more days. Vinyl going over an existing floor can also save the cost of tear-out. We don't quote prices without seeing the room, because subfloor condition and layout change the total. Our guide to <a href="/blog/flooring-installation-cost-okc/">what affects installation cost</a> covers what moves the number.`,
+        ],
+      },
+      {
+        heading: 'Which to choose, room by room',
+        paragraphs: [
+          `There is no single winner, so here is how the choice usually plays out.`,
+        ],
+        bullets: [
+          'Showers, tub surrounds and wet bathroom floors: tile',
+          'Sunrooms with heavy sun and temperature swings: tile, or a vinyl rated for it',
+          'Kitchens where you stand a lot: luxury vinyl is easier on the feet, tile if you want the most scratch-resistant surface',
+          'Laundry rooms and half baths: glue-down luxury vinyl or tile',
+          'Whole main floors and open floor plans: luxury vinyl for speed, comfort and one continuous look',
+          'Homes with a history of slab cracks: luxury vinyl is the more forgiving choice',
+          'Quick updates over an existing tile floor: click-lock luxury vinyl',
+        ],
+      },
+      {
+        heading: 'See both in your own room',
+        paragraphs: [
+          `Tile and vinyl look closer than ever in photos, but they feel different in person. <a href="/book/">Book a free in-home estimate</a> and we will bring tile and vinyl samples to your home, check the slab, and give you an itemized quote for each option so you can compare them side by side. We price-match the same or similar material, and our crew moves the furniture out and back.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Is tile or luxury vinyl better for a bathroom?',
+        a: 'Both work on a bathroom floor. Tile is the only choice for showers and tub surrounds. For the floor, glue-down luxury vinyl is warmer and softer and goes in faster, while porcelain tile is the hardest-wearing and does not fade or scratch.',
+      },
+      {
+        q: 'Is tile or vinyl better for a kitchen?',
+        a: 'Luxury vinyl is softer and warmer, easier on your feet when you stand at the counter, and less likely to break dropped dishes. Tile is more scratch-resistant and very long-lasting, but it is harder underfoot and takes longer to install.',
+      },
+      {
+        q: 'Can luxury vinyl go over existing tile?',
+        a: 'Often, yes. Rigid-core click-lock vinyl can float over existing tile as long as it is flat, sound and firmly attached. Deep grout lines may need to be filled first so they do not show through.',
+      },
+      {
+        q: 'Does tile crack on Oklahoma slabs?',
+        a: 'It can. Tile is rigid and bonded to the slab, so if the slab cracks from soil movement, the tile above it can crack too. Good prep and setting materials reduce the risk. Floating vinyl handles small slab movement better.',
+      },
+    ],
+    related: [
+      { label: 'Tile flooring & installation', href: '/services/tile/' },
+      { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
+      { label: 'Ceramic vs. porcelain vs. natural stone', href: '/blog/ceramic-vs-porcelain-vs-natural-stone-okc/' },
+      { label: 'LVP vs. laminate', href: '/blog/lvp-vs-laminate-oklahoma/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Tile vs. Luxury Vinyl in OKC: Which Is Better? | Floors To You',
+    metaDescription:
+      'Tile vs. luxury vinyl for Oklahoma City homes: water, feel, durability, slab movement, install time, repairs and cost compared, with room-by-room picks.',
   },
 ];
 
