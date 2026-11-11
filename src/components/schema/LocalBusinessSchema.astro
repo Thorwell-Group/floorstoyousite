@@ -25,7 +25,7 @@ const schema = {
   url: site.domain,
   image: `${site.domain}${site.logo}`,
   logo: `${site.domain}${site.logo}`,
-  telephone: site.phoneE164,
+  telephone: site.phoneSchema,
   priceRange: site.priceRange,
   paymentAccepted: site.paymentAccepted,
   foundingDate: site.foundingDate,
@@ -42,6 +42,7 @@ const schema = {
     latitude: site.geo.lat,
     longitude: site.geo.lng,
   },
+  hasMap: site.mapsUrl,
   areaServed: {
     '@type': 'GeoCircle',
     geoMidpoint: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },

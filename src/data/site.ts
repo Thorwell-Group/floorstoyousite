@@ -23,6 +23,9 @@ export const site = {
   ],
   phone: '(405) 913-7381',
   phoneE164: '+14059137381',
+  phoneSchema: '+1-405-913-7381',
+  // Google Business Profile listing (cid) — used for schema hasMap + sameAs.
+  mapsUrl: 'https://maps.google.com/maps?cid=7397502184600393072',
   email: 'floorstoyouinfo@allinfloors.com',
   social: {
     facebook: 'https://www.facebook.com/profile.php?id=100088814169249',
@@ -30,6 +33,7 @@ export const site = {
     // "Floors To You OKC", 4020 W Reno Ave, OKC 73107). Linking the GBP in
     // sameAs is a primary local-pack/entity signal.
     google: 'https://www.google.com/maps/place/?q=place_id:ChIJ7ZDMcfcRsocRcFVIEgs1qWY',
+    googleMaps: 'https://maps.google.com/maps?cid=7397502184600393072',
   },
   promises: [
     'Honest pricing - we price-match the same or similar material',

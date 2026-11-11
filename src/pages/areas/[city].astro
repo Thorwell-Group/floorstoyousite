@@ -54,7 +54,7 @@ const localBusinessAreaSchema = {
  geo: { '@type': 'GeoCoordinates', latitude: a.geo.lat, longitude: a.geo.lng },
  },
  geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
- telephone: site.phoneE164,
+ telephone: site.phoneSchema,
  hasOfferCatalog: {
  '@type': 'OfferCatalog',
  name: `Flooring services in ${a.city}`,
