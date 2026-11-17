@@ -5431,6 +5431,357 @@ export const posts: Post[] = [
     metaDescription:
       'Tile vs. luxury vinyl for Oklahoma City homes: water, feel, durability, slab movement, install time, repairs and cost compared, with room-by-room picks.',
   },
+  {
+    slug: "oak-vs-hickory-vs-walnut-vs-maple-hardwood-okc",
+    title: "Oak, Hickory, Walnut or Maple? Choosing a Hardwood Species for an Oklahoma City Home",
+    category: "Comparison",
+    excerpt: "Species changes how a hardwood floor looks, how it handles dogs and kids, and how it takes stain. Here is how oak, hickory, walnut and maple compare in real OKC homes, and why the finish matters as much as the wood.",
+    hero: "/images/photos/hardwood/closeuphardwood.webp",
+    heroAlt: "Close-up of the grain on a hardwood plank stocked at Floors To You OKC",
+    datePublished: "2026-11-17",
+    dateModified: "2026-11-17",
+    readMinutes: 6,
+    intro: "Once you decide on real wood, the next question is which wood. Oak, hickory, walnut and maple are the four species most people choose between, and they are not interchangeable. Each one has its own grain, color, hardness and personality, and each one suits a different kind of household. Here is how they compare in Oklahoma City homes, and what to weigh besides the species itself.",
+    sections: [
+      {
+        heading: "Oak: the safe, flexible choice",
+        paragraphs: [
+          "Oak is the most common hardwood for a reason. It has a strong, visible grain that hides everyday wear, it takes stain evenly, and it suits almost any style from traditional to modern farmhouse.",
+          "Red oak has a warmer, slightly pink undertone. White oak is cooler and more neutral, which is why it shows up in so many light, natural and gray-leaning floors. If you want a floor that works with whatever furniture you own in ten years, oak is hard to beat."
+        ]
+      },
+      {
+        heading: "Hickory: the toughest of the four",
+        paragraphs: [
+          "Hickory is the hardest of these species, and it shows the most character. Boards vary a lot in color from one to the next, from creamy to deep brown, with bold grain and knots. That variation hides scratches, dents and paw marks well.",
+          "If your household is hard on floors, with big dogs, kids or a lot of traffic through the kitchen, hickory takes more abuse than the others. The tradeoff is the busy look. Some people love the rustic variation; others find it too much in a large open room."
+        ]
+      },
+      {
+        heading: "Walnut: rich color, softer surface",
+        paragraphs: [
+          "Walnut has a deep chocolate color and a smooth, flowing grain. It looks rich without any stain at all, and it gives a room a warm, upscale feel.",
+          "Walnut is softer than oak and hickory, so it dents and scratches more easily. It suits a formal dining room, a bedroom or a lower-traffic living area better than a mudroom entry. A matte finish helps hide everyday marks."
+        ]
+      },
+      {
+        heading: "Maple: clean, smooth and modern",
+        paragraphs: [
+          "Maple has a fine, even grain and a light, creamy color. It looks clean and contemporary, and it is a hard, dense wood that holds up well.",
+          "Maple's smooth grain shows scratches more than a busy species does, and it does not take dark stain as evenly as oak, so it often looks blotchy if you try to make it very dark. It is at its best in a natural or light finish."
+        ]
+      },
+      {
+        heading: "Grade and plank width change the look too",
+        paragraphs: [
+          "Two floors in the same species can look very different. Within any species, boards are sorted by appearance. A cleaner grade has fewer knots and more even color. A more rustic or character grade keeps the knots, mineral streaks and color swings, and it hides wear better. If you like the idea of oak but want a calmer floor, a clean grade of white oak looks nothing like a rustic hickory, even though both are real hardwood.",
+          "Plank width matters as well. Wide planks show off the grain of a species and make a room feel more open, and they are especially popular in walnut and white oak. Narrower boards read more traditional. In engineered wood, wide planks are more stable than the same width in solid wood, which is one more reason engineered suits wide-plank floors in Oklahoma's humidity swings."
+        ]
+      },
+      {
+        heading: "Finish matters more than species",
+        paragraphs: [
+          "People spend a lot of time on species and not enough on the finish, but the finish decides how a floor looks after a year of real life. A matte or wire-brushed finish hides scratches and paw marks far better than a high-gloss one, whatever the species.",
+          "Color matters too. Very dark floors show dust, pet hair and scratches more than mid-tones. Our guide to <a href=\"/blog/choosing-floor-color-okc/\">choosing a floor color</a> covers how light, dark and mid-tone floors live day to day."
+        ]
+      },
+      {
+        heading: "Solid or engineered: same species, different build",
+        paragraphs: [
+          "Any of these species can come as solid hardwood or as engineered wood, which has a real hardwood top layer over a stable plywood core. The species you see is the same either way.",
+          "That matters in Oklahoma, where humid summers turn into dry winters and a lot of homes sit on a concrete slab. Solid hardwood cannot be nailed to a slab and is more prone to gapping and cupping through those swings. For slab-built homes, <a href=\"/services/engineered-wood/\">engineered wood</a> is usually the better fit. If your home has a plywood subfloor and you want a floor you can refinish for decades, solid hardwood is on the table. Our <a href=\"/blog/engineered-wood-flooring-okc/\">engineered wood guide</a> explains the construction."
+        ]
+      },
+      {
+        heading: "Quick picks by household",
+        paragraphs: [
+          "A short version of the above:"
+        ],
+        bullets: [
+          "Big dogs, kids and heavy traffic: hickory, in a matte or wire-brushed finish",
+          "A floor that goes with any style: white or red oak",
+          "Formal rooms and a rich, dark look without stain: walnut",
+          "Light, clean and contemporary: maple in a natural finish",
+          "Slab foundation: any species, as engineered wood"
+        ]
+      },
+      {
+        heading: "Caring for any species in Oklahoma",
+        paragraphs: [
+          "Whatever you choose, the care routine is the same. Sweep or vacuum on a hard-floor setting, damp-mop with a wood-safe cleaner (never a steam mop), keep indoor humidity between 35 and 55 percent year-round, and put felt pads under every piece of furniture that moves. Our <a href=\"/blog/hardwood-floor-cleaning-care-oklahoma/\">hardwood cleaning and care guide</a> goes into more detail."
+        ]
+      },
+      {
+        heading: "See the species side by side",
+        paragraphs: [
+          "Species is much easier to choose with real boards in your own light. <a href=\"/book/\">Book a free in-home estimate</a> and we bring the showroom to you, with oak, hickory, walnut and maple samples you can lay next to your cabinets and furniture. We check your subfloor, tell you honestly whether solid or engineered fits your home, and give you an itemized quote. We price-match the same or similar material, 0% APR financing for 24 months is available, and every job carries our 100% product and labor guarantee."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        q: "What is the most durable hardwood species for a home with dogs?",
+        a: "Hickory is the hardest of the common species and its varied color hides scratches well. Pair it with a matte or wire-brushed finish. Finish choice matters as much as species for hiding paw marks."
+      },
+      {
+        q: "Is oak or hickory better for an Oklahoma City home?",
+        a: "Both work well. Oak has a more uniform look and suits almost any style. Hickory is harder and shows more color variation and character. If your floors take a lot of abuse, hickory has the edge."
+      },
+      {
+        q: "Is walnut too soft for flooring?",
+        a: "Walnut is softer than oak, hickory and maple, so it dents and scratches more easily. It works well in dining rooms, bedrooms and lower-traffic living areas, especially with a matte finish."
+      },
+      {
+        q: "Can maple be stained dark?",
+        a: "It can, but maple's tight grain does not take dark stain as evenly as oak and can look blotchy. Maple looks best in a natural or light finish."
+      },
+      {
+        q: "Can I get these species in engineered wood for a slab home?",
+        a: "Yes. Engineered wood has a real hardwood top layer, so the species looks the same as solid hardwood. It is usually the better choice for slab-built Oklahoma homes."
+      }
+    ],
+    related: [
+      { label: "Hardwood flooring & installation", href: "/services/hardwood/" },
+      { label: "Engineered wood flooring", href: "/services/engineered-wood/" },
+      { label: "Hardwood vs. luxury vinyl", href: "/blog/hardwood-vs-luxury-vinyl-okc/" },
+      { label: "Hardwood floor installation in OKC", href: "/blog/hardwood-floor-installation-okc/" },
+      { label: "Book a free in-home estimate", href: "/book/" }
+    ],
+    metaTitle: "Oak vs. Hickory vs. Walnut vs. Maple Hardwood | Floors To You OKC",
+    metaDescription: "How oak, hickory, walnut and maple hardwood compare for Oklahoma City homes: look, hardness, stain, pets and kids, and why finish matters as much."
+  },
+  {
+    slug: "which-direction-to-lay-plank-flooring-okc",
+    title: "Which Direction Should Plank Flooring Run? Layout Rules for LVP, Laminate and Hardwood",
+    category: "How It Works",
+    excerpt: "The direction your planks run changes how big a room looks, how a hallway reads and where the transitions land. Here are the layout rules installers use for LVP, laminate and hardwood, and when to break them.",
+    hero: "/images/photos/lvp/vinyllowtohigh.webp",
+    heroAlt: "Wood-look vinyl plank flooring running down a hallway toward the front door, with a carpeted staircase on the right",
+    datePublished: "2026-11-17",
+    dateModified: "2026-11-17",
+    readMinutes: 6,
+    intro: "Most homeowners never think about plank direction until the installer asks which way you want the floor to run. It is a bigger decision than it sounds. Plank direction changes how long or wide a room feels, how the floor flows from one room to the next, and in some houses it affects how the floor is fastened. Here are the rules of thumb we use in Oklahoma City homes, and the situations where we break them.",
+    sections: [
+      {
+        heading: "Rule one: run planks the long way",
+        paragraphs: [
+          "In most rooms, planks look best running parallel to the longest wall. The long lines draw the eye down the room and make it feel bigger. Running them across a long, narrow room makes it look shorter and wider, which is rarely the goal.",
+          "This matters most in hallways. Planks running down the length of a hallway look clean. Planks running across a hallway create a ladder of short pieces and a lot of end joints."
+        ]
+      },
+      {
+        heading: "Rule two: follow the light",
+        paragraphs: [
+          "Planks also look best running toward the main source of natural light, such as a large window or a patio door. Light running along the boards hides the seams. Light hitting the seams side-on from across the room shows every joint.",
+          "When the longest wall and the main window point in different directions, the long wall usually wins, especially in an open plan. In a smaller room with one big window, the light can win."
+        ]
+      },
+      {
+        heading: "Rule three: think about the whole floor, not one room",
+        paragraphs: [
+          "If the same floor runs through the living room, dining room, kitchen and halls, it should run one direction throughout. Changing direction at every doorway breaks the floor up and adds transition strips you do not need. Pick the direction that works for the largest, most visible space, usually the main living area, and let the rest follow.",
+          "Our guide to <a href=\"/blog/same-flooring-throughout-house-okc/\">using the same flooring throughout the house</a> covers why one continuous floor makes a home feel larger."
+        ]
+      },
+      {
+        heading: "Where the front door and the view come in",
+        paragraphs: [
+          "Stand at the front door and look in. Planks that run away from you into the house make the entry feel deep and welcoming. Planks that run across your view feel like a wall of short lines. When the long-wall rule and the front door disagree, the view from the entry often settles it."
+        ]
+      },
+      {
+        heading: "When the subfloor decides",
+        paragraphs: [
+          "For nail-down solid hardwood over a wood subfloor, the boards generally run perpendicular to the floor joists so each board is fastened across them. That is a structural reason, and it can override the look-based rules.",
+          "Most OKC homes are built on a concrete slab, and floating LVP, laminate and engineered wood over a slab do not have that limit. You can run them whichever way looks best. Our guide to <a href=\"/blog/lvp-installation-okc-click-vs-glue-down/\">click vs. glue-down LVP</a> explains the installation methods."
+        ]
+      },
+      {
+        heading: "Diagonal and herringbone",
+        paragraphs: [
+          "Planks laid on a diagonal can make a small, boxy room feel more dynamic, and herringbone adds a lot of character to an entry or dining room. Both take more cutting, more material and more labor than a straight lay. Expect more waste, and order extra planks so you have spares."
+        ]
+      },
+      {
+        heading: "Waste, spares and stagger",
+        paragraphs: [
+          "Whichever direction you choose, the end joints should be staggered across the floor so you do not see stair-step or H-shaped patterns. Planks should be pulled from several boxes at once so color variation spreads evenly.",
+          "Layout affects how much material you need, so measure with the direction in mind. Our guide to <a href=\"/blog/how-much-flooring-do-i-need-okc/\">how much flooring you need</a> explains waste factors. Keep a box of spare planks after the job for future repairs."
+        ]
+      },
+      {
+        heading: "Rooms that meet at an angle, and the stairs",
+        paragraphs: [
+          "Some homes have a wing or a bedroom hallway that turns ninety degrees off the main living area. Running the same direction into it keeps the floor continuous, but it means the planks run across that hallway. When that looks wrong, a threshold or a doorway gives a natural place to change direction, and a small border board can make the change look intentional.",
+          "Stairs are their own case. Treads always run across the stair, front to back, with a matching stair nose on the edge. Where the stairs land in a hallway, the floor at the bottom should follow the hallway rule and run along its length. Our guide to <a href=\"/blog/stair-flooring-okc/\">stair flooring</a> covers treads, risers and nosing."
+        ]
+      },
+      {
+        heading: "Quick answers for common rooms",
+        paragraphs: [
+          "A short guide:"
+        ],
+        bullets: [
+          "Hallway: run planks down the length of the hall",
+          "Long living room: parallel to the longest wall",
+          "Open-concept main floor: one direction throughout, set by the main living area",
+          "Small square bedroom: toward the window, or match the hallway it opens onto",
+          "Kitchen: usually parallel to the cabinet runs or matching the adjoining living area"
+        ]
+      },
+      {
+        heading: "Let us lay it out with you",
+        paragraphs: [
+          "Plank direction is easier to decide standing in the room. <a href=\"/book/\">Book a free in-home estimate</a> and we bring the showroom to you, lay samples down both ways in your main room, and measure for the layout you choose. Our crew handles prep, installation, baseboards and cleanup, and next-day installation is available on in-stock material. Every job carries our 100% product and labor guarantee."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        q: "Should flooring run parallel or perpendicular to the longest wall?",
+        a: "Parallel, in most rooms. Running planks along the longest wall makes the room look bigger and gives the cleanest look. Hallways in particular should have planks running down their length."
+      },
+      {
+        q: "Should all rooms have flooring running the same direction?",
+        a: "If the same floor continues from room to room, yes. One direction throughout looks continuous and avoids extra transition strips. Set it by the largest, most visible room."
+      },
+      {
+        q: "Do planks need to run toward the window?",
+        a: "It helps. Light running along the boards hides the seams. If the window and the longest wall disagree, the longest wall usually wins in larger and open rooms."
+      },
+      {
+        q: "Does hardwood have to run perpendicular to the joists?",
+        a: "Nail-down solid hardwood over a wood subfloor generally runs across the floor joists for proper fastening. Floating floors over a concrete slab, which most OKC homes have, can run any direction."
+      },
+      {
+        q: "Does a diagonal layout cost more?",
+        a: "Usually. Diagonal and herringbone layouts need more cuts, more labor and more extra material than a straight layout."
+      }
+    ],
+    related: [
+      { label: "Luxury vinyl plank (LVP) flooring", href: "/services/vinyl-click/" },
+      { label: "Laminate flooring", href: "/services/laminate/" },
+      { label: "Hardwood flooring & installation", href: "/services/hardwood/" },
+      { label: "Flooring transitions and baseboards", href: "/blog/flooring-transitions-baseboards-okc/" },
+      { label: "Book a free in-home estimate", href: "/book/" }
+    ],
+    metaTitle: "Which Direction Should Flooring Run? | Floors To You OKC",
+    metaDescription: "Which way to lay LVP, laminate and hardwood planks: run them the long way, follow the light, keep one direction through open plans, and when to break the rules."
+  },
+  {
+    slug: "garage-conversion-flooring-okc",
+    title: "Flooring for a Converted Garage in Oklahoma City: Slab, Slope, Height and the Right Floor",
+    category: "Buying Guide",
+    excerpt: "A converted garage sits on a sloped, often cold slab that is lower than the rest of the house. Here is what has to happen to that concrete before a floor goes down, and how LVP, carpet, tile and engineered wood fit a garage room.",
+    hero: "/images/photos/lvp/vinylchairincorner.webp",
+    heroAlt: "A walnut dresser and a wooden chair draped with a green knit throw on light herringbone vinyl flooring beside long brown curtains",
+    datePublished: "2026-11-17",
+    dateModified: "2026-11-17",
+    readMinutes: 6,
+    intro: "Turning a garage into a bedroom, office, gym or game room is one of the most common ways Oklahoma City homeowners add living space. The walls and ceiling get most of the attention, but the floor is where garage conversions most often go wrong. A garage slab was built to park a car, not to be lived on. It slopes toward the door, it usually sits lower than the house, and it has years of oil and road salt in it. Here is how to get it ready and which floors work.",
+    sections: [
+      {
+        heading: "Why a garage slab is different",
+        paragraphs: [
+          "Three things set a garage floor apart from the slab under the rest of your house:"
+        ],
+        bullets: [
+          "Slope: garage slabs are poured to drain toward the door, so they are not level.",
+          "Height: the garage floor is usually lower than the house floor, which leaves a step at the door between them.",
+          "Condition: oil stains, cracks, old sealers and paint all affect how well a new floor or adhesive will bond."
+        ]
+      },
+      {
+        heading: "Step one: level the slab",
+        paragraphs: [
+          "Every floor we install needs a flat surface. On a garage slab, that usually means a self-leveling underlayment to take out the slope and fill low spots, after the concrete has been cleaned and any cracks have been addressed. Some conversions also raise the floor with a framed subfloor, which can bring the room up closer to the house level and adds a little warmth.",
+          "Which approach fits depends on how much slope there is, how big the step is to the house, and what you plan to put on top. We check the slab and walk you through the options at the estimate. Our guide to <a href=\"/blog/subfloor-prep-okc/\">subfloor prep</a> explains why flatness decides how long a floor lasts."
+        ]
+      },
+      {
+        heading: "Step two: deal with the step",
+        paragraphs: [
+          "Decide early whether you want the converted room level with the house or a step down. Bringing it level makes the room feel like part of the home and removes a trip hazard. Leaving a step is simpler but needs a clean transition at the doorway, usually a stair nose or a reducer. Our guide to <a href=\"/blog/flooring-transitions-baseboards-okc/\">transitions and baseboards</a> covers the options."
+        ]
+      },
+      {
+        heading: "Step three: check for moisture",
+        paragraphs: [
+          "Concrete in contact with the ground gives off moisture, and a garage slab often has no vapor barrier under it. Before a floor goes down we take moisture readings. A floating floor goes over a vapor barrier, and glue-down floors need an adhesive suited to the slab. Skipping this step is how a nice new floor ends up with a musty smell or lifting planks."
+        ]
+      },
+      {
+        heading: "Luxury vinyl plank: the usual answer",
+        paragraphs: [
+          "For most garage conversions, <a href=\"/services/vinyl-click/\">click-lock luxury vinyl</a> is the best fit. It is 100% waterproof, it floats over a leveled slab and vapor barrier, it handles temperature swings, and it can run straight into the house if the floors are brought level. It works for an office, a gym, a game room or a bedroom.",
+          "If you want a more solid feel underfoot, <a href=\"/services/vinyl-glue/\">glue-down vinyl</a> is another option over a properly prepared slab."
+        ]
+      },
+      {
+        heading: "Carpet: warm for bedrooms and media rooms",
+        paragraphs: [
+          "A garage slab is cold underfoot. Carpet over a good pad takes the chill off and quiets the room, which is why it is popular for converted bedrooms and media rooms. Choose a moisture-blocking pad over concrete. Our <a href=\"/blog/carpet-pad-guide-okc/\">carpet pad guide</a> explains the options."
+        ]
+      },
+      {
+        heading: "Tile and engineered wood",
+        paragraphs: [
+          "Tile works in a converted laundry, mudroom or bathroom area, as long as the slab is sound. Tile is rigid and bonded to the slab, so cracks in an older garage slab need to be addressed first or they can come through the tile.",
+          "Engineered wood can go over a leveled, dry garage slab, glued or floated. Solid hardwood is not a good fit directly on a garage slab."
+        ]
+      },
+      {
+        heading: "The details people forget",
+        paragraphs: [
+          "A garage conversion has a few floor details that do not come up in a normal room. The old garage door opening is usually framed in, and the floor needs to run cleanly to the new wall. Garage walls often have no baseboard, so new baseboards are part of the job, and our crew handles baseboards as part of the install. If a water heater or laundry hookups stay in the space, plan a waterproof floor around them and leave access for service.",
+          "Think about how the room will be heated and cooled, too. A converted garage that the HVAC does not reach well will be cold in winter and hot in summer no matter what floor goes down, and big temperature swings are harder on some floors than others. Vinyl and tile handle those swings best."
+        ]
+      },
+      {
+        heading: "Matching the rest of the house",
+        paragraphs: [
+          "If the converted garage opens into a hallway or kitchen, running the same floor through makes the addition feel original to the house. That only works well when the two floors are brought to the same height. If you are already replacing the adjoining floor, it is a good time to do both rooms together."
+        ]
+      },
+      {
+        heading: "Get the garage looked at",
+        paragraphs: [
+          "<a href=\"/book/\">Book a free in-home estimate</a> and we bring the showroom to you, check the slab's slope, height and moisture, and give you an itemized quote that includes the prep. Our crew handles prep, installation, baseboards and cleanup. We price-match the same or similar material, 0% APR financing for 24 months is available, and every job carries our 100% product and labor guarantee."
+        ]
+      }
+    ],
+    faqs: [
+      {
+        q: "What is the best flooring for a converted garage?",
+        a: "Luxury vinyl plank is the most common choice. It is waterproof, floats over a leveled slab and vapor barrier, and handles temperature swings. Carpet with a moisture-blocking pad is a good option for a converted bedroom or media room."
+      },
+      {
+        q: "Does a garage floor need to be leveled before new flooring?",
+        a: "Almost always. Garage slabs slope toward the door to drain water. A self-leveling underlayment or a raised subfloor makes it flat enough for new flooring."
+      },
+      {
+        q: "Can a converted garage floor be raised to match the house?",
+        a: "Often, yes. A raised subfloor or leveling can bring the room closer to the house floor height, which removes the step and lets the same floor run through. It depends on how big the height difference is."
+      },
+      {
+        q: "Do I need a moisture barrier on a garage slab?",
+        a: "Yes. Garage slabs often have no vapor barrier beneath them. We take moisture readings, and floating floors go over a vapor barrier while glue-down floors use an adhesive suited to the slab."
+      },
+      {
+        q: "Can tile go on a garage slab?",
+        a: "It can, if the slab is sound. Tile is rigid and bonded to the concrete, so existing cracks need to be addressed first or they can come through the tile."
+      }
+    ],
+    related: [
+      { label: "Luxury vinyl plank (LVP) flooring", href: "/services/vinyl-click/" },
+      { label: "Glue-down vinyl flooring", href: "/services/vinyl-glue/" },
+      { label: "Carpet & installation", href: "/services/carpet/" },
+      { label: "Subfloor prep", href: "/blog/subfloor-prep-okc/" },
+      { label: "Book a free in-home estimate", href: "/book/" }
+    ],
+    metaTitle: "Converted Garage Flooring in Oklahoma City | Floors To You OKC",
+    metaDescription: "Flooring for a converted garage in OKC: leveling the sloped slab, dealing with the step and moisture, and how LVP, carpet, tile and engineered wood fit."
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
