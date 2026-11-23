@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { site } from '../data/site';
+// Copy supplied by the client (Floors To You / Carpet Depot team), 2026-11-23. Keep verbatim.
+---
+<BaseLayout title="Disclaimers | Floors To You OKC" description="Floors To You disclaimers: pricing, financing, and promotion terms for our Oklahoma City shop-at-home flooring service.">
+  <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Disclaimers', url: '/disclaimers/' }]} />
+  <section class="container-x py-12 max-w-3xl prose-brand">
+    <h1>Disclaimers</h1>
+    <p class="text-lg">The fine print, in plain language.</p>
+    <p>Pricing, price beat, financing, promotions, installation timelines, reviews, and warranty terms for Floors To You OKC — all in one place.</p>
+    <p><a class="btn-primary no-underline" href={`tel:${site.phoneE164}`}>Call {site.phone}</a></p>
+
+    <h2>Pricing</h2>
+    <p>Prices discussed before your in-home estimate are starting points for basic installations and may vary based on product selected, room size and layout, subfloor condition, stairs, furniture moving, and other job-specific factors. Your written in-home estimate is the final price for the product and scope it covers.</p>
+
+    <h2>Price Beat Guarantee</h2>
+    <p>Bring us a written quote from a licensed retailer for the same product and the same scope of work, shown before you buy, and we’ll beat it. Excludes clearance, closeouts, and DIY pricing.</p>
+
+    <h2>Financing</h2>
+    <p>Financing is offered through Synchrony. Up to 48 months financing is available, with 0% options available, subject to credit approval. Terms, rates, and availability vary by applicant and may change without notice. Full plan terms are shown at application.</p>
+
+    <h2>Promotions</h2>
+    <p>Promotional offers (such as seasonal savings events) have stated expiration dates, cannot be combined with other offers unless noted, and apply to qualifying products and installations only.</p>
+
+    <h2>Installation Timeline</h2>
+    <p>Next-Day Install applies to in-stock material, scheduled at your estimate. Complex jobs, special orders, and peak periods may take longer — we’ll give you a straight timeline with your estimate.</p>
+
+    <h2>Reviews</h2>
+    <p>Review counts and ratings referenced on this site reflect Google reviews at the time of publication and may change.</p>
+
+    <h2>Warranty</h2>
+    <p>Lifetime Installation Warranty applies to owner-occupied single-family homes only; investment properties, rentals, and multifamily properties are excluded. Lifetime Installation Warranty does not apply to closeouts, promotions, or deeply discounted products. See the full <a href="/warranty/">Lifetime Installation Warranty</a>.</p>
+  </section>
+</BaseLayout>

@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { site } from '../data/site';
+// Copy supplied by the client (Floors To You / Carpet Depot team), 2026-11-23. Keep verbatim.
+---
+<BaseLayout title="Lifetime Installation Warranty | Floors To You OKC" description="Floors To You’s Lifetime Installation Warranty covers our installation workmanship for as long as you own your home. If our install work ever fails, we fix it free. Oklahoma City.">
+  <Breadcrumb items={[{ name: 'Home', url: '/' }, { name: 'Warranty', url: '/warranty/' }]} />
+  <section class="container-x py-12 max-w-3xl prose-brand">
+    <h1>Lifetime Installation Warranty</h1>
+    <p class="text-lg">If our installation workmanship ever fails, we come back and fix it — free. For as long as you own your home.</p>
+    <p>Every floor we install is covered — carpet, luxury vinyl, hardwood, laminate, and tile. What’s covered, how long it lasts, and how to make a claim are all right below. No fine-print games.</p>
+    <p><a class="btn-primary no-underline" href={`tel:${site.phoneE164}`}>Call {site.phone}</a></p>
+
+    <h2>The Promise</h2>
+    <p>No fine-print games — that’s the whole promise. What’s covered, how long it lasts, and how to make a claim are all right below.</p>
+
+    <h2>What’s Covered</h2>
+    <ul>
+      <li>Carpet that wrinkles, ripples, or loosens because it wasn’t stretched right</li>
+      <li>Seams that separate because of how they were installed</li>
+      <li>Transitions and trim we installed that fail because of workmanship</li>
+      <li>The same workmanship standard on hard-surface installs — gaps, lippage from install error, or pieces that come loose because of how they were put down</li>
+    </ul>
+    <p>A note on re-stretching: it’s free for the first two years, no questions asked — and covered for the life of the warranty whenever the original installation was improper, no matter when an inspection finds it. The only time re-stretching is a paid maintenance service is when the install was done right and the carpet has simply relaxed with age and use.</p>
+
+    <h2>How Long It Lasts</h2>
+    <p>The warranty lasts for as long as you own your home. It covers the original purchaser, at the original address where we installed it. It isn’t transferable if the home is sold.</p>
+
+    <h2>Payment &amp; Good Standing</h2>
+    <p>Your coverage starts once your installation is paid for — either paid in full, or funded through approved financing. If a payment is reversed or disputed, or the account falls behind, warranty service pauses while that’s sorted out — it isn’t cancelled. Once the account is back in good standing, your coverage picks right back up, in full.</p>
+
+    <h2>Climate &amp; Care</h2>
+    <p>Floors respond to the home they’re in. Keep the home climate-controlled between 60 and 80°F while the floor is in it — that range is a condition of this warranty, and letting the home sit outside it, with the heat or air left off in a vacant home for example, voids the coverage. Keep the home within the humidity range the manufacturer specifies for your floor, too, and care for the floor the way the manufacturer directs: damage from humidity extremes, the wrong cleaning products or methods, or plain neglect isn’t an installation defect, and it isn’t covered as warranty labor. For carpet, have it professionally cleaned at least once a year and keep the receipt — carpet coverage stays in force only while that annual documented cleaning is kept up.</p>
+
+    <h2>What’s Not Covered</h2>
+    <ul>
+      <li>The flooring product itself — that’s covered by the manufacturer’s warranty, and we’ll help you with that claim</li>
+      <li>Normal wear and tear</li>
+      <li>Water, moisture, or flood damage</li>
+      <li>Pet damage</li>
+      <li>Damage from furniture, or from moving furniture</li>
+      <li>Subfloor problems that develop after installation</li>
+      <li>Any floor that has been altered or repaired by someone else</li>
+    </ul>
+
+    <h2>Installed Right, To Standard</h2>
+    <p>Every install is done to manufacturer and industry standards. Carpet is power-stretched — not just kicked in — so it stays smooth and tight. That’s how we can stand behind the labor for life.</p>
+
+    <h2>How to Make a Claim</h2>
+    <p>Call <a href={`tel:${site.phoneE164}`}>{site.phone}</a> or visit our showroom at <a href={site.mapsUrl} target="_blank" rel="noopener">{site.address.street}, {site.address.city}, {site.address.region} {site.address.postalCode}</a>, with your invoice. We’ll schedule an inspection, and if it’s our workmanship, we’ll make the labor right — free.</p>
+
+    <h2>The Requirements</h2>
+    <ul>
+      <li>This warranty belongs to the original purchaser only, and it lasts only as long as that purchaser owns and lives in the home. It does not transfer — sell the home, and the warranty ends with the sale.</li>
+      <li>It covers labor on materials bought from us and installed by us. Flooring you supplied yourself, or work anyone else installed, is not covered.</li>
+      <li>Lifetime Installation Warranty applies to owner-occupied single-family homes only; investment properties, rentals, and multifamily properties are excluded.</li>
+      <li>Lifetime Installation Warranty does not apply to closeouts, promotions, or deeply discounted products.</li>
+      <li>Work on the warranted floor by anyone else — installing, removing, repairing, adjusting, or re-installing any part of it — voids the warranty on that work.</li>
+      <li>Not covered: defects that were already there before we installed, subfloor or underlayment conditions we did not install, and damage caused by the building settling, structural failure, or acts of God.</li>
+      <li>Not covered: normal wear, scratches, and damage from pets or high heels.</li>
+      <li>Warranty claims made after the second year carry a $50 claim fee.</li>
+      <li>The home must be kept climate-controlled between 60 and 80°F. Letting the home sit outside that range — heat or air left off in a vacant home, for example — voids the warranty.</li>
+      <li>Carpet must be professionally cleaned at least once a year, and the cleaning documented — keep the receipt. Carpet coverage stays in force only while that annual professional cleaning is kept up.</li>
+    </ul>
+
+    <h2>The Fine Print</h2>
+    <p class="text-sm text-ink/70">This warranty belongs to the original purchaser, for the floor we installed, at the address where we installed it — and it doesn’t transfer if the home is sold. “Lifetime” means for as long as you own your home. This page states our complete installation warranty; the flooring products themselves are covered separately by their manufacturers’ warranties. When our workmanship fails, our obligation is to repair or re-install the affected area — that’s the full extent of our responsibility under this warranty. Earlier installations are covered by the terms in effect when they were completed. Lifetime Installation Warranty applies to owner-occupied single-family homes only; investment properties, rentals, and multifamily properties are excluded.</p>
+
+    <p class="text-sm">See also: <a href="/disclaimers/">Disclaimers</a></p>
+  </section>
+</BaseLayout>

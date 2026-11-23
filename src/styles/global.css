@@ -26,4 +26,7 @@
   .eyebrow { @apply inline-flex items-center uppercase tracking-[0.2em] text-sm font-bold text-brand-500; }
   .card { @apply bg-white rounded-xl2 shadow-card overflow-hidden; }
   .prose-brand p { @apply leading-relaxed text-ink/85; }
+  .prose-brand ul { @apply list-disc pl-6 my-3 space-y-1.5 text-ink/85; }
+  .prose-brand h2 { @apply mt-10 mb-3; }
+  .prose-brand p { @apply my-3; }
 }
