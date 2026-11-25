@@ -2884,7 +2884,7 @@ export const posts: Post[] = [
       {
         heading: 'The number that protects your floor: 35 to 55 percent',
         paragraphs: [
-          `Wood moves with moisture in the air. Oklahoma summers push indoor humidity high and the boards swell; winter heating drops it low and the boards shrink. Small seasonal gaps in winter are normal. Large gaps, cupping in summer or squeaks that appear and disappear with the seasons mean the swing is too big.`,
+          `Wood moves with moisture in the air. Oklahoma summers push indoor humidity high and the boards swell; winter heating drops it low and the boards shrink. Small seasonal gaps in winter are normal. Large gaps, cupping in summer or squeaks that appear and disappear with the seasons mean the swing is too big. Our guide to <a href="/blog/hardwood-floor-gaps-cupping-oklahoma/">winter gaps and summer cupping</a> explains what is normal and what is not.`,
           `Keep indoor relative humidity between roughly 35 and 55 percent year-round. In practice that means running the air conditioning in summer, which dehumidifies, and adding a humidifier to the furnace or a room unit in the dry months from December through February. A ten-dollar hygrometer tells you where you stand. This one habit does more for a wood floor's lifespan than any cleaning product. Our guide to <a href="/blog/best-flooring-oklahoma-climate/">the best flooring for Oklahoma's climate</a> explains why the humidity swing matters more here than in most of the country.`,
         ],
       },
@@ -5899,6 +5899,115 @@ export const posts: Post[] = [
     metaTitle: 'Best Flooring for Allergies in OKC | Floors To You',
     metaDescription:
       'The best flooring for allergies in Oklahoma City: how luxury vinyl, laminate, wood, tile and carpet compare for dust, pollen and pet dander, room by room.',
+  },
+  {
+    slug: 'hardwood-floor-gaps-cupping-oklahoma',
+    title: 'Gaps in Winter, Cupping in Summer: Why Wood Floors Move in Oklahoma',
+    category: 'How It Works',
+    excerpt:
+      'Seeing gaps between your hardwood boards now that the heat is on? What counts as normal seasonal movement, what is a warning sign, and how to keep a wood floor steady through Oklahoma winters and summers.',
+    hero: '/images/photos/hardwood/hardwoodlivingroom.webp',
+    heroAlt: 'Hardwood flooring in a bright living room',
+    datePublished: '2026-11-25',
+    dateModified: '2026-11-25',
+    readMinutes: 6,
+    intro:
+      `Every year, about the time the furnace starts running for good, we hear the same question: why are there suddenly gaps between my hardwood boards? Then in early summer the question flips, and the edges of the boards start rising. Both have the same cause. Wood takes on moisture from the air and gives it back, and Oklahoma swings from humid to dry and back again every year. Here is what is normal, what is not, and what keeps a wood floor steady.`,
+    sections: [
+      {
+        heading: 'Why wood floors move at all',
+        paragraphs: [
+          `Wood is never completely dry. It always holds some moisture and keeps trading it with the air around it until the two are in balance. When the air is humid, the boards absorb moisture and swell across their width. When the air is dry, they release it and shrink. Board length barely changes. Width is where nearly all the movement happens.`,
+          `Oklahoma puts that behavior through its paces. Spring and summer bring long humid stretches, and winter heating pulls moisture out of indoor air. A wood floor in an OKC home lives through that cycle every year, which is why our guide to <a href="/blog/best-flooring-oklahoma-climate/">the best flooring for Oklahoma's climate</a> keeps coming back to humidity.`,
+        ],
+      },
+      {
+        heading: 'Winter gaps: usually normal',
+        paragraphs: [
+          `When the heat runs, indoor air gets dry, the boards shrink, and thin gaps open between them. On solid hardwood, especially wider planks, a gap about the thickness of a business card in the dead of winter is ordinary seasonal movement. As the air gets more humid in spring, the boards take moisture back on and most of those gaps close on their own.`,
+          `Gaps become a concern when they are wide enough to catch dirt or a fingernail, when they get bigger every winter, or when they do not close at all in summer. Those usually point to indoor air that is far too dry, wood that was not acclimated before it went down, or a moisture problem under the floor.`,
+        ],
+      },
+      {
+        heading: 'Summer cupping and crowning: the opposite problem',
+        paragraphs: [
+          `Cupping is when the edges of each board sit higher than the center, so the floor looks slightly wavy across the boards. It happens when the underside of the board takes on more moisture than the top. Humid summer air, a damp crawlspace or a slab giving off moisture are the usual sources. A spill or a leak can cause it in one spot.`,
+          `Crowning is the reverse: the center of the board sits higher than the edges. It often appears when a cupped floor is sanded flat before it has dried out, and the boards then settle the other way as they dry.`,
+          `Mild cupping during a humid stretch can ease once the moisture source is dealt with and indoor humidity comes back down. Severe or persistent cupping means too much moisture is coming from somewhere, and that has to be found and fixed before anyone works on the floor itself.`,
+        ],
+      },
+      {
+        heading: 'Buckling: when to call right away',
+        paragraphs: [
+          `Buckling is when boards lift off the subfloor entirely, sometimes by inches. It almost always follows a significant water event such as a plumbing leak, an appliance failure or storm water getting into the house. If you see boards lifting, shut off the water source if there is one and get the floor inspected. Our guide to <a href="/blog/replacing-floors-after-water-damage-okc/">replacing floors after water damage</a> walks through what happens next.`,
+        ],
+      },
+      {
+        heading: 'The habit that prevents most of it: 35 to 55 percent',
+        paragraphs: [
+          `The most useful thing you can do for a wood floor is keep indoor relative humidity in roughly the 35 to 55 percent range all year. An inexpensive hygrometer tells you where you stand.`,
+        ],
+        bullets: [
+          'Winter, roughly December through February: run a humidifier, either a whole-house unit on the furnace or room units where the wood floors are',
+          'Summer: run the air conditioning, which pulls moisture out of the air as it cools',
+          'When you travel, set the thermostat back rather than shutting the system off',
+          'Wipe up spills right away and clean with a well wrung mop, never a wet one',
+          'Watch for leaks at dishwashers, refrigerator water lines and sinks next to wood floors',
+        ],
+      },
+      {
+        heading: 'How installation decides how much your floor moves',
+        paragraphs: [
+          `A lot of seasonal trouble is set up on installation day. Wood needs time in the house to acclimate before it goes down, so it starts at the same moisture level as your home rather than the warehouse or the delivery truck. It needs an expansion gap at the walls, hidden under the baseboard, so the floor has room to swell. And on a concrete slab, which describes most OKC homes, the slab's moisture has to be measured rather than assumed, with a barrier where the reading calls for one.`,
+          `Moisture readings, acclimation, expansion gaps and subfloor checks are part of every hardwood job we do. Our <a href="/blog/hardwood-floor-installation-okc/">hardwood installation guide</a> and <a href="/blog/subfloor-prep-okc/">subfloor prep guide</a> cover each step.`,
+        ],
+      },
+      {
+        heading: 'Choosing a floor that moves less',
+        paragraphs: [
+          `If you are still deciding on a floor, the material matters as much as the habits. <a href="/services/engineered-wood/">Engineered wood</a> has a real wood top layer over a cross-layered plywood core, and that core resists the swelling and shrinking solid boards go through. It is the real-wood floor we most often recommend for slab homes in the metro. Our <a href="/blog/engineered-wood-flooring-okc/">engineered wood guide</a> explains how it is built.`,
+          `If you want the look of wood with no seasonal movement to manage, <a href="/services/vinyl-click/">luxury vinyl plank</a> has a waterproof core that does not absorb moisture from the air. <a href="/services/laminate/">Laminate</a> is also more stable than solid wood, though it still needs its expansion gap and should be kept away from standing water.`,
+        ],
+      },
+      {
+        heading: 'Not sure whether your floor is normal?',
+        paragraphs: [
+          `If the gaps in your floor look bigger than they should, or the boards are cupping and you cannot find the cause, <a href="/book/">book a free in-home estimate</a>. We will look at the floor, take moisture readings, and tell you plainly whether it is seasonal movement or something that needs fixing. If replacement makes sense, we bring samples to your home and give you an itemized quote, and our crew moves the furniture out and back. Our <a href="/warranty/">lifetime installation warranty</a> covers our workmanship for as long as you own your home, and 0% financing for 24 months is available.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Is it normal for hardwood floors to have gaps in winter?',
+        a: 'Yes, within reason. Winter heating dries the indoor air and wood boards shrink across their width, opening thin gaps that usually close again in spring and summer. Gaps that are wide, grow every year, or never close point to very dry indoor air, skipped acclimation or a moisture problem.',
+      },
+      {
+        q: 'What causes hardwood floors to cup?',
+        a: 'Cupping happens when the underside of the boards takes on more moisture than the top, so the edges rise above the center. Common causes are humid summer air, moisture coming up from a slab or crawlspace, and leaks. The moisture source has to be fixed before the floor itself is repaired.',
+      },
+      {
+        q: 'What humidity should I keep my house at for wood floors?',
+        a: 'Roughly 35 to 55 percent relative humidity year-round. In Oklahoma that usually means a humidifier in the dry winter months and air conditioning in the humid summer months. An inexpensive hygrometer lets you check.',
+      },
+      {
+        q: 'Should I fill the gaps in my hardwood floor?',
+        a: 'Usually not for normal seasonal gaps. Filler put in during winter gets squeezed out, or forces the boards against each other, when the wood swells in summer. Get indoor humidity under control first and see whether the gaps close. Gaps that stay open all year are worth having a professional look at.',
+      },
+      {
+        q: 'Does engineered wood gap and cup like solid hardwood?',
+        a: 'Far less. Engineered wood has a cross-layered plywood core that resists swelling and shrinking, which is why it is the real-wood floor we most often recommend for Oklahoma slab homes. It still benefits from steady indoor humidity and proper installation.',
+      },
+    ],
+    related: [
+      { label: 'Engineered wood flooring', href: '/services/engineered-wood/' },
+      { label: 'Hardwood flooring', href: '/services/hardwood/' },
+      { label: 'Hardwood floor cleaning and care in Oklahoma', href: '/blog/hardwood-floor-cleaning-care-oklahoma/' },
+      { label: 'Hardwood floor installation in OKC', href: '/blog/hardwood-floor-installation-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Hardwood Floor Gaps & Cupping in Oklahoma | Floors To You',
+    metaDescription:
+      'Why hardwood floors gap in winter and cup in summer in Oklahoma, what counts as normal seasonal movement, the 35 to 55 percent humidity rule, and when to call.',
   },
 ];
 
