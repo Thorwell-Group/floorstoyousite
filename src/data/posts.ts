@@ -3025,7 +3025,7 @@ export const posts: Post[] = [
       {
         heading: 'Seeing it on your own stairs',
         paragraphs: [
-          `Stairs are hard to picture from a sample board, because the light on a staircase is usually nothing like the light in a showroom. We bring samples to your home, hold them against your actual treads and railings, count and measure the steps, and look at how the stairs meet the floors at the top and bottom. You get a per-step price in the same visit. <a href="/book/">Book a free in-home estimate</a> and we will walk the staircase with you.`,
+          `Stairs are hard to picture from a sample board, because the light on a staircase is usually nothing like the light in a showroom. We bring samples to your home, hold them against your actual treads and railings, count and measure the steps, and look at how the stairs meet the floors at the top and bottom. You get a per-step price in the same visit. Our <a href="/services/stairs/">stair flooring page</a> covers how we install each option. <a href="/book/">Book a free in-home estimate</a> and we will walk the staircase with you.`,
         ],
       },
     ],
@@ -3048,6 +3048,7 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'Stair flooring installation in OKC', href: '/services/stairs/' },
       { label: 'Carpet flooring & installation', href: '/services/carpet/' },
       { label: 'Luxury vinyl plank (LVP) flooring', href: '/services/vinyl-click/' },
       { label: 'Engineered wood flooring', href: '/services/engineered-wood/' },
