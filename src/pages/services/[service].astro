@@ -48,14 +48,14 @@ const breadcrumbs = [
  </ul>
  </div>
  <div class="card p-6 md:p-8 bg-brand-50">
- <h3 class="text-2xl mb-3">Best Rooms For {s.shortName}</h3>
+ <h3 class="text-2xl mb-3">{s.bestForLabel ?? `Best Rooms For ${s.shortName}`}</h3>
  <div class="flex flex-wrap gap-2 mb-6">
  {s.bestFor.map((r) => <span class="px-3 py-1 rounded-full bg-white text-brand-800 text-sm font-medium">{r}</span>)}
  </div>
  <dl class="space-y-3 text-sm">
- <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Availability</dt><dd class="text-brand-800 font-semibold">In stock</dd></div>
+ <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">{s.availability?.label ?? 'Availability'}</dt><dd class="text-brand-800 font-semibold">{s.availability?.value ?? 'In stock'}</dd></div>
  <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Warranty</dt><dd class="text-brand-800 font-semibold">{s.warranty}</dd></div>
- <div class="flex justify-between"><dt class="text-ink/70">Install lead time</dt><dd class="text-brand-800 font-semibold">As fast as 24 hours</dd></div>
+ <div class="flex justify-between"><dt class="text-ink/70">{s.leadTime?.label ?? 'Install lead time'}</dt><dd class="text-brand-800 font-semibold">{s.leadTime?.value ?? 'As fast as 24 hours'}</dd></div>
  </dl>
  </div>
  </section>

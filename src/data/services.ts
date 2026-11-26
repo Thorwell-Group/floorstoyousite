@@ -23,6 +23,14 @@ export type Service = {
   * answers which question, instead of quietly competing for the same query.
   */
  related?: { label: string; href: string; note: string }[];
+ /**
+  * Wording overrides for an entry that is a job rather than a floor type (stairs).
+  * Floor entries leave these unset and render exactly as before.
+  */
+ bestForLabel?: string;
+ availability?: { label: string; value: string };
+ leadTime?: { label: string; value: string };
+ cardNote?: string;
 };
 
 export const services: Service[] = [
@@ -400,6 +408,67 @@ export const services: Service[] = [
  { src: '/images/photos/lvp/vinylchairincorner.webp', alt: 'Click-lock LVP detail in a sunlit OKC home' },
  ],
  installImage: { src: '/images/photos/lvp/lvp.webp', alt: 'Floors To You OKC installer clicking SPC vinyl planks together' },
+ },
+ {
+ // Stairs are a job, not a floor type, but they are sold and installed on most
+ // whole-home jobs: carpet "stair wrap" (carpet entry above), "Staircases" in the
+ // hardwood best-for list, the real LVP tread job in proof.ts, and the booking
+ // bot's own rule that we do stair work. Before this page the only stair content
+ // was a blog post, so "stair carpet installation" queries landed on /services/carpet/.
+ // Copy is limited to what the site already says about stairs (blog/stair-flooring-okc).
+ slug: 'stairs',
+ name: 'Stair Flooring & Installation',
+ shortName: 'Stair Flooring',
+ category: 'soft',
+ hero: '/images/photos/rooms/staircase.webp',
+ heroAlt: 'Luxury vinyl plank stair treads with a matching stair nose on every step in an Oklahoma City home',
+ intro:
+ 'Carpet, luxury vinyl plank and wood on your staircase, measured at your home and installed by our own crews. Stairs are fitted one tread and one riser at a time, so we quote them per step and match them to the floors at the top and bottom.',
+ benefits: [
+ 'Stair carpet, luxury vinyl plank (LVP) and wood treads',
+ 'A matching stair nose on every hard-surface step',
+ 'Waterfall or cap-and-band wrap on carpeted stairs',
+ 'Stairs matched to the new floor at the top and bottom',
+ 'Counted, measured and quoted per step at your free in-home estimate',
+ ],
+ bestFor: ['Carpeted staircases', 'LVP treads and risers', 'Wood treads', 'Landings'],
+ installation:
+ 'Every step is measured at your home, then cut, fitted and fastened one at a time. On carpeted stairs our installers wrap the pad over each nose and finish in a waterfall or cap-and-band style. Luxury vinyl plank is not floated on stairs: each tread and riser is cut from plank and glued down, with a stair nose made to match the product fastened on every step. We also plan the top and bottom steps around the height of the new floor, so the first and last step meet the floor cleanly.',
+ care:
+ 'Vacuum carpeted stairs right at the nose, where the wear starts. Sweep hard treads and damp-mop them with the cleaner made for that floor, and keep a mat at the bottom of the stairs so grit is not carried up.',
+ priceFrom: '',
+ warranty: '100% product & labor guarantee',
+ metaTitle: 'Stair Flooring & Stair Carpet in OKC | Floors To You OKC',
+ metaDescription:
+ 'Stair carpet, luxury vinyl plank and wood stair treads installed in Oklahoma City, with a matching stair nose on hard floors. Free in-home estimate.',
+ faqs: [
+ {
+ q: 'How are stairs priced?',
+ a: 'By the step, not by the square foot. Every tread and riser is cut and fitted on its own, so the labor is more than the square footage suggests, and landings are measured separately. We count and measure your stairs at the free in-home estimate and give you an itemized quote.',
+ },
+ {
+ q: 'Can you put luxury vinyl plank on stairs?',
+ a: 'Yes. Each tread and riser is cut from plank and glued down, and a stair nose made to match the product is fastened on every step. Click-lock LVP is not floated on stairs the way it is across a room, so it takes more labor per step than carpet.',
+ },
+ {
+ q: 'Is carpet or hard flooring safer on stairs?',
+ a: 'Carpet is the most slip-resistant stair surface, which is why it is the common choice in homes with young children, older family members, or dogs. If you want wood or LVP, choose a textured surface rather than a smooth, glossy one.',
+ },
+ {
+ q: 'Can my stairs match the new floor?',
+ a: 'Yes. If the main floor is LVP or wood, the treads are cut from the same product and finished with a matching stair nose. Order the stair material together with the floor: flooring is made in batches that vary slightly in color, and stairs done a year later can visibly miss.',
+ },
+ ],
+ gallery: [
+ { src: '/images/photos/carpet/carpet-staircase-okc.webp', alt: 'Curved staircase wrapped in soft neutral carpet in an Oklahoma City home' },
+ { src: '/images/photos/rooms/staircase.webp', alt: 'LVP stair treads with matching stair nose above a tile entry floor' },
+ { src: '/images/photos/hardwood/hardwood-staircase-and-living-area.webp', alt: 'Wood stair treads leading down to a wood-floored living area' },
+ ],
+ installImage: { src: '/images/photos/hardwood/hardwood-staircase-and-living-area.webp', alt: 'Wood stair treads with a rounded nose on each step, leading down to a wood floor' },
+ bestForLabel: 'Staircases We Cover',
+ availability: { label: 'Materials', value: 'Carpet, LVP & wood' },
+ leadTime: { label: 'Quoted', value: 'Per step, at your home' },
+ cardNote: 'Carpet, LVP & wood treads',
  },
 ];
 

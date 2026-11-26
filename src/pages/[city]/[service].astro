@@ -118,7 +118,7 @@ const serviceSchema = {
  <ul class="space-y-2 mb-8 text-ink/85">
  {s.benefits.map((b) => <li class="flex gap-3"><span class="text-brand-500 mt-1" aria-hidden>✓</span><span>{b}</span></li>)}
  </ul>
- <h3 class="text-xl mb-3">Best Rooms For {s.shortName} In {a.city} Homes</h3>
+ <h3 class="text-xl mb-3">{s.bestForLabel ?? `Best Rooms For ${s.shortName}`} In {a.city} Homes</h3>
  <div class="flex flex-wrap gap-2 mb-8">
  {s.bestFor.map((r) => <span class="px-3 py-1 rounded-full bg-brand-50 text-brand-800 text-sm font-medium">{r}</span>)}
  </div>
@@ -134,10 +134,10 @@ const serviceSchema = {
  <div class="card p-6 bg-brand-50">
  <h3 class="text-xl mb-3">{s.shortName} In {a.city}</h3>
  <dl class="text-sm space-y-2">
- <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Availability</dt><dd class="text-brand-800 font-semibold">In stock</dd></div>
+ <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">{s.availability?.label ?? 'Availability'}</dt><dd class="text-brand-800 font-semibold">{s.availability?.value ?? 'In stock'}</dd></div>
  <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Warranty</dt><dd class="text-brand-800 font-semibold">{s.warranty}</dd></div>
  <div class="flex justify-between border-b border-brand-100 pb-2"><dt class="text-ink/70">Drive from showroom</dt><dd class="text-brand-800 font-semibold">{a.drivingMinutes === 0 ? 'On site' : `${a.drivingMinutes} min`}</dd></div>
- <div class="flex justify-between"><dt class="text-ink/70">Install turnaround</dt><dd class="text-brand-800 font-semibold">As fast as 24 hr</dd></div>
+ <div class="flex justify-between"><dt class="text-ink/70">{s.leadTime?.label ?? 'Install turnaround'}</dt><dd class="text-brand-800 font-semibold">{s.leadTime?.value ?? 'As fast as 24 hr'}</dd></div>
  </dl>
  <a href="/book/" class="btn-primary w-full mt-5">Free {a.city} Quote</a>
  </div>
