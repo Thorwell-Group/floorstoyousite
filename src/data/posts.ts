@@ -4115,7 +4115,7 @@ export const posts: Post[] = [
         heading: 'Baseboards and quarter round',
         paragraphs: [
           `There are two ways to finish where the floor meets the wall. The first is to remove the existing baseboards, install the floor, and put the baseboards back, or put new ones on. This is the cleanest look, because the baseboard sits directly over the expansion gap and nothing extra shows. Old baseboards sometimes crack or split when they come off, and if they are painted, the top edge usually needs a touch of caulk and paint once they are back on.`,
-          `The second is to leave the baseboards in place and cover the gap with quarter round or shoe molding, a small strip of trim nailed to the baseboard, not the floor. It is faster and less expensive, and it is often the right call when baseboards are in good shape or would be damaged coming off. Some people dislike the look, so decide which you want before install day. Either way, tell us at the estimate. Prep, install, baseboard and cleanup are all part of how we quote a job.`,
+          `The second is to leave the baseboards in place and cover the gap with quarter round or shoe molding, a small strip of trim nailed to the baseboard, not the floor. It is faster and less expensive, and it is often the right call when baseboards are in good shape or would be damaged coming off. Some people dislike the look, so decide which you want before install day. Either way, tell us at the estimate. Prep, install, baseboard and cleanup are all part of how we quote a job, and our <a href="/services/baseboards/">baseboard and trim page</a> covers what is included.`,
         ],
       },
       {
@@ -4178,6 +4178,7 @@ export const posts: Post[] = [
       },
     ],
     related: [
+      { label: 'Baseboard and trim installation in OKC', href: '/services/baseboards/' },
       { label: 'All the flooring we install', href: '/services/' },
       { label: 'Flooring installation in OKC: the complete guide', href: '/blog/flooring-installation-okc-guide/' },
       { label: 'Click-lock vs. glue-down LVP', href: '/blog/lvp-installation-okc-click-vs-glue-down/' },

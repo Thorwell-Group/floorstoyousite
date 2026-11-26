@@ -470,6 +470,68 @@ export const services: Service[] = [
  leadTime: { label: 'Quoted', value: 'Per step, at your home' },
  cardNote: 'Carpet, LVP & wood treads',
  },
+ {
+ // Baseboards and trim are part of every floor job, not a floor type: the booking
+ // bot lists "baseboard removal and replacement" as included on every install, and
+ // the site's EasyBand / about / how-it-works copy says our installers pull and
+ // reset baseboards. The owner confirmed (11-26) that baseboards, quarter round and
+ // shoe molding are offered. Until now the only page on the topic was the blog guide
+ // (blog/flooring-transitions-baseboards-okc), so this is the service page for it.
+ // Copy is limited to what the site, that guide and the bot already say.
+ slug: 'baseboards',
+ name: 'Baseboard & Trim Installation',
+ shortName: 'Baseboards & Trim',
+ category: 'hard',
+ hero: '/images/photos/lvp/vinyllowtohigh.webp',
+ heroAlt: 'New plank floor running down a hallway with white baseboards along the walls and up the stair skirt',
+ intro:
+ 'Baseboards, quarter round and shoe molding, fitted by the same crew that installs your new floor. Taking your baseboards off and putting them back is included in every floor we install, and new trim is listed on its own line in your quote.',
+ benefits: [
+ 'Baseboard removal and reinstall included with every floor we install',
+ 'New baseboards when the old ones are damaged or you want a taller profile',
+ 'Quarter round or shoe molding if you would rather keep your baseboards in place',
+ 'Trim fastened to the wall, never through a floating floor',
+ 'Trim and transitions itemized on your written quote',
+ ],
+ bestFor: ['Baseboards', 'Quarter round', 'Shoe molding', 'Transitions & thresholds'],
+ installation:
+ 'There are two ways to finish the edge where the floor meets the wall. The first is to take the baseboards off, install the floor, and put them back on, or put new ones on. That is the cleanest look, because the baseboard sits right over the expansion gap and nothing extra shows. The second is to leave the baseboards where they are and cover the gap with quarter round or shoe molding nailed to the baseboard. Either way the trim is fastened to the wall, not through the floor, so a floating floor can still expand and contract through an Oklahoma summer. We walk every wall and doorway with you at the estimate and settle which finish each room gets before install day.',
+ care:
+ 'Dust baseboards when you clean the floor, and wipe scuffs with a damp cloth rather than a harsh cleaner. Painted baseboards usually need a little caulk and a paint touch-up along the top edge once they are back on; that can be done after the floor is in. Never caulk the trim down to a floating floor, because the floor needs that gap to move.',
+ priceFrom: '',
+ warranty: '100% product & labor guarantee',
+ metaTitle: 'Baseboards, Quarter Round & Trim in OKC | Floors To You OKC',
+ metaDescription:
+ 'Baseboard removal and reinstall, new baseboards, quarter round and shoe molding, fitted with your new floor in Oklahoma City. Free in-home estimate.',
+ faqs: [
+ {
+ q: 'Do you remove and reinstall baseboards?',
+ a: 'Yes. Taking your baseboards off and putting them back over the new floor is included in every floor we install. Older baseboards can crack or split when they come off, so if yours are original to the house, it is worth deciding at the estimate whether to reuse them or put on new ones.',
+ },
+ {
+ q: 'Should I replace my baseboards when I replace my flooring?',
+ a: 'Not necessarily. If your baseboards are in good shape, they go back on over the new floor. If they are already damaged or you want a taller profile, doing it while the floor is out is the cheapest time.',
+ },
+ {
+ q: 'What is quarter round, and do I need it?',
+ a: 'Quarter round is a small trim piece nailed to the baseboard, not the floor, that covers the expansion gap at the edge of a floating floor. Shoe molding does the same job with a slimmer profile. You only need either one if you would rather leave your baseboards in place instead of taking them off.',
+ },
+ {
+ q: 'How is trim priced?',
+ a: 'Trim and transitions are listed on their own lines in your quote. We measure the linear feet of baseboard, quarter round or shoe molding at your free in-home estimate, so you can see exactly what is included.',
+ },
+ ],
+ gallery: [
+ { src: '/images/photos/lvp/vinyllowtohigh.webp', alt: 'Hallway with a new plank floor finished against white baseboards and a carpeted staircase' },
+ { src: '/images/photos/lvp/vinylchairincorner.webp', alt: 'Herringbone floor meeting a low white baseboard along a living room wall' },
+ { src: '/images/photos/hardwood/hardwoodinstall.webp', alt: 'Newly installed wood floor with the baseboards taped off and ready to be finished' },
+ ],
+ installImage: { src: '/images/photos/hardwood/hardwoodinstall.webp', alt: 'Fresh wood floor installed through a home with tape still on the baseboards' },
+ bestForLabel: 'Trim We Install',
+ availability: { label: 'Included', value: 'Baseboards off & back on' },
+ leadTime: { label: 'Quoted', value: 'Itemized, at your home' },
+ cardNote: 'Baseboards, quarter round & shoe molding',
+ },
 ];
 
 export const getService = (slug: string) => services.find((s) => s.slug === slug);
