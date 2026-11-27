@@ -2480,7 +2480,7 @@ export const posts: Post[] = [
         heading: 'Moisture, acclimation and expansion',
         paragraphs: [
           `Vinyl itself is waterproof, but the slab under it is not, and moisture vapor coming up through concrete can break down adhesive or grow mold under a floating floor. We check slab moisture before install and use a vapor barrier or a moisture-tolerant adhesive when readings call for it.`,
-          `LVP also needs to sit in the house at normal temperature for a day or two before install. It does not move as much as wood, but a floor installed cold in January and warmed by summer will expand, and a floor installed tight will peak at the seams. That is also why a floating floor gets a perimeter gap at every wall, covered by baseboard or quarter round, and a T-molding at long runs where the manufacturer requires one. Glue-down needs less of this because it cannot move as a unit.`,
+          `LVP also needs to sit in the house at normal temperature for a day or two before install. It does not move as much as wood, but a floor installed cold in January and warmed by summer will expand, and a floor installed tight will peak at the seams. Our guide to <a href="/blog/floating-floor-separating-peaking-hollow-okc/">why floating floors separate, peak or sound hollow</a> covers what those problems look like. That is also why a floating floor gets a perimeter gap at every wall, covered by baseboard or quarter round, and a T-molding at long runs where the manufacturer requires one. Glue-down needs less of this because it cannot move as a unit.`,
         ],
       },
       {
@@ -6010,6 +6010,129 @@ export const posts: Post[] = [
     metaTitle: 'Hardwood Floor Gaps & Cupping in Oklahoma | Floors To You',
     metaDescription:
       'Why hardwood floors gap in winter and cup in summer in Oklahoma, what counts as normal seasonal movement, the 35 to 55 percent humidity rule, and when to call.',
+  },
+  {
+    slug: 'floating-floor-separating-peaking-hollow-okc',
+    title: 'Why Is My Vinyl Plank or Laminate Floor Separating, Peaking or Sounding Hollow?',
+    category: 'How It Works',
+    excerpt:
+      'Gaps opening at the plank ends, seams rising into a ridge, a hollow or clicking spot underfoot. What causes each problem in a click-lock floor, what you can safely do about it, and when it needs a professional.',
+    hero: '/images/photos/laminate/laminateinstall.webp',
+    heroAlt: 'Click-lock laminate planks being installed over a prepared subfloor',
+    datePublished: '2026-11-27',
+    dateModified: '2026-11-27',
+    readMinutes: 7,
+    intro:
+      `Click-lock luxury vinyl plank and laminate are the most popular floors in the OKC metro, and most of them go years without a problem. When one does act up, it usually shows up in one of four ways: gaps at the ends of the planks, seams lifting into a ridge, a spot that sounds hollow or bounces, or a click or creak when you step. Each of those has a short list of causes, and nearly all of them come back to how a floating floor is supposed to move. Here is what is going on and what to do about it.`,
+    sections: [
+      {
+        heading: 'First, how a floating floor is supposed to work',
+        paragraphs: [
+          `A click-lock floor is not attached to the subfloor. The planks lock to each other along milled edges, and the whole floor rests on the subfloor as a single sheet, held in place by its own weight and the trim around the edges. That is why it installs so fast and why it can go over existing flat tile or sheet vinyl.`,
+          `It also means the floor has to be free to move a little as the house warms, cools, dries out and gets humid again. Laminate has a wood-fiber core and moves more than vinyl. Rigid-core vinyl moves less, but it still expands with heat. Almost every floating floor problem comes from one of two things: the floor cannot move when it needs to, or the surface under it is not flat enough to support the locking joints. Our guide to <a href="/blog/lvp-installation-okc-click-vs-glue-down/">click-lock vs. glue-down vinyl</a> explains the two installation methods in more detail.`,
+        ],
+      },
+      {
+        heading: 'Gaps at the ends or sides of the planks',
+        paragraphs: [
+          `Small gaps between planks, usually at the short ends, are the most common complaint. They tend to appear in winter, once the heat is running and the floor has contracted. The usual causes:`,
+        ],
+        bullets: [
+          'Low spots in the subfloor: the plank flexes every time someone steps on it, and over months that flexing wears out the locking joint until it lets go',
+          'Skipped acclimation: planks installed straight from a cold truck or warehouse change size once they reach room temperature',
+          'Damaged locking edges: a chipped or crushed edge from installation never holds as tightly as an undamaged one',
+          'A floor that is pinned somewhere, so it pulls apart in one area instead of moving as a whole',
+        ],
+      },
+      {
+        heading: 'Peaking: seams rising into a ridge',
+        paragraphs: [
+          `Peaking is when two planks push against each other and the seam lifts into a tent shape. It usually shows up in summer or after the floor has warmed, and it means the floor is trying to expand with nowhere to go.`,
+          `The most common causes are a missing or undersized expansion gap at the walls, baseboard or quarter round nailed down through the floor instead of into the wall, and heavy fixed objects such as kitchen cabinets or an island set on top of the floating floor. Long runs and open floor plans without a transition where the manufacturer requires one can peak too. Laminate needs a 3/8-inch gap at every wall and fixed object, which our <a href="/blog/laminate-flooring-installation-okc/">laminate installation guide</a> covers.`,
+        ],
+      },
+      {
+        heading: 'Hollow sounds, bounce and soft spots',
+        paragraphs: [
+          `Every floating floor sounds slightly different from a floor that is glued or nailed down. A spot that sounds noticeably hollow, or gives when you step on it, is something else. It almost always means there is a dip in the subfloor and the plank is bridging over it instead of resting on a solid surface.`,
+          `Most Oklahoma City homes sit on concrete slabs, and slabs are rarely flat, especially on the shifting clay soil under much of the metro. A dip left uncorrected under a floating floor becomes a soft spot, and a soft spot becomes a separated joint later. Missing or wrong underlayment can make the whole floor sound hollow, a common complaint with laminate laid without a quality pad. Our <a href="/blog/oklahoma-clay-soil-and-your-floors/">guide to Oklahoma clay soil</a> explains why slabs here move.`,
+        ],
+      },
+      {
+        heading: 'Clicking, creaking and crackling underfoot',
+        paragraphs: [
+          `A click or crackle when you step in one place is usually the locking joint flexing over a high or low spot, or debris left under the floor that the planks are rocking on. On a wood subfloor, a creak can also come from the subfloor itself. A loose panel that squeaks keeps squeaking under a new floor unless it was fastened down first.`,
+          `If the noise appeared after the floor had been down a while and is getting worse, take it seriously. It often means the joint is wearing and a gap is not far behind.`,
+        ],
+      },
+      {
+        heading: 'Swelling at the seams (mostly laminate)',
+        paragraphs: [
+          `If plank edges look puffy or raised and the surface along the seam looks slightly swollen, that is water. Laminate has a high-density fiberboard core, and standing water that gets into the seams swells it. Once the core has swollen it does not shrink back, and those planks have to be replaced. Rigid-core vinyl does not swell this way because its core does not absorb water.`,
+          `If you see swelling near a dishwasher, refrigerator, sink or exterior door, find the source before anything else. Moisture coming up through a slab without a vapor barrier can also cause problems under any floating floor, which is why slab moisture should be measured before installation. Our guide to <a href="/blog/replacing-floors-after-water-damage-okc/">replacing floors after water damage</a> covers bigger leaks.`,
+        ],
+      },
+      {
+        heading: 'What you can do, and what to avoid',
+        paragraphs: [
+          `Some of these problems you can help along yourself. Others get worse if you try.`,
+        ],
+        bullets: [
+          'Check the edges: trim nailed into the floor, or a heavy fixed object sitting on it, is often the cause of peaking',
+          'Keep indoor temperature and humidity steady, and set the thermostat back rather than shutting the system off when you travel',
+          'Find and fix any leak before doing anything to the floor',
+          'Do not glue, caulk or nail a floating floor down to stop it moving; that guarantees peaking or gaps somewhere else',
+          'Do not stomp a lifted seam back down or force planks together, which can break the locking edge',
+          'Do not fill gaps with caulk or wood filler; the cause is still there and the filler will crack out',
+        ],
+      },
+      {
+        heading: 'Repair or replace?',
+        paragraphs: [
+          `Click-lock floors have one big advantage when something goes wrong: individual planks can be replaced. A few damaged or swollen planks, or a single bad joint, can often be fixed without touching the rest of the room, especially if spare planks from the original install were kept.`,
+          `If the problem is spread across the floor, such as peaking along a whole wall or gaps opening throughout, the cause is usually something done at installation: no expansion gap, no subfloor prep or no acclimation. Fixing that properly usually means taking the floor up, correcting the subfloor and relaying it, or replacing it if the product is damaged or discontinued. That is also a good time to ask whether the room should be <a href="/services/vinyl-click/">click-lock vinyl</a>, <a href="/services/vinyl-glue/">glue-down vinyl</a> or <a href="/services/laminate/">laminate</a> going forward.`,
+        ],
+      },
+      {
+        heading: 'How we prevent these problems on our installs',
+        paragraphs: [
+          `Nearly every problem above is decided on installation day. On every floating floor job we check the slab or subfloor for flatness and correct high and low spots, measure slab moisture and lay a vapor barrier where the reading calls for one, acclimate the material, leave the expansion gap at every wall and fixed object, fasten trim to the wall rather than the floor, undercut door jambs, and add transitions where the manufacturer requires them. Our <a href="/blog/subfloor-prep-okc/">subfloor prep guide</a> explains that work and how it shows up on an itemized quote.`,
+          `If your floor is separating, peaking or sounding hollow and you want a straight answer on why, <a href="/book/">book a free in-home estimate</a>. We will look at the floor and the subfloor and tell you plainly whether it can be repaired or should be replaced. If new flooring makes sense, we bring samples to your home, our crew moves the furniture, and our <a href="/warranty/">lifetime installation warranty</a> covers our workmanship for as long as you own your home. 0% financing for 24 months is available.`,
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'Why is my vinyl plank floor separating at the ends?',
+        a: 'The most common causes are low spots in the subfloor that let the planks flex until the locking joint wears out, planks that were not acclimated before installation, damaged locking edges, or a floor that is pinned in one place. Gaps that show up mainly in winter usually mean the floor is contracting while something is holding it.',
+      },
+      {
+        q: 'What causes laminate or LVP to peak at the seams?',
+        a: 'Peaking means the floor is trying to expand and has no room. It usually comes from a missing or undersized expansion gap at the walls, trim nailed down through the floor, heavy cabinets or an island set on top of the floating floor, or long runs installed without a required transition.',
+      },
+      {
+        q: 'Why does my floating floor sound hollow in some spots?',
+        a: 'A noticeably hollow or bouncy spot usually means a dip in the subfloor, so the plank is bridging over air instead of resting on a flat surface. Missing or poor underlayment can make the whole floor sound hollow. Dips should be filled before installation, because flexing over them eventually breaks the locking joints.',
+      },
+      {
+        q: 'Can I glue down a floating floor to stop it moving?',
+        a: 'No. A floating floor is designed to move as one piece. Gluing, caulking or nailing it in place stops it from expanding and contracting freely, which leads to peaking or gaps elsewhere and can void the product warranty.',
+      },
+      {
+        q: 'Can one damaged plank be replaced in a click-lock floor?',
+        a: 'Usually, yes. That is one of the advantages of click-lock flooring. A few damaged or water-swollen planks can often be replaced without redoing the whole room, especially if spare planks from the original install were kept. Problems spread across the whole floor usually point to an installation cause that needs a bigger fix.',
+      },
+    ],
+    related: [
+      { label: 'Luxury vinyl plank (click-lock)', href: '/services/vinyl-click/' },
+      { label: 'Laminate flooring', href: '/services/laminate/' },
+      { label: 'LVP installation: click-lock vs glue-down', href: '/blog/lvp-installation-okc-click-vs-glue-down/' },
+      { label: 'Laminate flooring installation in OKC', href: '/blog/laminate-flooring-installation-okc/' },
+      { label: 'Book a free in-home estimate', href: '/book/' },
+    ],
+    metaTitle: 'Vinyl or Laminate Floor Separating or Peaking? | Floors To You',
+    metaDescription:
+      'Why click-lock vinyl plank and laminate floors separate, peak at the seams, sound hollow or click in Oklahoma homes, what to do about it, and when to call.',
   },
 ];
 
